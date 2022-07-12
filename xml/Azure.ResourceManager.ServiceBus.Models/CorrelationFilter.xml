@@ -193,6 +193,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="SendTo">
+      <MemberSignature Language="C#" Value="public string SendTo { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SendTo" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ServiceBus.Models.CorrelationFilter.SendTo" />
+      <MemberSignature Language="VB.NET" Value="Public Property SendTo As String" />
+      <MemberSignature Language="F#" Value="member this.SendTo : string with get, set" Usage="Azure.ResourceManager.ServiceBus.Models.CorrelationFilter.SendTo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ServiceBus</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Address to send to. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SessionId">
       <MemberSignature Language="C#" Value="public string SessionId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SessionId" />

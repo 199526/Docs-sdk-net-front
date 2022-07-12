@@ -1,15 +1,15 @@
 <Type Name="ServicePrincipalCertificateAuthInfo" FullName="Azure.ResourceManager.ServiceLinker.Models.ServicePrincipalCertificateAuthInfo">
-  <TypeSignature Language="C#" Value="public class ServicePrincipalCertificateAuthInfo : Azure.ResourceManager.ServiceLinker.Models.AuthInfoBase" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServicePrincipalCertificateAuthInfo extends Azure.ResourceManager.ServiceLinker.Models.AuthInfoBase" />
+  <TypeSignature Language="C#" Value="public class ServicePrincipalCertificateAuthInfo : Azure.ResourceManager.ServiceLinker.Models.AuthBaseInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServicePrincipalCertificateAuthInfo extends Azure.ResourceManager.ServiceLinker.Models.AuthBaseInfo" />
   <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.ServiceLinker.Models.ServicePrincipalCertificateAuthInfo" />
-  <TypeSignature Language="VB.NET" Value="Public Class ServicePrincipalCertificateAuthInfo&#xA;Inherits AuthInfoBase" />
-  <TypeSignature Language="F#" Value="type ServicePrincipalCertificateAuthInfo = class&#xA;    inherit AuthInfoBase" />
+  <TypeSignature Language="VB.NET" Value="Public Class ServicePrincipalCertificateAuthInfo&#xA;Inherits AuthBaseInfo" />
+  <TypeSignature Language="F#" Value="type ServicePrincipalCertificateAuthInfo = class&#xA;    inherit AuthBaseInfo" />
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.ServiceLinker</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.ResourceManager.ServiceLinker.Models.AuthInfoBase</BaseTypeName>
+    <BaseTypeName>Azure.ResourceManager.ServiceLinker.Models.AuthBaseInfo</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>

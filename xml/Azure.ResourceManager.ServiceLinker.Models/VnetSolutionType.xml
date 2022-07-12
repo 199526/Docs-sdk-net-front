@@ -1,9 +1,9 @@
-<Type Name="VnetSolutionType" FullName="Azure.ResourceManager.ServiceLinker.Models.VnetSolutionType">
-  <TypeSignature Language="C#" Value="public readonly struct VnetSolutionType : IEquatable&lt;Azure.ResourceManager.ServiceLinker.Models.VnetSolutionType&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit VnetSolutionType extends System.ValueType implements class System.IEquatable`1&lt;valuetype Azure.ResourceManager.ServiceLinker.Models.VnetSolutionType&gt;" />
-  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.ServiceLinker.Models.VnetSolutionType" />
-  <TypeSignature Language="VB.NET" Value="Public Structure VnetSolutionType&#xA;Implements IEquatable(Of VnetSolutionType)" />
-  <TypeSignature Language="F#" Value="type VnetSolutionType = struct" />
+<Type Name="VNetSolutionType" FullName="Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType">
+  <TypeSignature Language="C#" Value="public readonly struct VNetSolutionType : IEquatable&lt;Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit VNetSolutionType extends System.ValueType implements class System.IEquatable`1&lt;valuetype Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType&gt;" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType" />
+  <TypeSignature Language="VB.NET" Value="Public Structure VNetSolutionType&#xA;Implements IEquatable(Of VNetSolutionType)" />
+  <TypeSignature Language="F#" Value="type VNetSolutionType = struct" />
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.ServiceLinker</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -13,7 +13,7 @@
   </Base>
   <Interfaces>
     <Interface>
-      <InterfaceName>System.IEquatable&lt;Azure.ResourceManager.ServiceLinker.Models.VnetSolutionType&gt;</InterfaceName>
+      <InterfaceName>System.IEquatable&lt;Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType&gt;</InterfaceName>
     </Interface>
   </Interfaces>
   <Docs>
@@ -22,11 +22,11 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public VnetSolutionType (string value);" />
+      <MemberSignature Language="C#" Value="public VNetSolutionType (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceLinker.Models.VnetSolutionType.#ctor(System.String)" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As String)" />
-      <MemberSignature Language="F#" Value="new Azure.ResourceManager.ServiceLinker.Models.VnetSolutionType : string -&gt; Azure.ResourceManager.ServiceLinker.Models.VnetSolutionType" Usage="new Azure.ResourceManager.ServiceLinker.Models.VnetSolutionType value" />
+      <MemberSignature Language="F#" Value="new Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType : string -&gt; Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType" Usage="new Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ServiceLinker</AssemblyName>
@@ -37,7 +37,7 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.ServiceLinker.Models.VnetSolutionType" />. </summary>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType" />. </summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="value" /> is null. </exception>
@@ -72,11 +72,39 @@
       </Docs>
     </Member>
     <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType.Equals(Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As VNetSolutionType) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType -&gt; bool" Usage="vNetSolutionType.Equals other" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ServiceLinker</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType" />
+      </Parameters>
+      <Docs>
+        <param name="other">An object to compare with this object.</param>
+        <summary>Indicates whether the current object is equal to another object of the same type.</summary>
+        <returns>
+          <see langword="true" /> if the current object is equal to the <paramref name="other" /> parameter; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceLinker.Models.VnetSolutionType.Equals(System.Object)" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
-      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="vnetSolutionType.Equals obj" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="vNetSolutionType.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ServiceLinker</AssemblyName>
@@ -105,9 +133,9 @@
     <Member MemberName="GetHashCode">
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceLinker.Models.VnetSolutionType.GetHashCode" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
-      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="vnetSolutionType.GetHashCode " />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="vNetSolutionType.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ServiceLinker</AssemblyName>
@@ -155,6 +183,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool operator == (Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType left, Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType left, valuetype Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType.op_Equality(Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType,Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As VNetSolutionType, right As VNetSolutionType) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType * Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType -&gt; bool" Usage="left = right" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ServiceLinker</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType" />
+        <Parameter Name="right" Type="Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary> Determines if two <see cref="T:Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType" /> values are the same. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="op_Implicit">
       <MemberSignature Language="C#" Value="public static implicit operator Azure.ResourceManager.ServiceLinker.Models.VnetSolutionType (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Azure.ResourceManager.ServiceLinker.Models.VnetSolutionType op_Implicit(string value) cil managed" />
@@ -175,6 +229,30 @@
       <Docs>
         <param name="value">To be added.</param>
         <summary> Converts a string to a <see cref="T:Azure.ResourceManager.ServiceLinker.Models.VnetSolutionType" />. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType op_Implicit(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType.op_Implicit(System.String)~Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As String) As VNetSolutionType" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : string -&gt; Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType" Usage="Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType.op_Implicit value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ServiceLinker</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary> Converts a string to a <see cref="T:Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType" />. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -205,19 +283,45 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool operator != (Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType left, Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType left, valuetype Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType.op_Inequality(Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType,Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As VNetSolutionType, right As VNetSolutionType) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType * Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType -&gt; bool" Usage="Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType.op_Inequality (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ServiceLinker</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType" />
+        <Parameter Name="right" Type="Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary> Determines if two <see cref="T:Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType" /> values are not the same. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="PrivateLink">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ServiceLinker.Models.VnetSolutionType PrivateLink { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.ServiceLinker.Models.VnetSolutionType PrivateLink" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ServiceLinker.Models.VnetSolutionType.PrivateLink" />
-      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PrivateLink As VnetSolutionType" />
-      <MemberSignature Language="F#" Value="member this.PrivateLink : Azure.ResourceManager.ServiceLinker.Models.VnetSolutionType" Usage="Azure.ResourceManager.ServiceLinker.Models.VnetSolutionType.PrivateLink" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType PrivateLink { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType PrivateLink" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType.PrivateLink" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PrivateLink As VNetSolutionType" />
+      <MemberSignature Language="F#" Value="member this.PrivateLink : Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType" Usage="Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType.PrivateLink" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ServiceLinker</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ServiceLinker.Models.VnetSolutionType</ReturnType>
+        <ReturnType>Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> privateLink. </summary>
@@ -226,18 +330,18 @@
       </Docs>
     </Member>
     <Member MemberName="ServiceEndpoint">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ServiceLinker.Models.VnetSolutionType ServiceEndpoint { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.ServiceLinker.Models.VnetSolutionType ServiceEndpoint" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ServiceLinker.Models.VnetSolutionType.ServiceEndpoint" />
-      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ServiceEndpoint As VnetSolutionType" />
-      <MemberSignature Language="F#" Value="member this.ServiceEndpoint : Azure.ResourceManager.ServiceLinker.Models.VnetSolutionType" Usage="Azure.ResourceManager.ServiceLinker.Models.VnetSolutionType.ServiceEndpoint" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType ServiceEndpoint { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType ServiceEndpoint" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType.ServiceEndpoint" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ServiceEndpoint As VNetSolutionType" />
+      <MemberSignature Language="F#" Value="member this.ServiceEndpoint : Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType" Usage="Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType.ServiceEndpoint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ServiceLinker</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ServiceLinker.Models.VnetSolutionType</ReturnType>
+        <ReturnType>Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> serviceEndpoint. </summary>
@@ -248,9 +352,9 @@
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceLinker.Models.VnetSolutionType.ToString" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceLinker.Models.VNetSolutionType.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
-      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="vnetSolutionType.ToString " />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="vNetSolutionType.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ServiceLinker</AssemblyName>

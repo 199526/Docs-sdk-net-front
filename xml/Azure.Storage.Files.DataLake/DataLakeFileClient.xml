@@ -13,6 +13,7 @@
     <AssemblyVersion>12.9.0.0</AssemblyVersion>
     <AssemblyVersion>12.10.0.0</AssemblyVersion>
     <AssemblyVersion>12.11.0.0</AssemblyVersion>
+    <AssemblyVersion>12.12.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.Storage.Files.DataLake.DataLakePathClient</BaseTypeName>
@@ -40,6 +41,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -66,6 +68,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="fileUri" Type="System.Uri" />
@@ -98,6 +101,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="fileUri" Type="System.Uri" />
@@ -137,6 +141,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="fileUri" Type="System.Uri" />
@@ -173,6 +178,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="fileUri" Type="System.Uri" />
@@ -211,6 +217,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="fileUri" Type="System.Uri" />
@@ -247,6 +254,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="connectionString" Type="System.String" />
@@ -290,6 +298,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="fileUri" Type="System.Uri" />
@@ -335,6 +344,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="fileUri" Type="System.Uri" />
@@ -377,6 +387,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="fileUri" Type="System.Uri" />
@@ -419,6 +430,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="connectionString" Type="System.String" />
@@ -468,6 +480,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response</ReturnType>
@@ -544,6 +557,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
@@ -613,13 +627,14 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Files.DataLake</AssemblyName>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="options" Type="Azure.Storage.Files.DataLake.Models.DataLakePathCreateOptions" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="options" Type="Azure.Storage.Files.DataLake.Models.DataLakePathCreateOptions" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="options">
@@ -647,13 +662,11 @@
       </Docs>
     </Member>
     <Member MemberName="Create">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt; Create (Azure.Storage.Files.DataLake.Models.PathHttpHeaders httpHeaders = default, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = default, string permissions = default, string umask = default, Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions conditions = default, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt; Create (Azure.Storage.Files.DataLake.Models.PathHttpHeaders httpHeaders, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata, string permissions, string umask, Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions conditions, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Storage.Files.DataLake.Models.PathInfo&gt; Create(class Azure.Storage.Files.DataLake.Models.PathHttpHeaders httpHeaders, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; metadata, string permissions, string umask, class Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions conditions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.DataLake.DataLakeFileClient.Create(Azure.Storage.Files.DataLake.Models.PathHttpHeaders,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String,Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Create (Optional httpHeaders As PathHttpHeaders = Nothing, Optional metadata As IDictionary(Of String, String) = Nothing, Optional permissions As String = Nothing, Optional umask As String = Nothing, Optional conditions As DataLakeRequestConditions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Response(Of PathInfo)" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Create (httpHeaders As PathHttpHeaders, metadata As IDictionary(Of String, String), permissions As String, umask As String, conditions As DataLakeRequestConditions, cancellationToken As CancellationToken) As Response(Of PathInfo)" />
       <MemberSignature Language="F#" Value="override this.Create : Azure.Storage.Files.DataLake.Models.PathHttpHeaders * System.Collections.Generic.IDictionary&lt;string, string&gt; * string * string * Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt;" Usage="dataLakeFileClient.Create (httpHeaders, metadata, permissions, umask, conditions, cancellationToken)" />
-      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt; Create (Azure.Storage.Files.DataLake.Models.PathHttpHeaders httpHeaders, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata, string permissions, string umask, Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions conditions, System.Threading.CancellationToken cancellationToken);" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Create (httpHeaders As PathHttpHeaders, metadata As IDictionary(Of String, String), permissions As String, umask As String, conditions As DataLakeRequestConditions, cancellationToken As CancellationToken) As Response(Of PathInfo)" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Files.DataLake</AssemblyName>
@@ -664,9 +677,10 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet-preview">
+        <Attribute>
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
@@ -740,13 +754,14 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Files.DataLake</AssemblyName>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="options" Type="Azure.Storage.Files.DataLake.Models.DataLakePathCreateOptions" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="options" Type="Azure.Storage.Files.DataLake.Models.DataLakePathCreateOptions" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="options">
@@ -774,13 +789,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt;&gt; CreateAsync (Azure.Storage.Files.DataLake.Models.PathHttpHeaders httpHeaders = default, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = default, string permissions = default, string umask = default, Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions conditions = default, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt;&gt; CreateAsync (Azure.Storage.Files.DataLake.Models.PathHttpHeaders httpHeaders, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata, string permissions, string umask, Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions conditions, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Storage.Files.DataLake.Models.PathInfo&gt;&gt; CreateAsync(class Azure.Storage.Files.DataLake.Models.PathHttpHeaders httpHeaders, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; metadata, string permissions, string umask, class Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions conditions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.DataLake.DataLakeFileClient.CreateAsync(Azure.Storage.Files.DataLake.Models.PathHttpHeaders,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String,Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateAsync (Optional httpHeaders As PathHttpHeaders = Nothing, Optional metadata As IDictionary(Of String, String) = Nothing, Optional permissions As String = Nothing, Optional umask As String = Nothing, Optional conditions As DataLakeRequestConditions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of PathInfo))" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateAsync (httpHeaders As PathHttpHeaders, metadata As IDictionary(Of String, String), permissions As String, umask As String, conditions As DataLakeRequestConditions, cancellationToken As CancellationToken) As Task(Of Response(Of PathInfo))" />
       <MemberSignature Language="F#" Value="override this.CreateAsync : Azure.Storage.Files.DataLake.Models.PathHttpHeaders * System.Collections.Generic.IDictionary&lt;string, string&gt; * string * string * Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt;&gt;" Usage="dataLakeFileClient.CreateAsync (httpHeaders, metadata, permissions, umask, conditions, cancellationToken)" />
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt;&gt; CreateAsync (Azure.Storage.Files.DataLake.Models.PathHttpHeaders httpHeaders, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata, string permissions, string umask, Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions conditions, System.Threading.CancellationToken cancellationToken);" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateAsync (httpHeaders As PathHttpHeaders, metadata As IDictionary(Of String, String), permissions As String, umask As String, conditions As DataLakeRequestConditions, cancellationToken As CancellationToken) As Task(Of Response(Of PathInfo))" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Files.DataLake</AssemblyName>
@@ -791,9 +804,10 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet-preview">
+        <Attribute>
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
@@ -867,13 +881,14 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Files.DataLake</AssemblyName>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="options" Type="Azure.Storage.Files.DataLake.Models.DataLakePathCreateOptions" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="options" Type="Azure.Storage.Files.DataLake.Models.DataLakePathCreateOptions" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="options">
@@ -900,13 +915,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateIfNotExists">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt; CreateIfNotExists (Azure.Storage.Files.DataLake.Models.PathHttpHeaders httpHeaders = default, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = default, string permissions = default, string umask = default, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt; CreateIfNotExists (Azure.Storage.Files.DataLake.Models.PathHttpHeaders httpHeaders, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata, string permissions, string umask, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Storage.Files.DataLake.Models.PathInfo&gt; CreateIfNotExists(class Azure.Storage.Files.DataLake.Models.PathHttpHeaders httpHeaders, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; metadata, string permissions, string umask, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.DataLake.DataLakeFileClient.CreateIfNotExists(Azure.Storage.Files.DataLake.Models.PathHttpHeaders,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateIfNotExists (Optional httpHeaders As PathHttpHeaders = Nothing, Optional metadata As IDictionary(Of String, String) = Nothing, Optional permissions As String = Nothing, Optional umask As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Response(Of PathInfo)" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateIfNotExists (httpHeaders As PathHttpHeaders, metadata As IDictionary(Of String, String), permissions As String, umask As String, cancellationToken As CancellationToken) As Response(Of PathInfo)" />
       <MemberSignature Language="F#" Value="override this.CreateIfNotExists : Azure.Storage.Files.DataLake.Models.PathHttpHeaders * System.Collections.Generic.IDictionary&lt;string, string&gt; * string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt;" Usage="dataLakeFileClient.CreateIfNotExists (httpHeaders, metadata, permissions, umask, cancellationToken)" />
-      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt; CreateIfNotExists (Azure.Storage.Files.DataLake.Models.PathHttpHeaders httpHeaders, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata, string permissions, string umask, System.Threading.CancellationToken cancellationToken);" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateIfNotExists (httpHeaders As PathHttpHeaders, metadata As IDictionary(Of String, String), permissions As String, umask As String, cancellationToken As CancellationToken) As Response(Of PathInfo)" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Files.DataLake</AssemblyName>
@@ -917,9 +930,10 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet-preview">
+        <Attribute>
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
@@ -987,13 +1001,14 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Files.DataLake</AssemblyName>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="options" Type="Azure.Storage.Files.DataLake.Models.DataLakePathCreateOptions" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="options" Type="Azure.Storage.Files.DataLake.Models.DataLakePathCreateOptions" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="options">
@@ -1020,13 +1035,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateIfNotExistsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt;&gt; CreateIfNotExistsAsync (Azure.Storage.Files.DataLake.Models.PathHttpHeaders httpHeaders = default, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = default, string permissions = default, string umask = default, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt;&gt; CreateIfNotExistsAsync (Azure.Storage.Files.DataLake.Models.PathHttpHeaders httpHeaders, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata, string permissions, string umask, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Storage.Files.DataLake.Models.PathInfo&gt;&gt; CreateIfNotExistsAsync(class Azure.Storage.Files.DataLake.Models.PathHttpHeaders httpHeaders, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; metadata, string permissions, string umask, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.DataLake.DataLakeFileClient.CreateIfNotExistsAsync(Azure.Storage.Files.DataLake.Models.PathHttpHeaders,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateIfNotExistsAsync (Optional httpHeaders As PathHttpHeaders = Nothing, Optional metadata As IDictionary(Of String, String) = Nothing, Optional permissions As String = Nothing, Optional umask As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of PathInfo))" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateIfNotExistsAsync (httpHeaders As PathHttpHeaders, metadata As IDictionary(Of String, String), permissions As String, umask As String, cancellationToken As CancellationToken) As Task(Of Response(Of PathInfo))" />
       <MemberSignature Language="F#" Value="override this.CreateIfNotExistsAsync : Azure.Storage.Files.DataLake.Models.PathHttpHeaders * System.Collections.Generic.IDictionary&lt;string, string&gt; * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt;&gt;" Usage="dataLakeFileClient.CreateIfNotExistsAsync (httpHeaders, metadata, permissions, umask, cancellationToken)" />
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt;&gt; CreateIfNotExistsAsync (Azure.Storage.Files.DataLake.Models.PathHttpHeaders httpHeaders, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata, string permissions, string umask, System.Threading.CancellationToken cancellationToken);" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateIfNotExistsAsync (httpHeaders As PathHttpHeaders, metadata As IDictionary(Of String, String), permissions As String, umask As String, cancellationToken As CancellationToken) As Task(Of Response(Of PathInfo))" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Files.DataLake</AssemblyName>
@@ -1037,9 +1050,10 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet-preview">
+        <Attribute>
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
@@ -1113,6 +1127,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response</ReturnType>
@@ -1164,6 +1179,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
@@ -1215,6 +1231,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;System.Boolean&gt;</ReturnType>
@@ -1266,6 +1283,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Boolean&gt;&gt;</ReturnType>
@@ -1317,6 +1335,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt;</ReturnType>
@@ -1395,6 +1414,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt;&gt;</ReturnType>
@@ -1473,6 +1493,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathAccessControl&gt;</ReturnType>
@@ -1533,6 +1554,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathAccessControl&gt;&gt;</ReturnType>
@@ -1593,6 +1615,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathProperties&gt;</ReturnType>
@@ -1646,6 +1669,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathProperties&gt;&gt;</ReturnType>
@@ -1699,6 +1723,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1736,6 +1761,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -1765,6 +1791,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Stream</ReturnType>
@@ -1808,6 +1835,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1867,6 +1895,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1927,6 +1956,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.IO.Stream&gt;</ReturnType>
@@ -1970,6 +2000,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2029,6 +2060,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2089,6 +2121,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Stream</ReturnType>
@@ -2137,6 +2170,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.IO.Stream&gt;</ReturnType>
@@ -2185,6 +2219,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Files.DataLake.Models.FileDownloadInfo&gt;</ReturnType>
@@ -2234,6 +2269,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.DataLake.Models.FileDownloadInfo&gt;&gt;</ReturnType>
@@ -2283,6 +2319,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Files.DataLake.Models.FileDownloadInfo&gt;</ReturnType>
@@ -2324,6 +2361,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Files.DataLake.Models.FileDownloadInfo&gt;</ReturnType>
@@ -2371,6 +2409,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Files.DataLake.Models.FileDownloadInfo&gt;</ReturnType>
@@ -2438,6 +2477,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.DataLake.Models.FileDownloadInfo&gt;&gt;</ReturnType>
@@ -2479,6 +2519,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.DataLake.Models.FileDownloadInfo&gt;&gt;</ReturnType>
@@ -2526,6 +2567,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.DataLake.Models.FileDownloadInfo&gt;&gt;</ReturnType>
@@ -2593,6 +2635,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response</ReturnType>
@@ -2649,6 +2692,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response</ReturnType>
@@ -2705,6 +2749,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
@@ -2761,6 +2806,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
@@ -2817,6 +2863,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Files.DataLake.DataLakeFileClient&gt;</ReturnType>
@@ -2879,6 +2926,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.DataLake.DataLakeFileClient&gt;&gt;</ReturnType>
@@ -2941,6 +2989,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt;</ReturnType>
@@ -2985,6 +3034,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt;&gt;</ReturnType>
@@ -3029,6 +3079,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt;</ReturnType>
@@ -3092,6 +3143,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt;&gt;</ReturnType>
@@ -3155,6 +3207,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt;</ReturnType>
@@ -3211,6 +3264,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt;&gt;</ReturnType>
@@ -3267,6 +3321,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt;</ReturnType>
@@ -3322,6 +3377,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt;&gt;</ReturnType>
@@ -3377,6 +3433,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt;</ReturnType>
@@ -3440,6 +3497,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt;&gt;</ReturnType>
@@ -3503,6 +3561,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt;</ReturnType>
@@ -3553,6 +3612,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt;</ReturnType>
@@ -3603,6 +3663,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt;</ReturnType>
@@ -3659,6 +3720,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt;</ReturnType>
@@ -3720,6 +3782,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt;</ReturnType>
@@ -3776,6 +3839,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt;</ReturnType>
@@ -3837,6 +3901,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -3911,6 +3976,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -3987,6 +4053,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt;&gt;</ReturnType>
@@ -4037,6 +4104,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt;&gt;</ReturnType>
@@ -4087,6 +4155,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt;&gt;</ReturnType>
@@ -4143,6 +4212,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt;&gt;</ReturnType>
@@ -4204,6 +4274,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt;&gt;</ReturnType>
@@ -4260,6 +4331,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.DataLake.Models.PathInfo&gt;&gt;</ReturnType>
@@ -4321,6 +4393,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -4397,6 +4470,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -4468,6 +4542,7 @@
         <AssemblyName>Azure.Storage.Files.DataLake</AssemblyName>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Storage.Files.DataLake.DataLakeFileClient</ReturnType>

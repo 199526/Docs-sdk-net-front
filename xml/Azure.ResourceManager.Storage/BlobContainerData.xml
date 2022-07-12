@@ -173,6 +173,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ETag">
+      <MemberSignature Language="C#" Value="public Azure.ETag? ETag { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ETag&gt; ETag" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Storage.BlobContainerData.ETag" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ETag As Nullable(Of ETag)" />
+      <MemberSignature Language="F#" Value="member this.ETag : Nullable&lt;Azure.ETag&gt;" Usage="Azure.ResourceManager.Storage.BlobContainerData.ETag" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ETag&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Resource Etag. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="HasImmutabilityPolicy">
       <MemberSignature Language="C#" Value="public bool? HasImmutabilityPolicy { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; HasImmutabilityPolicy" />
@@ -374,18 +394,18 @@
       </Docs>
     </Member>
     <Member MemberName="PublicAccess">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Storage.Models.PublicAccess? PublicAccess { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Storage.Models.PublicAccess&gt; PublicAccess" />
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Storage.Models.StoragePublicAccess? PublicAccess { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Storage.Models.StoragePublicAccess&gt; PublicAccess" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Storage.BlobContainerData.PublicAccess" />
-      <MemberSignature Language="VB.NET" Value="Public Property PublicAccess As Nullable(Of PublicAccess)" />
-      <MemberSignature Language="F#" Value="member this.PublicAccess : Nullable&lt;Azure.ResourceManager.Storage.Models.PublicAccess&gt; with get, set" Usage="Azure.ResourceManager.Storage.BlobContainerData.PublicAccess" />
+      <MemberSignature Language="VB.NET" Value="Public Property PublicAccess As Nullable(Of StoragePublicAccess)" />
+      <MemberSignature Language="F#" Value="member this.PublicAccess : Nullable&lt;Azure.ResourceManager.Storage.Models.StoragePublicAccess&gt; with get, set" Usage="Azure.ResourceManager.Storage.BlobContainerData.PublicAccess" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Nullable&lt;Azure.ResourceManager.Storage.Models.PublicAccess&gt;</ReturnType>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.Storage.Models.StoragePublicAccess&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Specifies whether data in the container may be accessed publicly and the level of access. </summary>
