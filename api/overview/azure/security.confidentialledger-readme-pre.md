@@ -3,12 +3,12 @@ title: Azure Confidential Ledger client library for .NET
 keywords: Azure, dotnet, SDK, API, Azure.Security.ConfidentialLedger, confidentialledger
 author: christothes
 ms.author: chriss
-ms.date: 07/08/2022
+ms.date: 07/13/2022
 ms.topic: reference
 ms.devlang: dotnet
 ms.service: confidentialledger
 ---
-# Azure Confidential Ledger client library for .NET - Version 1.0.0-beta.3 
+# Azure Confidential Ledger client library for .NET - Version 1.0.0-alpha.20220712.3 
 
 
 Azure Confidential Ledger provides a service for logging to an immutable, tamper-proof ledger. As part of the [Azure Confidential Computing][azure_confidential_computing]
@@ -110,9 +110,9 @@ Every write to Confidential Ledger generates an immutable ledger entry in the se
 
 ```C# Snippet:AppendToLedger
 PostLedgerEntryOperation postOperation = ledgerClient.PostLedgerEntry(
+    waitUntil: WaitUntil.Completed,
     RequestContent.Create(
-        new { contents = "Hello world!" }),
-    waitForCompletion: true);
+        new { contents = "Hello world!" })) as PostLedgerEntryOperation;
 
 string transactionId = postOperation.Id;
 Console.WriteLine($"Appended transaction with Id: {transactionId}");
@@ -160,23 +160,23 @@ While most use cases will involve one ledger, we provide the sub-ledger feature 
 
 ```C# Snippet:SubLedger
 ledgerClient.PostLedgerEntry(
+    waitUntil: WaitUntil.Completed,
     RequestContent.Create(
-        new { contents = "Hello from Chris!", subLedgerId = "Chris' messages" }),
-    waitForCompletion: true);
+        new { contents = "Hello from Chris!", subLedgerId = "Chris' messages" }));
 
 ledgerClient.PostLedgerEntry(
+    waitUntil: WaitUntil.Completed,
     RequestContent.Create(
-        new { contents = "Hello from Allison!", subLedgerId = "Allison's messages" }),
-    waitForCompletion: true);
+        new { contents = "Hello from Allison!", subLedgerId = "Allison's messages" }));
 ```
 
 When no sub-ledger id is specified on method calls, the Confidential Ledger service will assume a constant, service-determined sub-ledger id.
 
 ```C# Snippet:NoSubLedgerId
 Response postResponse = ledgerClient.PostLedgerEntry(
+waitUntil: WaitUntil.Completed,
     RequestContent.Create(
-        new { contents = "Hello world!" }),
-    waitForCompletion: true);
+        new { contents = "Hello world!" })) as PostLedgerEntryOperation;
 string transactionId = postOperation.Id;
 string subLedgerId = "subledger:0";
 
@@ -220,20 +220,19 @@ Ledger entries are retrieved from sub-ledgers. When a transaction id is specifie
 
 ```C# Snippet:GetEnteryWithNoTransactionId
 PostLedgerEntryOperation firstPostOperation = ledgerClient.PostLedgerEntry(
-    RequestContent.Create(new { contents = "Hello world 0" }),
-    waitForCompletion: true);
+    waitUntil: WaitUntil.Completed,
+    RequestContent.Create(new { contents = "Hello world 0" })) as PostLedgerEntryOperation;
 ledgerClient.PostLedgerEntry(
-    RequestContent.Create(new { contents = "Hello world 1" }),
-    waitForCompletion: true);
+    waitUntil: WaitUntil.Completed,
+    RequestContent.Create(new { contents = "Hello world 1" }));
 PostLedgerEntryOperation subLedgerPostOperation = ledgerClient.PostLedgerEntry(
+    waitUntil: WaitUntil.Completed,
     RequestContent.Create(new { contents = "Hello world sub-ledger 0" }),
-    "my sub-ledger",
-    waitForCompletion: true);
+    "my sub-ledger") as PostLedgerEntryOperation;
 ledgerClient.PostLedgerEntry(
+    waitUntil: WaitUntil.Completed,
     RequestContent.Create(new { contents = "Hello world sub-ledger 1" }),
-    "my sub-ledger",
-    waitForCompletion: true);
-
+    "my sub-ledger");
 string transactionId = firstPostOperation.Id;
 
 // Wait for the entry to be committed
@@ -391,12 +390,12 @@ We guarantee that all client instance methods are thread-safe and independent of
 ### Additional concepts
 
 <!-- CLIENT COMMON BAR -->
-[Client options](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Security.ConfidentialLedger_1.0.0-beta.3/sdk/core/Azure.Core/README.md#configuring-service-clients-using-clientoptions) |
-[Accessing the response](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Security.ConfidentialLedger_1.0.0-beta.3/sdk/core/Azure.Core/README.md#accessing-http-response-details-using-responset) |
-[Long-running operations](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Security.ConfidentialLedger_1.0.0-beta.3/sdk/core/Azure.Core/README.md#consuming-long-running-operations-using-operationt) |
-[Handling failures](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Security.ConfidentialLedger_1.0.0-beta.3/sdk/core/Azure.Core/README.md#reporting-errors-requestfailedexception) |
-[Diagnostics](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Security.ConfidentialLedger_1.0.0-beta.3/sdk/core/Azure.Core/samples/Diagnostics.md) |
-[Mocking](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Security.ConfidentialLedger_1.0.0-beta.3/sdk/core/Azure.Core/README.md#mocking) |
+[Client options](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/README.md#configuring-service-clients-using-clientoptions) |
+[Accessing the response](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/README.md#accessing-http-response-details-using-responset) |
+[Long-running operations](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/README.md#consuming-long-running-operations-using-operationt) |
+[Handling failures](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/README.md#reporting-errors-requestfailedexception) |
+[Diagnostics](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/Diagnostics.md) |
+[Mocking](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/README.md#mocking) |
 [Client lifetime](https://devblogs.microsoft.com/azure-sdk/lifetime-management-and-thread-safety-guarantees-of-azure-sdk-net-clients/)
 <!-- CLIENT COMMON BAR -->
 
@@ -439,16 +438,16 @@ For more information see the [Code of Conduct FAQ][coc_faq] or contact
 <!-- LINKS -->
 [style-guide-msft]: /style-guide/capitalization
 [style-guide-cloud]: https://aka.ms/azsdk/cloud-style-guide
-[client_src]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.Security.ConfidentialLedger_1.0.0-beta.3/sdk/confidentialledger/Azure.Security.ConfidentialLedger
+[client_src]: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/confidentialledger/Azure.Security.ConfidentialLedger
 [client_nuget_package]: https://www.nuget.org/packages?q=Azure.Security.ConfidentialLedger
 [azure_cli]: /cli/azure
 [azure_cloud_shell]: https://shell.azure.com/bash
 [azure_confidential_computing]: https://azure.microsoft.com/solutions/confidential-compute
 [azure_sub]: https://azure.microsoft.com/free/dotnet/
 [ccf]: https://github.com/Microsoft/CCF
-[azure_identity]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.Security.ConfidentialLedger_1.0.0-beta.3/sdk/identity/Azure.Identity
-[default_cred_ref]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.Security.ConfidentialLedger_1.0.0-beta.3/sdk/identity/Azure.Identity/README.md#defaultazurecredential
-[logging]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.Security.ConfidentialLedger_1.0.0-beta.3/sdk/core/Azure.Core/samples/Diagnostics.md
+[azure_identity]: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/identity/Azure.Identity
+[default_cred_ref]: https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/identity/Azure.Identity/README.md#defaultazurecredential
+[logging]: https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/Diagnostics.md
 [coc]: https://opensource.microsoft.com/codeofconduct/
 [coc_faq]: https://opensource.microsoft.com/codeofconduct/faq
 [cla]: https://cla.microsoft.com
