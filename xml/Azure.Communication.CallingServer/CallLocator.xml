@@ -1,0 +1,97 @@
+<Type Name="CallLocator" FullName="Azure.Communication.CallingServer.CallLocator">
+  <TypeSignature Language="C#" Value="public class CallLocator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CallLocator extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.Communication.CallingServer.CallLocator" />
+  <TypeSignature Language="VB.NET" Value="Public Class CallLocator" />
+  <TypeSignature Language="F#" Value="type CallLocator = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> The locator used for joining or taking action on a call. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CallLocator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.CallLocator.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of CallLocator. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupCallId">
+      <MemberSignature Language="C#" Value="public string GroupCallId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string GroupCallId" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallingServer.CallLocator.GroupCallId" />
+      <MemberSignature Language="VB.NET" Value="Public Property GroupCallId As String" />
+      <MemberSignature Language="F#" Value="member this.GroupCallId : string with get, set" Usage="Azure.Communication.CallingServer.CallLocator.GroupCallId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The group call id. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Kind">
+      <MemberSignature Language="C#" Value="public Azure.Communication.CallingServer.CallLocatorKind? Kind { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.Communication.CallingServer.CallLocatorKind&gt; Kind" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallingServer.CallLocator.Kind" />
+      <MemberSignature Language="VB.NET" Value="Public Property Kind As Nullable(Of CallLocatorKind)" />
+      <MemberSignature Language="F#" Value="member this.Kind : Nullable&lt;Azure.Communication.CallingServer.CallLocatorKind&gt; with get, set" Usage="Azure.Communication.CallingServer.CallLocator.Kind" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.Communication.CallingServer.CallLocatorKind&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The call locator kind. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerCallId">
+      <MemberSignature Language="C#" Value="public string ServerCallId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ServerCallId" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallingServer.CallLocator.ServerCallId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ServerCallId As String" />
+      <MemberSignature Language="F#" Value="member this.ServerCallId : string with get, set" Usage="Azure.Communication.CallingServer.CallLocator.ServerCallId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The server call id. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

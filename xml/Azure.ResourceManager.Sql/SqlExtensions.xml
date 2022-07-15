@@ -108,7 +108,7 @@
         <param name="id"> The resource ID of the resource to get. </param>
         <summary>
             Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.BackupShortTermRetentionPolicyResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.Sql.BackupShortTermRetentionPolicyResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Sql.BackupShortTermRetentionPolicyResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            You can use <see cref="M:Azure.ResourceManager.Sql.BackupShortTermRetentionPolicyResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.ShortTermRetentionPolicyName)" /> to create a <see cref="T:Azure.ResourceManager.Sql.BackupShortTermRetentionPolicyResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
             </summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.BackupShortTermRetentionPolicyResource" /> object. </returns>
         <remarks>To be added.</remarks>
@@ -158,6 +158,82 @@
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetByLocationCapabilityAsync(Azure.ResourceManager.Resources.SubscriptionResource,System.String,System.Nullable{Azure.ResourceManager.Sql.Models.CapabilityGroup},System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetByLocationCapabilityAsync (subscriptionResource As SubscriptionResource, locationName As String, Optional include As Nullable(Of CapabilityGroup) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of LocationCapabilities))" />
       <MemberSignature Language="F#" Value="static member GetByLocationCapabilityAsync : Azure.ResourceManager.Resources.SubscriptionResource * string * Nullable&lt;Azure.ResourceManager.Sql.Models.CapabilityGroup&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.LocationCapabilities&gt;&gt;" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetByLocationCapabilityAsync (subscriptionResource, locationName, include, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.LocationCapabilities&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
+        <Parameter Name="locationName" Type="System.String" />
+        <Parameter Name="include" Type="System.Nullable&lt;Azure.ResourceManager.Sql.Models.CapabilityGroup&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="locationName"> The location name whose capabilities are retrieved. </param>
+        <param name="include"> If specified, restricts the response to only include the selected item. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the subscription capabilities available for the specified location.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Sql/locations/{locationName}/capabilities
+            Operation Id: Capabilities_ListByLocation
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="locationName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="locationName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCapabilitiesByLocation">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.Sql.Models.LocationCapabilities&gt; GetCapabilitiesByLocation (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, string locationName, Azure.ResourceManager.Sql.Models.CapabilityGroup? include = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.LocationCapabilities&gt; GetCapabilitiesByLocation(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, string locationName, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Sql.Models.CapabilityGroup&gt; include, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetCapabilitiesByLocation(Azure.ResourceManager.Resources.SubscriptionResource,System.String,System.Nullable{Azure.ResourceManager.Sql.Models.CapabilityGroup},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCapabilitiesByLocation (subscriptionResource As SubscriptionResource, locationName As String, Optional include As Nullable(Of CapabilityGroup) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Response(Of LocationCapabilities)" />
+      <MemberSignature Language="F#" Value="static member GetCapabilitiesByLocation : Azure.ResourceManager.Resources.SubscriptionResource * string * Nullable&lt;Azure.ResourceManager.Sql.Models.CapabilityGroup&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.Models.LocationCapabilities&gt;" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetCapabilitiesByLocation (subscriptionResource, locationName, include, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.Models.LocationCapabilities&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
+        <Parameter Name="locationName" Type="System.String" />
+        <Parameter Name="include" Type="System.Nullable&lt;Azure.ResourceManager.Sql.Models.CapabilityGroup&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="locationName"> The location name whose capabilities are retrieved. </param>
+        <param name="include"> If specified, restricts the response to only include the selected item. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the subscription capabilities available for the specified location.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Sql/locations/{locationName}/capabilities
+            Operation Id: Capabilities_ListByLocation
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="locationName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="locationName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCapabilitiesByLocationAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.LocationCapabilities&gt;&gt; GetCapabilitiesByLocationAsync (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, string locationName, Azure.ResourceManager.Sql.Models.CapabilityGroup? include = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.Models.LocationCapabilities&gt;&gt; GetCapabilitiesByLocationAsync(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, string locationName, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Sql.Models.CapabilityGroup&gt; include, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetCapabilitiesByLocationAsync(Azure.ResourceManager.Resources.SubscriptionResource,System.String,System.Nullable{Azure.ResourceManager.Sql.Models.CapabilityGroup},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCapabilitiesByLocationAsync (subscriptionResource As SubscriptionResource, locationName As String, Optional include As Nullable(Of CapabilityGroup) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of LocationCapabilities))" />
+      <MemberSignature Language="F#" Value="static member GetCapabilitiesByLocationAsync : Azure.ResourceManager.Resources.SubscriptionResource * string * Nullable&lt;Azure.ResourceManager.Sql.Models.CapabilityGroup&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.Models.LocationCapabilities&gt;&gt;" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetCapabilitiesByLocationAsync (subscriptionResource, locationName, include, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
@@ -329,7 +405,7 @@
         <param name="id"> The resource ID of the resource to get. </param>
         <summary>
             Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.DataWarehouseUserActivitiesResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.Sql.DataWarehouseUserActivitiesResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Sql.DataWarehouseUserActivitiesResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            You can use <see cref="M:Azure.ResourceManager.Sql.DataWarehouseUserActivitiesResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.DataWarehouseUserActivityName)" /> to create a <see cref="T:Azure.ResourceManager.Sql.DataWarehouseUserActivitiesResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
             </summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.DataWarehouseUserActivitiesResource" /> object. </returns>
         <remarks>To be added.</remarks>
@@ -611,7 +687,7 @@
         <param name="id"> The resource ID of the resource to get. </param>
         <summary>
             Gets an object representing an <see cref="T:Azure.ResourceManager.Sql.EncryptionProtectorResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.Sql.EncryptionProtectorResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create an <see cref="T:Azure.ResourceManager.Sql.EncryptionProtectorResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            You can use <see cref="M:Azure.ResourceManager.Sql.EncryptionProtectorResource.CreateResourceIdentifier(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.EncryptionProtectorName)" /> to create an <see cref="T:Azure.ResourceManager.Sql.EncryptionProtectorResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
             </summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.EncryptionProtectorResource" /> object. </returns>
         <remarks>To be added.</remarks>
@@ -669,7 +745,7 @@
         <param name="id"> The resource ID of the resource to get. </param>
         <summary>
             Gets an object representing an <see cref="T:Azure.ResourceManager.Sql.ExtendedDatabaseBlobAuditingPolicyResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.Sql.ExtendedDatabaseBlobAuditingPolicyResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,System.String)" /> to create an <see cref="T:Azure.ResourceManager.Sql.ExtendedDatabaseBlobAuditingPolicyResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            You can use <see cref="M:Azure.ResourceManager.Sql.ExtendedDatabaseBlobAuditingPolicyResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName)" /> to create an <see cref="T:Azure.ResourceManager.Sql.ExtendedDatabaseBlobAuditingPolicyResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
             </summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.ExtendedDatabaseBlobAuditingPolicyResource" /> object. </returns>
         <remarks>To be added.</remarks>
@@ -698,7 +774,7 @@
         <param name="id"> The resource ID of the resource to get. </param>
         <summary>
             Gets an object representing an <see cref="T:Azure.ResourceManager.Sql.ExtendedServerBlobAuditingPolicyResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.Sql.ExtendedServerBlobAuditingPolicyResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create an <see cref="T:Azure.ResourceManager.Sql.ExtendedServerBlobAuditingPolicyResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            You can use <see cref="M:Azure.ResourceManager.Sql.ExtendedServerBlobAuditingPolicyResource.CreateResourceIdentifier(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName)" /> to create an <see cref="T:Azure.ResourceManager.Sql.ExtendedServerBlobAuditingPolicyResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
             </summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.ExtendedServerBlobAuditingPolicyResource" /> object. </returns>
         <remarks>To be added.</remarks>
@@ -785,7 +861,7 @@
         <param name="id"> The resource ID of the resource to get. </param>
         <summary>
             Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.GeoBackupPolicyResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.Sql.GeoBackupPolicyResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Sql.GeoBackupPolicyResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            You can use <see cref="M:Azure.ResourceManager.Sql.GeoBackupPolicyResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.GeoBackupPolicyName)" /> to create a <see cref="T:Azure.ResourceManager.Sql.GeoBackupPolicyResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
             </summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.GeoBackupPolicyResource" /> object. </returns>
         <remarks>To be added.</remarks>
@@ -1256,6 +1332,35 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetLedgerDigestUploadResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.LedgerDigestUploadResource GetLedgerDigestUploadResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.LedgerDigestUploadResource GetLedgerDigestUploadResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetLedgerDigestUploadResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetLedgerDigestUploadResource (client As ArmClient, id As ResourceIdentifier) As LedgerDigestUploadResource" />
+      <MemberSignature Language="F#" Value="static member GetLedgerDigestUploadResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.LedgerDigestUploadResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetLedgerDigestUploadResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.LedgerDigestUploadResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.LedgerDigestUploadResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.LedgerDigestUploadResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.LedgerDigestUploadsName)" /> to create a <see cref="T:Azure.ResourceManager.Sql.LedgerDigestUploadResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.LedgerDigestUploadResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetLedgerDigestUploadsResource">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.LedgerDigestUploadsResource GetLedgerDigestUploadsResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.LedgerDigestUploadsResource GetLedgerDigestUploadsResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
@@ -1308,7 +1413,7 @@
         <param name="id"> The resource ID of the resource to get. </param>
         <summary>
             Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            You can use <see cref="M:Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName)" /> to create a <see cref="T:Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
             </summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionResource" /> object. </returns>
         <remarks>To be added.</remarks>
@@ -1993,7 +2098,7 @@
         <param name="id"> The resource ID of the resource to get. </param>
         <summary>
             Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.LongTermRetentionPolicyResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.Sql.LongTermRetentionPolicyResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Sql.LongTermRetentionPolicyResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            You can use <see cref="M:Azure.ResourceManager.Sql.LongTermRetentionPolicyResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName)" /> to create a <see cref="T:Azure.ResourceManager.Sql.LongTermRetentionPolicyResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
             </summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.LongTermRetentionPolicyResource" /> object. </returns>
         <remarks>To be added.</remarks>
@@ -2057,6 +2162,64 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetManagedBackupShortTermRetentionPolicyResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.ManagedBackupShortTermRetentionPolicyResource GetManagedBackupShortTermRetentionPolicyResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.ManagedBackupShortTermRetentionPolicyResource GetManagedBackupShortTermRetentionPolicyResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetManagedBackupShortTermRetentionPolicyResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetManagedBackupShortTermRetentionPolicyResource (client As ArmClient, id As ResourceIdentifier) As ManagedBackupShortTermRetentionPolicyResource" />
+      <MemberSignature Language="F#" Value="static member GetManagedBackupShortTermRetentionPolicyResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.ManagedBackupShortTermRetentionPolicyResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetManagedBackupShortTermRetentionPolicyResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ManagedBackupShortTermRetentionPolicyResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.ManagedBackupShortTermRetentionPolicyResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.ManagedBackupShortTermRetentionPolicyResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName)" /> to create a <see cref="T:Azure.ResourceManager.Sql.ManagedBackupShortTermRetentionPolicyResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.ManagedBackupShortTermRetentionPolicyResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetManagedDatabaseColumnResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.ManagedDatabaseColumnResource GetManagedDatabaseColumnResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.ManagedDatabaseColumnResource GetManagedDatabaseColumnResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetManagedDatabaseColumnResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetManagedDatabaseColumnResource (client As ArmClient, id As ResourceIdentifier) As ManagedDatabaseColumnResource" />
+      <MemberSignature Language="F#" Value="static member GetManagedDatabaseColumnResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.ManagedDatabaseColumnResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetManagedDatabaseColumnResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ManagedDatabaseColumnResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.ManagedDatabaseColumnResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.ManagedDatabaseColumnResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Sql.ManagedDatabaseColumnResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.ManagedDatabaseColumnResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetManagedDatabaseResource">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.ManagedDatabaseResource GetManagedDatabaseResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.ManagedDatabaseResource GetManagedDatabaseResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
@@ -2083,6 +2246,35 @@
             You can use <see cref="M:Azure.ResourceManager.Sql.ManagedDatabaseResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Sql.ManagedDatabaseResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
             </summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.ManagedDatabaseResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetManagedDatabaseRestoreDetailResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.ManagedDatabaseRestoreDetailResource GetManagedDatabaseRestoreDetailResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.ManagedDatabaseRestoreDetailResource GetManagedDatabaseRestoreDetailResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetManagedDatabaseRestoreDetailResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetManagedDatabaseRestoreDetailResource (client As ArmClient, id As ResourceIdentifier) As ManagedDatabaseRestoreDetailResource" />
+      <MemberSignature Language="F#" Value="static member GetManagedDatabaseRestoreDetailResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.ManagedDatabaseRestoreDetailResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetManagedDatabaseRestoreDetailResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ManagedDatabaseRestoreDetailResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.ManagedDatabaseRestoreDetailResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.ManagedDatabaseRestoreDetailResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.RestoreDetailsName)" /> to create a <see cref="T:Azure.ResourceManager.Sql.ManagedDatabaseRestoreDetailResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.ManagedDatabaseRestoreDetailResource" /> object. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2138,9 +2330,154 @@
         <param name="id"> The resource ID of the resource to get. </param>
         <summary>
             Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.ManagedDatabaseSecurityAlertPolicyResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.Sql.ManagedDatabaseSecurityAlertPolicyResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Sql.ManagedDatabaseSecurityAlertPolicyResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            You can use <see cref="M:Azure.ResourceManager.Sql.ManagedDatabaseSecurityAlertPolicyResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName)" /> to create a <see cref="T:Azure.ResourceManager.Sql.ManagedDatabaseSecurityAlertPolicyResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
             </summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.ManagedDatabaseSecurityAlertPolicyResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetManagedDatabaseSensitivityLabelResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.ManagedDatabaseSensitivityLabelResource GetManagedDatabaseSensitivityLabelResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.ManagedDatabaseSensitivityLabelResource GetManagedDatabaseSensitivityLabelResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetManagedDatabaseSensitivityLabelResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetManagedDatabaseSensitivityLabelResource (client As ArmClient, id As ResourceIdentifier) As ManagedDatabaseSensitivityLabelResource" />
+      <MemberSignature Language="F#" Value="static member GetManagedDatabaseSensitivityLabelResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.ManagedDatabaseSensitivityLabelResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetManagedDatabaseSensitivityLabelResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ManagedDatabaseSensitivityLabelResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.ManagedDatabaseSensitivityLabelResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.ManagedDatabaseSensitivityLabelResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.SensitivityLabelSource)" /> to create a <see cref="T:Azure.ResourceManager.Sql.ManagedDatabaseSensitivityLabelResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.ManagedDatabaseSensitivityLabelResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetManagedDatabaseTableResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.ManagedDatabaseTableResource GetManagedDatabaseTableResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.ManagedDatabaseTableResource GetManagedDatabaseTableResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetManagedDatabaseTableResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetManagedDatabaseTableResource (client As ArmClient, id As ResourceIdentifier) As ManagedDatabaseTableResource" />
+      <MemberSignature Language="F#" Value="static member GetManagedDatabaseTableResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.ManagedDatabaseTableResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetManagedDatabaseTableResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ManagedDatabaseTableResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.ManagedDatabaseTableResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.ManagedDatabaseTableResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Sql.ManagedDatabaseTableResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.ManagedDatabaseTableResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetManagedDatabaseVulnerabilityAssessmentResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.ManagedDatabaseVulnerabilityAssessmentResource GetManagedDatabaseVulnerabilityAssessmentResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.ManagedDatabaseVulnerabilityAssessmentResource GetManagedDatabaseVulnerabilityAssessmentResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetManagedDatabaseVulnerabilityAssessmentResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetManagedDatabaseVulnerabilityAssessmentResource (client As ArmClient, id As ResourceIdentifier) As ManagedDatabaseVulnerabilityAssessmentResource" />
+      <MemberSignature Language="F#" Value="static member GetManagedDatabaseVulnerabilityAssessmentResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.ManagedDatabaseVulnerabilityAssessmentResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetManagedDatabaseVulnerabilityAssessmentResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ManagedDatabaseVulnerabilityAssessmentResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.ManagedDatabaseVulnerabilityAssessmentResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.ManagedDatabaseVulnerabilityAssessmentResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.VulnerabilityAssessmentName)" /> to create a <see cref="T:Azure.ResourceManager.Sql.ManagedDatabaseVulnerabilityAssessmentResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.ManagedDatabaseVulnerabilityAssessmentResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetManagedDatabaseVulnerabilityAssessmentRuleBaselineResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.ManagedDatabaseVulnerabilityAssessmentRuleBaselineResource GetManagedDatabaseVulnerabilityAssessmentRuleBaselineResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.ManagedDatabaseVulnerabilityAssessmentRuleBaselineResource GetManagedDatabaseVulnerabilityAssessmentRuleBaselineResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetManagedDatabaseVulnerabilityAssessmentRuleBaselineResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetManagedDatabaseVulnerabilityAssessmentRuleBaselineResource (client As ArmClient, id As ResourceIdentifier) As ManagedDatabaseVulnerabilityAssessmentRuleBaselineResource" />
+      <MemberSignature Language="F#" Value="static member GetManagedDatabaseVulnerabilityAssessmentRuleBaselineResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.ManagedDatabaseVulnerabilityAssessmentRuleBaselineResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetManagedDatabaseVulnerabilityAssessmentRuleBaselineResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ManagedDatabaseVulnerabilityAssessmentRuleBaselineResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.ManagedDatabaseVulnerabilityAssessmentRuleBaselineResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.ManagedDatabaseVulnerabilityAssessmentRuleBaselineResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.VulnerabilityAssessmentName,System.String,Azure.ResourceManager.Sql.Models.VulnerabilityAssessmentPolicyBaselineName)" /> to create a <see cref="T:Azure.ResourceManager.Sql.ManagedDatabaseVulnerabilityAssessmentRuleBaselineResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.ManagedDatabaseVulnerabilityAssessmentRuleBaselineResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetManagedDatabaseVulnerabilityAssessmentScanResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.ManagedDatabaseVulnerabilityAssessmentScanResource GetManagedDatabaseVulnerabilityAssessmentScanResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.ManagedDatabaseVulnerabilityAssessmentScanResource GetManagedDatabaseVulnerabilityAssessmentScanResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetManagedDatabaseVulnerabilityAssessmentScanResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetManagedDatabaseVulnerabilityAssessmentScanResource (client As ArmClient, id As ResourceIdentifier) As ManagedDatabaseVulnerabilityAssessmentScanResource" />
+      <MemberSignature Language="F#" Value="static member GetManagedDatabaseVulnerabilityAssessmentScanResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.ManagedDatabaseVulnerabilityAssessmentScanResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetManagedDatabaseVulnerabilityAssessmentScanResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ManagedDatabaseVulnerabilityAssessmentScanResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.ManagedDatabaseVulnerabilityAssessmentScanResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.ManagedDatabaseVulnerabilityAssessmentScanResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.VulnerabilityAssessmentName,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Sql.ManagedDatabaseVulnerabilityAssessmentScanResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.ManagedDatabaseVulnerabilityAssessmentScanResource" /> object. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2205,7 +2542,7 @@
         <param name="id"> The resource ID of the resource to get. </param>
         <summary>
             Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.ManagedInstanceAdministratorResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.Sql.ManagedInstanceAdministratorResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Sql.ManagedInstanceAdministratorResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            You can use <see cref="M:Azure.ResourceManager.Sql.ManagedInstanceAdministratorResource.CreateResourceIdentifier(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.AdministratorName)" /> to create a <see cref="T:Azure.ResourceManager.Sql.ManagedInstanceAdministratorResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
             </summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.ManagedInstanceAdministratorResource" /> object. </returns>
         <remarks>To be added.</remarks>
@@ -2272,7 +2609,7 @@
         <param name="id"> The resource ID of the resource to get. </param>
         <summary>
             Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.ManagedInstanceAzureADOnlyAuthenticationResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.Sql.ManagedInstanceAzureADOnlyAuthenticationResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Sql.ManagedInstanceAzureADOnlyAuthenticationResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            You can use <see cref="M:Azure.ResourceManager.Sql.ManagedInstanceAzureADOnlyAuthenticationResource.CreateResourceIdentifier(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.AuthenticationName)" /> to create a <see cref="T:Azure.ResourceManager.Sql.ManagedInstanceAzureADOnlyAuthenticationResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
             </summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.ManagedInstanceAzureADOnlyAuthenticationResource" /> object. </returns>
         <remarks>To be added.</remarks>
@@ -2533,7 +2870,7 @@
         <param name="id"> The resource ID of the resource to get. </param>
         <summary>
             Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.ManagedInstanceEncryptionProtectorResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.Sql.ManagedInstanceEncryptionProtectorResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Sql.ManagedInstanceEncryptionProtectorResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            You can use <see cref="M:Azure.ResourceManager.Sql.ManagedInstanceEncryptionProtectorResource.CreateResourceIdentifier(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.EncryptionProtectorName)" /> to create a <see cref="T:Azure.ResourceManager.Sql.ManagedInstanceEncryptionProtectorResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
             </summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.ManagedInstanceEncryptionProtectorResource" /> object. </returns>
         <remarks>To be added.</remarks>
@@ -2591,7 +2928,7 @@
         <param name="id"> The resource ID of the resource to get. </param>
         <summary>
             Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionPolicyResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionPolicyResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionPolicyResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            You can use <see cref="M:Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionPolicyResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.ManagedInstanceLongTermRetentionPolicyName)" /> to create a <see cref="T:Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionPolicyResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
             </summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionPolicyResource" /> object. </returns>
         <remarks>To be added.</remarks>
@@ -2620,7 +2957,7 @@
         <param name="id"> The resource ID of the resource to get. </param>
         <summary>
             Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.ManagedInstanceOperationResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.Sql.ManagedInstanceOperationResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Sql.ManagedInstanceOperationResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            You can use <see cref="M:Azure.ResourceManager.Sql.ManagedInstanceOperationResource.CreateResourceIdentifier(System.String,System.String,System.String,System.Guid)" /> to create a <see cref="T:Azure.ResourceManager.Sql.ManagedInstanceOperationResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
             </summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.ManagedInstanceOperationResource" /> object. </returns>
         <remarks>To be added.</remarks>
@@ -2801,6 +3138,35 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetManagedInstanceServerTrustCertificateResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.ManagedInstanceServerTrustCertificateResource GetManagedInstanceServerTrustCertificateResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.ManagedInstanceServerTrustCertificateResource GetManagedInstanceServerTrustCertificateResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetManagedInstanceServerTrustCertificateResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetManagedInstanceServerTrustCertificateResource (client As ArmClient, id As ResourceIdentifier) As ManagedInstanceServerTrustCertificateResource" />
+      <MemberSignature Language="F#" Value="static member GetManagedInstanceServerTrustCertificateResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.ManagedInstanceServerTrustCertificateResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetManagedInstanceServerTrustCertificateResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.ManagedInstanceServerTrustCertificateResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.ManagedInstanceServerTrustCertificateResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.ManagedInstanceServerTrustCertificateResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Sql.ManagedInstanceServerTrustCertificateResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.ManagedInstanceServerTrustCertificateResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetManagedInstanceVulnerabilityAssessmentResource">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.ManagedInstanceVulnerabilityAssessmentResource GetManagedInstanceVulnerabilityAssessmentResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.ManagedInstanceVulnerabilityAssessmentResource GetManagedInstanceVulnerabilityAssessmentResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
@@ -2824,7 +3190,7 @@
         <param name="id"> The resource ID of the resource to get. </param>
         <summary>
             Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.ManagedInstanceVulnerabilityAssessmentResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.Sql.ManagedInstanceVulnerabilityAssessmentResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Sql.ManagedInstanceVulnerabilityAssessmentResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            You can use <see cref="M:Azure.ResourceManager.Sql.ManagedInstanceVulnerabilityAssessmentResource.CreateResourceIdentifier(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.VulnerabilityAssessmentName)" /> to create a <see cref="T:Azure.ResourceManager.Sql.ManagedInstanceVulnerabilityAssessmentResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
             </summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.ManagedInstanceVulnerabilityAssessmentResource" /> object. </returns>
         <remarks>To be added.</remarks>
@@ -2853,7 +3219,7 @@
         <param name="id"> The resource ID of the resource to get. </param>
         <summary>
             Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.ManagedRestorableDroppedDbBackupShortTermRetentionPolicyResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.Sql.ManagedRestorableDroppedDbBackupShortTermRetentionPolicyResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Sql.ManagedRestorableDroppedDbBackupShortTermRetentionPolicyResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            You can use <see cref="M:Azure.ResourceManager.Sql.ManagedRestorableDroppedDbBackupShortTermRetentionPolicyResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName)" /> to create a <see cref="T:Azure.ResourceManager.Sql.ManagedRestorableDroppedDbBackupShortTermRetentionPolicyResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
             </summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.ManagedRestorableDroppedDbBackupShortTermRetentionPolicyResource" /> object. </returns>
         <remarks>To be added.</remarks>
@@ -2882,7 +3248,7 @@
         <param name="id"> The resource ID of the resource to get. </param>
         <summary>
             Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.ManagedServerSecurityAlertPolicyResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.Sql.ManagedServerSecurityAlertPolicyResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Sql.ManagedServerSecurityAlertPolicyResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            You can use <see cref="M:Azure.ResourceManager.Sql.ManagedServerSecurityAlertPolicyResource.CreateResourceIdentifier(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName)" /> to create a <see cref="T:Azure.ResourceManager.Sql.ManagedServerSecurityAlertPolicyResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
             </summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.ManagedServerSecurityAlertPolicyResource" /> object. </returns>
         <remarks>To be added.</remarks>
@@ -2911,7 +3277,7 @@
         <param name="id"> The resource ID of the resource to get. </param>
         <summary>
             Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.ManagedTransparentDataEncryptionResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.Sql.ManagedTransparentDataEncryptionResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Sql.ManagedTransparentDataEncryptionResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            You can use <see cref="M:Azure.ResourceManager.Sql.ManagedTransparentDataEncryptionResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName)" /> to create a <see cref="T:Azure.ResourceManager.Sql.ManagedTransparentDataEncryptionResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
             </summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.ManagedTransparentDataEncryptionResource" /> object. </returns>
         <remarks>To be added.</remarks>
@@ -4520,6 +4886,122 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetSqlDatabaseAdvisorResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.SqlDatabaseAdvisorResource GetSqlDatabaseAdvisorResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.SqlDatabaseAdvisorResource GetSqlDatabaseAdvisorResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetSqlDatabaseAdvisorResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlDatabaseAdvisorResource (client As ArmClient, id As ResourceIdentifier) As SqlDatabaseAdvisorResource" />
+      <MemberSignature Language="F#" Value="static member GetSqlDatabaseAdvisorResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.SqlDatabaseAdvisorResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetSqlDatabaseAdvisorResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlDatabaseAdvisorResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseAdvisorResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.SqlDatabaseAdvisorResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseAdvisorResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseAdvisorResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlDatabaseAutomaticTuningResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.SqlDatabaseAutomaticTuningResource GetSqlDatabaseAutomaticTuningResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.SqlDatabaseAutomaticTuningResource GetSqlDatabaseAutomaticTuningResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetSqlDatabaseAutomaticTuningResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlDatabaseAutomaticTuningResource (client As ArmClient, id As ResourceIdentifier) As SqlDatabaseAutomaticTuningResource" />
+      <MemberSignature Language="F#" Value="static member GetSqlDatabaseAutomaticTuningResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.SqlDatabaseAutomaticTuningResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetSqlDatabaseAutomaticTuningResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlDatabaseAutomaticTuningResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseAutomaticTuningResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.SqlDatabaseAutomaticTuningResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseAutomaticTuningResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseAutomaticTuningResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlDatabaseBlobAuditingPolicyResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.SqlDatabaseBlobAuditingPolicyResource GetSqlDatabaseBlobAuditingPolicyResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.SqlDatabaseBlobAuditingPolicyResource GetSqlDatabaseBlobAuditingPolicyResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetSqlDatabaseBlobAuditingPolicyResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlDatabaseBlobAuditingPolicyResource (client As ArmClient, id As ResourceIdentifier) As SqlDatabaseBlobAuditingPolicyResource" />
+      <MemberSignature Language="F#" Value="static member GetSqlDatabaseBlobAuditingPolicyResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.SqlDatabaseBlobAuditingPolicyResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetSqlDatabaseBlobAuditingPolicyResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlDatabaseBlobAuditingPolicyResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseBlobAuditingPolicyResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.SqlDatabaseBlobAuditingPolicyResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName)" /> to create a <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseBlobAuditingPolicyResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseBlobAuditingPolicyResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlDatabaseColumnResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.SqlDatabaseColumnResource GetSqlDatabaseColumnResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.SqlDatabaseColumnResource GetSqlDatabaseColumnResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetSqlDatabaseColumnResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlDatabaseColumnResource (client As ArmClient, id As ResourceIdentifier) As SqlDatabaseColumnResource" />
+      <MemberSignature Language="F#" Value="static member GetSqlDatabaseColumnResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.SqlDatabaseColumnResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetSqlDatabaseColumnResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlDatabaseColumnResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseColumnResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.SqlDatabaseColumnResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseColumnResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseColumnResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetSqlDatabaseResource">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.SqlDatabaseResource GetSqlDatabaseResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.SqlDatabaseResource GetSqlDatabaseResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
@@ -4546,6 +5028,209 @@
             You can use <see cref="M:Azure.ResourceManager.Sql.SqlDatabaseResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
             </summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlDatabaseSchemaResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.SqlDatabaseSchemaResource GetSqlDatabaseSchemaResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.SqlDatabaseSchemaResource GetSqlDatabaseSchemaResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetSqlDatabaseSchemaResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlDatabaseSchemaResource (client As ArmClient, id As ResourceIdentifier) As SqlDatabaseSchemaResource" />
+      <MemberSignature Language="F#" Value="static member GetSqlDatabaseSchemaResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.SqlDatabaseSchemaResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetSqlDatabaseSchemaResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlDatabaseSchemaResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseSchemaResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.SqlDatabaseSchemaResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseSchemaResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseSchemaResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlDatabaseSecurityAlertPolicyResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.SqlDatabaseSecurityAlertPolicyResource GetSqlDatabaseSecurityAlertPolicyResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.SqlDatabaseSecurityAlertPolicyResource GetSqlDatabaseSecurityAlertPolicyResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetSqlDatabaseSecurityAlertPolicyResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlDatabaseSecurityAlertPolicyResource (client As ArmClient, id As ResourceIdentifier) As SqlDatabaseSecurityAlertPolicyResource" />
+      <MemberSignature Language="F#" Value="static member GetSqlDatabaseSecurityAlertPolicyResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.SqlDatabaseSecurityAlertPolicyResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetSqlDatabaseSecurityAlertPolicyResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlDatabaseSecurityAlertPolicyResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseSecurityAlertPolicyResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.SqlDatabaseSecurityAlertPolicyResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName)" /> to create a <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseSecurityAlertPolicyResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseSecurityAlertPolicyResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlDatabaseSensitivityLabelResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.SqlDatabaseSensitivityLabelResource GetSqlDatabaseSensitivityLabelResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.SqlDatabaseSensitivityLabelResource GetSqlDatabaseSensitivityLabelResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetSqlDatabaseSensitivityLabelResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlDatabaseSensitivityLabelResource (client As ArmClient, id As ResourceIdentifier) As SqlDatabaseSensitivityLabelResource" />
+      <MemberSignature Language="F#" Value="static member GetSqlDatabaseSensitivityLabelResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.SqlDatabaseSensitivityLabelResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetSqlDatabaseSensitivityLabelResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlDatabaseSensitivityLabelResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseSensitivityLabelResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.SqlDatabaseSensitivityLabelResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.SensitivityLabelSource)" /> to create a <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseSensitivityLabelResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseSensitivityLabelResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlDatabaseTableResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.SqlDatabaseTableResource GetSqlDatabaseTableResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.SqlDatabaseTableResource GetSqlDatabaseTableResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetSqlDatabaseTableResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlDatabaseTableResource (client As ArmClient, id As ResourceIdentifier) As SqlDatabaseTableResource" />
+      <MemberSignature Language="F#" Value="static member GetSqlDatabaseTableResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.SqlDatabaseTableResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetSqlDatabaseTableResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlDatabaseTableResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseTableResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.SqlDatabaseTableResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseTableResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseTableResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlDatabaseVulnerabilityAssessmentResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.SqlDatabaseVulnerabilityAssessmentResource GetSqlDatabaseVulnerabilityAssessmentResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.SqlDatabaseVulnerabilityAssessmentResource GetSqlDatabaseVulnerabilityAssessmentResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetSqlDatabaseVulnerabilityAssessmentResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlDatabaseVulnerabilityAssessmentResource (client As ArmClient, id As ResourceIdentifier) As SqlDatabaseVulnerabilityAssessmentResource" />
+      <MemberSignature Language="F#" Value="static member GetSqlDatabaseVulnerabilityAssessmentResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.SqlDatabaseVulnerabilityAssessmentResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetSqlDatabaseVulnerabilityAssessmentResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlDatabaseVulnerabilityAssessmentResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseVulnerabilityAssessmentResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.SqlDatabaseVulnerabilityAssessmentResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.VulnerabilityAssessmentName)" /> to create a <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseVulnerabilityAssessmentResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseVulnerabilityAssessmentResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlDatabaseVulnerabilityAssessmentRuleBaselineResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.SqlDatabaseVulnerabilityAssessmentRuleBaselineResource GetSqlDatabaseVulnerabilityAssessmentRuleBaselineResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.SqlDatabaseVulnerabilityAssessmentRuleBaselineResource GetSqlDatabaseVulnerabilityAssessmentRuleBaselineResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetSqlDatabaseVulnerabilityAssessmentRuleBaselineResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlDatabaseVulnerabilityAssessmentRuleBaselineResource (client As ArmClient, id As ResourceIdentifier) As SqlDatabaseVulnerabilityAssessmentRuleBaselineResource" />
+      <MemberSignature Language="F#" Value="static member GetSqlDatabaseVulnerabilityAssessmentRuleBaselineResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.SqlDatabaseVulnerabilityAssessmentRuleBaselineResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetSqlDatabaseVulnerabilityAssessmentRuleBaselineResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlDatabaseVulnerabilityAssessmentRuleBaselineResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseVulnerabilityAssessmentRuleBaselineResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.SqlDatabaseVulnerabilityAssessmentRuleBaselineResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.VulnerabilityAssessmentName,System.String,Azure.ResourceManager.Sql.Models.VulnerabilityAssessmentPolicyBaselineName)" /> to create a <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseVulnerabilityAssessmentRuleBaselineResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseVulnerabilityAssessmentRuleBaselineResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlDatabaseVulnerabilityAssessmentScanResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.SqlDatabaseVulnerabilityAssessmentScanResource GetSqlDatabaseVulnerabilityAssessmentScanResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.SqlDatabaseVulnerabilityAssessmentScanResource GetSqlDatabaseVulnerabilityAssessmentScanResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetSqlDatabaseVulnerabilityAssessmentScanResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlDatabaseVulnerabilityAssessmentScanResource (client As ArmClient, id As ResourceIdentifier) As SqlDatabaseVulnerabilityAssessmentScanResource" />
+      <MemberSignature Language="F#" Value="static member GetSqlDatabaseVulnerabilityAssessmentScanResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.SqlDatabaseVulnerabilityAssessmentScanResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetSqlDatabaseVulnerabilityAssessmentScanResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlDatabaseVulnerabilityAssessmentScanResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseVulnerabilityAssessmentScanResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.SqlDatabaseVulnerabilityAssessmentScanResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.VulnerabilityAssessmentName,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseVulnerabilityAssessmentScanResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseVulnerabilityAssessmentScanResource" /> object. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -4674,6 +5359,35 @@
           <paramref name="serverName" /> is null. </exception>
       </Docs>
     </Member>
+    <Member MemberName="GetSqlServerAdvisorResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.SqlServerAdvisorResource GetSqlServerAdvisorResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.SqlServerAdvisorResource GetSqlServerAdvisorResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerAdvisorResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlServerAdvisorResource (client As ArmClient, id As ResourceIdentifier) As SqlServerAdvisorResource" />
+      <MemberSignature Language="F#" Value="static member GetSqlServerAdvisorResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.SqlServerAdvisorResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerAdvisorResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlServerAdvisorResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.SqlServerAdvisorResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.SqlServerAdvisorResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Sql.SqlServerAdvisorResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.SqlServerAdvisorResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetSqlServerAsync">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerResource&gt;&gt; GetSqlServerAsync (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string serverName, string expand = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.SqlServerResource&gt;&gt; GetSqlServerAsync(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string serverName, string expand, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -4710,6 +5424,557 @@
           <paramref name="serverName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="serverName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerAutomaticTuningResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.SqlServerAutomaticTuningResource GetSqlServerAutomaticTuningResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.SqlServerAutomaticTuningResource GetSqlServerAutomaticTuningResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerAutomaticTuningResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlServerAutomaticTuningResource (client As ArmClient, id As ResourceIdentifier) As SqlServerAutomaticTuningResource" />
+      <MemberSignature Language="F#" Value="static member GetSqlServerAutomaticTuningResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.SqlServerAutomaticTuningResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerAutomaticTuningResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlServerAutomaticTuningResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.SqlServerAutomaticTuningResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.SqlServerAutomaticTuningResource.CreateResourceIdentifier(System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Sql.SqlServerAutomaticTuningResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.SqlServerAutomaticTuningResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerAzureADAdministratorResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.SqlServerAzureADAdministratorResource GetSqlServerAzureADAdministratorResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.SqlServerAzureADAdministratorResource GetSqlServerAzureADAdministratorResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerAzureADAdministratorResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlServerAzureADAdministratorResource (client As ArmClient, id As ResourceIdentifier) As SqlServerAzureADAdministratorResource" />
+      <MemberSignature Language="F#" Value="static member GetSqlServerAzureADAdministratorResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.SqlServerAzureADAdministratorResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerAzureADAdministratorResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlServerAzureADAdministratorResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.SqlServerAzureADAdministratorResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.SqlServerAzureADAdministratorResource.CreateResourceIdentifier(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.AdministratorName)" /> to create a <see cref="T:Azure.ResourceManager.Sql.SqlServerAzureADAdministratorResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.SqlServerAzureADAdministratorResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerAzureADOnlyAuthenticationResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.SqlServerAzureADOnlyAuthenticationResource GetSqlServerAzureADOnlyAuthenticationResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.SqlServerAzureADOnlyAuthenticationResource GetSqlServerAzureADOnlyAuthenticationResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerAzureADOnlyAuthenticationResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlServerAzureADOnlyAuthenticationResource (client As ArmClient, id As ResourceIdentifier) As SqlServerAzureADOnlyAuthenticationResource" />
+      <MemberSignature Language="F#" Value="static member GetSqlServerAzureADOnlyAuthenticationResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.SqlServerAzureADOnlyAuthenticationResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerAzureADOnlyAuthenticationResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlServerAzureADOnlyAuthenticationResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.SqlServerAzureADOnlyAuthenticationResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.SqlServerAzureADOnlyAuthenticationResource.CreateResourceIdentifier(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.AuthenticationName)" /> to create a <see cref="T:Azure.ResourceManager.Sql.SqlServerAzureADOnlyAuthenticationResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.SqlServerAzureADOnlyAuthenticationResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerBlobAuditingPolicyResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.SqlServerBlobAuditingPolicyResource GetSqlServerBlobAuditingPolicyResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.SqlServerBlobAuditingPolicyResource GetSqlServerBlobAuditingPolicyResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerBlobAuditingPolicyResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlServerBlobAuditingPolicyResource (client As ArmClient, id As ResourceIdentifier) As SqlServerBlobAuditingPolicyResource" />
+      <MemberSignature Language="F#" Value="static member GetSqlServerBlobAuditingPolicyResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.SqlServerBlobAuditingPolicyResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerBlobAuditingPolicyResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlServerBlobAuditingPolicyResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.SqlServerBlobAuditingPolicyResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.SqlServerBlobAuditingPolicyResource.CreateResourceIdentifier(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName)" /> to create a <see cref="T:Azure.ResourceManager.Sql.SqlServerBlobAuditingPolicyResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.SqlServerBlobAuditingPolicyResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerCommunicationLinkResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.SqlServerCommunicationLinkResource GetSqlServerCommunicationLinkResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.SqlServerCommunicationLinkResource GetSqlServerCommunicationLinkResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerCommunicationLinkResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlServerCommunicationLinkResource (client As ArmClient, id As ResourceIdentifier) As SqlServerCommunicationLinkResource" />
+      <MemberSignature Language="F#" Value="static member GetSqlServerCommunicationLinkResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.SqlServerCommunicationLinkResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerCommunicationLinkResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlServerCommunicationLinkResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.SqlServerCommunicationLinkResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.SqlServerCommunicationLinkResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Sql.SqlServerCommunicationLinkResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.SqlServerCommunicationLinkResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerConnectionPolicyResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.SqlServerConnectionPolicyResource GetSqlServerConnectionPolicyResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.SqlServerConnectionPolicyResource GetSqlServerConnectionPolicyResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerConnectionPolicyResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlServerConnectionPolicyResource (client As ArmClient, id As ResourceIdentifier) As SqlServerConnectionPolicyResource" />
+      <MemberSignature Language="F#" Value="static member GetSqlServerConnectionPolicyResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.SqlServerConnectionPolicyResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerConnectionPolicyResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlServerConnectionPolicyResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.SqlServerConnectionPolicyResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.SqlServerConnectionPolicyResource.CreateResourceIdentifier(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.ConnectionPolicyName)" /> to create a <see cref="T:Azure.ResourceManager.Sql.SqlServerConnectionPolicyResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.SqlServerConnectionPolicyResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerDevOpsAuditingSettingResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.SqlServerDevOpsAuditingSettingResource GetSqlServerDevOpsAuditingSettingResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.SqlServerDevOpsAuditingSettingResource GetSqlServerDevOpsAuditingSettingResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerDevOpsAuditingSettingResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlServerDevOpsAuditingSettingResource (client As ArmClient, id As ResourceIdentifier) As SqlServerDevOpsAuditingSettingResource" />
+      <MemberSignature Language="F#" Value="static member GetSqlServerDevOpsAuditingSettingResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.SqlServerDevOpsAuditingSettingResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerDevOpsAuditingSettingResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlServerDevOpsAuditingSettingResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.SqlServerDevOpsAuditingSettingResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.SqlServerDevOpsAuditingSettingResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Sql.SqlServerDevOpsAuditingSettingResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.SqlServerDevOpsAuditingSettingResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerDnsAliasResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.SqlServerDnsAliasResource GetSqlServerDnsAliasResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.SqlServerDnsAliasResource GetSqlServerDnsAliasResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerDnsAliasResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlServerDnsAliasResource (client As ArmClient, id As ResourceIdentifier) As SqlServerDnsAliasResource" />
+      <MemberSignature Language="F#" Value="static member GetSqlServerDnsAliasResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.SqlServerDnsAliasResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerDnsAliasResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlServerDnsAliasResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.SqlServerDnsAliasResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.SqlServerDnsAliasResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Sql.SqlServerDnsAliasResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.SqlServerDnsAliasResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerJobAgentResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.SqlServerJobAgentResource GetSqlServerJobAgentResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.SqlServerJobAgentResource GetSqlServerJobAgentResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerJobAgentResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlServerJobAgentResource (client As ArmClient, id As ResourceIdentifier) As SqlServerJobAgentResource" />
+      <MemberSignature Language="F#" Value="static member GetSqlServerJobAgentResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.SqlServerJobAgentResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerJobAgentResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlServerJobAgentResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.SqlServerJobAgentResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.SqlServerJobAgentResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Sql.SqlServerJobAgentResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.SqlServerJobAgentResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerJobCredentialResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.SqlServerJobCredentialResource GetSqlServerJobCredentialResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.SqlServerJobCredentialResource GetSqlServerJobCredentialResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerJobCredentialResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlServerJobCredentialResource (client As ArmClient, id As ResourceIdentifier) As SqlServerJobCredentialResource" />
+      <MemberSignature Language="F#" Value="static member GetSqlServerJobCredentialResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.SqlServerJobCredentialResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerJobCredentialResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlServerJobCredentialResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.SqlServerJobCredentialResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.SqlServerJobCredentialResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Sql.SqlServerJobCredentialResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.SqlServerJobCredentialResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerJobExecutionResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.SqlServerJobExecutionResource GetSqlServerJobExecutionResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.SqlServerJobExecutionResource GetSqlServerJobExecutionResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerJobExecutionResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlServerJobExecutionResource (client As ArmClient, id As ResourceIdentifier) As SqlServerJobExecutionResource" />
+      <MemberSignature Language="F#" Value="static member GetSqlServerJobExecutionResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.SqlServerJobExecutionResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerJobExecutionResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlServerJobExecutionResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.SqlServerJobExecutionResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.SqlServerJobExecutionResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,System.String,System.Guid)" /> to create a <see cref="T:Azure.ResourceManager.Sql.SqlServerJobExecutionResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.SqlServerJobExecutionResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerJobExecutionStepResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.SqlServerJobExecutionStepResource GetSqlServerJobExecutionStepResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.SqlServerJobExecutionStepResource GetSqlServerJobExecutionStepResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerJobExecutionStepResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlServerJobExecutionStepResource (client As ArmClient, id As ResourceIdentifier) As SqlServerJobExecutionStepResource" />
+      <MemberSignature Language="F#" Value="static member GetSqlServerJobExecutionStepResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.SqlServerJobExecutionStepResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerJobExecutionStepResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlServerJobExecutionStepResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.SqlServerJobExecutionStepResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.SqlServerJobExecutionStepResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,System.String,System.Guid,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Sql.SqlServerJobExecutionStepResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.SqlServerJobExecutionStepResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerJobExecutionStepTargetResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.SqlServerJobExecutionStepTargetResource GetSqlServerJobExecutionStepTargetResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.SqlServerJobExecutionStepTargetResource GetSqlServerJobExecutionStepTargetResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerJobExecutionStepTargetResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlServerJobExecutionStepTargetResource (client As ArmClient, id As ResourceIdentifier) As SqlServerJobExecutionStepTargetResource" />
+      <MemberSignature Language="F#" Value="static member GetSqlServerJobExecutionStepTargetResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.SqlServerJobExecutionStepTargetResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerJobExecutionStepTargetResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlServerJobExecutionStepTargetResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.SqlServerJobExecutionStepTargetResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.SqlServerJobExecutionStepTargetResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,System.String,System.Guid,System.String,System.Guid)" /> to create a <see cref="T:Azure.ResourceManager.Sql.SqlServerJobExecutionStepTargetResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.SqlServerJobExecutionStepTargetResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerJobResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.SqlServerJobResource GetSqlServerJobResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.SqlServerJobResource GetSqlServerJobResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerJobResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlServerJobResource (client As ArmClient, id As ResourceIdentifier) As SqlServerJobResource" />
+      <MemberSignature Language="F#" Value="static member GetSqlServerJobResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.SqlServerJobResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerJobResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlServerJobResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.SqlServerJobResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.SqlServerJobResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Sql.SqlServerJobResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.SqlServerJobResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerJobStepResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.SqlServerJobStepResource GetSqlServerJobStepResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.SqlServerJobStepResource GetSqlServerJobStepResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerJobStepResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlServerJobStepResource (client As ArmClient, id As ResourceIdentifier) As SqlServerJobStepResource" />
+      <MemberSignature Language="F#" Value="static member GetSqlServerJobStepResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.SqlServerJobStepResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerJobStepResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlServerJobStepResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.SqlServerJobStepResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.SqlServerJobStepResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Sql.SqlServerJobStepResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.SqlServerJobStepResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerJobTargetGroupResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.SqlServerJobTargetGroupResource GetSqlServerJobTargetGroupResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.SqlServerJobTargetGroupResource GetSqlServerJobTargetGroupResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerJobTargetGroupResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlServerJobTargetGroupResource (client As ArmClient, id As ResourceIdentifier) As SqlServerJobTargetGroupResource" />
+      <MemberSignature Language="F#" Value="static member GetSqlServerJobTargetGroupResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.SqlServerJobTargetGroupResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerJobTargetGroupResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlServerJobTargetGroupResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.SqlServerJobTargetGroupResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.SqlServerJobTargetGroupResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Sql.SqlServerJobTargetGroupResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.SqlServerJobTargetGroupResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerJobVersionResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.SqlServerJobVersionResource GetSqlServerJobVersionResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.SqlServerJobVersionResource GetSqlServerJobVersionResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerJobVersionResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlServerJobVersionResource (client As ArmClient, id As ResourceIdentifier) As SqlServerJobVersionResource" />
+      <MemberSignature Language="F#" Value="static member GetSqlServerJobVersionResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.SqlServerJobVersionResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerJobVersionResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlServerJobVersionResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.SqlServerJobVersionResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.SqlServerJobVersionResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,System.String,System.Int32)" /> to create a <see cref="T:Azure.ResourceManager.Sql.SqlServerJobVersionResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.SqlServerJobVersionResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerJobVersionStepResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.SqlServerJobVersionStepResource GetSqlServerJobVersionStepResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.SqlServerJobVersionStepResource GetSqlServerJobVersionStepResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerJobVersionStepResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlServerJobVersionStepResource (client As ArmClient, id As ResourceIdentifier) As SqlServerJobVersionStepResource" />
+      <MemberSignature Language="F#" Value="static member GetSqlServerJobVersionStepResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.SqlServerJobVersionStepResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerJobVersionStepResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlServerJobVersionStepResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.SqlServerJobVersionStepResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.SqlServerJobVersionStepResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,System.String,System.Int32,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Sql.SqlServerJobVersionStepResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.SqlServerJobVersionStepResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerKeyResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.SqlServerKeyResource GetSqlServerKeyResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.SqlServerKeyResource GetSqlServerKeyResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerKeyResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlServerKeyResource (client As ArmClient, id As ResourceIdentifier) As SqlServerKeyResource" />
+      <MemberSignature Language="F#" Value="static member GetSqlServerKeyResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.SqlServerKeyResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerKeyResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlServerKeyResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.SqlServerKeyResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.SqlServerKeyResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Sql.SqlServerKeyResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.SqlServerKeyResource" /> object. </returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSqlServerResource">
@@ -4826,6 +6091,199 @@
             Operation Id: Servers_List
             </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.Sql.SqlServerResource" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerSecurityAlertPolicyResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.SqlServerSecurityAlertPolicyResource GetSqlServerSecurityAlertPolicyResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.SqlServerSecurityAlertPolicyResource GetSqlServerSecurityAlertPolicyResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerSecurityAlertPolicyResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlServerSecurityAlertPolicyResource (client As ArmClient, id As ResourceIdentifier) As SqlServerSecurityAlertPolicyResource" />
+      <MemberSignature Language="F#" Value="static member GetSqlServerSecurityAlertPolicyResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.SqlServerSecurityAlertPolicyResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerSecurityAlertPolicyResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlServerSecurityAlertPolicyResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.SqlServerSecurityAlertPolicyResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.SqlServerSecurityAlertPolicyResource.CreateResourceIdentifier(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName)" /> to create a <see cref="T:Azure.ResourceManager.Sql.SqlServerSecurityAlertPolicyResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.SqlServerSecurityAlertPolicyResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerTrustGroup">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerTrustGroupResource&gt; GetSqlServerTrustGroup (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string locationName, string serverTrustGroupName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.Sql.SqlServerTrustGroupResource&gt; GetSqlServerTrustGroup(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string locationName, string serverTrustGroupName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerTrustGroup(Azure.ResourceManager.Resources.ResourceGroupResource,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlServerTrustGroup (resourceGroupResource As ResourceGroupResource, locationName As String, serverTrustGroupName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of SqlServerTrustGroupResource)" />
+      <MemberSignature Language="F#" Value="static member GetSqlServerTrustGroup : Azure.ResourceManager.Resources.ResourceGroupResource * string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerTrustGroupResource&gt;" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerTrustGroup (resourceGroupResource, locationName, serverTrustGroupName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerTrustGroupResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
+        <Parameter Name="locationName" Type="System.String" />
+        <Parameter Name="serverTrustGroupName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="locationName"> The name of the region where the resource is located. </param>
+        <param name="serverTrustGroupName"> The name of the server trust group. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a server trust group.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/locations/{locationName}/serverTrustGroups/{serverTrustGroupName}
+            Operation Id: ServerTrustGroups_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="locationName" /> or <paramref name="serverTrustGroupName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="locationName" /> or <paramref name="serverTrustGroupName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerTrustGroupAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerTrustGroupResource&gt;&gt; GetSqlServerTrustGroupAsync (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string locationName, string serverTrustGroupName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.SqlServerTrustGroupResource&gt;&gt; GetSqlServerTrustGroupAsync(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string locationName, string serverTrustGroupName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerTrustGroupAsync(Azure.ResourceManager.Resources.ResourceGroupResource,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlServerTrustGroupAsync (resourceGroupResource As ResourceGroupResource, locationName As String, serverTrustGroupName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of SqlServerTrustGroupResource))" />
+      <MemberSignature Language="F#" Value="static member GetSqlServerTrustGroupAsync : Azure.ResourceManager.Resources.ResourceGroupResource * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerTrustGroupResource&gt;&gt;" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerTrustGroupAsync (resourceGroupResource, locationName, serverTrustGroupName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerTrustGroupResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
+        <Parameter Name="locationName" Type="System.String" />
+        <Parameter Name="serverTrustGroupName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="locationName"> The name of the region where the resource is located. </param>
+        <param name="serverTrustGroupName"> The name of the server trust group. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a server trust group.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/locations/{locationName}/serverTrustGroups/{serverTrustGroupName}
+            Operation Id: ServerTrustGroups_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="locationName" /> or <paramref name="serverTrustGroupName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="locationName" /> or <paramref name="serverTrustGroupName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerTrustGroupResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.SqlServerTrustGroupResource GetSqlServerTrustGroupResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.SqlServerTrustGroupResource GetSqlServerTrustGroupResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerTrustGroupResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlServerTrustGroupResource (client As ArmClient, id As ResourceIdentifier) As SqlServerTrustGroupResource" />
+      <MemberSignature Language="F#" Value="static member GetSqlServerTrustGroupResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.SqlServerTrustGroupResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerTrustGroupResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlServerTrustGroupResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.SqlServerTrustGroupResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.SqlServerTrustGroupResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Sql.SqlServerTrustGroupResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.SqlServerTrustGroupResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerTrustGroups">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.SqlServerTrustGroupCollection GetSqlServerTrustGroups (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string locationName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.SqlServerTrustGroupCollection GetSqlServerTrustGroups(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string locationName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerTrustGroups(Azure.ResourceManager.Resources.ResourceGroupResource,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlServerTrustGroups (resourceGroupResource As ResourceGroupResource, locationName As String) As SqlServerTrustGroupCollection" />
+      <MemberSignature Language="F#" Value="static member GetSqlServerTrustGroups : Azure.ResourceManager.Resources.ResourceGroupResource * string -&gt; Azure.ResourceManager.Sql.SqlServerTrustGroupCollection" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerTrustGroups (resourceGroupResource, locationName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlServerTrustGroupCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
+        <Parameter Name="locationName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="locationName"> The name of the region where the resource is located. </param>
+        <summary> Gets a collection of SqlServerTrustGroupResources in the ResourceGroupResource. </summary>
+        <returns> An object representing collection of SqlServerTrustGroupResources and their operations over a SqlServerTrustGroupResource. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="locationName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="locationName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerVulnerabilityAssessmentResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.SqlServerVulnerabilityAssessmentResource GetSqlServerVulnerabilityAssessmentResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Sql.SqlServerVulnerabilityAssessmentResource GetSqlServerVulnerabilityAssessmentResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerVulnerabilityAssessmentResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSqlServerVulnerabilityAssessmentResource (client As ArmClient, id As ResourceIdentifier) As SqlServerVulnerabilityAssessmentResource" />
+      <MemberSignature Language="F#" Value="static member GetSqlServerVulnerabilityAssessmentResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Sql.SqlServerVulnerabilityAssessmentResource" Usage="Azure.ResourceManager.Sql.SqlExtensions.GetSqlServerVulnerabilityAssessmentResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlServerVulnerabilityAssessmentResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Sql.SqlServerVulnerabilityAssessmentResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Sql.SqlServerVulnerabilityAssessmentResource.CreateResourceIdentifier(System.String,System.String,System.String,Azure.ResourceManager.Sql.Models.VulnerabilityAssessmentName)" /> to create a <see cref="T:Azure.ResourceManager.Sql.SqlServerVulnerabilityAssessmentResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.SqlServerVulnerabilityAssessmentResource" /> object. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -94,18 +94,18 @@
       </Docs>
     </Member>
     <Member MemberName="PartnerLocation">
-      <MemberSignature Language="C#" Value="public string PartnerLocation { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string PartnerLocation" />
+      <MemberSignature Language="C#" Value="public Azure.Core.AzureLocation? PartnerLocation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.Core.AzureLocation&gt; PartnerLocation" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.ReplicationLinkData.PartnerLocation" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PartnerLocation As String" />
-      <MemberSignature Language="F#" Value="member this.PartnerLocation : string" Usage="Azure.ResourceManager.Sql.ReplicationLinkData.PartnerLocation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PartnerLocation As Nullable(Of AzureLocation)" />
+      <MemberSignature Language="F#" Value="member this.PartnerLocation : Nullable&lt;Azure.Core.AzureLocation&gt;" Usage="Azure.ResourceManager.Sql.ReplicationLinkData.PartnerLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>System.Nullable&lt;Azure.Core.AzureLocation&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Resource partner location. </summary>

@@ -1,0 +1,143 @@
+<Type Name="StartCallRecordingRequest" FullName="Azure.Communication.CallingServer.StartCallRecordingRequest">
+  <TypeSignature Language="C#" Value="public class StartCallRecordingRequest" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StartCallRecordingRequest extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.Communication.CallingServer.StartCallRecordingRequest" />
+  <TypeSignature Language="VB.NET" Value="Public Class StartCallRecordingRequest" />
+  <TypeSignature Language="F#" Value="type StartCallRecordingRequest = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> The request payload start for call recording operation with call locator. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StartCallRecordingRequest (Azure.Communication.CallingServer.CallLocator callLocator);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Azure.Communication.CallingServer.CallLocator callLocator) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.StartCallRecordingRequest.#ctor(Azure.Communication.CallingServer.CallLocator)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (callLocator As CallLocator)" />
+      <MemberSignature Language="F#" Value="new Azure.Communication.CallingServer.StartCallRecordingRequest : Azure.Communication.CallingServer.CallLocator -&gt; Azure.Communication.CallingServer.StartCallRecordingRequest" Usage="new Azure.Communication.CallingServer.StartCallRecordingRequest callLocator" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="callLocator" Type="Azure.Communication.CallingServer.CallLocator" />
+      </Parameters>
+      <Docs>
+        <param name="callLocator"> The call locator. </param>
+        <summary> Initializes a new instance of StartCallRecordingRequest. </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callLocator" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CallLocator">
+      <MemberSignature Language="C#" Value="public Azure.Communication.CallingServer.CallLocator CallLocator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Communication.CallingServer.CallLocator CallLocator" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallingServer.StartCallRecordingRequest.CallLocator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CallLocator As CallLocator" />
+      <MemberSignature Language="F#" Value="member this.CallLocator : Azure.Communication.CallingServer.CallLocator" Usage="Azure.Communication.CallingServer.StartCallRecordingRequest.CallLocator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Communication.CallingServer.CallLocator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The call locator. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecordingChannelType">
+      <MemberSignature Language="C#" Value="public Azure.Communication.CallingServer.RecordingChannelType? RecordingChannelType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.Communication.CallingServer.RecordingChannelType&gt; RecordingChannelType" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallingServer.StartCallRecordingRequest.RecordingChannelType" />
+      <MemberSignature Language="VB.NET" Value="Public Property RecordingChannelType As Nullable(Of RecordingChannelType)" />
+      <MemberSignature Language="F#" Value="member this.RecordingChannelType : Nullable&lt;Azure.Communication.CallingServer.RecordingChannelType&gt; with get, set" Usage="Azure.Communication.CallingServer.StartCallRecordingRequest.RecordingChannelType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.Communication.CallingServer.RecordingChannelType&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The channel type of call recording. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecordingContentType">
+      <MemberSignature Language="C#" Value="public Azure.Communication.CallingServer.RecordingContentType? RecordingContentType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.Communication.CallingServer.RecordingContentType&gt; RecordingContentType" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallingServer.StartCallRecordingRequest.RecordingContentType" />
+      <MemberSignature Language="VB.NET" Value="Public Property RecordingContentType As Nullable(Of RecordingContentType)" />
+      <MemberSignature Language="F#" Value="member this.RecordingContentType : Nullable&lt;Azure.Communication.CallingServer.RecordingContentType&gt; with get, set" Usage="Azure.Communication.CallingServer.StartCallRecordingRequest.RecordingContentType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.Communication.CallingServer.RecordingContentType&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The content type of call recording. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecordingFormatType">
+      <MemberSignature Language="C#" Value="public Azure.Communication.CallingServer.RecordingFormatType? RecordingFormatType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.Communication.CallingServer.RecordingFormatType&gt; RecordingFormatType" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallingServer.StartCallRecordingRequest.RecordingFormatType" />
+      <MemberSignature Language="VB.NET" Value="Public Property RecordingFormatType As Nullable(Of RecordingFormatType)" />
+      <MemberSignature Language="F#" Value="member this.RecordingFormatType : Nullable&lt;Azure.Communication.CallingServer.RecordingFormatType&gt; with get, set" Usage="Azure.Communication.CallingServer.StartCallRecordingRequest.RecordingFormatType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.Communication.CallingServer.RecordingFormatType&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The format type of call recording. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecordingStateCallbackUri">
+      <MemberSignature Language="C#" Value="public string RecordingStateCallbackUri { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RecordingStateCallbackUri" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallingServer.StartCallRecordingRequest.RecordingStateCallbackUri" />
+      <MemberSignature Language="VB.NET" Value="Public Property RecordingStateCallbackUri As String" />
+      <MemberSignature Language="F#" Value="member this.RecordingStateCallbackUri : string with get, set" Usage="Azure.Communication.CallingServer.StartCallRecordingRequest.RecordingStateCallbackUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The uri to send notifications to. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

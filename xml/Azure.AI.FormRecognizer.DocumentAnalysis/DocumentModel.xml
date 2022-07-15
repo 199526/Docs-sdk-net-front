@@ -1,15 +1,15 @@
 <Type Name="DocumentModel" FullName="Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModel">
-  <TypeSignature Language="C#" Value="public class DocumentModel : Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelInfo" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DocumentModel extends Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelInfo" />
+  <TypeSignature Language="C#" Value="public class DocumentModel : Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelSummary" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DocumentModel extends Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelSummary" />
   <TypeSignature Language="DocId" Value="T:Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModel" />
-  <TypeSignature Language="VB.NET" Value="Public Class DocumentModel&#xA;Inherits DocumentModelInfo" />
-  <TypeSignature Language="F#" Value="type DocumentModel = class&#xA;    inherit DocumentModelInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Class DocumentModel&#xA;Inherits DocumentModelSummary" />
+  <TypeSignature Language="F#" Value="type DocumentModel = class&#xA;    inherit DocumentModelSummary" />
   <AssemblyInfo>
     <AssemblyName>Azure.AI.FormRecognizer</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelInfo</BaseTypeName>
+    <BaseTypeName>Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelSummary</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>

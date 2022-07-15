@@ -34,18 +34,18 @@
       </Docs>
     </Member>
     <Member MemberName="KeyType">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.WebPubSub.Models.KeyType? KeyType { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.WebPubSub.Models.KeyType&gt; KeyType" />
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.WebPubSub.Models.WebPubSubKeyType? KeyType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.WebPubSub.Models.WebPubSubKeyType&gt; KeyType" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.WebPubSub.Models.RegenerateKeyContent.KeyType" />
-      <MemberSignature Language="VB.NET" Value="Public Property KeyType As Nullable(Of KeyType)" />
-      <MemberSignature Language="F#" Value="member this.KeyType : Nullable&lt;Azure.ResourceManager.WebPubSub.Models.KeyType&gt; with get, set" Usage="Azure.ResourceManager.WebPubSub.Models.RegenerateKeyContent.KeyType" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeyType As Nullable(Of WebPubSubKeyType)" />
+      <MemberSignature Language="F#" Value="member this.KeyType : Nullable&lt;Azure.ResourceManager.WebPubSub.Models.WebPubSubKeyType&gt; with get, set" Usage="Azure.ResourceManager.WebPubSub.Models.RegenerateKeyContent.KeyType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Nullable&lt;Azure.ResourceManager.WebPubSub.Models.KeyType&gt;</ReturnType>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.WebPubSub.Models.WebPubSubKeyType&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The keyType to regenerate. Must be either 'primary' or 'secondary'(case-insensitive). </summary>

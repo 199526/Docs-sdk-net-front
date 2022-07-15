@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,14 +28,15 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.KeyVault.Models.KeyVaultNameAvailabilityResult&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
-        <Parameter Name="content" Type="Azure.ResourceManager.KeyVault.Models.KeyVaultNameAvailabilityContent" Index="1" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
+        <Parameter Name="content" Type="Azure.ResourceManager.KeyVault.Models.KeyVaultNameAvailabilityContent" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
@@ -95,14 +97,15 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.KeyVault.Models.KeyVaultNameAvailabilityResult&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
-        <Parameter Name="content" Type="Azure.ResourceManager.KeyVault.Models.KeyVaultNameAvailabilityContent" Index="1" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
+        <Parameter Name="content" Type="Azure.ResourceManager.KeyVault.Models.KeyVaultNameAvailabilityContent" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
@@ -163,15 +166,16 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.KeyVault.DeletedKeyVaultResource&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
-        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="1" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="vaultName" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" />
+        <Parameter Name="vaultName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
@@ -201,15 +205,16 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.KeyVault.DeletedKeyVaultResource&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
-        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="1" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="vaultName" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" />
+        <Parameter Name="vaultName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
@@ -239,13 +244,14 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.KeyVault.DeletedKeyVaultResource</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
-        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
       </Parameters>
       <Docs>
         <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
@@ -268,12 +274,13 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.KeyVault.DeletedKeyVaultCollection</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
       </Parameters>
       <Docs>
         <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
@@ -292,13 +299,14 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.KeyVault.DeletedKeyVaultResource&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
@@ -322,13 +330,14 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.KeyVault.DeletedKeyVaultResource&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
@@ -352,15 +361,16 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.KeyVault.DeletedManagedHsmResource&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
-        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="1" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="name" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
@@ -428,15 +438,16 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.KeyVault.DeletedManagedHsmResource&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
-        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="1" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="name" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
@@ -504,6 +515,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.KeyVault.DeletedManagedHsmResource</ReturnType>
@@ -533,6 +545,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.KeyVault.DeletedManagedHsmCollection</ReturnType>
@@ -557,6 +570,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.KeyVault.DeletedManagedHsmResource&gt;</ReturnType>
@@ -587,6 +601,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.KeyVault.DeletedManagedHsmResource&gt;</ReturnType>
@@ -806,14 +821,15 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.KeyVault.KeyVaultResource&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
-        <Parameter Name="vaultName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
+        <Parameter Name="vaultName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
@@ -842,14 +858,15 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.KeyVault.KeyVaultResource&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
-        <Parameter Name="vaultName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
+        <Parameter Name="vaultName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
@@ -878,13 +895,14 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.KeyVault.KeyVaultPrivateEndpointConnectionResource</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
-        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
       </Parameters>
       <Docs>
         <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
@@ -907,13 +925,14 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.KeyVault.KeyVaultResource</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
-        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
       </Parameters>
       <Docs>
         <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
@@ -936,12 +955,13 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.KeyVault.KeyVaultCollection</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
       </Parameters>
       <Docs>
         <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
@@ -960,14 +980,15 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.KeyVault.KeyVaultResource&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
-        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" Index="1" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
@@ -992,14 +1013,15 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.KeyVault.KeyVaultResource&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
-        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" Index="1" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
@@ -1024,6 +1046,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.KeyVault.ManagedHsmResource&gt;</ReturnType>
@@ -1060,6 +1083,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.KeyVault.ManagedHsmResource&gt;&gt;</ReturnType>
@@ -1096,13 +1120,14 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.KeyVault.ManagedHsmPrivateEndpointConnectionResource</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
-        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
       </Parameters>
       <Docs>
         <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
@@ -1125,6 +1150,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.KeyVault.ManagedHsmResource</ReturnType>
@@ -1154,6 +1180,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.KeyVault.ManagedHsmCollection</ReturnType>
@@ -1178,6 +1205,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.KeyVault.ManagedHsmResource&gt;</ReturnType>
@@ -1210,6 +1238,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.KeyVault.ManagedHsmResource&gt;</ReturnType>

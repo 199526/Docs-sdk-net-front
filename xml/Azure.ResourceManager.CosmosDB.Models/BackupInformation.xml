@@ -18,18 +18,18 @@
   </Docs>
   <Members>
     <Member MemberName="ContinuousBackupInformationLatestRestorableTimestamp">
-      <MemberSignature Language="C#" Value="public string ContinuousBackupInformationLatestRestorableTimestamp { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string ContinuousBackupInformationLatestRestorableTimestamp" />
+      <MemberSignature Language="C#" Value="public DateTimeOffset? ContinuousBackupInformationLatestRestorableTimestamp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; ContinuousBackupInformationLatestRestorableTimestamp" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.CosmosDB.Models.BackupInformation.ContinuousBackupInformationLatestRestorableTimestamp" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContinuousBackupInformationLatestRestorableTimestamp As String" />
-      <MemberSignature Language="F#" Value="member this.ContinuousBackupInformationLatestRestorableTimestamp : string" Usage="Azure.ResourceManager.CosmosDB.Models.BackupInformation.ContinuousBackupInformationLatestRestorableTimestamp" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContinuousBackupInformationLatestRestorableTimestamp As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.ContinuousBackupInformationLatestRestorableTimestamp : Nullable&lt;DateTimeOffset&gt;" Usage="Azure.ResourceManager.CosmosDB.Models.BackupInformation.ContinuousBackupInformationLatestRestorableTimestamp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The latest restorable timestamp for a resource. </summary>

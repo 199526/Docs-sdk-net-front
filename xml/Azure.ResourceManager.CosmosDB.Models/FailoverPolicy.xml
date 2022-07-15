@@ -74,18 +74,18 @@
       </Docs>
     </Member>
     <Member MemberName="LocationName">
-      <MemberSignature Language="C#" Value="public string LocationName { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string LocationName" />
+      <MemberSignature Language="C#" Value="public Azure.Core.AzureLocation? LocationName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.Core.AzureLocation&gt; LocationName" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.CosmosDB.Models.FailoverPolicy.LocationName" />
-      <MemberSignature Language="VB.NET" Value="Public Property LocationName As String" />
-      <MemberSignature Language="F#" Value="member this.LocationName : string with get, set" Usage="Azure.ResourceManager.CosmosDB.Models.FailoverPolicy.LocationName" />
+      <MemberSignature Language="VB.NET" Value="Public Property LocationName As Nullable(Of AzureLocation)" />
+      <MemberSignature Language="F#" Value="member this.LocationName : Nullable&lt;Azure.Core.AzureLocation&gt; with get, set" Usage="Azure.ResourceManager.CosmosDB.Models.FailoverPolicy.LocationName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>System.Nullable&lt;Azure.Core.AzureLocation&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The name of the region in which the database account exists. </summary>

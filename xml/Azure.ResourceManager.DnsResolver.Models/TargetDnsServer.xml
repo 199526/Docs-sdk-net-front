@@ -33,6 +33,28 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TargetDnsServer (string ipAddress);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string ipAddress) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DnsResolver.Models.TargetDnsServer.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ipAddress As String)" />
+      <MemberSignature Language="F#" Value="new Azure.ResourceManager.DnsResolver.Models.TargetDnsServer : string -&gt; Azure.ResourceManager.DnsResolver.Models.TargetDnsServer" Usage="new Azure.ResourceManager.DnsResolver.Models.TargetDnsServer ipAddress" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DnsResolver</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="ipAddress" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ipAddress"> DNS server IP address. </param>
+        <summary> Initializes a new instance of TargetDnsServer. </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="ipAddress" /> is null. </exception>
+      </Docs>
+    </Member>
     <Member MemberName="IPAddress">
       <MemberSignature Language="C#" Value="public string IPAddress { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string IPAddress" />

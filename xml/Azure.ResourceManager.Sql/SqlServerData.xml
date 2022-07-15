@@ -218,18 +218,18 @@
       </Docs>
     </Member>
     <Member MemberName="PrimaryUserAssignedIdentityId">
-      <MemberSignature Language="C#" Value="public string PrimaryUserAssignedIdentityId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string PrimaryUserAssignedIdentityId" />
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier PrimaryUserAssignedIdentityId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier PrimaryUserAssignedIdentityId" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlServerData.PrimaryUserAssignedIdentityId" />
-      <MemberSignature Language="VB.NET" Value="Public Property PrimaryUserAssignedIdentityId As String" />
-      <MemberSignature Language="F#" Value="member this.PrimaryUserAssignedIdentityId : string with get, set" Usage="Azure.ResourceManager.Sql.SqlServerData.PrimaryUserAssignedIdentityId" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrimaryUserAssignedIdentityId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.PrimaryUserAssignedIdentityId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Sql.SqlServerData.PrimaryUserAssignedIdentityId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The resource id of a user assigned identity to be used by default. </summary>

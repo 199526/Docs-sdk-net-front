@@ -294,11 +294,11 @@
       </Docs>
     </Member>
     <Member MemberName="CopyAuthorization">
-      <MemberSignature Language="C#" Value="public static Azure.AI.FormRecognizer.DocumentAnalysis.CopyAuthorization CopyAuthorization (string targetResourceRegion = default, string targetModelId = default, string targetModelLocation = default, DateTimeOffset expirationDateTime = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.FormRecognizer.DocumentAnalysis.CopyAuthorization CopyAuthorization(string targetResourceRegion, string targetModelId, string targetModelLocation, valuetype System.DateTimeOffset expirationDateTime) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.AI.FormRecognizer.DocumentAnalysis.CopyAuthorization CopyAuthorization (string targetResourceRegion = default, string targetModelId = default, string targetModelLocation = default, DateTimeOffset expiresOn = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.FormRecognizer.DocumentAnalysis.CopyAuthorization CopyAuthorization(string targetResourceRegion, string targetModelId, string targetModelLocation, valuetype System.DateTimeOffset expiresOn) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.FormRecognizer.DocumentAnalysis.DocumentAnalysisModelFactory.CopyAuthorization(System.String,System.String,System.String,System.DateTimeOffset)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function CopyAuthorization (Optional targetResourceRegion As String = Nothing, Optional targetModelId As String = Nothing, Optional targetModelLocation As String = Nothing, Optional expirationDateTime As DateTimeOffset = Nothing) As CopyAuthorization" />
-      <MemberSignature Language="F#" Value="static member CopyAuthorization : string * string * string * DateTimeOffset -&gt; Azure.AI.FormRecognizer.DocumentAnalysis.CopyAuthorization" Usage="Azure.AI.FormRecognizer.DocumentAnalysis.DocumentAnalysisModelFactory.CopyAuthorization (targetResourceRegion, targetModelId, targetModelLocation, expirationDateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CopyAuthorization (Optional targetResourceRegion As String = Nothing, Optional targetModelId As String = Nothing, Optional targetModelLocation As String = Nothing, Optional expiresOn As DateTimeOffset = Nothing) As CopyAuthorization" />
+      <MemberSignature Language="F#" Value="static member CopyAuthorization : string * string * string * DateTimeOffset -&gt; Azure.AI.FormRecognizer.DocumentAnalysis.CopyAuthorization" Usage="Azure.AI.FormRecognizer.DocumentAnalysis.DocumentAnalysisModelFactory.CopyAuthorization (targetResourceRegion, targetModelId, targetModelLocation, expiresOn)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.FormRecognizer</AssemblyName>
@@ -311,13 +311,13 @@
         <Parameter Name="targetResourceRegion" Type="System.String" />
         <Parameter Name="targetModelId" Type="System.String" />
         <Parameter Name="targetModelLocation" Type="System.String" />
-        <Parameter Name="expirationDateTime" Type="System.DateTimeOffset" />
+        <Parameter Name="expiresOn" Type="System.DateTimeOffset" />
       </Parameters>
       <Docs>
         <param name="targetResourceRegion"> Location of the target Azure resource where the model should be copied to. </param>
         <param name="targetModelId"> Identifier of the target model. </param>
         <param name="targetModelLocation"> URL of the copied model in the target account. </param>
-        <param name="expirationDateTime"> Date/time when the access token expires. </param>
+        <param name="expiresOn"> Date/time when the access token expires. </param>
         <summary> Initializes a new instance of CopyAuthorization. </summary>
         <returns> A new <see cref="T:Azure.AI.FormRecognizer.DocumentAnalysis.CopyAuthorization" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
@@ -1028,6 +1028,36 @@
         <param name="tags"> List of key-value tag attributes associated with the model. </param>
         <summary> Initializes a new instance of DocumentModelInfo. </summary>
         <returns> A new <see cref="T:Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelInfo" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DocumentModelSummary">
+      <MemberSignature Language="C#" Value="public static Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelSummary DocumentModelSummary (string modelId = default, string description = default, DateTimeOffset createdOn = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt; tags = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelSummary DocumentModelSummary(string modelId, string description, valuetype System.DateTimeOffset createdOn, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, string&gt; tags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.FormRecognizer.DocumentAnalysis.DocumentAnalysisModelFactory.DocumentModelSummary(System.String,System.String,System.DateTimeOffset,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DocumentModelSummary (Optional modelId As String = Nothing, Optional description As String = Nothing, Optional createdOn As DateTimeOffset = Nothing, Optional tags As IReadOnlyDictionary(Of String, String) = Nothing) As DocumentModelSummary" />
+      <MemberSignature Language="F#" Value="static member DocumentModelSummary : string * string * DateTimeOffset * System.Collections.Generic.IReadOnlyDictionary&lt;string, string&gt; -&gt; Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelSummary" Usage="Azure.AI.FormRecognizer.DocumentAnalysis.DocumentAnalysisModelFactory.DocumentModelSummary (modelId, description, createdOn, tags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.FormRecognizer</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelSummary</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modelId" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="createdOn" Type="System.DateTimeOffset" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="modelId"> Unique model name. </param>
+        <param name="description"> Model description. </param>
+        <param name="createdOn"> Date and time (UTC) when the model was created. </param>
+        <param name="tags"> List of key-value tag attributes associated with the model. </param>
+        <summary> Initializes a new instance of DocumentModelSummary. </summary>
+        <returns> A new <see cref="T:Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelSummary" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

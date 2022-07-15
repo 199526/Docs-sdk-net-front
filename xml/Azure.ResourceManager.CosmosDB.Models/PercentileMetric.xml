@@ -58,18 +58,18 @@
       </Docs>
     </Member>
     <Member MemberName="Name">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.CosmosDB.Models.MetricName Name { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.CosmosDB.Models.MetricName Name" />
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.CosmosDB.Models.CosmosDBMetricName Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.CosmosDB.Models.CosmosDBMetricName Name" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.CosmosDB.Models.PercentileMetric.Name" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As MetricName" />
-      <MemberSignature Language="F#" Value="member this.Name : Azure.ResourceManager.CosmosDB.Models.MetricName" Usage="Azure.ResourceManager.CosmosDB.Models.PercentileMetric.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As CosmosDBMetricName" />
+      <MemberSignature Language="F#" Value="member this.Name : Azure.ResourceManager.CosmosDB.Models.CosmosDBMetricName" Usage="Azure.ResourceManager.CosmosDB.Models.PercentileMetric.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.CosmosDB.Models.MetricName</ReturnType>
+        <ReturnType>Azure.ResourceManager.CosmosDB.Models.CosmosDBMetricName</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The name information for the metric. </summary>
@@ -118,18 +118,18 @@
       </Docs>
     </Member>
     <Member MemberName="Unit">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.CosmosDB.Models.UnitType? Unit { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.CosmosDB.Models.UnitType&gt; Unit" />
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.CosmosDB.Models.CosmosDBMetricUnitType? Unit { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.CosmosDB.Models.CosmosDBMetricUnitType&gt; Unit" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.CosmosDB.Models.PercentileMetric.Unit" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Unit As Nullable(Of UnitType)" />
-      <MemberSignature Language="F#" Value="member this.Unit : Nullable&lt;Azure.ResourceManager.CosmosDB.Models.UnitType&gt;" Usage="Azure.ResourceManager.CosmosDB.Models.PercentileMetric.Unit" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Unit As Nullable(Of CosmosDBMetricUnitType)" />
+      <MemberSignature Language="F#" Value="member this.Unit : Nullable&lt;Azure.ResourceManager.CosmosDB.Models.CosmosDBMetricUnitType&gt;" Usage="Azure.ResourceManager.CosmosDB.Models.PercentileMetric.Unit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Nullable&lt;Azure.ResourceManager.CosmosDB.Models.UnitType&gt;</ReturnType>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.CosmosDB.Models.CosmosDBMetricUnitType&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The unit of the metric. </summary>

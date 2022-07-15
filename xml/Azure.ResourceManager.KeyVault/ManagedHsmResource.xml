@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.ResourceManager.ArmResource</BaseTypeName>
@@ -31,6 +32,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -48,6 +50,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.KeyVault.ManagedHsmResource&gt;</ReturnType>
@@ -82,6 +85,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.KeyVault.ManagedHsmResource&gt;&gt;</ReturnType>
@@ -116,6 +120,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
@@ -144,6 +149,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.KeyVault.ManagedHsmData</ReturnType>
@@ -165,6 +171,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
@@ -196,6 +203,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
@@ -227,6 +235,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.KeyVault.ManagedHsmResource&gt;</ReturnType>
@@ -255,6 +264,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.KeyVault.ManagedHsmResource&gt;&gt;</ReturnType>
@@ -283,13 +293,14 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.KeyVault.ManagedHsmPrivateEndpointConnectionResource&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="privateEndpointConnectionName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="privateEndpointConnectionName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="privateEndpointConnectionName"> Name of the private endpoint connection associated with the managed hsm pool. </param>
@@ -317,13 +328,14 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.KeyVault.ManagedHsmPrivateEndpointConnectionResource&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="privateEndpointConnectionName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="privateEndpointConnectionName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="privateEndpointConnectionName"> Name of the private endpoint connection associated with the managed hsm pool. </param>
@@ -351,6 +363,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.KeyVault.ManagedHsmPrivateEndpointConnectionCollection</ReturnType>
@@ -517,12 +530,13 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateLinkResourceData&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
@@ -545,12 +559,13 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateLinkResourceData&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
@@ -573,6 +588,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -593,6 +609,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.KeyVault.ManagedHsmResource&gt;</ReturnType>
@@ -625,6 +642,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.KeyVault.ManagedHsmResource&gt;&gt;</ReturnType>
@@ -657,6 +675,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Core.ResourceType</ReturnType>
@@ -676,6 +695,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.KeyVault.ManagedHsmResource&gt;</ReturnType>
@@ -708,6 +728,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.KeyVault.ManagedHsmResource&gt;&gt;</ReturnType>
@@ -740,6 +761,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.KeyVault.ManagedHsmResource&gt;</ReturnType>
@@ -775,6 +797,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.KeyVault.ManagedHsmResource&gt;&gt;</ReturnType>

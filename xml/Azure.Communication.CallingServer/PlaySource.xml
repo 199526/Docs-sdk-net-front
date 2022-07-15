@@ -1,0 +1,81 @@
+<Type Name="PlaySource" FullName="Azure.Communication.CallingServer.PlaySource">
+  <TypeSignature Language="C#" Value="public class PlaySource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PlaySource extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.Communication.CallingServer.PlaySource" />
+  <TypeSignature Language="VB.NET" Value="Public Class PlaySource" />
+  <TypeSignature Language="F#" Value="type PlaySource = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> The PlaySource. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PlaySource (Azure.Communication.CallingServer.PlaySourceType sourceType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Azure.Communication.CallingServer.PlaySourceType sourceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.PlaySource.#ctor(Azure.Communication.CallingServer.PlaySourceType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (sourceType As PlaySourceType)" />
+      <MemberSignature Language="F#" Value="new Azure.Communication.CallingServer.PlaySource : Azure.Communication.CallingServer.PlaySourceType -&gt; Azure.Communication.CallingServer.PlaySource" Usage="new Azure.Communication.CallingServer.PlaySource sourceType" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="sourceType" Type="Azure.Communication.CallingServer.PlaySourceType" />
+      </Parameters>
+      <Docs>
+        <param name="sourceType"> Defines the type of the play source. </param>
+        <summary> Initializes a new instance of PlaySource. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlaySourceId">
+      <MemberSignature Language="C#" Value="public string PlaySourceId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PlaySourceId" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallingServer.PlaySource.PlaySourceId" />
+      <MemberSignature Language="VB.NET" Value="Public Property PlaySourceId As String" />
+      <MemberSignature Language="F#" Value="member this.PlaySourceId : string with get, set" Usage="Azure.Communication.CallingServer.PlaySource.PlaySourceId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Defines the identifier to be used for caching related media. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceType">
+      <MemberSignature Language="C#" Value="public Azure.Communication.CallingServer.PlaySourceType SourceType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Azure.Communication.CallingServer.PlaySourceType SourceType" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallingServer.PlaySource.SourceType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceType As PlaySourceType" />
+      <MemberSignature Language="F#" Value="member this.SourceType : Azure.Communication.CallingServer.PlaySourceType" Usage="Azure.Communication.CallingServer.PlaySource.SourceType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Communication.CallingServer.PlaySourceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Defines the type of the play source. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

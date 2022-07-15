@@ -273,6 +273,184 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetMonitorPrivateEndpointConnection">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Monitor.MonitorPrivateEndpointConnectionResource&gt; GetMonitorPrivateEndpointConnection (string privateEndpointConnectionName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Monitor.MonitorPrivateEndpointConnectionResource&gt; GetMonitorPrivateEndpointConnection(string privateEndpointConnectionName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Monitor.PrivateLinkScopeResource.GetMonitorPrivateEndpointConnection(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMonitorPrivateEndpointConnection (privateEndpointConnectionName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of MonitorPrivateEndpointConnectionResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetMonitorPrivateEndpointConnection : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Monitor.MonitorPrivateEndpointConnectionResource&gt;&#xA;override this.GetMonitorPrivateEndpointConnection : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Monitor.MonitorPrivateEndpointConnectionResource&gt;" Usage="privateLinkScopeResource.GetMonitorPrivateEndpointConnection (privateEndpointConnectionName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Monitor.MonitorPrivateEndpointConnectionResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="privateEndpointConnectionName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="privateEndpointConnectionName"> The name of the private endpoint connection. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a private endpoint connection.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/privateLinkScopes/{scopeName}/privateEndpointConnections/{privateEndpointConnectionName}
+            Operation Id: PrivateEndpointConnections_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="privateEndpointConnectionName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="privateEndpointConnectionName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMonitorPrivateEndpointConnectionAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Monitor.MonitorPrivateEndpointConnectionResource&gt;&gt; GetMonitorPrivateEndpointConnectionAsync (string privateEndpointConnectionName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Monitor.MonitorPrivateEndpointConnectionResource&gt;&gt; GetMonitorPrivateEndpointConnectionAsync(string privateEndpointConnectionName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Monitor.PrivateLinkScopeResource.GetMonitorPrivateEndpointConnectionAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMonitorPrivateEndpointConnectionAsync (privateEndpointConnectionName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of MonitorPrivateEndpointConnectionResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetMonitorPrivateEndpointConnectionAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Monitor.MonitorPrivateEndpointConnectionResource&gt;&gt;&#xA;override this.GetMonitorPrivateEndpointConnectionAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Monitor.MonitorPrivateEndpointConnectionResource&gt;&gt;" Usage="privateLinkScopeResource.GetMonitorPrivateEndpointConnectionAsync (privateEndpointConnectionName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Monitor.MonitorPrivateEndpointConnectionResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="privateEndpointConnectionName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="privateEndpointConnectionName"> The name of the private endpoint connection. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a private endpoint connection.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/privateLinkScopes/{scopeName}/privateEndpointConnections/{privateEndpointConnectionName}
+            Operation Id: PrivateEndpointConnections_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="privateEndpointConnectionName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="privateEndpointConnectionName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMonitorPrivateEndpointConnections">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Monitor.MonitorPrivateEndpointConnectionCollection GetMonitorPrivateEndpointConnections ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Monitor.MonitorPrivateEndpointConnectionCollection GetMonitorPrivateEndpointConnections() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Monitor.PrivateLinkScopeResource.GetMonitorPrivateEndpointConnections" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMonitorPrivateEndpointConnections () As MonitorPrivateEndpointConnectionCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetMonitorPrivateEndpointConnections : unit -&gt; Azure.ResourceManager.Monitor.MonitorPrivateEndpointConnectionCollection&#xA;override this.GetMonitorPrivateEndpointConnections : unit -&gt; Azure.ResourceManager.Monitor.MonitorPrivateEndpointConnectionCollection" Usage="privateLinkScopeResource.GetMonitorPrivateEndpointConnections " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Monitor.MonitorPrivateEndpointConnectionCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> Gets a collection of MonitorPrivateEndpointConnectionResources in the PrivateLinkScope. </summary>
+        <returns> An object representing collection of MonitorPrivateEndpointConnectionResources and their operations over a MonitorPrivateEndpointConnectionResource. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMonitorPrivateLinkResource">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Monitor.MonitorPrivateLinkResource&gt; GetMonitorPrivateLinkResource (string groupName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Monitor.MonitorPrivateLinkResource&gt; GetMonitorPrivateLinkResource(string groupName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Monitor.PrivateLinkScopeResource.GetMonitorPrivateLinkResource(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMonitorPrivateLinkResource (groupName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of MonitorPrivateLinkResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetMonitorPrivateLinkResource : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Monitor.MonitorPrivateLinkResource&gt;&#xA;override this.GetMonitorPrivateLinkResource : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Monitor.MonitorPrivateLinkResource&gt;" Usage="privateLinkScopeResource.GetMonitorPrivateLinkResource (groupName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Monitor.MonitorPrivateLinkResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="groupName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="groupName"> The name of the private link resource. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the private link resources that need to be created for a Azure Monitor PrivateLinkScope.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/privateLinkScopes/{scopeName}/privateLinkResources/{groupName}
+            Operation Id: PrivateLinkResources_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="groupName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="groupName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMonitorPrivateLinkResourceAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Monitor.MonitorPrivateLinkResource&gt;&gt; GetMonitorPrivateLinkResourceAsync (string groupName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Monitor.MonitorPrivateLinkResource&gt;&gt; GetMonitorPrivateLinkResourceAsync(string groupName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Monitor.PrivateLinkScopeResource.GetMonitorPrivateLinkResourceAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMonitorPrivateLinkResourceAsync (groupName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of MonitorPrivateLinkResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetMonitorPrivateLinkResourceAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Monitor.MonitorPrivateLinkResource&gt;&gt;&#xA;override this.GetMonitorPrivateLinkResourceAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Monitor.MonitorPrivateLinkResource&gt;&gt;" Usage="privateLinkScopeResource.GetMonitorPrivateLinkResourceAsync (groupName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Monitor.MonitorPrivateLinkResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="groupName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="groupName"> The name of the private link resource. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the private link resources that need to be created for a Azure Monitor PrivateLinkScope.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/privateLinkScopes/{scopeName}/privateLinkResources/{groupName}
+            Operation Id: PrivateLinkResources_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="groupName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="groupName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMonitorPrivateLinkResources">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Monitor.MonitorPrivateLinkResourceCollection GetMonitorPrivateLinkResources ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Monitor.MonitorPrivateLinkResourceCollection GetMonitorPrivateLinkResources() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Monitor.PrivateLinkScopeResource.GetMonitorPrivateLinkResources" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMonitorPrivateLinkResources () As MonitorPrivateLinkResourceCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetMonitorPrivateLinkResources : unit -&gt; Azure.ResourceManager.Monitor.MonitorPrivateLinkResourceCollection&#xA;override this.GetMonitorPrivateLinkResources : unit -&gt; Azure.ResourceManager.Monitor.MonitorPrivateLinkResourceCollection" Usage="privateLinkScopeResource.GetMonitorPrivateLinkResources " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Monitor.MonitorPrivateLinkResourceCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> Gets a collection of MonitorPrivateLinkResources in the PrivateLinkScope. </summary>
+        <returns> An object representing collection of MonitorPrivateLinkResources and their operations over a MonitorPrivateLinkResource. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetPrivateEndpointConnection">
       <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Monitor.PrivateEndpointConnectionResource&gt; GetPrivateEndpointConnection (string privateEndpointConnectionName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Monitor.PrivateEndpointConnectionResource&gt; GetPrivateEndpointConnection(string privateEndpointConnectionName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -448,6 +626,95 @@
       <Docs>
         <summary> Gets a collection of PrivateLinkResources in the PrivateLinkScope. </summary>
         <returns> An object representing collection of PrivateLinkResources and their operations over a PrivateLinkResource. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPrivateLinkScopedResource">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Monitor.PrivateLinkScopedResource&gt; GetPrivateLinkScopedResource (string name, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Monitor.PrivateLinkScopedResource&gt; GetPrivateLinkScopedResource(string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Monitor.PrivateLinkScopeResource.GetPrivateLinkScopedResource(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPrivateLinkScopedResource (name As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of PrivateLinkScopedResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetPrivateLinkScopedResource : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Monitor.PrivateLinkScopedResource&gt;&#xA;override this.GetPrivateLinkScopedResource : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Monitor.PrivateLinkScopedResource&gt;" Usage="privateLinkScopeResource.GetPrivateLinkScopedResource (name, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Monitor.PrivateLinkScopedResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="name"> The name of the scoped resource object. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a scoped resource in a private link scope.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/privateLinkScopes/{scopeName}/scopedResources/{name}
+            Operation Id: PrivateLinkScopedResources_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPrivateLinkScopedResourceAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Monitor.PrivateLinkScopedResource&gt;&gt; GetPrivateLinkScopedResourceAsync (string name, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Monitor.PrivateLinkScopedResource&gt;&gt; GetPrivateLinkScopedResourceAsync(string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Monitor.PrivateLinkScopeResource.GetPrivateLinkScopedResourceAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPrivateLinkScopedResourceAsync (name As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of PrivateLinkScopedResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetPrivateLinkScopedResourceAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Monitor.PrivateLinkScopedResource&gt;&gt;&#xA;override this.GetPrivateLinkScopedResourceAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Monitor.PrivateLinkScopedResource&gt;&gt;" Usage="privateLinkScopeResource.GetPrivateLinkScopedResourceAsync (name, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Monitor.PrivateLinkScopedResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="name"> The name of the scoped resource object. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a scoped resource in a private link scope.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/privateLinkScopes/{scopeName}/scopedResources/{name}
+            Operation Id: PrivateLinkScopedResources_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPrivateLinkScopedResources">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Monitor.PrivateLinkScopedResourceCollection GetPrivateLinkScopedResources ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Monitor.PrivateLinkScopedResourceCollection GetPrivateLinkScopedResources() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Monitor.PrivateLinkScopeResource.GetPrivateLinkScopedResources" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPrivateLinkScopedResources () As PrivateLinkScopedResourceCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetPrivateLinkScopedResources : unit -&gt; Azure.ResourceManager.Monitor.PrivateLinkScopedResourceCollection&#xA;override this.GetPrivateLinkScopedResources : unit -&gt; Azure.ResourceManager.Monitor.PrivateLinkScopedResourceCollection" Usage="privateLinkScopeResource.GetPrivateLinkScopedResources " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Monitor.PrivateLinkScopedResourceCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> Gets a collection of PrivateLinkScopedResources in the PrivateLinkScope. </summary>
+        <returns> An object representing collection of PrivateLinkScopedResources and their operations over a PrivateLinkScopedResource. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -705,6 +972,70 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="tags" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Update">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Monitor.PrivateLinkScopeResource&gt; Update (Azure.ResourceManager.Monitor.Models.PrivateLinkScopePatch patch, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Monitor.PrivateLinkScopeResource&gt; Update(class Azure.ResourceManager.Monitor.Models.PrivateLinkScopePatch patch, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Monitor.PrivateLinkScopeResource.Update(Azure.ResourceManager.Monitor.Models.PrivateLinkScopePatch,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Update (patch As PrivateLinkScopePatch, Optional cancellationToken As CancellationToken = Nothing) As Response(Of PrivateLinkScopeResource)" />
+      <MemberSignature Language="F#" Value="abstract member Update : Azure.ResourceManager.Monitor.Models.PrivateLinkScopePatch * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Monitor.PrivateLinkScopeResource&gt;&#xA;override this.Update : Azure.ResourceManager.Monitor.Models.PrivateLinkScopePatch * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Monitor.PrivateLinkScopeResource&gt;" Usage="privateLinkScopeResource.Update (patch, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Monitor.PrivateLinkScopeResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="patch" Type="Azure.ResourceManager.Monitor.Models.PrivateLinkScopePatch" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="patch"> Updated tag information to set into the PrivateLinkScope instance. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Updates an existing PrivateLinkScope's tags. To update other fields use the CreateOrUpdate method.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/microsoft.insights/privateLinkScopes/{scopeName}
+            Operation Id: PrivateLinkScopes_UpdateTags
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="patch" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Monitor.PrivateLinkScopeResource&gt;&gt; UpdateAsync (Azure.ResourceManager.Monitor.Models.PrivateLinkScopePatch patch, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Monitor.PrivateLinkScopeResource&gt;&gt; UpdateAsync(class Azure.ResourceManager.Monitor.Models.PrivateLinkScopePatch patch, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Monitor.PrivateLinkScopeResource.UpdateAsync(Azure.ResourceManager.Monitor.Models.PrivateLinkScopePatch,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAsync (patch As PrivateLinkScopePatch, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of PrivateLinkScopeResource))" />
+      <MemberSignature Language="F#" Value="abstract member UpdateAsync : Azure.ResourceManager.Monitor.Models.PrivateLinkScopePatch * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Monitor.PrivateLinkScopeResource&gt;&gt;&#xA;override this.UpdateAsync : Azure.ResourceManager.Monitor.Models.PrivateLinkScopePatch * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Monitor.PrivateLinkScopeResource&gt;&gt;" Usage="privateLinkScopeResource.UpdateAsync (patch, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Monitor.PrivateLinkScopeResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="patch" Type="Azure.ResourceManager.Monitor.Models.PrivateLinkScopePatch" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="patch"> Updated tag information to set into the PrivateLinkScope instance. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Updates an existing PrivateLinkScope's tags. To update other fields use the CreateOrUpdate method.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/microsoft.insights/privateLinkScopes/{scopeName}
+            Operation Id: PrivateLinkScopes_UpdateTags
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="patch" /> is null. </exception>
       </Docs>
     </Member>
   </Members>

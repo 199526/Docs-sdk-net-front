@@ -94,18 +94,18 @@
       </Docs>
     </Member>
     <Member MemberName="ResourceId">
-      <MemberSignature Language="C#" Value="public string ResourceId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string ResourceId" />
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier ResourceId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier ResourceId" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Monitor.VmInsightsOnboardingStatusData.ResourceId" />
-      <MemberSignature Language="VB.NET" Value="Public Property ResourceId As String" />
-      <MemberSignature Language="F#" Value="member this.ResourceId : string with get, set" Usage="Azure.ResourceManager.Monitor.VmInsightsOnboardingStatusData.ResourceId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResourceId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.ResourceId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Monitor.VmInsightsOnboardingStatusData.ResourceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Azure Resource Manager identifier of the resource whose onboarding status is being represented. </summary>

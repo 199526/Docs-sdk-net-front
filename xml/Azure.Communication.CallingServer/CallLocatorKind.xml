@@ -1,0 +1,270 @@
+<Type Name="CallLocatorKind" FullName="Azure.Communication.CallingServer.CallLocatorKind">
+  <TypeSignature Language="C#" Value="public readonly struct CallLocatorKind : IEquatable&lt;Azure.Communication.CallingServer.CallLocatorKind&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit CallLocatorKind extends System.ValueType implements class System.IEquatable`1&lt;valuetype Azure.Communication.CallingServer.CallLocatorKind&gt;" />
+  <TypeSignature Language="DocId" Value="T:Azure.Communication.CallingServer.CallLocatorKind" />
+  <TypeSignature Language="VB.NET" Value="Public Structure CallLocatorKind&#xA;Implements IEquatable(Of CallLocatorKind)" />
+  <TypeSignature Language="F#" Value="type CallLocatorKind = struct" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;Azure.Communication.CallingServer.CallLocatorKind&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary> The call locator kind. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CallLocatorKind (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.CallLocatorKind.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As String)" />
+      <MemberSignature Language="F#" Value="new Azure.Communication.CallingServer.CallLocatorKind : string -&gt; Azure.Communication.CallingServer.CallLocatorKind" Usage="new Azure.Communication.CallingServer.CallLocatorKind value" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary> Initializes a new instance of <see cref="T:Azure.Communication.CallingServer.CallLocatorKind" />. </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (Azure.Communication.CallingServer.CallLocatorKind other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype Azure.Communication.CallingServer.CallLocatorKind other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.CallLocatorKind.Equals(Azure.Communication.CallingServer.CallLocatorKind)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As CallLocatorKind) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : Azure.Communication.CallingServer.CallLocatorKind -&gt; bool" Usage="callLocatorKind.Equals other" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="Azure.Communication.CallingServer.CallLocatorKind" />
+      </Parameters>
+      <Docs>
+        <param name="other">An object to compare with this object.</param>
+        <summary>Indicates whether the current object is equal to another object of the same type.</summary>
+        <returns>
+          <see langword="true" /> if the current object is equal to the <paramref name="other" /> parameter; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.CallLocatorKind.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="callLocatorKind.Equals obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to compare with the current instance.</param>
+        <summary>Indicates whether this instance and a specified object are equal.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> and this instance are the same type and represent the same value; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.CallLocatorKind.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="callLocatorKind.GetHashCode " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>A 32-bit signed integer that is the hash code for this instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupCallLocator">
+      <MemberSignature Language="C#" Value="public static Azure.Communication.CallingServer.CallLocatorKind GroupCallLocator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.Communication.CallingServer.CallLocatorKind GroupCallLocator" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallingServer.CallLocatorKind.GroupCallLocator" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property GroupCallLocator As CallLocatorKind" />
+      <MemberSignature Language="F#" Value="member this.GroupCallLocator : Azure.Communication.CallingServer.CallLocatorKind" Usage="Azure.Communication.CallingServer.CallLocatorKind.GroupCallLocator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Communication.CallingServer.CallLocatorKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> groupCallLocator. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool operator == (Azure.Communication.CallingServer.CallLocatorKind left, Azure.Communication.CallingServer.CallLocatorKind right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype Azure.Communication.CallingServer.CallLocatorKind left, valuetype Azure.Communication.CallingServer.CallLocatorKind right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.CallLocatorKind.op_Equality(Azure.Communication.CallingServer.CallLocatorKind,Azure.Communication.CallingServer.CallLocatorKind)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As CallLocatorKind, right As CallLocatorKind) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : Azure.Communication.CallingServer.CallLocatorKind * Azure.Communication.CallingServer.CallLocatorKind -&gt; bool" Usage="left = right" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="Azure.Communication.CallingServer.CallLocatorKind" />
+        <Parameter Name="right" Type="Azure.Communication.CallingServer.CallLocatorKind" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary> Determines if two <see cref="T:Azure.Communication.CallingServer.CallLocatorKind" /> values are the same. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Azure.Communication.CallingServer.CallLocatorKind (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Azure.Communication.CallingServer.CallLocatorKind op_Implicit(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.CallLocatorKind.op_Implicit(System.String)~Azure.Communication.CallingServer.CallLocatorKind" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As String) As CallLocatorKind" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : string -&gt; Azure.Communication.CallingServer.CallLocatorKind" Usage="Azure.Communication.CallingServer.CallLocatorKind.op_Implicit value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Communication.CallingServer.CallLocatorKind</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary> Converts a string to a <see cref="T:Azure.Communication.CallingServer.CallLocatorKind" />. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool operator != (Azure.Communication.CallingServer.CallLocatorKind left, Azure.Communication.CallingServer.CallLocatorKind right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype Azure.Communication.CallingServer.CallLocatorKind left, valuetype Azure.Communication.CallingServer.CallLocatorKind right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.CallLocatorKind.op_Inequality(Azure.Communication.CallingServer.CallLocatorKind,Azure.Communication.CallingServer.CallLocatorKind)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As CallLocatorKind, right As CallLocatorKind) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : Azure.Communication.CallingServer.CallLocatorKind * Azure.Communication.CallingServer.CallLocatorKind -&gt; bool" Usage="Azure.Communication.CallingServer.CallLocatorKind.op_Inequality (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="Azure.Communication.CallingServer.CallLocatorKind" />
+        <Parameter Name="right" Type="Azure.Communication.CallingServer.CallLocatorKind" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary> Determines if two <see cref="T:Azure.Communication.CallingServer.CallLocatorKind" /> values are not the same. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerCallLocator">
+      <MemberSignature Language="C#" Value="public static Azure.Communication.CallingServer.CallLocatorKind ServerCallLocator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.Communication.CallingServer.CallLocatorKind ServerCallLocator" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallingServer.CallLocatorKind.ServerCallLocator" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ServerCallLocator As CallLocatorKind" />
+      <MemberSignature Language="F#" Value="member this.ServerCallLocator : Azure.Communication.CallingServer.CallLocatorKind" Usage="Azure.Communication.CallingServer.CallLocatorKind.ServerCallLocator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Communication.CallingServer.CallLocatorKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> serverCallLocator. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.CallLocatorKind.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="callLocatorKind.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the fully qualified type name of this instance.</summary>
+        <returns>The fully qualified type name.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

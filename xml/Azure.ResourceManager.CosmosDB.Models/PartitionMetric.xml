@@ -1,15 +1,15 @@
 <Type Name="PartitionMetric" FullName="Azure.ResourceManager.CosmosDB.Models.PartitionMetric">
-  <TypeSignature Language="C#" Value="public class PartitionMetric : Azure.ResourceManager.CosmosDB.Models.BaseMetric" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PartitionMetric extends Azure.ResourceManager.CosmosDB.Models.BaseMetric" />
+  <TypeSignature Language="C#" Value="public class PartitionMetric : Azure.ResourceManager.CosmosDB.Models.CosmosDBBaseMetric" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PartitionMetric extends Azure.ResourceManager.CosmosDB.Models.CosmosDBBaseMetric" />
   <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.CosmosDB.Models.PartitionMetric" />
-  <TypeSignature Language="VB.NET" Value="Public Class PartitionMetric&#xA;Inherits BaseMetric" />
-  <TypeSignature Language="F#" Value="type PartitionMetric = class&#xA;    inherit BaseMetric" />
+  <TypeSignature Language="VB.NET" Value="Public Class PartitionMetric&#xA;Inherits CosmosDBBaseMetric" />
+  <TypeSignature Language="F#" Value="type PartitionMetric = class&#xA;    inherit CosmosDBBaseMetric" />
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.ResourceManager.CosmosDB.Models.BaseMetric</BaseTypeName>
+    <BaseTypeName>Azure.ResourceManager.CosmosDB.Models.CosmosDBBaseMetric</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>

@@ -93,6 +93,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="CreatedOn">
+      <MemberSignature Language="C#" Value="public DateTimeOffset? CreatedOn { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; CreatedOn" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.SqlDatabasePatch.CreatedOn" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CreatedOn As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.CreatedOn : Nullable&lt;DateTimeOffset&gt;" Usage="Azure.ResourceManager.Sql.Models.SqlDatabasePatch.CreatedOn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The creation date of the database (ISO8601 format). </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CreateMode">
       <MemberSignature Language="C#" Value="public Azure.ResourceManager.Sql.Models.CreateMode? CreateMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Sql.Models.CreateMode&gt; CreateMode" />
@@ -232,18 +252,18 @@
       </Docs>
     </Member>
     <Member MemberName="DefaultSecondaryLocation">
-      <MemberSignature Language="C#" Value="public string DefaultSecondaryLocation { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string DefaultSecondaryLocation" />
+      <MemberSignature Language="C#" Value="public Azure.Core.AzureLocation? DefaultSecondaryLocation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.Core.AzureLocation&gt; DefaultSecondaryLocation" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.SqlDatabasePatch.DefaultSecondaryLocation" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultSecondaryLocation As String" />
-      <MemberSignature Language="F#" Value="member this.DefaultSecondaryLocation : string" Usage="Azure.ResourceManager.Sql.Models.SqlDatabasePatch.DefaultSecondaryLocation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultSecondaryLocation As Nullable(Of AzureLocation)" />
+      <MemberSignature Language="F#" Value="member this.DefaultSecondaryLocation : Nullable&lt;Azure.Core.AzureLocation&gt;" Usage="Azure.ResourceManager.Sql.Models.SqlDatabasePatch.DefaultSecondaryLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>System.Nullable&lt;Azure.Core.AzureLocation&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The default secondary region for this database. </summary>
@@ -272,18 +292,18 @@
       </Docs>
     </Member>
     <Member MemberName="ElasticPoolId">
-      <MemberSignature Language="C#" Value="public string ElasticPoolId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string ElasticPoolId" />
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier ElasticPoolId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier ElasticPoolId" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.SqlDatabasePatch.ElasticPoolId" />
-      <MemberSignature Language="VB.NET" Value="Public Property ElasticPoolId As String" />
-      <MemberSignature Language="F#" Value="member this.ElasticPoolId : string with get, set" Usage="Azure.ResourceManager.Sql.Models.SqlDatabasePatch.ElasticPoolId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ElasticPoolId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.ElasticPoolId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Sql.Models.SqlDatabasePatch.ElasticPoolId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The resource identifier of the elastic pool containing this database. </summary>
@@ -432,18 +452,18 @@
       </Docs>
     </Member>
     <Member MemberName="LongTermRetentionBackupResourceId">
-      <MemberSignature Language="C#" Value="public string LongTermRetentionBackupResourceId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string LongTermRetentionBackupResourceId" />
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier LongTermRetentionBackupResourceId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier LongTermRetentionBackupResourceId" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.SqlDatabasePatch.LongTermRetentionBackupResourceId" />
-      <MemberSignature Language="VB.NET" Value="Public Property LongTermRetentionBackupResourceId As String" />
-      <MemberSignature Language="F#" Value="member this.LongTermRetentionBackupResourceId : string with get, set" Usage="Azure.ResourceManager.Sql.Models.SqlDatabasePatch.LongTermRetentionBackupResourceId" />
+      <MemberSignature Language="VB.NET" Value="Public Property LongTermRetentionBackupResourceId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.LongTermRetentionBackupResourceId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Sql.Models.SqlDatabasePatch.LongTermRetentionBackupResourceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The resource identifier of the long term retention backup associated with create operation of this database. </summary>
@@ -452,18 +472,18 @@
       </Docs>
     </Member>
     <Member MemberName="MaintenanceConfigurationId">
-      <MemberSignature Language="C#" Value="public string MaintenanceConfigurationId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string MaintenanceConfigurationId" />
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier MaintenanceConfigurationId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier MaintenanceConfigurationId" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.SqlDatabasePatch.MaintenanceConfigurationId" />
-      <MemberSignature Language="VB.NET" Value="Public Property MaintenanceConfigurationId As String" />
-      <MemberSignature Language="F#" Value="member this.MaintenanceConfigurationId : string with get, set" Usage="Azure.ResourceManager.Sql.Models.SqlDatabasePatch.MaintenanceConfigurationId" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaintenanceConfigurationId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.MaintenanceConfigurationId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Sql.Models.SqlDatabasePatch.MaintenanceConfigurationId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Maintenance configuration id assigned to the database. This configuration defines the period when the maintenance updates will occur. </summary>
@@ -572,18 +592,18 @@
       </Docs>
     </Member>
     <Member MemberName="RecoverableDatabaseId">
-      <MemberSignature Language="C#" Value="public string RecoverableDatabaseId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string RecoverableDatabaseId" />
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier RecoverableDatabaseId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier RecoverableDatabaseId" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.SqlDatabasePatch.RecoverableDatabaseId" />
-      <MemberSignature Language="VB.NET" Value="Public Property RecoverableDatabaseId As String" />
-      <MemberSignature Language="F#" Value="member this.RecoverableDatabaseId : string with get, set" Usage="Azure.ResourceManager.Sql.Models.SqlDatabasePatch.RecoverableDatabaseId" />
+      <MemberSignature Language="VB.NET" Value="Public Property RecoverableDatabaseId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.RecoverableDatabaseId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Sql.Models.SqlDatabasePatch.RecoverableDatabaseId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The resource identifier of the recoverable database associated with create operation of this database. </summary>
@@ -592,18 +612,18 @@
       </Docs>
     </Member>
     <Member MemberName="RecoveryServicesRecoveryPointId">
-      <MemberSignature Language="C#" Value="public string RecoveryServicesRecoveryPointId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string RecoveryServicesRecoveryPointId" />
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier RecoveryServicesRecoveryPointId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier RecoveryServicesRecoveryPointId" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.SqlDatabasePatch.RecoveryServicesRecoveryPointId" />
-      <MemberSignature Language="VB.NET" Value="Public Property RecoveryServicesRecoveryPointId As String" />
-      <MemberSignature Language="F#" Value="member this.RecoveryServicesRecoveryPointId : string with get, set" Usage="Azure.ResourceManager.Sql.Models.SqlDatabasePatch.RecoveryServicesRecoveryPointId" />
+      <MemberSignature Language="VB.NET" Value="Public Property RecoveryServicesRecoveryPointId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.RecoveryServicesRecoveryPointId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Sql.Models.SqlDatabasePatch.RecoveryServicesRecoveryPointId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The resource identifier of the recovery point associated with create operation of this database. </summary>
@@ -652,18 +672,18 @@
       </Docs>
     </Member>
     <Member MemberName="RestorableDroppedDatabaseId">
-      <MemberSignature Language="C#" Value="public string RestorableDroppedDatabaseId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string RestorableDroppedDatabaseId" />
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier RestorableDroppedDatabaseId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier RestorableDroppedDatabaseId" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.SqlDatabasePatch.RestorableDroppedDatabaseId" />
-      <MemberSignature Language="VB.NET" Value="Public Property RestorableDroppedDatabaseId As String" />
-      <MemberSignature Language="F#" Value="member this.RestorableDroppedDatabaseId : string with get, set" Usage="Azure.ResourceManager.Sql.Models.SqlDatabasePatch.RestorableDroppedDatabaseId" />
+      <MemberSignature Language="VB.NET" Value="Public Property RestorableDroppedDatabaseId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.RestorableDroppedDatabaseId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Sql.Models.SqlDatabasePatch.RestorableDroppedDatabaseId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The resource identifier of the restorable dropped database associated with create operation of this database. </summary>
@@ -677,6 +697,26 @@
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.SqlDatabasePatch.RestorePointInOn" />
       <MemberSignature Language="VB.NET" Value="Public Property RestorePointInOn As Nullable(Of DateTimeOffset)" />
       <MemberSignature Language="F#" Value="member this.RestorePointInOn : Nullable&lt;DateTimeOffset&gt; with get, set" Usage="Azure.ResourceManager.Sql.Models.SqlDatabasePatch.RestorePointInOn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Specifies the point in time (ISO8601 format) of the source database that will be restored to create the new database. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RestorePointInTime">
+      <MemberSignature Language="C#" Value="public DateTimeOffset? RestorePointInTime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; RestorePointInTime" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.SqlDatabasePatch.RestorePointInTime" />
+      <MemberSignature Language="VB.NET" Value="Public Property RestorePointInTime As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.RestorePointInTime : Nullable&lt;DateTimeOffset&gt; with get, set" Usage="Azure.ResourceManager.Sql.Models.SqlDatabasePatch.RestorePointInTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
@@ -771,6 +811,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="SourceDatabaseDeletedOn">
+      <MemberSignature Language="C#" Value="public DateTimeOffset? SourceDatabaseDeletedOn { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; SourceDatabaseDeletedOn" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.SqlDatabasePatch.SourceDatabaseDeletedOn" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceDatabaseDeletedOn As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.SourceDatabaseDeletedOn : Nullable&lt;DateTimeOffset&gt; with get, set" Usage="Azure.ResourceManager.Sql.Models.SqlDatabasePatch.SourceDatabaseDeletedOn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Specifies the time that the database was deleted. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SourceDatabaseDeletionOn">
       <MemberSignature Language="C#" Value="public DateTimeOffset? SourceDatabaseDeletionOn { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; SourceDatabaseDeletionOn" />
@@ -792,18 +852,18 @@
       </Docs>
     </Member>
     <Member MemberName="SourceDatabaseId">
-      <MemberSignature Language="C#" Value="public string SourceDatabaseId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string SourceDatabaseId" />
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier SourceDatabaseId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier SourceDatabaseId" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.SqlDatabasePatch.SourceDatabaseId" />
-      <MemberSignature Language="VB.NET" Value="Public Property SourceDatabaseId As String" />
-      <MemberSignature Language="F#" Value="member this.SourceDatabaseId : string with get, set" Usage="Azure.ResourceManager.Sql.Models.SqlDatabasePatch.SourceDatabaseId" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceDatabaseId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.SourceDatabaseId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Sql.Models.SqlDatabasePatch.SourceDatabaseId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The resource identifier of the source database associated with create operation of this database. </summary>

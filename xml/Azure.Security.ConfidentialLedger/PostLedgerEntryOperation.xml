@@ -14,7 +14,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            Tracks the status of a call to <see cref="M:Azure.Security.ConfidentialLedger.ConfidentialLedgerClient.PostLedgerEntry(Azure.Core.RequestContent,System.String,System.Boolean,Azure.RequestContext)" /> and <see cref="M:Azure.Security.ConfidentialLedger.ConfidentialLedgerClient.PostLedgerEntryAsync(Azure.Core.RequestContent,System.String,System.Boolean,Azure.RequestContext)" />
+            Tracks the status of a call to <see cref="M:Azure.Security.ConfidentialLedger.ConfidentialLedgerClient.PostLedgerEntry(Azure.WaitUntil,Azure.Core.RequestContent,System.String,Azure.RequestContext)" /> and <see cref="M:Azure.Security.ConfidentialLedger.ConfidentialLedgerClient.PostLedgerEntryAsync(Azure.WaitUntil,Azure.Core.RequestContent,System.String,Azure.RequestContext)" />
             until completion.
             </summary>
     <remarks>To be added.</remarks>
@@ -56,7 +56,7 @@
       <Docs>
         <param name="client"> Tje <see cref="T:Azure.Security.ConfidentialLedger.ConfidentialLedgerClient" />. </param>
         <param name="transactionId"> The transaction id from a previous call to
-            <see cref="M:Azure.Security.ConfidentialLedger.ConfidentialLedgerClient.PostLedgerEntry(Azure.Core.RequestContent,System.String,System.Boolean,Azure.RequestContext)" />.</param>
+            <see cref="M:Azure.Security.ConfidentialLedger.ConfidentialLedgerClient.PostLedgerEntry(Azure.WaitUntil,Azure.Core.RequestContent,System.String,Azure.RequestContext)" />.</param>
         <summary>
             Initializes a previously run operation with the given <paramref name="transactionId" />.
             </summary>
@@ -68,7 +68,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Azure.Response GetRawResponse() cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Security.ConfidentialLedger.PostLedgerEntryOperation.GetRawResponse" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetRawResponse () As Response" />
-      <MemberSignature Language="F#" Value="abstract member GetRawResponse : unit -&gt; Azure.Response&#xA;override this.GetRawResponse : unit -&gt; Azure.Response" Usage="postLedgerEntryOperation.GetRawResponse " />
+      <MemberSignature Language="F#" Value="override this.GetRawResponse : unit -&gt; Azure.Response" Usage="postLedgerEntryOperation.GetRawResponse " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Security.ConfidentialLedger</AssemblyName>
@@ -139,7 +139,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Azure.Response UpdateStatus(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Security.ConfidentialLedger.PostLedgerEntryOperation.UpdateStatus(System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function UpdateStatus (Optional cancellationToken As CancellationToken = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="abstract member UpdateStatus : System.Threading.CancellationToken -&gt; Azure.Response&#xA;override this.UpdateStatus : System.Threading.CancellationToken -&gt; Azure.Response" Usage="postLedgerEntryOperation.UpdateStatus cancellationToken" />
+      <MemberSignature Language="F#" Value="override this.UpdateStatus : System.Threading.CancellationToken -&gt; Azure.Response" Usage="postLedgerEntryOperation.UpdateStatus cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Security.ConfidentialLedger</AssemblyName>
@@ -167,7 +167,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Threading.Tasks.ValueTask`1&lt;class Azure.Response&gt; UpdateStatusAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Security.ConfidentialLedger.PostLedgerEntryOperation.UpdateStatusAsync(System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function UpdateStatusAsync (Optional cancellationToken As CancellationToken = Nothing) As ValueTask(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member UpdateStatusAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;Azure.Response&gt;&#xA;override this.UpdateStatusAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;Azure.Response&gt;" Usage="postLedgerEntryOperation.UpdateStatusAsync cancellationToken" />
+      <MemberSignature Language="F#" Value="override this.UpdateStatusAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;Azure.Response&gt;" Usage="postLedgerEntryOperation.UpdateStatusAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Security.ConfidentialLedger</AssemblyName>

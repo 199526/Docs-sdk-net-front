@@ -74,18 +74,18 @@
       </Docs>
     </Member>
     <Member MemberName="MaintenanceConfigurationId">
-      <MemberSignature Language="C#" Value="public string MaintenanceConfigurationId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string MaintenanceConfigurationId" />
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier MaintenanceConfigurationId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier MaintenanceConfigurationId" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ElasticPoolPatch.MaintenanceConfigurationId" />
-      <MemberSignature Language="VB.NET" Value="Public Property MaintenanceConfigurationId As String" />
-      <MemberSignature Language="F#" Value="member this.MaintenanceConfigurationId : string with get, set" Usage="Azure.ResourceManager.Sql.Models.ElasticPoolPatch.MaintenanceConfigurationId" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaintenanceConfigurationId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.MaintenanceConfigurationId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Sql.Models.ElasticPoolPatch.MaintenanceConfigurationId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Maintenance configuration id assigned to the elastic pool. This configuration defines the period when the maintenance updates will will occur. </summary>

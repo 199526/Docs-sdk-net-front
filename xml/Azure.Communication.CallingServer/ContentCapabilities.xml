@@ -1,0 +1,139 @@
+<Type Name="ContentCapabilities" FullName="Azure.Communication.CallingServer.ContentCapabilities">
+  <TypeSignature Language="C#" Value="public class ContentCapabilities" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContentCapabilities extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.Communication.CallingServer.ContentCapabilities" />
+  <TypeSignature Language="VB.NET" Value="Public Class ContentCapabilities" />
+  <TypeSignature Language="F#" Value="type ContentCapabilities = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Content Capabilities for the call.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Play">
+      <MemberSignature Language="C#" Value="public Azure.Response&lt;Azure.Communication.CallingServer.PlayResponse&gt; Play (Azure.Communication.CallingServer.PlaySource playSource, System.Collections.Generic.IEnumerable&lt;Azure.Communication.CommunicationIdentifier&gt; playTo, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Azure.Response`1&lt;class Azure.Communication.CallingServer.PlayResponse&gt; Play(class Azure.Communication.CallingServer.PlaySource playSource, class System.Collections.Generic.IEnumerable`1&lt;class Azure.Communication.CommunicationIdentifier&gt; playTo, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.ContentCapabilities.Play(Azure.Communication.CallingServer.PlaySource,System.Collections.Generic.IEnumerable{Azure.Communication.CommunicationIdentifier},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Play (playSource As PlaySource, playTo As IEnumerable(Of CommunicationIdentifier), Optional cancellationToken As CancellationToken = Nothing) As Response(Of PlayResponse)" />
+      <MemberSignature Language="F#" Value="member this.Play : Azure.Communication.CallingServer.PlaySource * seq&lt;Azure.Communication.CommunicationIdentifier&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Communication.CallingServer.PlayResponse&gt;" Usage="contentCapabilities.Play (playSource, playTo, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.Communication.CallingServer.PlayResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="playSource" Type="Azure.Communication.CallingServer.PlaySource" />
+        <Parameter Name="playTo" Type="System.Collections.Generic.IEnumerable&lt;Azure.Communication.CommunicationIdentifier&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="playSource" />
+        <param name="cancellationToken" />
+        <param name="playTo" />
+        <summary>
+            Plays a file.
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlayAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Communication.CallingServer.PlayResponse&gt;&gt; PlayAsync (Azure.Communication.CallingServer.PlaySource playSource, System.Collections.Generic.IEnumerable&lt;Azure.Communication.CommunicationIdentifier&gt; playTo, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Communication.CallingServer.PlayResponse&gt;&gt; PlayAsync(class Azure.Communication.CallingServer.PlaySource playSource, class System.Collections.Generic.IEnumerable`1&lt;class Azure.Communication.CommunicationIdentifier&gt; playTo, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.ContentCapabilities.PlayAsync(Azure.Communication.CallingServer.PlaySource,System.Collections.Generic.IEnumerable{Azure.Communication.CommunicationIdentifier},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PlayAsync (playSource As PlaySource, playTo As IEnumerable(Of CommunicationIdentifier), Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of PlayResponse))" />
+      <MemberSignature Language="F#" Value="member this.PlayAsync : Azure.Communication.CallingServer.PlaySource * seq&lt;Azure.Communication.CommunicationIdentifier&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Communication.CallingServer.PlayResponse&gt;&gt;" Usage="contentCapabilities.PlayAsync (playSource, playTo, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Communication.CallingServer.PlayResponse&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="playSource" Type="Azure.Communication.CallingServer.PlaySource" />
+        <Parameter Name="playTo" Type="System.Collections.Generic.IEnumerable&lt;Azure.Communication.CommunicationIdentifier&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="playSource" />
+        <param name="cancellationToken" />
+        <param name="playTo" />
+        <summary>
+            Plays a file async.
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlayToAll">
+      <MemberSignature Language="C#" Value="public Azure.Response&lt;Azure.Communication.CallingServer.PlayResponse&gt; PlayToAll (Azure.Communication.CallingServer.PlaySource playSource, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Azure.Response`1&lt;class Azure.Communication.CallingServer.PlayResponse&gt; PlayToAll(class Azure.Communication.CallingServer.PlaySource playSource, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.ContentCapabilities.PlayToAll(Azure.Communication.CallingServer.PlaySource,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PlayToAll (playSource As PlaySource, Optional cancellationToken As CancellationToken = Nothing) As Response(Of PlayResponse)" />
+      <MemberSignature Language="F#" Value="member this.PlayToAll : Azure.Communication.CallingServer.PlaySource * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Communication.CallingServer.PlayResponse&gt;" Usage="contentCapabilities.PlayToAll (playSource, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.Communication.CallingServer.PlayResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="playSource" Type="Azure.Communication.CallingServer.PlaySource" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="playSource" />
+        <param name="cancellationToken" />
+        <summary>
+            Play to all participants.
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlayToAllAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Communication.CallingServer.PlayResponse&gt;&gt; PlayToAllAsync (Azure.Communication.CallingServer.PlaySource playSource, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Communication.CallingServer.PlayResponse&gt;&gt; PlayToAllAsync(class Azure.Communication.CallingServer.PlaySource playSource, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.ContentCapabilities.PlayToAllAsync(Azure.Communication.CallingServer.PlaySource,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PlayToAllAsync (playSource As PlaySource, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of PlayResponse))" />
+      <MemberSignature Language="F#" Value="member this.PlayToAllAsync : Azure.Communication.CallingServer.PlaySource * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Communication.CallingServer.PlayResponse&gt;&gt;" Usage="contentCapabilities.PlayToAllAsync (playSource, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Communication.CallingServer.PlayResponse&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="playSource" Type="Azure.Communication.CallingServer.PlaySource" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="playSource" />
+        <param name="cancellationToken" />
+        <summary>
+            Play to all participants async.
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,107 @@
+<Type Name="TransferCallOptions" FullName="Azure.Communication.CallingServer.TransferCallOptions">
+  <TypeSignature Language="C#" Value="public class TransferCallOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TransferCallOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.Communication.CallingServer.TransferCallOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class TransferCallOptions" />
+  <TypeSignature Language="F#" Value="type TransferCallOptions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> The options for transfering a call. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TransferCallOptions (Azure.Communication.PhoneNumberIdentifier alternateCallerId, string userToUserInformation, string operationContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Azure.Communication.PhoneNumberIdentifier alternateCallerId, string userToUserInformation, string operationContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.TransferCallOptions.#ctor(Azure.Communication.PhoneNumberIdentifier,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (alternateCallerId As PhoneNumberIdentifier, userToUserInformation As String, operationContext As String)" />
+      <MemberSignature Language="F#" Value="new Azure.Communication.CallingServer.TransferCallOptions : Azure.Communication.PhoneNumberIdentifier * string * string -&gt; Azure.Communication.CallingServer.TransferCallOptions" Usage="new Azure.Communication.CallingServer.TransferCallOptions (alternateCallerId, userToUserInformation, operationContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="alternateCallerId" Type="Azure.Communication.PhoneNumberIdentifier" />
+        <Parameter Name="userToUserInformation" Type="System.String" />
+        <Parameter Name="operationContext" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="alternateCallerId">The alternate caller id of the source</param>
+        <param name="userToUserInformation">The userToUserInformation.</param>
+        <param name="operationContext">The operationContext for this transfer call.</param>
+        <summary>
+            Transfer Call Options.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AlternateCallerId">
+      <MemberSignature Language="C#" Value="public Azure.Communication.PhoneNumberIdentifier AlternateCallerId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Communication.PhoneNumberIdentifier AlternateCallerId" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallingServer.TransferCallOptions.AlternateCallerId" />
+      <MemberSignature Language="VB.NET" Value="Public Property AlternateCallerId As PhoneNumberIdentifier" />
+      <MemberSignature Language="F#" Value="member this.AlternateCallerId : Azure.Communication.PhoneNumberIdentifier with get, set" Usage="Azure.Communication.CallingServer.TransferCallOptions.AlternateCallerId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Communication.PhoneNumberIdentifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The alternate caller id of the source. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OperationContext">
+      <MemberSignature Language="C#" Value="public string OperationContext { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OperationContext" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallingServer.TransferCallOptions.OperationContext" />
+      <MemberSignature Language="VB.NET" Value="Public Property OperationContext As String" />
+      <MemberSignature Language="F#" Value="member this.OperationContext : string with get, set" Usage="Azure.Communication.CallingServer.TransferCallOptions.OperationContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The operationContext for this transfer call. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserToUserInformation">
+      <MemberSignature Language="C#" Value="public string UserToUserInformation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UserToUserInformation" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallingServer.TransferCallOptions.UserToUserInformation" />
+      <MemberSignature Language="VB.NET" Value="Public Property UserToUserInformation As String" />
+      <MemberSignature Language="F#" Value="member this.UserToUserInformation : string with get, set" Usage="Azure.Communication.CallingServer.TransferCallOptions.UserToUserInformation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The UserToUserInformation. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

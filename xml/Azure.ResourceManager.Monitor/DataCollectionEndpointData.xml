@@ -37,6 +37,46 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ConfigurationAccessEndpoint">
+      <MemberSignature Language="C#" Value="public string ConfigurationAccessEndpoint { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConfigurationAccessEndpoint" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Monitor.DataCollectionEndpointData.ConfigurationAccessEndpoint" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConfigurationAccessEndpoint As String" />
+      <MemberSignature Language="F#" Value="member this.ConfigurationAccessEndpoint : string" Usage="Azure.ResourceManager.Monitor.DataCollectionEndpointData.ConfigurationAccessEndpoint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The endpoint. This property is READ-ONLY. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Monitor.DataCollectionEndpointData.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
+      <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="Azure.ResourceManager.Monitor.DataCollectionEndpointData.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Description of the data collection endpoint. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Etag">
       <MemberSignature Language="C#" Value="public string Etag { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Etag" />
@@ -53,6 +93,46 @@
       </ReturnValue>
       <Docs>
         <summary> Resource entity tag (ETag). </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ETag">
+      <MemberSignature Language="C#" Value="public Azure.ETag? ETag { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ETag&gt; ETag" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Monitor.DataCollectionEndpointData.ETag" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ETag As Nullable(Of ETag)" />
+      <MemberSignature Language="F#" Value="member this.ETag : Nullable&lt;Azure.ETag&gt;" Usage="Azure.ResourceManager.Monitor.DataCollectionEndpointData.ETag" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ETag&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Resource entity tag (ETag). </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImmutableId">
+      <MemberSignature Language="C#" Value="public string ImmutableId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ImmutableId" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Monitor.DataCollectionEndpointData.ImmutableId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImmutableId As String" />
+      <MemberSignature Language="F#" Value="member this.ImmutableId : string with get, set" Usage="Azure.ResourceManager.Monitor.DataCollectionEndpointData.ImmutableId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The immutable ID of this data collection endpoint resource. This property is READ-ONLY. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -77,6 +157,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="LogsIngestionEndpoint">
+      <MemberSignature Language="C#" Value="public string LogsIngestionEndpoint { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LogsIngestionEndpoint" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Monitor.DataCollectionEndpointData.LogsIngestionEndpoint" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LogsIngestionEndpoint As String" />
+      <MemberSignature Language="F#" Value="member this.LogsIngestionEndpoint : string" Usage="Azure.ResourceManager.Monitor.DataCollectionEndpointData.LogsIngestionEndpoint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The endpoint. This property is READ-ONLY. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Properties">
       <MemberSignature Language="C#" Value="public Azure.ResourceManager.Monitor.Models.DataCollectionEndpointProperties Properties { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Monitor.Models.DataCollectionEndpointProperties Properties" />
@@ -93,6 +193,46 @@
       </ReturnValue>
       <Docs>
         <summary> Resource properties. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProvisioningState">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Monitor.Models.KnownDataCollectionEndpointProvisioningState? ProvisioningState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Monitor.Models.KnownDataCollectionEndpointProvisioningState&gt; ProvisioningState" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Monitor.DataCollectionEndpointData.ProvisioningState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProvisioningState As Nullable(Of KnownDataCollectionEndpointProvisioningState)" />
+      <MemberSignature Language="F#" Value="member this.ProvisioningState : Nullable&lt;Azure.ResourceManager.Monitor.Models.KnownDataCollectionEndpointProvisioningState&gt;" Usage="Azure.ResourceManager.Monitor.DataCollectionEndpointData.ProvisioningState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.Monitor.Models.KnownDataCollectionEndpointProvisioningState&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The resource provisioning state. This property is READ-ONLY. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PublicNetworkAccess">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Monitor.Models.KnownPublicNetworkAccessOption? PublicNetworkAccess { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Monitor.Models.KnownPublicNetworkAccessOption&gt; PublicNetworkAccess" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Monitor.DataCollectionEndpointData.PublicNetworkAccess" />
+      <MemberSignature Language="VB.NET" Value="Public Property PublicNetworkAccess As Nullable(Of KnownPublicNetworkAccessOption)" />
+      <MemberSignature Language="F#" Value="member this.PublicNetworkAccess : Nullable&lt;Azure.ResourceManager.Monitor.Models.KnownPublicNetworkAccessOption&gt; with get, set" Usage="Azure.ResourceManager.Monitor.DataCollectionEndpointData.PublicNetworkAccess" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.Monitor.Models.KnownPublicNetworkAccessOption&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The configuration to set whether network access from public internet to the endpoints are allowed. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
