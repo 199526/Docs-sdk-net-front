@@ -52,18 +52,18 @@
       </Docs>
     </Member>
     <Member MemberName="CheckStorageAccountNameAvailability">
-      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.Storage.Models.CheckNameAvailabilityResult&gt; CheckStorageAccountNameAvailability (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, Azure.ResourceManager.Storage.Models.StorageAccountNameAvailabilityContent content, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.Storage.Models.CheckNameAvailabilityResult&gt; CheckStorageAccountNameAvailability(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, class Azure.ResourceManager.Storage.Models.StorageAccountNameAvailabilityContent content, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.Storage.Models.StorageAccountNameAvailabilityResult&gt; CheckStorageAccountNameAvailability (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, Azure.ResourceManager.Storage.Models.StorageAccountNameAvailabilityContent content, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.Storage.Models.StorageAccountNameAvailabilityResult&gt; CheckStorageAccountNameAvailability(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, class Azure.ResourceManager.Storage.Models.StorageAccountNameAvailabilityContent content, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.StorageExtensions.CheckStorageAccountNameAvailability(Azure.ResourceManager.Resources.SubscriptionResource,Azure.ResourceManager.Storage.Models.StorageAccountNameAvailabilityContent,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CheckStorageAccountNameAvailability (subscriptionResource As SubscriptionResource, content As StorageAccountNameAvailabilityContent, Optional cancellationToken As CancellationToken = Nothing) As Response(Of CheckNameAvailabilityResult)" />
-      <MemberSignature Language="F#" Value="static member CheckStorageAccountNameAvailability : Azure.ResourceManager.Resources.SubscriptionResource * Azure.ResourceManager.Storage.Models.StorageAccountNameAvailabilityContent * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Storage.Models.CheckNameAvailabilityResult&gt;" Usage="Azure.ResourceManager.Storage.StorageExtensions.CheckStorageAccountNameAvailability (subscriptionResource, content, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CheckStorageAccountNameAvailability (subscriptionResource As SubscriptionResource, content As StorageAccountNameAvailabilityContent, Optional cancellationToken As CancellationToken = Nothing) As Response(Of StorageAccountNameAvailabilityResult)" />
+      <MemberSignature Language="F#" Value="static member CheckStorageAccountNameAvailability : Azure.ResourceManager.Resources.SubscriptionResource * Azure.ResourceManager.Storage.Models.StorageAccountNameAvailabilityContent * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Storage.Models.StorageAccountNameAvailabilityResult&gt;" Usage="Azure.ResourceManager.Storage.StorageExtensions.CheckStorageAccountNameAvailability (subscriptionResource, content, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Storage.Models.CheckNameAvailabilityResult&gt;</ReturnType>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Storage.Models.StorageAccountNameAvailabilityResult&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
@@ -120,18 +120,18 @@
       </Docs>
     </Member>
     <Member MemberName="CheckStorageAccountNameAvailabilityAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Storage.Models.CheckNameAvailabilityResult&gt;&gt; CheckStorageAccountNameAvailabilityAsync (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, Azure.ResourceManager.Storage.Models.StorageAccountNameAvailabilityContent content, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Storage.Models.CheckNameAvailabilityResult&gt;&gt; CheckStorageAccountNameAvailabilityAsync(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, class Azure.ResourceManager.Storage.Models.StorageAccountNameAvailabilityContent content, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Storage.Models.StorageAccountNameAvailabilityResult&gt;&gt; CheckStorageAccountNameAvailabilityAsync (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, Azure.ResourceManager.Storage.Models.StorageAccountNameAvailabilityContent content, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Storage.Models.StorageAccountNameAvailabilityResult&gt;&gt; CheckStorageAccountNameAvailabilityAsync(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, class Azure.ResourceManager.Storage.Models.StorageAccountNameAvailabilityContent content, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.StorageExtensions.CheckStorageAccountNameAvailabilityAsync(Azure.ResourceManager.Resources.SubscriptionResource,Azure.ResourceManager.Storage.Models.StorageAccountNameAvailabilityContent,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CheckStorageAccountNameAvailabilityAsync (subscriptionResource As SubscriptionResource, content As StorageAccountNameAvailabilityContent, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of CheckNameAvailabilityResult))" />
-      <MemberSignature Language="F#" Value="static member CheckStorageAccountNameAvailabilityAsync : Azure.ResourceManager.Resources.SubscriptionResource * Azure.ResourceManager.Storage.Models.StorageAccountNameAvailabilityContent * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Storage.Models.CheckNameAvailabilityResult&gt;&gt;" Usage="Azure.ResourceManager.Storage.StorageExtensions.CheckStorageAccountNameAvailabilityAsync (subscriptionResource, content, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CheckStorageAccountNameAvailabilityAsync (subscriptionResource As SubscriptionResource, content As StorageAccountNameAvailabilityContent, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of StorageAccountNameAvailabilityResult))" />
+      <MemberSignature Language="F#" Value="static member CheckStorageAccountNameAvailabilityAsync : Azure.ResourceManager.Resources.SubscriptionResource * Azure.ResourceManager.Storage.Models.StorageAccountNameAvailabilityContent * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Storage.Models.StorageAccountNameAvailabilityResult&gt;&gt;" Usage="Azure.ResourceManager.Storage.StorageExtensions.CheckStorageAccountNameAvailabilityAsync (subscriptionResource, content, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Storage.Models.CheckNameAvailabilityResult&gt;&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Storage.Models.StorageAccountNameAvailabilityResult&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />

@@ -34,18 +34,18 @@
       </Docs>
     </Member>
     <Member MemberName="EventHubAuthorizationRuleId">
-      <MemberSignature Language="C#" Value="public string EventHubAuthorizationRuleId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string EventHubAuthorizationRuleId" />
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier EventHubAuthorizationRuleId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier EventHubAuthorizationRuleId" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Monitor.DiagnosticSettingsData.EventHubAuthorizationRuleId" />
-      <MemberSignature Language="VB.NET" Value="Public Property EventHubAuthorizationRuleId As String" />
-      <MemberSignature Language="F#" Value="member this.EventHubAuthorizationRuleId : string with get, set" Usage="Azure.ResourceManager.Monitor.DiagnosticSettingsData.EventHubAuthorizationRuleId" />
+      <MemberSignature Language="VB.NET" Value="Public Property EventHubAuthorizationRuleId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.EventHubAuthorizationRuleId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Monitor.DiagnosticSettingsData.EventHubAuthorizationRuleId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The resource Id for the event hub authorization rule. </summary>
@@ -134,18 +134,18 @@
       </Docs>
     </Member>
     <Member MemberName="ServiceBusRuleId">
-      <MemberSignature Language="C#" Value="public string ServiceBusRuleId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string ServiceBusRuleId" />
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier ServiceBusRuleId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier ServiceBusRuleId" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Monitor.DiagnosticSettingsData.ServiceBusRuleId" />
-      <MemberSignature Language="VB.NET" Value="Public Property ServiceBusRuleId As String" />
-      <MemberSignature Language="F#" Value="member this.ServiceBusRuleId : string with get, set" Usage="Azure.ResourceManager.Monitor.DiagnosticSettingsData.ServiceBusRuleId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ServiceBusRuleId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.ServiceBusRuleId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Monitor.DiagnosticSettingsData.ServiceBusRuleId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The service bus rule Id of the diagnostic setting. This is here to maintain backwards compatibility. </summary>
@@ -154,18 +154,18 @@
       </Docs>
     </Member>
     <Member MemberName="StorageAccountId">
-      <MemberSignature Language="C#" Value="public string StorageAccountId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string StorageAccountId" />
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier StorageAccountId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier StorageAccountId" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Monitor.DiagnosticSettingsData.StorageAccountId" />
-      <MemberSignature Language="VB.NET" Value="Public Property StorageAccountId As String" />
-      <MemberSignature Language="F#" Value="member this.StorageAccountId : string with get, set" Usage="Azure.ResourceManager.Monitor.DiagnosticSettingsData.StorageAccountId" />
+      <MemberSignature Language="VB.NET" Value="Public Property StorageAccountId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.StorageAccountId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Monitor.DiagnosticSettingsData.StorageAccountId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The resource ID of the storage account to which you would like to send Diagnostic Logs. </summary>
@@ -174,18 +174,18 @@
       </Docs>
     </Member>
     <Member MemberName="WorkspaceId">
-      <MemberSignature Language="C#" Value="public string WorkspaceId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string WorkspaceId" />
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier WorkspaceId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier WorkspaceId" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Monitor.DiagnosticSettingsData.WorkspaceId" />
-      <MemberSignature Language="VB.NET" Value="Public Property WorkspaceId As String" />
-      <MemberSignature Language="F#" Value="member this.WorkspaceId : string with get, set" Usage="Azure.ResourceManager.Monitor.DiagnosticSettingsData.WorkspaceId" />
+      <MemberSignature Language="VB.NET" Value="Public Property WorkspaceId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.WorkspaceId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Monitor.DiagnosticSettingsData.WorkspaceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The full ARM resource ID of the Log Analytics workspace to which you would like to send Diagnostic Logs. Example: /subscriptions/4b9e8510-67ab-4e9a-95a9-e2f1e570ea9c/resourceGroups/insights-integration/providers/Microsoft.OperationalInsights/workspaces/viruela2. </summary>

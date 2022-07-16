@@ -1,20 +1,16 @@
 <Type Name="NetworkInterfaceIPConfigurationData" FullName="Azure.ResourceManager.Network.NetworkInterfaceIPConfigurationData">
-  <TypeSignature Language="C#" Value="public class NetworkInterfaceIPConfigurationData : Azure.ResourceManager.Network.Models.NetworkWritableResourceData" FrameworkAlternate="azure-dotnet" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NetworkInterfaceIPConfigurationData extends Azure.ResourceManager.Network.Models.NetworkWritableResourceData" FrameworkAlternate="azure-dotnet" />
+  <TypeSignature Language="C#" Value="public class NetworkInterfaceIPConfigurationData : Azure.ResourceManager.Network.Models.NetworkWritableResourceData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NetworkInterfaceIPConfigurationData extends Azure.ResourceManager.Network.Models.NetworkWritableResourceData" />
   <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Network.NetworkInterfaceIPConfigurationData" />
-  <TypeSignature Language="VB.NET" Value="Public Class NetworkInterfaceIPConfigurationData&#xA;Inherits NetworkWritableResourceData" FrameworkAlternate="azure-dotnet" />
-  <TypeSignature Language="F#" Value="type NetworkInterfaceIPConfigurationData = class&#xA;    inherit NetworkWritableResourceData" FrameworkAlternate="azure-dotnet" />
-  <TypeSignature Language="C#" Value="public class NetworkInterfaceIPConfigurationData : Azure.ResourceManager.Network.Models.SubResource" FrameworkAlternate="azure-dotnet-preview" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NetworkInterfaceIPConfigurationData extends Azure.ResourceManager.Network.Models.SubResource" FrameworkAlternate="azure-dotnet-preview" />
-  <TypeSignature Language="VB.NET" Value="Public Class NetworkInterfaceIPConfigurationData&#xA;Inherits SubResource" FrameworkAlternate="azure-dotnet-preview" />
-  <TypeSignature Language="F#" Value="type NetworkInterfaceIPConfigurationData = class&#xA;    inherit SubResource" FrameworkAlternate="azure-dotnet-preview" />
+  <TypeSignature Language="VB.NET" Value="Public Class NetworkInterfaceIPConfigurationData&#xA;Inherits NetworkWritableResourceData" />
+  <TypeSignature Language="F#" Value="type NetworkInterfaceIPConfigurationData = class&#xA;    inherit NetworkWritableResourceData" />
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.ResourceManager.Network.Models.NetworkWritableResourceData</BaseTypeName>
-    <BaseTypeName FrameworkAlternate="azure-dotnet-preview">Azure.ResourceManager.Network.Models.SubResource</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -31,6 +27,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -48,6 +45,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Azure.ResourceManager.Network.Models.ApplicationGatewayBackendAddressPool&gt;</ReturnType>
@@ -68,6 +66,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Azure.ResourceManager.Network.ApplicationSecurityGroupData&gt;</ReturnType>
@@ -108,6 +107,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ETag&gt;</ReturnType>
@@ -128,6 +128,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
@@ -148,6 +149,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Azure.ResourceManager.Network.BackendAddressPoolData&gt;</ReturnType>
@@ -168,6 +170,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Azure.ResourceManager.Network.InboundNatRuleData&gt;</ReturnType>
@@ -208,6 +211,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -228,6 +232,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -239,23 +244,19 @@
       </Docs>
     </Member>
     <Member MemberName="PrivateIPAddressVersion">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Network.Models.NetworkIPVersion? PrivateIPAddressVersion { get; set; }" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Network.Models.NetworkIPVersion&gt; PrivateIPAddressVersion" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Network.Models.NetworkIPVersion? PrivateIPAddressVersion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Network.Models.NetworkIPVersion&gt; PrivateIPAddressVersion" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.NetworkInterfaceIPConfigurationData.PrivateIPAddressVersion" />
-      <MemberSignature Language="VB.NET" Value="Public Property PrivateIPAddressVersion As Nullable(Of NetworkIPVersion)" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="member this.PrivateIPAddressVersion : Nullable&lt;Azure.ResourceManager.Network.Models.NetworkIPVersion&gt; with get, set" Usage="Azure.ResourceManager.Network.NetworkInterfaceIPConfigurationData.PrivateIPAddressVersion" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Network.Models.IPVersion? PrivateIPAddressVersion { get; set; }" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Network.Models.IPVersion&gt; PrivateIPAddressVersion" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public Property PrivateIPAddressVersion As Nullable(Of IPVersion)" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="member this.PrivateIPAddressVersion : Nullable&lt;Azure.ResourceManager.Network.Models.IPVersion&gt; with get, set" Usage="Azure.ResourceManager.Network.NetworkInterfaceIPConfigurationData.PrivateIPAddressVersion" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrivateIPAddressVersion As Nullable(Of NetworkIPVersion)" />
+      <MemberSignature Language="F#" Value="member this.PrivateIPAddressVersion : Nullable&lt;Azure.ResourceManager.Network.Models.NetworkIPVersion&gt; with get, set" Usage="Azure.ResourceManager.Network.NetworkInterfaceIPConfigurationData.PrivateIPAddressVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType FrameworkAlternate="azure-dotnet">System.Nullable&lt;Azure.ResourceManager.Network.Models.NetworkIPVersion&gt;</ReturnType>
-        <ReturnType FrameworkAlternate="azure-dotnet-preview">System.Nullable&lt;Azure.ResourceManager.Network.Models.IPVersion&gt;</ReturnType>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.Network.Models.NetworkIPVersion&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Whether the specific IP configuration is IPv4 or IPv6. Default is IPv4. </summary>
@@ -264,23 +265,19 @@
       </Docs>
     </Member>
     <Member MemberName="PrivateIPAllocationMethod">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Network.Models.NetworkIPAllocationMethod? PrivateIPAllocationMethod { get; set; }" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Network.Models.NetworkIPAllocationMethod&gt; PrivateIPAllocationMethod" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Network.Models.NetworkIPAllocationMethod? PrivateIPAllocationMethod { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Network.Models.NetworkIPAllocationMethod&gt; PrivateIPAllocationMethod" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.NetworkInterfaceIPConfigurationData.PrivateIPAllocationMethod" />
-      <MemberSignature Language="VB.NET" Value="Public Property PrivateIPAllocationMethod As Nullable(Of NetworkIPAllocationMethod)" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="member this.PrivateIPAllocationMethod : Nullable&lt;Azure.ResourceManager.Network.Models.NetworkIPAllocationMethod&gt; with get, set" Usage="Azure.ResourceManager.Network.NetworkInterfaceIPConfigurationData.PrivateIPAllocationMethod" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Network.Models.IPAllocationMethod? PrivateIPAllocationMethod { get; set; }" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Network.Models.IPAllocationMethod&gt; PrivateIPAllocationMethod" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public Property PrivateIPAllocationMethod As Nullable(Of IPAllocationMethod)" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="member this.PrivateIPAllocationMethod : Nullable&lt;Azure.ResourceManager.Network.Models.IPAllocationMethod&gt; with get, set" Usage="Azure.ResourceManager.Network.NetworkInterfaceIPConfigurationData.PrivateIPAllocationMethod" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrivateIPAllocationMethod As Nullable(Of NetworkIPAllocationMethod)" />
+      <MemberSignature Language="F#" Value="member this.PrivateIPAllocationMethod : Nullable&lt;Azure.ResourceManager.Network.Models.NetworkIPAllocationMethod&gt; with get, set" Usage="Azure.ResourceManager.Network.NetworkInterfaceIPConfigurationData.PrivateIPAllocationMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType FrameworkAlternate="azure-dotnet">System.Nullable&lt;Azure.ResourceManager.Network.Models.NetworkIPAllocationMethod&gt;</ReturnType>
-        <ReturnType FrameworkAlternate="azure-dotnet-preview">System.Nullable&lt;Azure.ResourceManager.Network.Models.IPAllocationMethod&gt;</ReturnType>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.Network.Models.NetworkIPAllocationMethod&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The private IP address allocation method. </summary>
@@ -298,6 +295,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Network.Models.NetworkInterfaceIPConfigurationPrivateLinkConnectionProperties</ReturnType>
@@ -309,23 +307,19 @@
       </Docs>
     </Member>
     <Member MemberName="ProvisioningState">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Network.Models.NetworkProvisioningState? ProvisioningState { get; }" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Network.Models.NetworkProvisioningState&gt; ProvisioningState" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Network.Models.NetworkProvisioningState? ProvisioningState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Network.Models.NetworkProvisioningState&gt; ProvisioningState" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.NetworkInterfaceIPConfigurationData.ProvisioningState" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProvisioningState As Nullable(Of NetworkProvisioningState)" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="member this.ProvisioningState : Nullable&lt;Azure.ResourceManager.Network.Models.NetworkProvisioningState&gt;" Usage="Azure.ResourceManager.Network.NetworkInterfaceIPConfigurationData.ProvisioningState" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Network.Models.ProvisioningState? ProvisioningState { get; }" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Network.Models.ProvisioningState&gt; ProvisioningState" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProvisioningState As Nullable(Of ProvisioningState)" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="member this.ProvisioningState : Nullable&lt;Azure.ResourceManager.Network.Models.ProvisioningState&gt;" Usage="Azure.ResourceManager.Network.NetworkInterfaceIPConfigurationData.ProvisioningState" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProvisioningState As Nullable(Of NetworkProvisioningState)" />
+      <MemberSignature Language="F#" Value="member this.ProvisioningState : Nullable&lt;Azure.ResourceManager.Network.Models.NetworkProvisioningState&gt;" Usage="Azure.ResourceManager.Network.NetworkInterfaceIPConfigurationData.ProvisioningState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType FrameworkAlternate="azure-dotnet">System.Nullable&lt;Azure.ResourceManager.Network.Models.NetworkProvisioningState&gt;</ReturnType>
-        <ReturnType FrameworkAlternate="azure-dotnet-preview">System.Nullable&lt;Azure.ResourceManager.Network.Models.ProvisioningState&gt;</ReturnType>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.Network.Models.NetworkProvisioningState&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The provisioning state of the network interface IP configuration. </summary>
@@ -343,6 +337,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Network.PublicIPAddressData</ReturnType>
@@ -383,6 +378,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Network.SubnetData</ReturnType>
@@ -403,6 +399,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Azure.ResourceManager.Network.VirtualNetworkTapData&gt;</ReturnType>

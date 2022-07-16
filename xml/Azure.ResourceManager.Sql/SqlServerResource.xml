@@ -2931,6 +2931,1047 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetSqlServerAdvisor">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerAdvisorResource&gt; GetSqlServerAdvisor (string advisorName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.SqlServerAdvisorResource&gt; GetSqlServerAdvisor(string advisorName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlServerResource.GetSqlServerAdvisor(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlServerAdvisor (advisorName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of SqlServerAdvisorResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlServerAdvisor : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerAdvisorResource&gt;&#xA;override this.GetSqlServerAdvisor : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerAdvisorResource&gt;" Usage="sqlServerResource.GetSqlServerAdvisor (advisorName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerAdvisorResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="advisorName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="advisorName"> The name of the Server Advisor. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a server advisor.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/advisors/{advisorName}
+            Operation Id: ServerAdvisors_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="advisorName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="advisorName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerAdvisorAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerAdvisorResource&gt;&gt; GetSqlServerAdvisorAsync (string advisorName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.SqlServerAdvisorResource&gt;&gt; GetSqlServerAdvisorAsync(string advisorName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlServerResource.GetSqlServerAdvisorAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlServerAdvisorAsync (advisorName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of SqlServerAdvisorResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlServerAdvisorAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerAdvisorResource&gt;&gt;&#xA;override this.GetSqlServerAdvisorAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerAdvisorResource&gt;&gt;" Usage="sqlServerResource.GetSqlServerAdvisorAsync (advisorName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerAdvisorResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="advisorName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="advisorName"> The name of the Server Advisor. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a server advisor.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/advisors/{advisorName}
+            Operation Id: ServerAdvisors_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="advisorName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="advisorName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerAdvisors">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.SqlServerAdvisorCollection GetSqlServerAdvisors ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.SqlServerAdvisorCollection GetSqlServerAdvisors() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlServerResource.GetSqlServerAdvisors" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlServerAdvisors () As SqlServerAdvisorCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlServerAdvisors : unit -&gt; Azure.ResourceManager.Sql.SqlServerAdvisorCollection&#xA;override this.GetSqlServerAdvisors : unit -&gt; Azure.ResourceManager.Sql.SqlServerAdvisorCollection" Usage="sqlServerResource.GetSqlServerAdvisors " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlServerAdvisorCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> Gets a collection of SqlServerAdvisorResources in the SqlServer. </summary>
+        <returns> An object representing collection of SqlServerAdvisorResources and their operations over a SqlServerAdvisorResource. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerAutomaticTuning">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.SqlServerAutomaticTuningResource GetSqlServerAutomaticTuning ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.SqlServerAutomaticTuningResource GetSqlServerAutomaticTuning() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlServerResource.GetSqlServerAutomaticTuning" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlServerAutomaticTuning () As SqlServerAutomaticTuningResource" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlServerAutomaticTuning : unit -&gt; Azure.ResourceManager.Sql.SqlServerAutomaticTuningResource&#xA;override this.GetSqlServerAutomaticTuning : unit -&gt; Azure.ResourceManager.Sql.SqlServerAutomaticTuningResource" Usage="sqlServerResource.GetSqlServerAutomaticTuning " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlServerAutomaticTuningResource</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> Gets an object representing a SqlServerAutomaticTuningResource along with the instance operations that can be performed on it in the SqlServer. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.SqlServerAutomaticTuningResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerAzureADAdministrator">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerAzureADAdministratorResource&gt; GetSqlServerAzureADAdministrator (Azure.ResourceManager.Sql.Models.AdministratorName administratorName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.SqlServerAzureADAdministratorResource&gt; GetSqlServerAzureADAdministrator(valuetype Azure.ResourceManager.Sql.Models.AdministratorName administratorName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlServerResource.GetSqlServerAzureADAdministrator(Azure.ResourceManager.Sql.Models.AdministratorName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlServerAzureADAdministrator (administratorName As AdministratorName, Optional cancellationToken As CancellationToken = Nothing) As Response(Of SqlServerAzureADAdministratorResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlServerAzureADAdministrator : Azure.ResourceManager.Sql.Models.AdministratorName * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerAzureADAdministratorResource&gt;&#xA;override this.GetSqlServerAzureADAdministrator : Azure.ResourceManager.Sql.Models.AdministratorName * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerAzureADAdministratorResource&gt;" Usage="sqlServerResource.GetSqlServerAzureADAdministrator (administratorName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerAzureADAdministratorResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="administratorName" Type="Azure.ResourceManager.Sql.Models.AdministratorName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="administratorName"> The name of server active directory administrator. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a Azure Active Directory administrator.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/administrators/{administratorName}
+            Operation Id: ServerAzureADAdministrators_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerAzureADAdministratorAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerAzureADAdministratorResource&gt;&gt; GetSqlServerAzureADAdministratorAsync (Azure.ResourceManager.Sql.Models.AdministratorName administratorName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.SqlServerAzureADAdministratorResource&gt;&gt; GetSqlServerAzureADAdministratorAsync(valuetype Azure.ResourceManager.Sql.Models.AdministratorName administratorName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlServerResource.GetSqlServerAzureADAdministratorAsync(Azure.ResourceManager.Sql.Models.AdministratorName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlServerAzureADAdministratorAsync (administratorName As AdministratorName, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of SqlServerAzureADAdministratorResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlServerAzureADAdministratorAsync : Azure.ResourceManager.Sql.Models.AdministratorName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerAzureADAdministratorResource&gt;&gt;&#xA;override this.GetSqlServerAzureADAdministratorAsync : Azure.ResourceManager.Sql.Models.AdministratorName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerAzureADAdministratorResource&gt;&gt;" Usage="sqlServerResource.GetSqlServerAzureADAdministratorAsync (administratorName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerAzureADAdministratorResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="administratorName" Type="Azure.ResourceManager.Sql.Models.AdministratorName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="administratorName"> The name of server active directory administrator. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a Azure Active Directory administrator.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/administrators/{administratorName}
+            Operation Id: ServerAzureADAdministrators_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerAzureADAdministrators">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.SqlServerAzureADAdministratorCollection GetSqlServerAzureADAdministrators ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.SqlServerAzureADAdministratorCollection GetSqlServerAzureADAdministrators() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlServerResource.GetSqlServerAzureADAdministrators" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlServerAzureADAdministrators () As SqlServerAzureADAdministratorCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlServerAzureADAdministrators : unit -&gt; Azure.ResourceManager.Sql.SqlServerAzureADAdministratorCollection&#xA;override this.GetSqlServerAzureADAdministrators : unit -&gt; Azure.ResourceManager.Sql.SqlServerAzureADAdministratorCollection" Usage="sqlServerResource.GetSqlServerAzureADAdministrators " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlServerAzureADAdministratorCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> Gets a collection of SqlServerAzureADAdministratorResources in the SqlServer. </summary>
+        <returns> An object representing collection of SqlServerAzureADAdministratorResources and their operations over a SqlServerAzureADAdministratorResource. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerAzureADOnlyAuthentication">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerAzureADOnlyAuthenticationResource&gt; GetSqlServerAzureADOnlyAuthentication (Azure.ResourceManager.Sql.Models.AuthenticationName authenticationName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.SqlServerAzureADOnlyAuthenticationResource&gt; GetSqlServerAzureADOnlyAuthentication(valuetype Azure.ResourceManager.Sql.Models.AuthenticationName authenticationName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlServerResource.GetSqlServerAzureADOnlyAuthentication(Azure.ResourceManager.Sql.Models.AuthenticationName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlServerAzureADOnlyAuthentication (authenticationName As AuthenticationName, Optional cancellationToken As CancellationToken = Nothing) As Response(Of SqlServerAzureADOnlyAuthenticationResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlServerAzureADOnlyAuthentication : Azure.ResourceManager.Sql.Models.AuthenticationName * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerAzureADOnlyAuthenticationResource&gt;&#xA;override this.GetSqlServerAzureADOnlyAuthentication : Azure.ResourceManager.Sql.Models.AuthenticationName * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerAzureADOnlyAuthenticationResource&gt;" Usage="sqlServerResource.GetSqlServerAzureADOnlyAuthentication (authenticationName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerAzureADOnlyAuthenticationResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="authenticationName" Type="Azure.ResourceManager.Sql.Models.AuthenticationName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="authenticationName"> The name of server azure active directory only authentication. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a specific Azure Active Directory only authentication property.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/azureADOnlyAuthentications/{authenticationName}
+            Operation Id: ServerAzureADOnlyAuthentications_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerAzureADOnlyAuthenticationAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerAzureADOnlyAuthenticationResource&gt;&gt; GetSqlServerAzureADOnlyAuthenticationAsync (Azure.ResourceManager.Sql.Models.AuthenticationName authenticationName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.SqlServerAzureADOnlyAuthenticationResource&gt;&gt; GetSqlServerAzureADOnlyAuthenticationAsync(valuetype Azure.ResourceManager.Sql.Models.AuthenticationName authenticationName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlServerResource.GetSqlServerAzureADOnlyAuthenticationAsync(Azure.ResourceManager.Sql.Models.AuthenticationName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlServerAzureADOnlyAuthenticationAsync (authenticationName As AuthenticationName, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of SqlServerAzureADOnlyAuthenticationResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlServerAzureADOnlyAuthenticationAsync : Azure.ResourceManager.Sql.Models.AuthenticationName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerAzureADOnlyAuthenticationResource&gt;&gt;&#xA;override this.GetSqlServerAzureADOnlyAuthenticationAsync : Azure.ResourceManager.Sql.Models.AuthenticationName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerAzureADOnlyAuthenticationResource&gt;&gt;" Usage="sqlServerResource.GetSqlServerAzureADOnlyAuthenticationAsync (authenticationName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerAzureADOnlyAuthenticationResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="authenticationName" Type="Azure.ResourceManager.Sql.Models.AuthenticationName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="authenticationName"> The name of server azure active directory only authentication. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a specific Azure Active Directory only authentication property.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/azureADOnlyAuthentications/{authenticationName}
+            Operation Id: ServerAzureADOnlyAuthentications_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerAzureADOnlyAuthentications">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.SqlServerAzureADOnlyAuthenticationCollection GetSqlServerAzureADOnlyAuthentications ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.SqlServerAzureADOnlyAuthenticationCollection GetSqlServerAzureADOnlyAuthentications() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlServerResource.GetSqlServerAzureADOnlyAuthentications" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlServerAzureADOnlyAuthentications () As SqlServerAzureADOnlyAuthenticationCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlServerAzureADOnlyAuthentications : unit -&gt; Azure.ResourceManager.Sql.SqlServerAzureADOnlyAuthenticationCollection&#xA;override this.GetSqlServerAzureADOnlyAuthentications : unit -&gt; Azure.ResourceManager.Sql.SqlServerAzureADOnlyAuthenticationCollection" Usage="sqlServerResource.GetSqlServerAzureADOnlyAuthentications " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlServerAzureADOnlyAuthenticationCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> Gets a collection of SqlServerAzureADOnlyAuthenticationResources in the SqlServer. </summary>
+        <returns> An object representing collection of SqlServerAzureADOnlyAuthenticationResources and their operations over a SqlServerAzureADOnlyAuthenticationResource. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerBlobAuditingPolicies">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.SqlServerBlobAuditingPolicyCollection GetSqlServerBlobAuditingPolicies ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.SqlServerBlobAuditingPolicyCollection GetSqlServerBlobAuditingPolicies() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlServerResource.GetSqlServerBlobAuditingPolicies" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlServerBlobAuditingPolicies () As SqlServerBlobAuditingPolicyCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlServerBlobAuditingPolicies : unit -&gt; Azure.ResourceManager.Sql.SqlServerBlobAuditingPolicyCollection&#xA;override this.GetSqlServerBlobAuditingPolicies : unit -&gt; Azure.ResourceManager.Sql.SqlServerBlobAuditingPolicyCollection" Usage="sqlServerResource.GetSqlServerBlobAuditingPolicies " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlServerBlobAuditingPolicyCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> Gets a collection of SqlServerBlobAuditingPolicyResources in the SqlServer. </summary>
+        <returns> An object representing collection of SqlServerBlobAuditingPolicyResources and their operations over a SqlServerBlobAuditingPolicyResource. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerBlobAuditingPolicy">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerBlobAuditingPolicyResource&gt; GetSqlServerBlobAuditingPolicy (Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName blobAuditingPolicyName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.SqlServerBlobAuditingPolicyResource&gt; GetSqlServerBlobAuditingPolicy(valuetype Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName blobAuditingPolicyName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlServerResource.GetSqlServerBlobAuditingPolicy(Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlServerBlobAuditingPolicy (blobAuditingPolicyName As BlobAuditingPolicyName, Optional cancellationToken As CancellationToken = Nothing) As Response(Of SqlServerBlobAuditingPolicyResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlServerBlobAuditingPolicy : Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerBlobAuditingPolicyResource&gt;&#xA;override this.GetSqlServerBlobAuditingPolicy : Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerBlobAuditingPolicyResource&gt;" Usage="sqlServerResource.GetSqlServerBlobAuditingPolicy (blobAuditingPolicyName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerBlobAuditingPolicyResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="blobAuditingPolicyName" Type="Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="blobAuditingPolicyName"> The name of the blob auditing policy. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a server's blob auditing policy.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/auditingSettings/{blobAuditingPolicyName}
+            Operation Id: ServerBlobAuditingPolicies_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerBlobAuditingPolicyAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerBlobAuditingPolicyResource&gt;&gt; GetSqlServerBlobAuditingPolicyAsync (Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName blobAuditingPolicyName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.SqlServerBlobAuditingPolicyResource&gt;&gt; GetSqlServerBlobAuditingPolicyAsync(valuetype Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName blobAuditingPolicyName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlServerResource.GetSqlServerBlobAuditingPolicyAsync(Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlServerBlobAuditingPolicyAsync (blobAuditingPolicyName As BlobAuditingPolicyName, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of SqlServerBlobAuditingPolicyResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlServerBlobAuditingPolicyAsync : Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerBlobAuditingPolicyResource&gt;&gt;&#xA;override this.GetSqlServerBlobAuditingPolicyAsync : Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerBlobAuditingPolicyResource&gt;&gt;" Usage="sqlServerResource.GetSqlServerBlobAuditingPolicyAsync (blobAuditingPolicyName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerBlobAuditingPolicyResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="blobAuditingPolicyName" Type="Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="blobAuditingPolicyName"> The name of the blob auditing policy. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a server's blob auditing policy.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/auditingSettings/{blobAuditingPolicyName}
+            Operation Id: ServerBlobAuditingPolicies_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerCommunicationLink">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerCommunicationLinkResource&gt; GetSqlServerCommunicationLink (string communicationLinkName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.SqlServerCommunicationLinkResource&gt; GetSqlServerCommunicationLink(string communicationLinkName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlServerResource.GetSqlServerCommunicationLink(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlServerCommunicationLink (communicationLinkName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of SqlServerCommunicationLinkResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlServerCommunicationLink : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerCommunicationLinkResource&gt;&#xA;override this.GetSqlServerCommunicationLink : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerCommunicationLinkResource&gt;" Usage="sqlServerResource.GetSqlServerCommunicationLink (communicationLinkName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerCommunicationLinkResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="communicationLinkName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="communicationLinkName"> The name of the server communication link. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Returns a server communication link.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/communicationLinks/{communicationLinkName}
+            Operation Id: ServerCommunicationLinks_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="communicationLinkName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="communicationLinkName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerCommunicationLinkAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerCommunicationLinkResource&gt;&gt; GetSqlServerCommunicationLinkAsync (string communicationLinkName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.SqlServerCommunicationLinkResource&gt;&gt; GetSqlServerCommunicationLinkAsync(string communicationLinkName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlServerResource.GetSqlServerCommunicationLinkAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlServerCommunicationLinkAsync (communicationLinkName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of SqlServerCommunicationLinkResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlServerCommunicationLinkAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerCommunicationLinkResource&gt;&gt;&#xA;override this.GetSqlServerCommunicationLinkAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerCommunicationLinkResource&gt;&gt;" Usage="sqlServerResource.GetSqlServerCommunicationLinkAsync (communicationLinkName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerCommunicationLinkResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="communicationLinkName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="communicationLinkName"> The name of the server communication link. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Returns a server communication link.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/communicationLinks/{communicationLinkName}
+            Operation Id: ServerCommunicationLinks_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="communicationLinkName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="communicationLinkName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerCommunicationLinks">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.SqlServerCommunicationLinkCollection GetSqlServerCommunicationLinks ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.SqlServerCommunicationLinkCollection GetSqlServerCommunicationLinks() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlServerResource.GetSqlServerCommunicationLinks" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlServerCommunicationLinks () As SqlServerCommunicationLinkCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlServerCommunicationLinks : unit -&gt; Azure.ResourceManager.Sql.SqlServerCommunicationLinkCollection&#xA;override this.GetSqlServerCommunicationLinks : unit -&gt; Azure.ResourceManager.Sql.SqlServerCommunicationLinkCollection" Usage="sqlServerResource.GetSqlServerCommunicationLinks " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlServerCommunicationLinkCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> Gets a collection of SqlServerCommunicationLinkResources in the SqlServer. </summary>
+        <returns> An object representing collection of SqlServerCommunicationLinkResources and their operations over a SqlServerCommunicationLinkResource. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerConnectionPolicies">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.SqlServerConnectionPolicyCollection GetSqlServerConnectionPolicies ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.SqlServerConnectionPolicyCollection GetSqlServerConnectionPolicies() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlServerResource.GetSqlServerConnectionPolicies" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlServerConnectionPolicies () As SqlServerConnectionPolicyCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlServerConnectionPolicies : unit -&gt; Azure.ResourceManager.Sql.SqlServerConnectionPolicyCollection&#xA;override this.GetSqlServerConnectionPolicies : unit -&gt; Azure.ResourceManager.Sql.SqlServerConnectionPolicyCollection" Usage="sqlServerResource.GetSqlServerConnectionPolicies " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlServerConnectionPolicyCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> Gets a collection of SqlServerConnectionPolicyResources in the SqlServer. </summary>
+        <returns> An object representing collection of SqlServerConnectionPolicyResources and their operations over a SqlServerConnectionPolicyResource. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerConnectionPolicy">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerConnectionPolicyResource&gt; GetSqlServerConnectionPolicy (Azure.ResourceManager.Sql.Models.ConnectionPolicyName connectionPolicyName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.SqlServerConnectionPolicyResource&gt; GetSqlServerConnectionPolicy(valuetype Azure.ResourceManager.Sql.Models.ConnectionPolicyName connectionPolicyName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlServerResource.GetSqlServerConnectionPolicy(Azure.ResourceManager.Sql.Models.ConnectionPolicyName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlServerConnectionPolicy (connectionPolicyName As ConnectionPolicyName, Optional cancellationToken As CancellationToken = Nothing) As Response(Of SqlServerConnectionPolicyResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlServerConnectionPolicy : Azure.ResourceManager.Sql.Models.ConnectionPolicyName * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerConnectionPolicyResource&gt;&#xA;override this.GetSqlServerConnectionPolicy : Azure.ResourceManager.Sql.Models.ConnectionPolicyName * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerConnectionPolicyResource&gt;" Usage="sqlServerResource.GetSqlServerConnectionPolicy (connectionPolicyName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerConnectionPolicyResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connectionPolicyName" Type="Azure.ResourceManager.Sql.Models.ConnectionPolicyName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="connectionPolicyName"> The name of the connection policy. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a server connection policy
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/connectionPolicies/{connectionPolicyName}
+            Operation Id: ServerConnectionPolicies_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerConnectionPolicyAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerConnectionPolicyResource&gt;&gt; GetSqlServerConnectionPolicyAsync (Azure.ResourceManager.Sql.Models.ConnectionPolicyName connectionPolicyName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.SqlServerConnectionPolicyResource&gt;&gt; GetSqlServerConnectionPolicyAsync(valuetype Azure.ResourceManager.Sql.Models.ConnectionPolicyName connectionPolicyName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlServerResource.GetSqlServerConnectionPolicyAsync(Azure.ResourceManager.Sql.Models.ConnectionPolicyName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlServerConnectionPolicyAsync (connectionPolicyName As ConnectionPolicyName, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of SqlServerConnectionPolicyResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlServerConnectionPolicyAsync : Azure.ResourceManager.Sql.Models.ConnectionPolicyName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerConnectionPolicyResource&gt;&gt;&#xA;override this.GetSqlServerConnectionPolicyAsync : Azure.ResourceManager.Sql.Models.ConnectionPolicyName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerConnectionPolicyResource&gt;&gt;" Usage="sqlServerResource.GetSqlServerConnectionPolicyAsync (connectionPolicyName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerConnectionPolicyResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connectionPolicyName" Type="Azure.ResourceManager.Sql.Models.ConnectionPolicyName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="connectionPolicyName"> The name of the connection policy. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a server connection policy
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/connectionPolicies/{connectionPolicyName}
+            Operation Id: ServerConnectionPolicies_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerDevOpsAuditingSetting">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerDevOpsAuditingSettingResource&gt; GetSqlServerDevOpsAuditingSetting (string devOpsAuditingSettingsName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.SqlServerDevOpsAuditingSettingResource&gt; GetSqlServerDevOpsAuditingSetting(string devOpsAuditingSettingsName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlServerResource.GetSqlServerDevOpsAuditingSetting(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlServerDevOpsAuditingSetting (devOpsAuditingSettingsName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of SqlServerDevOpsAuditingSettingResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlServerDevOpsAuditingSetting : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerDevOpsAuditingSettingResource&gt;&#xA;override this.GetSqlServerDevOpsAuditingSetting : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerDevOpsAuditingSettingResource&gt;" Usage="sqlServerResource.GetSqlServerDevOpsAuditingSetting (devOpsAuditingSettingsName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerDevOpsAuditingSettingResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="devOpsAuditingSettingsName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="devOpsAuditingSettingsName"> The name of the devops audit settings. This should always be 'default'. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a server's DevOps audit settings.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/devOpsAuditingSettings/{devOpsAuditingSettingsName}
+            Operation Id: ServerDevOpsAuditSettings_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="devOpsAuditingSettingsName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="devOpsAuditingSettingsName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerDevOpsAuditingSettingAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerDevOpsAuditingSettingResource&gt;&gt; GetSqlServerDevOpsAuditingSettingAsync (string devOpsAuditingSettingsName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.SqlServerDevOpsAuditingSettingResource&gt;&gt; GetSqlServerDevOpsAuditingSettingAsync(string devOpsAuditingSettingsName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlServerResource.GetSqlServerDevOpsAuditingSettingAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlServerDevOpsAuditingSettingAsync (devOpsAuditingSettingsName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of SqlServerDevOpsAuditingSettingResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlServerDevOpsAuditingSettingAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerDevOpsAuditingSettingResource&gt;&gt;&#xA;override this.GetSqlServerDevOpsAuditingSettingAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerDevOpsAuditingSettingResource&gt;&gt;" Usage="sqlServerResource.GetSqlServerDevOpsAuditingSettingAsync (devOpsAuditingSettingsName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerDevOpsAuditingSettingResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="devOpsAuditingSettingsName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="devOpsAuditingSettingsName"> The name of the devops audit settings. This should always be 'default'. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a server's DevOps audit settings.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/devOpsAuditingSettings/{devOpsAuditingSettingsName}
+            Operation Id: ServerDevOpsAuditSettings_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="devOpsAuditingSettingsName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="devOpsAuditingSettingsName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerDevOpsAuditingSettings">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.SqlServerDevOpsAuditingSettingCollection GetSqlServerDevOpsAuditingSettings ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.SqlServerDevOpsAuditingSettingCollection GetSqlServerDevOpsAuditingSettings() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlServerResource.GetSqlServerDevOpsAuditingSettings" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlServerDevOpsAuditingSettings () As SqlServerDevOpsAuditingSettingCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlServerDevOpsAuditingSettings : unit -&gt; Azure.ResourceManager.Sql.SqlServerDevOpsAuditingSettingCollection&#xA;override this.GetSqlServerDevOpsAuditingSettings : unit -&gt; Azure.ResourceManager.Sql.SqlServerDevOpsAuditingSettingCollection" Usage="sqlServerResource.GetSqlServerDevOpsAuditingSettings " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlServerDevOpsAuditingSettingCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> Gets a collection of SqlServerDevOpsAuditingSettingResources in the SqlServer. </summary>
+        <returns> An object representing collection of SqlServerDevOpsAuditingSettingResources and their operations over a SqlServerDevOpsAuditingSettingResource. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerDnsAlias">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerDnsAliasResource&gt; GetSqlServerDnsAlias (string dnsAliasName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.SqlServerDnsAliasResource&gt; GetSqlServerDnsAlias(string dnsAliasName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlServerResource.GetSqlServerDnsAlias(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlServerDnsAlias (dnsAliasName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of SqlServerDnsAliasResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlServerDnsAlias : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerDnsAliasResource&gt;&#xA;override this.GetSqlServerDnsAlias : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerDnsAliasResource&gt;" Usage="sqlServerResource.GetSqlServerDnsAlias (dnsAliasName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerDnsAliasResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dnsAliasName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="dnsAliasName"> The name of the server dns alias. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a server DNS alias.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/dnsAliases/{dnsAliasName}
+            Operation Id: ServerDnsAliases_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="dnsAliasName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dnsAliasName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerDnsAliasAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerDnsAliasResource&gt;&gt; GetSqlServerDnsAliasAsync (string dnsAliasName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.SqlServerDnsAliasResource&gt;&gt; GetSqlServerDnsAliasAsync(string dnsAliasName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlServerResource.GetSqlServerDnsAliasAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlServerDnsAliasAsync (dnsAliasName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of SqlServerDnsAliasResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlServerDnsAliasAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerDnsAliasResource&gt;&gt;&#xA;override this.GetSqlServerDnsAliasAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerDnsAliasResource&gt;&gt;" Usage="sqlServerResource.GetSqlServerDnsAliasAsync (dnsAliasName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerDnsAliasResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dnsAliasName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="dnsAliasName"> The name of the server dns alias. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a server DNS alias.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/dnsAliases/{dnsAliasName}
+            Operation Id: ServerDnsAliases_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="dnsAliasName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dnsAliasName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerDnsAliases">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.SqlServerDnsAliasCollection GetSqlServerDnsAliases ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.SqlServerDnsAliasCollection GetSqlServerDnsAliases() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlServerResource.GetSqlServerDnsAliases" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlServerDnsAliases () As SqlServerDnsAliasCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlServerDnsAliases : unit -&gt; Azure.ResourceManager.Sql.SqlServerDnsAliasCollection&#xA;override this.GetSqlServerDnsAliases : unit -&gt; Azure.ResourceManager.Sql.SqlServerDnsAliasCollection" Usage="sqlServerResource.GetSqlServerDnsAliases " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlServerDnsAliasCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> Gets a collection of SqlServerDnsAliasResources in the SqlServer. </summary>
+        <returns> An object representing collection of SqlServerDnsAliasResources and their operations over a SqlServerDnsAliasResource. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerJobAgent">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerJobAgentResource&gt; GetSqlServerJobAgent (string jobAgentName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.SqlServerJobAgentResource&gt; GetSqlServerJobAgent(string jobAgentName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlServerResource.GetSqlServerJobAgent(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlServerJobAgent (jobAgentName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of SqlServerJobAgentResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlServerJobAgent : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerJobAgentResource&gt;&#xA;override this.GetSqlServerJobAgent : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerJobAgentResource&gt;" Usage="sqlServerResource.GetSqlServerJobAgent (jobAgentName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerJobAgentResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="jobAgentName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="jobAgentName"> The name of the job agent to be retrieved. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a job agent.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/jobAgents/{jobAgentName}
+            Operation Id: JobAgents_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="jobAgentName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="jobAgentName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerJobAgentAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerJobAgentResource&gt;&gt; GetSqlServerJobAgentAsync (string jobAgentName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.SqlServerJobAgentResource&gt;&gt; GetSqlServerJobAgentAsync(string jobAgentName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlServerResource.GetSqlServerJobAgentAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlServerJobAgentAsync (jobAgentName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of SqlServerJobAgentResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlServerJobAgentAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerJobAgentResource&gt;&gt;&#xA;override this.GetSqlServerJobAgentAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerJobAgentResource&gt;&gt;" Usage="sqlServerResource.GetSqlServerJobAgentAsync (jobAgentName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerJobAgentResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="jobAgentName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="jobAgentName"> The name of the job agent to be retrieved. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a job agent.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/jobAgents/{jobAgentName}
+            Operation Id: JobAgents_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="jobAgentName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="jobAgentName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerJobAgents">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.SqlServerJobAgentCollection GetSqlServerJobAgents ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.SqlServerJobAgentCollection GetSqlServerJobAgents() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlServerResource.GetSqlServerJobAgents" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlServerJobAgents () As SqlServerJobAgentCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlServerJobAgents : unit -&gt; Azure.ResourceManager.Sql.SqlServerJobAgentCollection&#xA;override this.GetSqlServerJobAgents : unit -&gt; Azure.ResourceManager.Sql.SqlServerJobAgentCollection" Usage="sqlServerResource.GetSqlServerJobAgents " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlServerJobAgentCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> Gets a collection of SqlServerJobAgentResources in the SqlServer. </summary>
+        <returns> An object representing collection of SqlServerJobAgentResources and their operations over a SqlServerJobAgentResource. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerKey">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerKeyResource&gt; GetSqlServerKey (string keyName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.SqlServerKeyResource&gt; GetSqlServerKey(string keyName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlServerResource.GetSqlServerKey(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlServerKey (keyName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of SqlServerKeyResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlServerKey : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerKeyResource&gt;&#xA;override this.GetSqlServerKey : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerKeyResource&gt;" Usage="sqlServerResource.GetSqlServerKey (keyName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerKeyResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keyName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="keyName"> The name of the server key to be retrieved. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a server key.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/keys/{keyName}
+            Operation Id: ServerKeys_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="keyName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="keyName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerKeyAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerKeyResource&gt;&gt; GetSqlServerKeyAsync (string keyName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.SqlServerKeyResource&gt;&gt; GetSqlServerKeyAsync(string keyName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlServerResource.GetSqlServerKeyAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlServerKeyAsync (keyName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of SqlServerKeyResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlServerKeyAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerKeyResource&gt;&gt;&#xA;override this.GetSqlServerKeyAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerKeyResource&gt;&gt;" Usage="sqlServerResource.GetSqlServerKeyAsync (keyName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerKeyResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keyName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="keyName"> The name of the server key to be retrieved. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a server key.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/keys/{keyName}
+            Operation Id: ServerKeys_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="keyName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="keyName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerKeys">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.SqlServerKeyCollection GetSqlServerKeys ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.SqlServerKeyCollection GetSqlServerKeys() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlServerResource.GetSqlServerKeys" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlServerKeys () As SqlServerKeyCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlServerKeys : unit -&gt; Azure.ResourceManager.Sql.SqlServerKeyCollection&#xA;override this.GetSqlServerKeys : unit -&gt; Azure.ResourceManager.Sql.SqlServerKeyCollection" Usage="sqlServerResource.GetSqlServerKeys " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlServerKeyCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> Gets a collection of SqlServerKeyResources in the SqlServer. </summary>
+        <returns> An object representing collection of SqlServerKeyResources and their operations over a SqlServerKeyResource. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerSecurityAlertPolicies">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.SqlServerSecurityAlertPolicyCollection GetSqlServerSecurityAlertPolicies ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.SqlServerSecurityAlertPolicyCollection GetSqlServerSecurityAlertPolicies() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlServerResource.GetSqlServerSecurityAlertPolicies" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlServerSecurityAlertPolicies () As SqlServerSecurityAlertPolicyCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlServerSecurityAlertPolicies : unit -&gt; Azure.ResourceManager.Sql.SqlServerSecurityAlertPolicyCollection&#xA;override this.GetSqlServerSecurityAlertPolicies : unit -&gt; Azure.ResourceManager.Sql.SqlServerSecurityAlertPolicyCollection" Usage="sqlServerResource.GetSqlServerSecurityAlertPolicies " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlServerSecurityAlertPolicyCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> Gets a collection of SqlServerSecurityAlertPolicyResources in the SqlServer. </summary>
+        <returns> An object representing collection of SqlServerSecurityAlertPolicyResources and their operations over a SqlServerSecurityAlertPolicyResource. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerSecurityAlertPolicy">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerSecurityAlertPolicyResource&gt; GetSqlServerSecurityAlertPolicy (Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName securityAlertPolicyName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.SqlServerSecurityAlertPolicyResource&gt; GetSqlServerSecurityAlertPolicy(valuetype Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName securityAlertPolicyName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlServerResource.GetSqlServerSecurityAlertPolicy(Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlServerSecurityAlertPolicy (securityAlertPolicyName As SecurityAlertPolicyName, Optional cancellationToken As CancellationToken = Nothing) As Response(Of SqlServerSecurityAlertPolicyResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlServerSecurityAlertPolicy : Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerSecurityAlertPolicyResource&gt;&#xA;override this.GetSqlServerSecurityAlertPolicy : Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerSecurityAlertPolicyResource&gt;" Usage="sqlServerResource.GetSqlServerSecurityAlertPolicy (securityAlertPolicyName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerSecurityAlertPolicyResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="securityAlertPolicyName" Type="Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="securityAlertPolicyName"> The name of the security alert policy. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get a server's security alert policy.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/securityAlertPolicies/{securityAlertPolicyName}
+            Operation Id: ServerSecurityAlertPolicies_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerSecurityAlertPolicyAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerSecurityAlertPolicyResource&gt;&gt; GetSqlServerSecurityAlertPolicyAsync (Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName securityAlertPolicyName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.SqlServerSecurityAlertPolicyResource&gt;&gt; GetSqlServerSecurityAlertPolicyAsync(valuetype Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName securityAlertPolicyName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlServerResource.GetSqlServerSecurityAlertPolicyAsync(Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlServerSecurityAlertPolicyAsync (securityAlertPolicyName As SecurityAlertPolicyName, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of SqlServerSecurityAlertPolicyResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlServerSecurityAlertPolicyAsync : Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerSecurityAlertPolicyResource&gt;&gt;&#xA;override this.GetSqlServerSecurityAlertPolicyAsync : Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerSecurityAlertPolicyResource&gt;&gt;" Usage="sqlServerResource.GetSqlServerSecurityAlertPolicyAsync (securityAlertPolicyName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerSecurityAlertPolicyResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="securityAlertPolicyName" Type="Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="securityAlertPolicyName"> The name of the security alert policy. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get a server's security alert policy.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/securityAlertPolicies/{securityAlertPolicyName}
+            Operation Id: ServerSecurityAlertPolicies_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerVulnerabilityAssessment">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerVulnerabilityAssessmentResource&gt; GetSqlServerVulnerabilityAssessment (Azure.ResourceManager.Sql.Models.VulnerabilityAssessmentName vulnerabilityAssessmentName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.SqlServerVulnerabilityAssessmentResource&gt; GetSqlServerVulnerabilityAssessment(valuetype Azure.ResourceManager.Sql.Models.VulnerabilityAssessmentName vulnerabilityAssessmentName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlServerResource.GetSqlServerVulnerabilityAssessment(Azure.ResourceManager.Sql.Models.VulnerabilityAssessmentName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlServerVulnerabilityAssessment (vulnerabilityAssessmentName As VulnerabilityAssessmentName, Optional cancellationToken As CancellationToken = Nothing) As Response(Of SqlServerVulnerabilityAssessmentResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlServerVulnerabilityAssessment : Azure.ResourceManager.Sql.Models.VulnerabilityAssessmentName * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerVulnerabilityAssessmentResource&gt;&#xA;override this.GetSqlServerVulnerabilityAssessment : Azure.ResourceManager.Sql.Models.VulnerabilityAssessmentName * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerVulnerabilityAssessmentResource&gt;" Usage="sqlServerResource.GetSqlServerVulnerabilityAssessment (vulnerabilityAssessmentName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerVulnerabilityAssessmentResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vulnerabilityAssessmentName" Type="Azure.ResourceManager.Sql.Models.VulnerabilityAssessmentName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="vulnerabilityAssessmentName"> The name of the vulnerability assessment. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the server's vulnerability assessment.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/vulnerabilityAssessments/{vulnerabilityAssessmentName}
+            Operation Id: ServerVulnerabilityAssessments_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerVulnerabilityAssessmentAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerVulnerabilityAssessmentResource&gt;&gt; GetSqlServerVulnerabilityAssessmentAsync (Azure.ResourceManager.Sql.Models.VulnerabilityAssessmentName vulnerabilityAssessmentName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.SqlServerVulnerabilityAssessmentResource&gt;&gt; GetSqlServerVulnerabilityAssessmentAsync(valuetype Azure.ResourceManager.Sql.Models.VulnerabilityAssessmentName vulnerabilityAssessmentName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlServerResource.GetSqlServerVulnerabilityAssessmentAsync(Azure.ResourceManager.Sql.Models.VulnerabilityAssessmentName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlServerVulnerabilityAssessmentAsync (vulnerabilityAssessmentName As VulnerabilityAssessmentName, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of SqlServerVulnerabilityAssessmentResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlServerVulnerabilityAssessmentAsync : Azure.ResourceManager.Sql.Models.VulnerabilityAssessmentName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerVulnerabilityAssessmentResource&gt;&gt;&#xA;override this.GetSqlServerVulnerabilityAssessmentAsync : Azure.ResourceManager.Sql.Models.VulnerabilityAssessmentName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerVulnerabilityAssessmentResource&gt;&gt;" Usage="sqlServerResource.GetSqlServerVulnerabilityAssessmentAsync (vulnerabilityAssessmentName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlServerVulnerabilityAssessmentResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vulnerabilityAssessmentName" Type="Azure.ResourceManager.Sql.Models.VulnerabilityAssessmentName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="vulnerabilityAssessmentName"> The name of the vulnerability assessment. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the server's vulnerability assessment.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/vulnerabilityAssessments/{vulnerabilityAssessmentName}
+            Operation Id: ServerVulnerabilityAssessments_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerVulnerabilityAssessments">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.SqlServerVulnerabilityAssessmentCollection GetSqlServerVulnerabilityAssessments ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.SqlServerVulnerabilityAssessmentCollection GetSqlServerVulnerabilityAssessments() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlServerResource.GetSqlServerVulnerabilityAssessments" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlServerVulnerabilityAssessments () As SqlServerVulnerabilityAssessmentCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlServerVulnerabilityAssessments : unit -&gt; Azure.ResourceManager.Sql.SqlServerVulnerabilityAssessmentCollection&#xA;override this.GetSqlServerVulnerabilityAssessments : unit -&gt; Azure.ResourceManager.Sql.SqlServerVulnerabilityAssessmentCollection" Usage="sqlServerResource.GetSqlServerVulnerabilityAssessments " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlServerVulnerabilityAssessmentCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> Gets a collection of SqlServerVulnerabilityAssessmentResources in the SqlServer. </summary>
+        <returns> An object representing collection of SqlServerVulnerabilityAssessmentResources and their operations over a SqlServerVulnerabilityAssessmentResource. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetSyncAgent">
       <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.SyncAgentResource&gt; GetSyncAgent (string syncAgentName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.SyncAgentResource&gt; GetSyncAgent(string syncAgentName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />

@@ -20,7 +20,7 @@
             documents with models built on custom document types.
             </summary>
     <remarks>
-            Client is only available for <see cref="F:Azure.AI.FormRecognizer.DocumentAnalysis.DocumentAnalysisClientOptions.ServiceVersion.V2022_06_30_preview" /> and higher.
+            Client is only available for <see cref="F:Azure.AI.FormRecognizer.DocumentAnalysis.DocumentAnalysisClientOptions.ServiceVersion.V2022_06_30_Preview" /> and higher.
             If you want to use a lower version, please use the <see cref="T:Azure.AI.FormRecognizer.FormRecognizerClient" />.
             </remarks>
   </Docs>
@@ -158,11 +158,11 @@
       </Docs>
     </Member>
     <Member MemberName="StartAnalyzeDocument">
-      <MemberSignature Language="C#" Value="public virtual Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOperation StartAnalyzeDocument (string modelId, System.IO.Stream document, Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions analyzeDocumentOptions = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOperation StartAnalyzeDocument(string modelId, class System.IO.Stream document, class Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions analyzeDocumentOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOperation StartAnalyzeDocument (string modelId, System.IO.Stream document, Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions options = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOperation StartAnalyzeDocument(string modelId, class System.IO.Stream document, class Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.FormRecognizer.DocumentAnalysis.DocumentAnalysisClient.StartAnalyzeDocument(System.String,System.IO.Stream,Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartAnalyzeDocument (modelId As String, document As Stream, Optional analyzeDocumentOptions As AnalyzeDocumentOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AnalyzeDocumentOperation" />
-      <MemberSignature Language="F#" Value="abstract member StartAnalyzeDocument : string * System.IO.Stream * Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions * System.Threading.CancellationToken -&gt; Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOperation&#xA;override this.StartAnalyzeDocument : string * System.IO.Stream * Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions * System.Threading.CancellationToken -&gt; Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOperation" Usage="documentAnalysisClient.StartAnalyzeDocument (modelId, document, analyzeDocumentOptions, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartAnalyzeDocument (modelId As String, document As Stream, Optional options As AnalyzeDocumentOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AnalyzeDocumentOperation" />
+      <MemberSignature Language="F#" Value="abstract member StartAnalyzeDocument : string * System.IO.Stream * Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions * System.Threading.CancellationToken -&gt; Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOperation&#xA;override this.StartAnalyzeDocument : string * System.IO.Stream * Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions * System.Threading.CancellationToken -&gt; Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOperation" Usage="documentAnalysisClient.StartAnalyzeDocument (modelId, document, options, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.FormRecognizer</AssemblyName>
@@ -174,7 +174,7 @@
       <Parameters>
         <Parameter Name="modelId" Type="System.String" />
         <Parameter Name="document" Type="System.IO.Stream" />
-        <Parameter Name="analyzeDocumentOptions" Type="Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions" />
+        <Parameter Name="options" Type="Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
@@ -185,7 +185,7 @@
             Prebuilt model IDs can be found at <see href="https://aka.ms/azsdk/formrecognizer/models" />.
             </param>
         <param name="document">The stream containing one or more documents to analyze.</param>
-        <param name="analyzeDocumentOptions">
+        <param name="options">
             A set of options available for configuring the analyze request. For example, specify the locale of the
             document, or which pages to analyze.
             </param>
@@ -202,11 +202,11 @@
       </Docs>
     </Member>
     <Member MemberName="StartAnalyzeDocumentAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOperation&gt; StartAnalyzeDocumentAsync (string modelId, System.IO.Stream document, Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions analyzeDocumentOptions = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOperation&gt; StartAnalyzeDocumentAsync(string modelId, class System.IO.Stream document, class Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions analyzeDocumentOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOperation&gt; StartAnalyzeDocumentAsync (string modelId, System.IO.Stream document, Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions options = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOperation&gt; StartAnalyzeDocumentAsync(string modelId, class System.IO.Stream document, class Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.FormRecognizer.DocumentAnalysis.DocumentAnalysisClient.StartAnalyzeDocumentAsync(System.String,System.IO.Stream,Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartAnalyzeDocumentAsync (modelId As String, document As Stream, Optional analyzeDocumentOptions As AnalyzeDocumentOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of AnalyzeDocumentOperation)" />
-      <MemberSignature Language="F#" Value="abstract member StartAnalyzeDocumentAsync : string * System.IO.Stream * Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOperation&gt;&#xA;override this.StartAnalyzeDocumentAsync : string * System.IO.Stream * Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOperation&gt;" Usage="documentAnalysisClient.StartAnalyzeDocumentAsync (modelId, document, analyzeDocumentOptions, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartAnalyzeDocumentAsync (modelId As String, document As Stream, Optional options As AnalyzeDocumentOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of AnalyzeDocumentOperation)" />
+      <MemberSignature Language="F#" Value="abstract member StartAnalyzeDocumentAsync : string * System.IO.Stream * Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOperation&gt;&#xA;override this.StartAnalyzeDocumentAsync : string * System.IO.Stream * Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOperation&gt;" Usage="documentAnalysisClient.StartAnalyzeDocumentAsync (modelId, document, options, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.FormRecognizer</AssemblyName>
@@ -218,7 +218,7 @@
       <Parameters>
         <Parameter Name="modelId" Type="System.String" />
         <Parameter Name="document" Type="System.IO.Stream" />
-        <Parameter Name="analyzeDocumentOptions" Type="Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions" />
+        <Parameter Name="options" Type="Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
@@ -229,7 +229,7 @@
             Prebuilt model IDs can be found at <see href="https://aka.ms/azsdk/formrecognizer/models" />.
             </param>
         <param name="document">The stream containing one or more documents to analyze.</param>
-        <param name="analyzeDocumentOptions">
+        <param name="options">
             A set of options available for configuring the analyze request. For example, specify the locale of the
             document, or which pages to analyze.
             </param>
@@ -246,11 +246,11 @@
       </Docs>
     </Member>
     <Member MemberName="StartAnalyzeDocumentFromUri">
-      <MemberSignature Language="C#" Value="public virtual Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOperation StartAnalyzeDocumentFromUri (string modelId, Uri documentUri, Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions analyzeDocumentOptions = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOperation StartAnalyzeDocumentFromUri(string modelId, class System.Uri documentUri, class Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions analyzeDocumentOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOperation StartAnalyzeDocumentFromUri (string modelId, Uri documentUri, Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions options = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOperation StartAnalyzeDocumentFromUri(string modelId, class System.Uri documentUri, class Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.FormRecognizer.DocumentAnalysis.DocumentAnalysisClient.StartAnalyzeDocumentFromUri(System.String,System.Uri,Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartAnalyzeDocumentFromUri (modelId As String, documentUri As Uri, Optional analyzeDocumentOptions As AnalyzeDocumentOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AnalyzeDocumentOperation" />
-      <MemberSignature Language="F#" Value="abstract member StartAnalyzeDocumentFromUri : string * Uri * Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions * System.Threading.CancellationToken -&gt; Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOperation&#xA;override this.StartAnalyzeDocumentFromUri : string * Uri * Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions * System.Threading.CancellationToken -&gt; Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOperation" Usage="documentAnalysisClient.StartAnalyzeDocumentFromUri (modelId, documentUri, analyzeDocumentOptions, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartAnalyzeDocumentFromUri (modelId As String, documentUri As Uri, Optional options As AnalyzeDocumentOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AnalyzeDocumentOperation" />
+      <MemberSignature Language="F#" Value="abstract member StartAnalyzeDocumentFromUri : string * Uri * Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions * System.Threading.CancellationToken -&gt; Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOperation&#xA;override this.StartAnalyzeDocumentFromUri : string * Uri * Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions * System.Threading.CancellationToken -&gt; Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOperation" Usage="documentAnalysisClient.StartAnalyzeDocumentFromUri (modelId, documentUri, options, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.FormRecognizer</AssemblyName>
@@ -262,7 +262,7 @@
       <Parameters>
         <Parameter Name="modelId" Type="System.String" />
         <Parameter Name="documentUri" Type="System.Uri" />
-        <Parameter Name="analyzeDocumentOptions" Type="Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions" />
+        <Parameter Name="options" Type="Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
@@ -273,7 +273,7 @@
             Prebuilt model IDs can be found at <see href="https://aka.ms/azsdk/formrecognizer/models" />.
             </param>
         <param name="documentUri">The absolute URI of the remote file to analyze documents from.</param>
-        <param name="analyzeDocumentOptions">
+        <param name="options">
             A set of options available for configuring the analyze request. For example, specify the locale of the
             document, or which pages to analyze.
             </param>
@@ -290,11 +290,11 @@
       </Docs>
     </Member>
     <Member MemberName="StartAnalyzeDocumentFromUriAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOperation&gt; StartAnalyzeDocumentFromUriAsync (string modelId, Uri documentUri, Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions analyzeDocumentOptions = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOperation&gt; StartAnalyzeDocumentFromUriAsync(string modelId, class System.Uri documentUri, class Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions analyzeDocumentOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOperation&gt; StartAnalyzeDocumentFromUriAsync (string modelId, Uri documentUri, Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions options = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOperation&gt; StartAnalyzeDocumentFromUriAsync(string modelId, class System.Uri documentUri, class Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.FormRecognizer.DocumentAnalysis.DocumentAnalysisClient.StartAnalyzeDocumentFromUriAsync(System.String,System.Uri,Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartAnalyzeDocumentFromUriAsync (modelId As String, documentUri As Uri, Optional analyzeDocumentOptions As AnalyzeDocumentOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of AnalyzeDocumentOperation)" />
-      <MemberSignature Language="F#" Value="abstract member StartAnalyzeDocumentFromUriAsync : string * Uri * Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOperation&gt;&#xA;override this.StartAnalyzeDocumentFromUriAsync : string * Uri * Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOperation&gt;" Usage="documentAnalysisClient.StartAnalyzeDocumentFromUriAsync (modelId, documentUri, analyzeDocumentOptions, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartAnalyzeDocumentFromUriAsync (modelId As String, documentUri As Uri, Optional options As AnalyzeDocumentOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of AnalyzeDocumentOperation)" />
+      <MemberSignature Language="F#" Value="abstract member StartAnalyzeDocumentFromUriAsync : string * Uri * Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOperation&gt;&#xA;override this.StartAnalyzeDocumentFromUriAsync : string * Uri * Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOperation&gt;" Usage="documentAnalysisClient.StartAnalyzeDocumentFromUriAsync (modelId, documentUri, options, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.FormRecognizer</AssemblyName>
@@ -306,7 +306,7 @@
       <Parameters>
         <Parameter Name="modelId" Type="System.String" />
         <Parameter Name="documentUri" Type="System.Uri" />
-        <Parameter Name="analyzeDocumentOptions" Type="Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions" />
+        <Parameter Name="options" Type="Azure.AI.FormRecognizer.DocumentAnalysis.AnalyzeDocumentOptions" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
@@ -317,7 +317,7 @@
             Prebuilt model IDs can be found at <see href="https://aka.ms/azsdk/formrecognizer/models" />.
             </param>
         <param name="documentUri">The absolute URI of the remote file to analyze documents from.</param>
-        <param name="analyzeDocumentOptions">
+        <param name="options">
             A set of options available for configuring the analyze request. For example, specify the locale of the
             document, or which pages to analyze.
             </param>

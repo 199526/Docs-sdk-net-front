@@ -117,6 +117,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="IsEnabled">
+      <MemberSignature Language="C#" Value="public bool? IsEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsEnabled" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Monitor.ActivityLogAlertData.IsEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsEnabled As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.IsEnabled : Nullable&lt;bool&gt; with get, set" Usage="Azure.ResourceManager.Monitor.ActivityLogAlertData.IsEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Indicates whether this activity log alert is enabled. If an activity log alert is not enabled, then none of its actions will be activated. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Scopes">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; Scopes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;string&gt; Scopes" />

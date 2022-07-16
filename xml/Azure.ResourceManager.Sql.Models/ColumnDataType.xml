@@ -389,6 +389,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="HierarchyId">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ColumnDataType HierarchyId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ColumnDataType HierarchyId" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ColumnDataType.HierarchyId" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property HierarchyId As ColumnDataType" />
+      <MemberSignature Language="F#" Value="member this.HierarchyId : Azure.ResourceManager.Sql.Models.ColumnDataType" Usage="Azure.ResourceManager.Sql.Models.ColumnDataType.HierarchyId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ColumnDataType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> hierarchyid. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Image">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Sql.Models.ColumnDataType Image { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Sql.Models.ColumnDataType Image" />

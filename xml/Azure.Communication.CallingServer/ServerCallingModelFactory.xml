@@ -1,0 +1,217 @@
+<Type Name="ServerCallingModelFactory" FullName="Azure.Communication.CallingServer.ServerCallingModelFactory">
+  <TypeSignature Language="C#" Value="public static class ServerCallingModelFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ServerCallingModelFactory extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.Communication.CallingServer.ServerCallingModelFactory" />
+  <TypeSignature Language="VB.NET" Value="Public Class ServerCallingModelFactory" />
+  <TypeSignature Language="F#" Value="type ServerCallingModelFactory = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> Model factory for read-only models. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddParticipantsResponse">
+      <MemberSignature Language="C#" Value="public static Azure.Communication.CallingServer.AddParticipantsResponse AddParticipantsResponse (string operationId = default, Azure.Communication.CallingServer.CallingOperationStatusDto status = default, string operationContext = default, Azure.Communication.CallingServer.CallingOperationResultDetailsDto resultDetails = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Communication.CallingServer.AddParticipantsResponse AddParticipantsResponse(string operationId, valuetype Azure.Communication.CallingServer.CallingOperationStatusDto status, string operationContext, class Azure.Communication.CallingServer.CallingOperationResultDetailsDto resultDetails) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.ServerCallingModelFactory.AddParticipantsResponse(System.String,Azure.Communication.CallingServer.CallingOperationStatusDto,System.String,Azure.Communication.CallingServer.CallingOperationResultDetailsDto)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AddParticipantsResponse (Optional operationId As String = Nothing, Optional status As CallingOperationStatusDto = Nothing, Optional operationContext As String = Nothing, Optional resultDetails As CallingOperationResultDetailsDto = Nothing) As AddParticipantsResponse" />
+      <MemberSignature Language="F#" Value="static member AddParticipantsResponse : string * Azure.Communication.CallingServer.CallingOperationStatusDto * string * Azure.Communication.CallingServer.CallingOperationResultDetailsDto -&gt; Azure.Communication.CallingServer.AddParticipantsResponse" Usage="Azure.Communication.CallingServer.ServerCallingModelFactory.AddParticipantsResponse (operationId, status, operationContext, resultDetails)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Communication.CallingServer.AddParticipantsResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operationId" Type="System.String" />
+        <Parameter Name="status" Type="Azure.Communication.CallingServer.CallingOperationStatusDto" />
+        <Parameter Name="operationContext" Type="System.String" />
+        <Parameter Name="resultDetails" Type="Azure.Communication.CallingServer.CallingOperationResultDetailsDto" />
+      </Parameters>
+      <Docs>
+        <param name="operationId"> The operation id. </param>
+        <param name="status"> The status of the operation. </param>
+        <param name="operationContext"> The operation context provided by client. </param>
+        <param name="resultDetails"> The result info for the operation. </param>
+        <summary> Initializes a new instance of AddParticipantsResponse. </summary>
+        <returns> A new <see cref="T:Azure.Communication.CallingServer.AddParticipantsResponse" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CallingOperationResultDetailsDto">
+      <MemberSignature Language="C#" Value="public static Azure.Communication.CallingServer.CallingOperationResultDetailsDto CallingOperationResultDetailsDto (int code = 0, int subcode = 0, string message = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Communication.CallingServer.CallingOperationResultDetailsDto CallingOperationResultDetailsDto(int32 code, int32 subcode, string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.ServerCallingModelFactory.CallingOperationResultDetailsDto(System.Int32,System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CallingOperationResultDetailsDto (Optional code As Integer = 0, Optional subcode As Integer = 0, Optional message As String = Nothing) As CallingOperationResultDetailsDto" />
+      <MemberSignature Language="F#" Value="static member CallingOperationResultDetailsDto : int * int * string -&gt; Azure.Communication.CallingServer.CallingOperationResultDetailsDto" Usage="Azure.Communication.CallingServer.ServerCallingModelFactory.CallingOperationResultDetailsDto (code, subcode, message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Communication.CallingServer.CallingOperationResultDetailsDto</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="code" Type="System.Int32" />
+        <Parameter Name="subcode" Type="System.Int32" />
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="code"> The result code associated with the operation. </param>
+        <param name="subcode"> The subcode that further classifies the result. </param>
+        <param name="message"> The message is a detail explanation of subcode. </param>
+        <summary> Initializes a new instance of CallingOperationResultDetailsDto. </summary>
+        <returns> A new <see cref="T:Azure.Communication.CallingServer.CallingOperationResultDetailsDto" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCallRecordingStateResponse">
+      <MemberSignature Language="C#" Value="public static Azure.Communication.CallingServer.GetCallRecordingStateResponse GetCallRecordingStateResponse (Azure.Communication.CallingServer.RecordingState? recordingState = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Communication.CallingServer.GetCallRecordingStateResponse GetCallRecordingStateResponse(valuetype System.Nullable`1&lt;valuetype Azure.Communication.CallingServer.RecordingState&gt; recordingState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.ServerCallingModelFactory.GetCallRecordingStateResponse(System.Nullable{Azure.Communication.CallingServer.RecordingState})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetCallRecordingStateResponse (Optional recordingState As Nullable(Of RecordingState) = Nothing) As GetCallRecordingStateResponse" />
+      <MemberSignature Language="F#" Value="static member GetCallRecordingStateResponse : Nullable&lt;Azure.Communication.CallingServer.RecordingState&gt; -&gt; Azure.Communication.CallingServer.GetCallRecordingStateResponse" Usage="Azure.Communication.CallingServer.ServerCallingModelFactory.GetCallRecordingStateResponse recordingState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Communication.CallingServer.GetCallRecordingStateResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="recordingState" Type="System.Nullable&lt;Azure.Communication.CallingServer.RecordingState&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="recordingState" />
+        <summary> Initializes a new instance of GetCallRecordingStateResponse. </summary>
+        <returns> A new <see cref="T:Azure.Communication.CallingServer.GetCallRecordingStateResponse" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlayResponse">
+      <MemberSignature Language="C#" Value="public static Azure.Communication.CallingServer.PlayResponse PlayResponse (string operationId = default, Azure.Communication.CallingServer.CallingOperationStatusDto status = default, string operationContext = default, Azure.Communication.CallingServer.CallingOperationResultDetailsDto resultDetails = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Communication.CallingServer.PlayResponse PlayResponse(string operationId, valuetype Azure.Communication.CallingServer.CallingOperationStatusDto status, string operationContext, class Azure.Communication.CallingServer.CallingOperationResultDetailsDto resultDetails) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.ServerCallingModelFactory.PlayResponse(System.String,Azure.Communication.CallingServer.CallingOperationStatusDto,System.String,Azure.Communication.CallingServer.CallingOperationResultDetailsDto)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PlayResponse (Optional operationId As String = Nothing, Optional status As CallingOperationStatusDto = Nothing, Optional operationContext As String = Nothing, Optional resultDetails As CallingOperationResultDetailsDto = Nothing) As PlayResponse" />
+      <MemberSignature Language="F#" Value="static member PlayResponse : string * Azure.Communication.CallingServer.CallingOperationStatusDto * string * Azure.Communication.CallingServer.CallingOperationResultDetailsDto -&gt; Azure.Communication.CallingServer.PlayResponse" Usage="Azure.Communication.CallingServer.ServerCallingModelFactory.PlayResponse (operationId, status, operationContext, resultDetails)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Communication.CallingServer.PlayResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operationId" Type="System.String" />
+        <Parameter Name="status" Type="Azure.Communication.CallingServer.CallingOperationStatusDto" />
+        <Parameter Name="operationContext" Type="System.String" />
+        <Parameter Name="resultDetails" Type="Azure.Communication.CallingServer.CallingOperationResultDetailsDto" />
+      </Parameters>
+      <Docs>
+        <param name="operationId"> The operation id. </param>
+        <param name="status"> The status of the operation. </param>
+        <param name="operationContext"> The operation context provided by client. </param>
+        <param name="resultDetails"> The result info for the operation. </param>
+        <summary> Initializes a new instance of PlayResponse. </summary>
+        <returns> A new <see cref="T:Azure.Communication.CallingServer.PlayResponse" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveParticipantsResponse">
+      <MemberSignature Language="C#" Value="public static Azure.Communication.CallingServer.RemoveParticipantsResponse RemoveParticipantsResponse (string operationId = default, Azure.Communication.CallingServer.CallingOperationStatusDto status = default, string operationContext = default, Azure.Communication.CallingServer.CallingOperationResultDetailsDto resultDetails = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Communication.CallingServer.RemoveParticipantsResponse RemoveParticipantsResponse(string operationId, valuetype Azure.Communication.CallingServer.CallingOperationStatusDto status, string operationContext, class Azure.Communication.CallingServer.CallingOperationResultDetailsDto resultDetails) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.ServerCallingModelFactory.RemoveParticipantsResponse(System.String,Azure.Communication.CallingServer.CallingOperationStatusDto,System.String,Azure.Communication.CallingServer.CallingOperationResultDetailsDto)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RemoveParticipantsResponse (Optional operationId As String = Nothing, Optional status As CallingOperationStatusDto = Nothing, Optional operationContext As String = Nothing, Optional resultDetails As CallingOperationResultDetailsDto = Nothing) As RemoveParticipantsResponse" />
+      <MemberSignature Language="F#" Value="static member RemoveParticipantsResponse : string * Azure.Communication.CallingServer.CallingOperationStatusDto * string * Azure.Communication.CallingServer.CallingOperationResultDetailsDto -&gt; Azure.Communication.CallingServer.RemoveParticipantsResponse" Usage="Azure.Communication.CallingServer.ServerCallingModelFactory.RemoveParticipantsResponse (operationId, status, operationContext, resultDetails)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Communication.CallingServer.RemoveParticipantsResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operationId" Type="System.String" />
+        <Parameter Name="status" Type="Azure.Communication.CallingServer.CallingOperationStatusDto" />
+        <Parameter Name="operationContext" Type="System.String" />
+        <Parameter Name="resultDetails" Type="Azure.Communication.CallingServer.CallingOperationResultDetailsDto" />
+      </Parameters>
+      <Docs>
+        <param name="operationId"> The operation id. </param>
+        <param name="status"> The status of the operation. </param>
+        <param name="operationContext"> The operation context provided by client. </param>
+        <param name="resultDetails"> The result info for the operation. </param>
+        <summary> Initializes a new instance of RemoveParticipantsResponse. </summary>
+        <returns> A new <see cref="T:Azure.Communication.CallingServer.RemoveParticipantsResponse" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartCallRecordingResponse">
+      <MemberSignature Language="C#" Value="public static Azure.Communication.CallingServer.StartCallRecordingResponse StartCallRecordingResponse (string recordingId = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Communication.CallingServer.StartCallRecordingResponse StartCallRecordingResponse(string recordingId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.ServerCallingModelFactory.StartCallRecordingResponse(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function StartCallRecordingResponse (Optional recordingId As String = Nothing) As StartCallRecordingResponse" />
+      <MemberSignature Language="F#" Value="static member StartCallRecordingResponse : string -&gt; Azure.Communication.CallingServer.StartCallRecordingResponse" Usage="Azure.Communication.CallingServer.ServerCallingModelFactory.StartCallRecordingResponse recordingId" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Communication.CallingServer.StartCallRecordingResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="recordingId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="recordingId"> The recording id of the started recording. </param>
+        <summary> Initializes a new instance of StartCallRecordingResponse. </summary>
+        <returns> A new <see cref="T:Azure.Communication.CallingServer.StartCallRecordingResponse" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransferCallResponse">
+      <MemberSignature Language="C#" Value="public static Azure.Communication.CallingServer.TransferCallResponse TransferCallResponse (string operationId = default, Azure.Communication.CallingServer.CallingOperationStatusDto status = default, string operationContext = default, Azure.Communication.CallingServer.CallingOperationResultDetailsDto resultDetails = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Communication.CallingServer.TransferCallResponse TransferCallResponse(string operationId, valuetype Azure.Communication.CallingServer.CallingOperationStatusDto status, string operationContext, class Azure.Communication.CallingServer.CallingOperationResultDetailsDto resultDetails) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.ServerCallingModelFactory.TransferCallResponse(System.String,Azure.Communication.CallingServer.CallingOperationStatusDto,System.String,Azure.Communication.CallingServer.CallingOperationResultDetailsDto)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TransferCallResponse (Optional operationId As String = Nothing, Optional status As CallingOperationStatusDto = Nothing, Optional operationContext As String = Nothing, Optional resultDetails As CallingOperationResultDetailsDto = Nothing) As TransferCallResponse" />
+      <MemberSignature Language="F#" Value="static member TransferCallResponse : string * Azure.Communication.CallingServer.CallingOperationStatusDto * string * Azure.Communication.CallingServer.CallingOperationResultDetailsDto -&gt; Azure.Communication.CallingServer.TransferCallResponse" Usage="Azure.Communication.CallingServer.ServerCallingModelFactory.TransferCallResponse (operationId, status, operationContext, resultDetails)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Communication.CallingServer.TransferCallResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operationId" Type="System.String" />
+        <Parameter Name="status" Type="Azure.Communication.CallingServer.CallingOperationStatusDto" />
+        <Parameter Name="operationContext" Type="System.String" />
+        <Parameter Name="resultDetails" Type="Azure.Communication.CallingServer.CallingOperationResultDetailsDto" />
+      </Parameters>
+      <Docs>
+        <param name="operationId"> The operation id. </param>
+        <param name="status"> The status of the operation. </param>
+        <param name="operationContext"> The operation context provided by client. </param>
+        <param name="resultDetails"> The result info for the operation. </param>
+        <summary> Initializes a new instance of TransferCallResponse. </summary>
+        <returns> A new <see cref="T:Azure.Communication.CallingServer.TransferCallResponse" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

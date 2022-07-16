@@ -194,18 +194,18 @@
       </Docs>
     </Member>
     <Member MemberName="ProvisioningState">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Sql.Models.ProvisioningState? ProvisioningState { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Sql.Models.ProvisioningState&gt; ProvisioningState" />
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Sql.Models.JobExecutionProvisioningState? ProvisioningState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Sql.Models.JobExecutionProvisioningState&gt; ProvisioningState" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.JobExecutionData.ProvisioningState" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProvisioningState As Nullable(Of ProvisioningState)" />
-      <MemberSignature Language="F#" Value="member this.ProvisioningState : Nullable&lt;Azure.ResourceManager.Sql.Models.ProvisioningState&gt;" Usage="Azure.ResourceManager.Sql.JobExecutionData.ProvisioningState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProvisioningState As Nullable(Of JobExecutionProvisioningState)" />
+      <MemberSignature Language="F#" Value="member this.ProvisioningState : Nullable&lt;Azure.ResourceManager.Sql.Models.JobExecutionProvisioningState&gt;" Usage="Azure.ResourceManager.Sql.JobExecutionData.ProvisioningState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Nullable&lt;Azure.ResourceManager.Sql.Models.ProvisioningState&gt;</ReturnType>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.Sql.Models.JobExecutionProvisioningState&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The ARM provisioning state of the job execution. </summary>

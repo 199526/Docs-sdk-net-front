@@ -19,7 +19,7 @@
             properties.
             </summary>
     <remarks>
-            This client only works with <see cref="F:Azure.AI.FormRecognizer.DocumentAnalysis.DocumentAnalysisClientOptions.ServiceVersion.V2022_06_30_preview" /> and up.
+            This client only works with <see cref="F:Azure.AI.FormRecognizer.DocumentAnalysis.DocumentAnalysisClientOptions.ServiceVersion.V2022_06_30_Preview" /> and up.
             If you want to use a lower version, please use the <see cref="T:Azure.AI.FormRecognizer.Training.FormTrainingClient" />.
             </remarks>
   </Docs>
@@ -267,11 +267,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetCopyAuthorization">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.AI.FormRecognizer.DocumentAnalysis.CopyAuthorization&gt; GetCopyAuthorization (string modelId = default, string modelDescription = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.AI.FormRecognizer.DocumentAnalysis.CopyAuthorization&gt; GetCopyAuthorization(string modelId, string modelDescription, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.AI.FormRecognizer.DocumentAnalysis.CopyAuthorization&gt; GetCopyAuthorization (string modelId = default, string description = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.AI.FormRecognizer.DocumentAnalysis.CopyAuthorization&gt; GetCopyAuthorization(string modelId, string description, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelAdministrationClient.GetCopyAuthorization(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCopyAuthorization (Optional modelId As String = Nothing, Optional modelDescription As String = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Response(Of CopyAuthorization)" />
-      <MemberSignature Language="F#" Value="abstract member GetCopyAuthorization : string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.AI.FormRecognizer.DocumentAnalysis.CopyAuthorization&gt;&#xA;override this.GetCopyAuthorization : string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.AI.FormRecognizer.DocumentAnalysis.CopyAuthorization&gt;" Usage="documentModelAdministrationClient.GetCopyAuthorization (modelId, modelDescription, tags, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCopyAuthorization (Optional modelId As String = Nothing, Optional description As String = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Response(Of CopyAuthorization)" />
+      <MemberSignature Language="F#" Value="abstract member GetCopyAuthorization : string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.AI.FormRecognizer.DocumentAnalysis.CopyAuthorization&gt;&#xA;override this.GetCopyAuthorization : string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.AI.FormRecognizer.DocumentAnalysis.CopyAuthorization&gt;" Usage="documentModelAdministrationClient.GetCopyAuthorization (modelId, description, tags, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.FormRecognizer</AssemblyName>
@@ -282,13 +282,13 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="modelId" Type="System.String" />
-        <Parameter Name="modelDescription" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
         <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="modelId">A unique ID for your copied model. If not specified, a model ID will be created for you.</param>
-        <param name="modelDescription">An optional description to add to the model.</param>
+        <param name="description">An optional description to add to the model.</param>
         <param name="tags">A list of user-defined key-value tag attributes associated with the model.</param>
         <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> controlling the request lifetime.</param>
         <summary>
@@ -300,11 +300,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetCopyAuthorizationAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.AI.FormRecognizer.DocumentAnalysis.CopyAuthorization&gt;&gt; GetCopyAuthorizationAsync (string modelId = default, string modelDescription = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.AI.FormRecognizer.DocumentAnalysis.CopyAuthorization&gt;&gt; GetCopyAuthorizationAsync(string modelId, string modelDescription, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.AI.FormRecognizer.DocumentAnalysis.CopyAuthorization&gt;&gt; GetCopyAuthorizationAsync (string modelId = default, string description = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.AI.FormRecognizer.DocumentAnalysis.CopyAuthorization&gt;&gt; GetCopyAuthorizationAsync(string modelId, string description, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelAdministrationClient.GetCopyAuthorizationAsync(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCopyAuthorizationAsync (Optional modelId As String = Nothing, Optional modelDescription As String = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of CopyAuthorization))" />
-      <MemberSignature Language="F#" Value="abstract member GetCopyAuthorizationAsync : string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.AI.FormRecognizer.DocumentAnalysis.CopyAuthorization&gt;&gt;&#xA;override this.GetCopyAuthorizationAsync : string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.AI.FormRecognizer.DocumentAnalysis.CopyAuthorization&gt;&gt;" Usage="documentModelAdministrationClient.GetCopyAuthorizationAsync (modelId, modelDescription, tags, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCopyAuthorizationAsync (Optional modelId As String = Nothing, Optional description As String = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of CopyAuthorization))" />
+      <MemberSignature Language="F#" Value="abstract member GetCopyAuthorizationAsync : string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.AI.FormRecognizer.DocumentAnalysis.CopyAuthorization&gt;&gt;&#xA;override this.GetCopyAuthorizationAsync : string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.AI.FormRecognizer.DocumentAnalysis.CopyAuthorization&gt;&gt;" Usage="documentModelAdministrationClient.GetCopyAuthorizationAsync (modelId, description, tags, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.FormRecognizer</AssemblyName>
@@ -315,13 +315,13 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="modelId" Type="System.String" />
-        <Parameter Name="modelDescription" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
         <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="modelId">A unique ID for your copied model. If not specified, a model ID will be created for you.</param>
-        <param name="modelDescription">An optional description to add to the model.</param>
+        <param name="description">An optional description to add to the model.</param>
         <param name="tags">A list of user-defined key-value tag attributes associated with the model.</param>
         <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> controlling the request lifetime.</param>
         <summary>
@@ -354,7 +354,7 @@
         <param name="modelId">The ID of the model to retrieve.</param>
         <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> controlling the request lifetime.</param>
         <summary>
-            Gets a description of a model, including the types of documents it can recognize and the fields it will extract for each document type.
+            Gets information about a model, including the types of documents it can recognize and the fields it will extract for each document type.
             </summary>
         <returns>A <see cref="T:Azure.Response`1" /> representing the result of the operation. It can be cast to a <see cref="T:Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModel" /> containing
             information about the requested model.</returns>
@@ -383,7 +383,7 @@
         <param name="modelId">The ID of the model to retrieve.</param>
         <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> controlling the request lifetime.</param>
         <summary>
-            Gets a description of a model, including the types of documents it can recognize and the fields it will extract for each document type.
+            Gets information about a model, including the types of documents it can recognize and the fields it will extract for each document type.
             </summary>
         <returns>A <see cref="T:Azure.Response`1" /> representing the result of the operation. It can be cast to a <see cref="T:Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModel" /> containing
             information about the requested model.</returns>
@@ -391,18 +391,18 @@
       </Docs>
     </Member>
     <Member MemberName="GetModels">
-      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelInfo&gt; GetModels (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelInfo&gt; GetModels(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelSummary&gt; GetModels (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelSummary&gt; GetModels(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelAdministrationClient.GetModels(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetModels (Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of DocumentModelInfo)" />
-      <MemberSignature Language="F#" Value="abstract member GetModels : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelInfo&gt;&#xA;override this.GetModels : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelInfo&gt;" Usage="documentModelAdministrationClient.GetModels cancellationToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetModels (Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of DocumentModelSummary)" />
+      <MemberSignature Language="F#" Value="abstract member GetModels : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelSummary&gt;&#xA;override this.GetModels : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelSummary&gt;" Usage="documentModelAdministrationClient.GetModels cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.FormRecognizer</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Pageable&lt;Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelInfo&gt;</ReturnType>
+        <ReturnType>Azure.Pageable&lt;Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelSummary&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
@@ -412,23 +412,23 @@
         <summary>
             Gets a collection of items describing the models available on this Cognitive Services Account.
             </summary>
-        <returns>A collection of <see cref="T:Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelInfo" /> items.</returns>
+        <returns>A collection of <see cref="T:Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelSummary" /> items.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetModelsAsync">
-      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelInfo&gt; GetModelsAsync (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelInfo&gt; GetModelsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelSummary&gt; GetModelsAsync (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelSummary&gt; GetModelsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelAdministrationClient.GetModelsAsync(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetModelsAsync (Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of DocumentModelInfo)" />
-      <MemberSignature Language="F#" Value="abstract member GetModelsAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelInfo&gt;&#xA;override this.GetModelsAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelInfo&gt;" Usage="documentModelAdministrationClient.GetModelsAsync cancellationToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetModelsAsync (Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of DocumentModelSummary)" />
+      <MemberSignature Language="F#" Value="abstract member GetModelsAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelSummary&gt;&#xA;override this.GetModelsAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelSummary&gt;" Usage="documentModelAdministrationClient.GetModelsAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.FormRecognizer</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AsyncPageable&lt;Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelInfo&gt;</ReturnType>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelSummary&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
@@ -438,7 +438,7 @@
         <summary>
             Gets a collection of items describing the models available on this Cognitive Services Account.
             </summary>
-        <returns>A collection of <see cref="T:Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelInfo" /> items.</returns>
+        <returns>A collection of <see cref="T:Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelSummary" /> items.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -553,11 +553,11 @@
       </Docs>
     </Member>
     <Member MemberName="StartBuildModel">
-      <MemberSignature Language="C#" Value="public virtual Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOperation StartBuildModel (Uri trainingFilesUri, Azure.AI.FormRecognizer.DocumentAnalysis.DocumentBuildMode buildMode, string modelId = default, Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOptions buildModelOptions = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOperation StartBuildModel(class System.Uri trainingFilesUri, valuetype Azure.AI.FormRecognizer.DocumentAnalysis.DocumentBuildMode buildMode, string modelId, class Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOptions buildModelOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOperation StartBuildModel (Uri trainingFilesUri, Azure.AI.FormRecognizer.DocumentAnalysis.DocumentBuildMode buildMode, string modelId = default, Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOptions options = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOperation StartBuildModel(class System.Uri trainingFilesUri, valuetype Azure.AI.FormRecognizer.DocumentAnalysis.DocumentBuildMode buildMode, string modelId, class Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelAdministrationClient.StartBuildModel(System.Uri,Azure.AI.FormRecognizer.DocumentAnalysis.DocumentBuildMode,System.String,Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartBuildModel (trainingFilesUri As Uri, buildMode As DocumentBuildMode, Optional modelId As String = Nothing, Optional buildModelOptions As BuildModelOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As BuildModelOperation" />
-      <MemberSignature Language="F#" Value="abstract member StartBuildModel : Uri * Azure.AI.FormRecognizer.DocumentAnalysis.DocumentBuildMode * string * Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOptions * System.Threading.CancellationToken -&gt; Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOperation&#xA;override this.StartBuildModel : Uri * Azure.AI.FormRecognizer.DocumentAnalysis.DocumentBuildMode * string * Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOptions * System.Threading.CancellationToken -&gt; Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOperation" Usage="documentModelAdministrationClient.StartBuildModel (trainingFilesUri, buildMode, modelId, buildModelOptions, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartBuildModel (trainingFilesUri As Uri, buildMode As DocumentBuildMode, Optional modelId As String = Nothing, Optional options As BuildModelOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As BuildModelOperation" />
+      <MemberSignature Language="F#" Value="abstract member StartBuildModel : Uri * Azure.AI.FormRecognizer.DocumentAnalysis.DocumentBuildMode * string * Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOptions * System.Threading.CancellationToken -&gt; Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOperation&#xA;override this.StartBuildModel : Uri * Azure.AI.FormRecognizer.DocumentAnalysis.DocumentBuildMode * string * Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOptions * System.Threading.CancellationToken -&gt; Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOperation" Usage="documentModelAdministrationClient.StartBuildModel (trainingFilesUri, buildMode, modelId, options, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.FormRecognizer</AssemblyName>
@@ -570,7 +570,7 @@
         <Parameter Name="trainingFilesUri" Type="System.Uri" />
         <Parameter Name="buildMode" Type="Azure.AI.FormRecognizer.DocumentAnalysis.DocumentBuildMode" />
         <Parameter Name="modelId" Type="System.String" />
-        <Parameter Name="buildModelOptions" Type="Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOptions" />
+        <Parameter Name="options" Type="Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOptions" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
@@ -593,7 +593,7 @@
             For more information see <see href="https://aka.ms/azsdk/formrecognizer/buildmode">here</see>.
             </param>
         <param name="modelId">A unique ID for your model. If not specified, a model ID will be created for you.</param>
-        <param name="buildModelOptions">A set of options available for configuring the request. For example, set a model description or set a filter to apply
+        <param name="options">A set of options available for configuring the request. For example, set a model description or set a filter to apply
             to the documents in the source path.</param>
         <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> controlling the request lifetime.</param>
         <summary>
@@ -607,11 +607,11 @@
       </Docs>
     </Member>
     <Member MemberName="StartBuildModelAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOperation&gt; StartBuildModelAsync (Uri trainingFilesUri, Azure.AI.FormRecognizer.DocumentAnalysis.DocumentBuildMode buildMode, string modelId = default, Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOptions buildModelOptions = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOperation&gt; StartBuildModelAsync(class System.Uri trainingFilesUri, valuetype Azure.AI.FormRecognizer.DocumentAnalysis.DocumentBuildMode buildMode, string modelId, class Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOptions buildModelOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOperation&gt; StartBuildModelAsync (Uri trainingFilesUri, Azure.AI.FormRecognizer.DocumentAnalysis.DocumentBuildMode buildMode, string modelId = default, Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOptions options = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOperation&gt; StartBuildModelAsync(class System.Uri trainingFilesUri, valuetype Azure.AI.FormRecognizer.DocumentAnalysis.DocumentBuildMode buildMode, string modelId, class Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelAdministrationClient.StartBuildModelAsync(System.Uri,Azure.AI.FormRecognizer.DocumentAnalysis.DocumentBuildMode,System.String,Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartBuildModelAsync (trainingFilesUri As Uri, buildMode As DocumentBuildMode, Optional modelId As String = Nothing, Optional buildModelOptions As BuildModelOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of BuildModelOperation)" />
-      <MemberSignature Language="F#" Value="abstract member StartBuildModelAsync : Uri * Azure.AI.FormRecognizer.DocumentAnalysis.DocumentBuildMode * string * Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOperation&gt;&#xA;override this.StartBuildModelAsync : Uri * Azure.AI.FormRecognizer.DocumentAnalysis.DocumentBuildMode * string * Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOperation&gt;" Usage="documentModelAdministrationClient.StartBuildModelAsync (trainingFilesUri, buildMode, modelId, buildModelOptions, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartBuildModelAsync (trainingFilesUri As Uri, buildMode As DocumentBuildMode, Optional modelId As String = Nothing, Optional options As BuildModelOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of BuildModelOperation)" />
+      <MemberSignature Language="F#" Value="abstract member StartBuildModelAsync : Uri * Azure.AI.FormRecognizer.DocumentAnalysis.DocumentBuildMode * string * Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOperation&gt;&#xA;override this.StartBuildModelAsync : Uri * Azure.AI.FormRecognizer.DocumentAnalysis.DocumentBuildMode * string * Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOperation&gt;" Usage="documentModelAdministrationClient.StartBuildModelAsync (trainingFilesUri, buildMode, modelId, options, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.FormRecognizer</AssemblyName>
@@ -624,7 +624,7 @@
         <Parameter Name="trainingFilesUri" Type="System.Uri" />
         <Parameter Name="buildMode" Type="Azure.AI.FormRecognizer.DocumentAnalysis.DocumentBuildMode" />
         <Parameter Name="modelId" Type="System.String" />
-        <Parameter Name="buildModelOptions" Type="Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOptions" />
+        <Parameter Name="options" Type="Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOptions" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
@@ -647,7 +647,7 @@
             For more information see <see href="https://aka.ms/azsdk/formrecognizer/buildmode">here</see>.
             </param>
         <param name="modelId">A unique ID for your model. If not specified, a model ID will be created for you.</param>
-        <param name="buildModelOptions">A set of options available for configuring the request. For example, set a model description or set a filter to apply
+        <param name="options">A set of options available for configuring the request. For example, set a model description or set a filter to apply
             to the documents in the source path.</param>
         <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> controlling the request lifetime.</param>
         <summary>
@@ -657,6 +657,86 @@
             A <see cref="T:Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOperation" /> to wait on this long-running operation. Its Value upon successful
             completion will contain meta-data about the created custom model.
             </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartComposeModel">
+      <MemberSignature Language="C#" Value="public virtual Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOperation StartComposeModel (System.Collections.Generic.IEnumerable&lt;string&gt; componentModelIds, string modelId = default, string description = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOperation StartComposeModel(class System.Collections.Generic.IEnumerable`1&lt;string&gt; componentModelIds, string modelId, string description, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelAdministrationClient.StartComposeModel(System.Collections.Generic.IEnumerable{System.String},System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartComposeModel (componentModelIds As IEnumerable(Of String), Optional modelId As String = Nothing, Optional description As String = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As BuildModelOperation" />
+      <MemberSignature Language="F#" Value="abstract member StartComposeModel : seq&lt;string&gt; * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOperation&#xA;override this.StartComposeModel : seq&lt;string&gt; * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOperation" Usage="documentModelAdministrationClient.StartComposeModel (componentModelIds, modelId, description, tags, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.FormRecognizer</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOperation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="componentModelIds" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="modelId" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="componentModelIds">List of model ids to use in the composition.</param>
+        <param name="modelId">A unique ID for your model. If not specified, a model ID will be created for you.</param>
+        <param name="description">An optional description to add to the model.</param>
+        <param name="tags">A list of user-defined key-value tag attributes associated with the model.</param>
+        <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> controlling the request lifetime.</param>
+        <summary>
+            Composes a model from a collection of existing models.
+            A model built by composition allows multiple models to be called with a single model ID. When a document is
+            submitted to be analyzed with its model ID, a classification step is first performed to route it to the correct
+            custom model.
+            </summary>
+        <returns>
+          <para>A <see cref="T:Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOperation" /> to wait on this long-running operation. Its Value upon successful
+            completion will contain meta-data about the built model.</para>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartComposeModelAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOperation&gt; StartComposeModelAsync (System.Collections.Generic.IEnumerable&lt;string&gt; componentModelIds, string modelId = default, string description = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOperation&gt; StartComposeModelAsync(class System.Collections.Generic.IEnumerable`1&lt;string&gt; componentModelIds, string modelId, string description, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.FormRecognizer.DocumentAnalysis.DocumentModelAdministrationClient.StartComposeModelAsync(System.Collections.Generic.IEnumerable{System.String},System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartComposeModelAsync (componentModelIds As IEnumerable(Of String), Optional modelId As String = Nothing, Optional description As String = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of BuildModelOperation)" />
+      <MemberSignature Language="F#" Value="abstract member StartComposeModelAsync : seq&lt;string&gt; * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOperation&gt;&#xA;override this.StartComposeModelAsync : seq&lt;string&gt; * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOperation&gt;" Usage="documentModelAdministrationClient.StartComposeModelAsync (componentModelIds, modelId, description, tags, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.FormRecognizer</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="componentModelIds" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="modelId" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="componentModelIds">List of model ids to use in the composition.</param>
+        <param name="modelId">A unique ID for your model. If not specified, a model ID will be created for you.</param>
+        <param name="description">An optional description to add to the model.</param>
+        <param name="tags">A list of user-defined key-value tag attributes associated with the model.</param>
+        <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> controlling the request lifetime.</param>
+        <summary>
+            Composes a model from a collection of existing models.
+            A model built by composition allows multiple models to be called with a single model ID. When a document is
+            submitted to be analyzed with its model ID, a classification step is first performed to route it to the correct
+            custom model.
+            </summary>
+        <returns>
+          <para>A <see cref="T:Azure.AI.FormRecognizer.DocumentAnalysis.BuildModelOperation" /> to wait on this long-running operation. Its Value upon successful
+            completion will contain meta-data about the built model.</para>
+        </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

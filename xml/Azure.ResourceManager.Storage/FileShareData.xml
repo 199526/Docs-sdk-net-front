@@ -34,18 +34,18 @@
       </Docs>
     </Member>
     <Member MemberName="AccessTier">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Storage.Models.ShareAccessTier? AccessTier { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Storage.Models.ShareAccessTier&gt; AccessTier" />
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Storage.Models.FileShareAccessTier? AccessTier { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Storage.Models.FileShareAccessTier&gt; AccessTier" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Storage.FileShareData.AccessTier" />
-      <MemberSignature Language="VB.NET" Value="Public Property AccessTier As Nullable(Of ShareAccessTier)" />
-      <MemberSignature Language="F#" Value="member this.AccessTier : Nullable&lt;Azure.ResourceManager.Storage.Models.ShareAccessTier&gt; with get, set" Usage="Azure.ResourceManager.Storage.FileShareData.AccessTier" />
+      <MemberSignature Language="VB.NET" Value="Public Property AccessTier As Nullable(Of FileShareAccessTier)" />
+      <MemberSignature Language="F#" Value="member this.AccessTier : Nullable&lt;Azure.ResourceManager.Storage.Models.FileShareAccessTier&gt; with get, set" Usage="Azure.ResourceManager.Storage.FileShareData.AccessTier" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Nullable&lt;Azure.ResourceManager.Storage.Models.ShareAccessTier&gt;</ReturnType>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.Storage.Models.FileShareAccessTier&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Access tier for specific share. GpV2 account can choose between TransactionOptimized (default), Hot, and Cool. FileStorage account can choose Premium. </summary>
@@ -133,6 +133,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="EnabledProtocol">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Storage.Models.FileShareEnabledProtocol? EnabledProtocol { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Storage.Models.FileShareEnabledProtocol&gt; EnabledProtocol" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Storage.FileShareData.EnabledProtocol" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnabledProtocol As Nullable(Of FileShareEnabledProtocol)" />
+      <MemberSignature Language="F#" Value="member this.EnabledProtocol : Nullable&lt;Azure.ResourceManager.Storage.Models.FileShareEnabledProtocol&gt; with get, set" Usage="Azure.ResourceManager.Storage.FileShareData.EnabledProtocol" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.Storage.Models.FileShareEnabledProtocol&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The authentication protocol that is used for the file share. Can only be specified when creating a share. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="EnabledProtocols">
       <MemberSignature Language="C#" Value="public Azure.ResourceManager.Storage.Models.EnabledProtocol? EnabledProtocols { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Storage.Models.EnabledProtocol&gt; EnabledProtocols" />
@@ -169,6 +189,46 @@
       </ReturnValue>
       <Docs>
         <summary> Resource Etag. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ETag">
+      <MemberSignature Language="C#" Value="public Azure.ETag? ETag { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ETag&gt; ETag" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Storage.FileShareData.ETag" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ETag As Nullable(Of ETag)" />
+      <MemberSignature Language="F#" Value="member this.ETag : Nullable&lt;Azure.ETag&gt;" Usage="Azure.ResourceManager.Storage.FileShareData.ETag" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ETag&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Resource Etag. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDeleted">
+      <MemberSignature Language="C#" Value="public bool? IsDeleted { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsDeleted" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Storage.FileShareData.IsDeleted" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDeleted As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.IsDeleted : Nullable&lt;bool&gt;" Usage="Azure.ResourceManager.Storage.FileShareData.IsDeleted" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Indicates whether the share was deleted. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,0 +1,101 @@
+<Type Name="PlayResponse" FullName="Azure.Communication.CallingServer.PlayResponse">
+  <TypeSignature Language="C#" Value="public class PlayResponse" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PlayResponse extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.Communication.CallingServer.PlayResponse" />
+  <TypeSignature Language="VB.NET" Value="Public Class PlayResponse" />
+  <TypeSignature Language="F#" Value="type PlayResponse = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> The PlayResponse. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="OperationContext">
+      <MemberSignature Language="C#" Value="public string OperationContext { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OperationContext" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallingServer.PlayResponse.OperationContext" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OperationContext As String" />
+      <MemberSignature Language="F#" Value="member this.OperationContext : string" Usage="Azure.Communication.CallingServer.PlayResponse.OperationContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The operation context provided by client. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OperationId">
+      <MemberSignature Language="C#" Value="public string OperationId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OperationId" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallingServer.PlayResponse.OperationId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OperationId As String" />
+      <MemberSignature Language="F#" Value="member this.OperationId : string" Usage="Azure.Communication.CallingServer.PlayResponse.OperationId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The operation id. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResultDetails">
+      <MemberSignature Language="C#" Value="public Azure.Communication.CallingServer.CallingOperationResultDetailsDto ResultDetails { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Communication.CallingServer.CallingOperationResultDetailsDto ResultDetails" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallingServer.PlayResponse.ResultDetails" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResultDetails As CallingOperationResultDetailsDto" />
+      <MemberSignature Language="F#" Value="member this.ResultDetails : Azure.Communication.CallingServer.CallingOperationResultDetailsDto" Usage="Azure.Communication.CallingServer.PlayResponse.ResultDetails" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Communication.CallingServer.CallingOperationResultDetailsDto</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The result info for the operation. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Status">
+      <MemberSignature Language="C#" Value="public Azure.Communication.CallingServer.CallingOperationStatusDto Status { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Azure.Communication.CallingServer.CallingOperationStatusDto Status" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallingServer.PlayResponse.Status" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Status As CallingOperationStatusDto" />
+      <MemberSignature Language="F#" Value="member this.Status : Azure.Communication.CallingServer.CallingOperationStatusDto" Usage="Azure.Communication.CallingServer.PlayResponse.Status" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Communication.CallingServer.CallingOperationStatusDto</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The status of the operation. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

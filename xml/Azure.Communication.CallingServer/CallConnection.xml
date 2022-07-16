@@ -36,6 +36,37 @@
       </Docs>
     </Member>
     <Member MemberName="AddParticipant">
+      <MemberSignature Language="C#" Value="public virtual Azure.Communication.CallingServer.AddParticipantsResponse AddParticipant (System.Collections.Generic.IEnumerable&lt;Azure.Communication.CommunicationIdentifier&gt; participantsToAdd, Azure.Communication.CallingServer.AddParticipantsOptions options = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Communication.CallingServer.AddParticipantsResponse AddParticipant(class System.Collections.Generic.IEnumerable`1&lt;class Azure.Communication.CommunicationIdentifier&gt; participantsToAdd, class Azure.Communication.CallingServer.AddParticipantsOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.CallConnection.AddParticipant(System.Collections.Generic.IEnumerable{Azure.Communication.CommunicationIdentifier},Azure.Communication.CallingServer.AddParticipantsOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AddParticipant (participantsToAdd As IEnumerable(Of CommunicationIdentifier), Optional options As AddParticipantsOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AddParticipantsResponse" />
+      <MemberSignature Language="F#" Value="abstract member AddParticipant : seq&lt;Azure.Communication.CommunicationIdentifier&gt; * Azure.Communication.CallingServer.AddParticipantsOptions * System.Threading.CancellationToken -&gt; Azure.Communication.CallingServer.AddParticipantsResponse&#xA;override this.AddParticipant : seq&lt;Azure.Communication.CommunicationIdentifier&gt; * Azure.Communication.CallingServer.AddParticipantsOptions * System.Threading.CancellationToken -&gt; Azure.Communication.CallingServer.AddParticipantsResponse" Usage="callConnection.AddParticipant (participantsToAdd, options, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Communication.CallingServer.AddParticipantsResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="participantsToAdd" Type="System.Collections.Generic.IEnumerable&lt;Azure.Communication.CommunicationIdentifier&gt;" />
+        <Parameter Name="options" Type="Azure.Communication.CallingServer.AddParticipantsOptions" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="participantsToAdd"> The list of identity of participants to be added to the call. </param>
+        <param name="options">The options. </param>
+        <param name="cancellationToken"> The cancellation token. </param>
+        <summary> Add a participant to the call. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Azure.RequestFailedException">The server returned an error. See <see cref="P:System.Exception.Message" /> for details returned from the server.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="participantsToAdd" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddParticipant">
       <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Communication.CallingServer.AddParticipantResult&gt; AddParticipant (Azure.Communication.CommunicationIdentifier participant, string alternateCallerId = default, string operationContext = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Communication.CallingServer.AddParticipantResult&gt; AddParticipant(class Azure.Communication.CommunicationIdentifier participant, string alternateCallerId, string operationContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.CallConnection.AddParticipant(Azure.Communication.CommunicationIdentifier,System.String,System.String,System.Threading.CancellationToken)" />
@@ -66,6 +97,37 @@
         <exception cref="T:Azure.RequestFailedException">The server returned an error. See <see cref="P:System.Exception.Message" /> for details returned from the server.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="participant" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddParticipantAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Communication.CallingServer.AddParticipantsResponse&gt; AddParticipantAsync (System.Collections.Generic.IEnumerable&lt;Azure.Communication.CommunicationIdentifier&gt; participantsToAdd, Azure.Communication.CallingServer.AddParticipantsOptions options = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Communication.CallingServer.AddParticipantsResponse&gt; AddParticipantAsync(class System.Collections.Generic.IEnumerable`1&lt;class Azure.Communication.CommunicationIdentifier&gt; participantsToAdd, class Azure.Communication.CallingServer.AddParticipantsOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.CallConnection.AddParticipantAsync(System.Collections.Generic.IEnumerable{Azure.Communication.CommunicationIdentifier},Azure.Communication.CallingServer.AddParticipantsOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AddParticipantAsync (participantsToAdd As IEnumerable(Of CommunicationIdentifier), Optional options As AddParticipantsOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of AddParticipantsResponse)" />
+      <MemberSignature Language="F#" Value="abstract member AddParticipantAsync : seq&lt;Azure.Communication.CommunicationIdentifier&gt; * Azure.Communication.CallingServer.AddParticipantsOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Communication.CallingServer.AddParticipantsResponse&gt;&#xA;override this.AddParticipantAsync : seq&lt;Azure.Communication.CommunicationIdentifier&gt; * Azure.Communication.CallingServer.AddParticipantsOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Communication.CallingServer.AddParticipantsResponse&gt;" Usage="callConnection.AddParticipantAsync (participantsToAdd, options, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Communication.CallingServer.AddParticipantsResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="participantsToAdd" Type="System.Collections.Generic.IEnumerable&lt;Azure.Communication.CommunicationIdentifier&gt;" />
+        <Parameter Name="options" Type="Azure.Communication.CallingServer.AddParticipantsOptions" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="participantsToAdd"> The list of identity of participants to be added to the call. </param>
+        <param name="options">The options. </param>
+        <param name="cancellationToken"> The cancellation token. </param>
+        <summary> Add a participant to the call. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Azure.RequestFailedException">The server returned an error. See <see cref="P:System.Exception.Message" /> for details returned from the server.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="participantsToAdd" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="AddParticipantAsync">
@@ -101,6 +163,46 @@
           <paramref name="participant" /> is null. </exception>
       </Docs>
     </Member>
+    <Member MemberName="AlternateCallerId">
+      <MemberSignature Language="C#" Value="public virtual Azure.Communication.PhoneNumberIdentifier AlternateCallerId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Communication.PhoneNumberIdentifier AlternateCallerId" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallingServer.CallConnection.AlternateCallerId" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AlternateCallerId As PhoneNumberIdentifier" />
+      <MemberSignature Language="F#" Value="member this.AlternateCallerId : Azure.Communication.PhoneNumberIdentifier" Usage="Azure.Communication.CallingServer.CallConnection.AlternateCallerId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Communication.PhoneNumberIdentifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The alternate identity of the source of the call if dialing out to a pstn number. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CallbackUri">
+      <MemberSignature Language="C#" Value="public virtual Uri CallbackUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri CallbackUri" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallingServer.CallConnection.CallbackUri" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CallbackUri As Uri" />
+      <MemberSignature Language="F#" Value="member this.CallbackUri : Uri" Usage="Azure.Communication.CallingServer.CallConnection.CallbackUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The callback URI. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CallConnectionId">
       <MemberSignature Language="C#" Value="public virtual string CallConnectionId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CallConnectionId" />
@@ -119,6 +221,26 @@
         <summary>
             The call connection id.
             </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CallConnectionState">
+      <MemberSignature Language="C#" Value="public virtual Azure.Communication.CallingServer.CallConnectionStateModel? CallConnectionState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.Communication.CallingServer.CallConnectionStateModel&gt; CallConnectionState" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallingServer.CallConnection.CallConnectionState" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CallConnectionState As Nullable(Of CallConnectionStateModel)" />
+      <MemberSignature Language="F#" Value="member this.CallConnectionState : Nullable&lt;Azure.Communication.CallingServer.CallConnectionStateModel&gt;" Usage="Azure.Communication.CallingServer.CallConnection.CallConnectionState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.Communication.CallingServer.CallConnectionStateModel&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The state of the call connection. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -173,6 +295,110 @@
         <param name="cancellationToken"> The cancellation token. </param>
         <summary> Cancel all media operations in the call. </summary>
         <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Azure.RequestFailedException">The server returned an error. See <see cref="P:System.Exception.Message" /> for details returned from the server.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetParticipant">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Communication.CallingServer.CallParticipant&gt; GetParticipant (Azure.Communication.CommunicationIdentifier participant, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Communication.CallingServer.CallParticipant&gt; GetParticipant(class Azure.Communication.CommunicationIdentifier participant, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.CallConnection.GetParticipant(Azure.Communication.CommunicationIdentifier,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetParticipant (participant As CommunicationIdentifier, Optional cancellationToken As CancellationToken = Nothing) As Response(Of CallParticipant)" />
+      <MemberSignature Language="F#" Value="abstract member GetParticipant : Azure.Communication.CommunicationIdentifier * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Communication.CallingServer.CallParticipant&gt;&#xA;override this.GetParticipant : Azure.Communication.CommunicationIdentifier * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Communication.CallingServer.CallParticipant&gt;" Usage="callConnection.GetParticipant (participant, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.Communication.CallingServer.CallParticipant&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="participant" Type="Azure.Communication.CommunicationIdentifier" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="participant">The participant.</param>
+        <param name="cancellationToken"> The cancellation token. </param>
+        <summary> Get participant from a call. </summary>
+        <returns>The <see cref="T:Azure.Communication.CallingServer.CallParticipant" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Azure.RequestFailedException">The server returned an error. See <see cref="P:System.Exception.Message" /> for details returned from the server.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetParticipantAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Communication.CallingServer.CallParticipant&gt;&gt; GetParticipantAsync (Azure.Communication.CommunicationIdentifier participant, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Communication.CallingServer.CallParticipant&gt;&gt; GetParticipantAsync(class Azure.Communication.CommunicationIdentifier participant, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.CallConnection.GetParticipantAsync(Azure.Communication.CommunicationIdentifier,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetParticipantAsync (participant As CommunicationIdentifier, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of CallParticipant))" />
+      <MemberSignature Language="F#" Value="abstract member GetParticipantAsync : Azure.Communication.CommunicationIdentifier * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Communication.CallingServer.CallParticipant&gt;&gt;&#xA;override this.GetParticipantAsync : Azure.Communication.CommunicationIdentifier * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Communication.CallingServer.CallParticipant&gt;&gt;" Usage="callConnection.GetParticipantAsync (participant, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Communication.CallingServer.CallParticipant&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="participant" Type="Azure.Communication.CommunicationIdentifier" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="participant">The participant.</param>
+        <param name="cancellationToken"> The cancellation token. </param>
+        <summary> Get participant from a call. </summary>
+        <returns>The <see cref="T:Azure.Communication.CallingServer.CallParticipant" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Azure.RequestFailedException">The server returned an error. See <see cref="P:System.Exception.Message" /> for details returned from the server.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetParticipants">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Communication.CallingServer.CallParticipantCollection&gt; GetParticipants (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Communication.CallingServer.CallParticipantCollection&gt; GetParticipants(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.CallConnection.GetParticipants(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetParticipants (Optional cancellationToken As CancellationToken = Nothing) As Response(Of CallParticipantCollection)" />
+      <MemberSignature Language="F#" Value="abstract member GetParticipants : System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Communication.CallingServer.CallParticipantCollection&gt;&#xA;override this.GetParticipants : System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Communication.CallingServer.CallParticipantCollection&gt;" Usage="callConnection.GetParticipants cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.Communication.CallingServer.CallParticipantCollection&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken"> The cancellation token. </param>
+        <summary> Get participants from a call. </summary>
+        <returns>The <see cref="T:System.Collections.Generic.IEnumerable`1" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Azure.RequestFailedException">The server returned an error. See <see cref="P:System.Exception.Message" /> for details returned from the server.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetParticipantsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Communication.CallingServer.CallParticipantCollection&gt;&gt; GetParticipantsAsync (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Communication.CallingServer.CallParticipantCollection&gt;&gt; GetParticipantsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.CallConnection.GetParticipantsAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetParticipantsAsync (Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of CallParticipantCollection))" />
+      <MemberSignature Language="F#" Value="abstract member GetParticipantsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Communication.CallingServer.CallParticipantCollection&gt;&gt;&#xA;override this.GetParticipantsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Communication.CallingServer.CallParticipantCollection&gt;&gt;" Usage="callConnection.GetParticipantsAsync cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Communication.CallingServer.CallParticipantCollection&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken"> The cancellation token. </param>
+        <summary> Get participants from a call. </summary>
+        <returns>The <see cref="T:System.Collections.Generic.IEnumerable`1" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:Azure.RequestFailedException">The server returned an error. See <see cref="P:System.Exception.Message" /> for details returned from the server.</exception>
       </Docs>
@@ -382,6 +608,37 @@
         <exception cref="T:Azure.RequestFailedException">The server returned an error. See <see cref="P:System.Exception.Message" /> for details returned from the server.</exception>
       </Docs>
     </Member>
+    <Member MemberName="RemoveParticipant">
+      <MemberSignature Language="C#" Value="public virtual Azure.Communication.CallingServer.RemoveParticipantsResponse RemoveParticipant (System.Collections.Generic.IEnumerable&lt;Azure.Communication.CommunicationIdentifier&gt; participantsToRemove, string operationContext = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Communication.CallingServer.RemoveParticipantsResponse RemoveParticipant(class System.Collections.Generic.IEnumerable`1&lt;class Azure.Communication.CommunicationIdentifier&gt; participantsToRemove, string operationContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.CallConnection.RemoveParticipant(System.Collections.Generic.IEnumerable{Azure.Communication.CommunicationIdentifier},System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RemoveParticipant (participantsToRemove As IEnumerable(Of CommunicationIdentifier), Optional operationContext As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As RemoveParticipantsResponse" />
+      <MemberSignature Language="F#" Value="abstract member RemoveParticipant : seq&lt;Azure.Communication.CommunicationIdentifier&gt; * string * System.Threading.CancellationToken -&gt; Azure.Communication.CallingServer.RemoveParticipantsResponse&#xA;override this.RemoveParticipant : seq&lt;Azure.Communication.CommunicationIdentifier&gt; * string * System.Threading.CancellationToken -&gt; Azure.Communication.CallingServer.RemoveParticipantsResponse" Usage="callConnection.RemoveParticipant (participantsToRemove, operationContext, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Communication.CallingServer.RemoveParticipantsResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="participantsToRemove" Type="System.Collections.Generic.IEnumerable&lt;Azure.Communication.CommunicationIdentifier&gt;" />
+        <Parameter Name="operationContext" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="participantsToRemove"> The list of identity of participants to be removed from the call. </param>
+        <param name="operationContext">The operation context. </param>
+        <param name="cancellationToken"> The cancellation token. </param>
+        <summary> Remove participants from the call. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Azure.RequestFailedException">The server returned an error. See <see cref="P:System.Exception.Message" /> for details returned from the server.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="participantsToRemove" /> is null. </exception>
+      </Docs>
+    </Member>
     <Member MemberName="RemoveParticipantAsync">
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; RemoveParticipantAsync (string participantId, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; RemoveParticipantAsync(string participantId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -404,6 +661,229 @@
         <param name="participantId"> The participant id. </param>
         <param name="cancellationToken"> The cancellation token. </param>
         <summary> Remove a participant from the call. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Azure.RequestFailedException">The server returned an error. See <see cref="P:System.Exception.Message" /> for details returned from the server.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveParticipantAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Communication.CallingServer.RemoveParticipantsResponse&gt; RemoveParticipantAsync (System.Collections.Generic.IEnumerable&lt;Azure.Communication.CommunicationIdentifier&gt; participantsToRemove, string operationContext = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Communication.CallingServer.RemoveParticipantsResponse&gt; RemoveParticipantAsync(class System.Collections.Generic.IEnumerable`1&lt;class Azure.Communication.CommunicationIdentifier&gt; participantsToRemove, string operationContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.CallConnection.RemoveParticipantAsync(System.Collections.Generic.IEnumerable{Azure.Communication.CommunicationIdentifier},System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RemoveParticipantAsync (participantsToRemove As IEnumerable(Of CommunicationIdentifier), Optional operationContext As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of RemoveParticipantsResponse)" />
+      <MemberSignature Language="F#" Value="abstract member RemoveParticipantAsync : seq&lt;Azure.Communication.CommunicationIdentifier&gt; * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Communication.CallingServer.RemoveParticipantsResponse&gt;&#xA;override this.RemoveParticipantAsync : seq&lt;Azure.Communication.CommunicationIdentifier&gt; * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Communication.CallingServer.RemoveParticipantsResponse&gt;" Usage="callConnection.RemoveParticipantAsync (participantsToRemove, operationContext, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Communication.CallingServer.RemoveParticipantsResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="participantsToRemove" Type="System.Collections.Generic.IEnumerable&lt;Azure.Communication.CommunicationIdentifier&gt;" />
+        <Parameter Name="operationContext" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="participantsToRemove"> The list of identity of participants to be removed from the call. </param>
+        <param name="operationContext">The operation context. </param>
+        <param name="cancellationToken"> The cancellation token. </param>
+        <summary> Remove participants from the call. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Azure.RequestFailedException">The server returned an error. See <see cref="P:System.Exception.Message" /> for details returned from the server.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="participantsToRemove" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerCallId">
+      <MemberSignature Language="C#" Value="public virtual string ServerCallId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ServerCallId" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallingServer.CallConnection.ServerCallId" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ServerCallId As String" />
+      <MemberSignature Language="F#" Value="member this.ServerCallId : string" Usage="Azure.Communication.CallingServer.CallConnection.ServerCallId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The ServerCall id.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Source">
+      <MemberSignature Language="C#" Value="public virtual Azure.Communication.CommunicationIdentifier Source { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Communication.CommunicationIdentifier Source" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallingServer.CallConnection.Source" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Source As CommunicationIdentifier" />
+      <MemberSignature Language="F#" Value="member this.Source : Azure.Communication.CommunicationIdentifier" Usage="Azure.Communication.CallingServer.CallConnection.Source" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Communication.CommunicationIdentifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The source of the call. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Subject">
+      <MemberSignature Language="C#" Value="public virtual string Subject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Subject" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallingServer.CallConnection.Subject" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Subject As String" />
+      <MemberSignature Language="F#" Value="member this.Subject : string" Usage="Azure.Communication.CallingServer.CallConnection.Subject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The subject. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Targets">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Azure.Communication.CommunicationIdentifier&gt; Targets { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class Azure.Communication.CommunicationIdentifier&gt; Targets" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallingServer.CallConnection.Targets" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Targets As IEnumerable(Of CommunicationIdentifier)" />
+      <MemberSignature Language="F#" Value="member this.Targets : seq&lt;Azure.Communication.CommunicationIdentifier&gt;" Usage="Azure.Communication.CallingServer.CallConnection.Targets" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Azure.Communication.CommunicationIdentifier&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The targets of the call. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TerminateCall">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response TerminateCall (string reason, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response TerminateCall(string reason, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.CallConnection.TerminateCall(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function TerminateCall (reason As String, Optional cancellationToken As CancellationToken = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member TerminateCall : string * System.Threading.CancellationToken -&gt; Azure.Response&#xA;override this.TerminateCall : string * System.Threading.CancellationToken -&gt; Azure.Response" Usage="callConnection.TerminateCall (reason, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reason" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="reason"> The reason of the terminate. </param>
+        <param name="cancellationToken"> The cancellation token. </param>
+        <summary> Terminates the conversation for all participants in the call. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Azure.RequestFailedException">The server returned an error. See <see cref="P:System.Exception.Message" /> for details returned from the server.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TerminateCallAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; TerminateCallAsync (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; TerminateCallAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.CallConnection.TerminateCallAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function TerminateCallAsync (Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member TerminateCallAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.TerminateCallAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="callConnection.TerminateCallAsync cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken"> The cancellation token. </param>
+        <summary> Terminates the conversation for all participants in the call. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Azure.RequestFailedException">The server returned an error. See <see cref="P:System.Exception.Message" /> for details returned from the server.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TransferCallToParticipant">
+      <MemberSignature Language="C#" Value="public virtual Azure.Communication.CallingServer.TransferCallResponse TransferCallToParticipant (Azure.Communication.CommunicationIdentifier targetParticipant, Azure.Communication.CallingServer.TransferCallOptions options = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Communication.CallingServer.TransferCallResponse TransferCallToParticipant(class Azure.Communication.CommunicationIdentifier targetParticipant, class Azure.Communication.CallingServer.TransferCallOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.CallConnection.TransferCallToParticipant(Azure.Communication.CommunicationIdentifier,Azure.Communication.CallingServer.TransferCallOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function TransferCallToParticipant (targetParticipant As CommunicationIdentifier, Optional options As TransferCallOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As TransferCallResponse" />
+      <MemberSignature Language="F#" Value="abstract member TransferCallToParticipant : Azure.Communication.CommunicationIdentifier * Azure.Communication.CallingServer.TransferCallOptions * System.Threading.CancellationToken -&gt; Azure.Communication.CallingServer.TransferCallResponse&#xA;override this.TransferCallToParticipant : Azure.Communication.CommunicationIdentifier * Azure.Communication.CallingServer.TransferCallOptions * System.Threading.CancellationToken -&gt; Azure.Communication.CallingServer.TransferCallResponse" Usage="callConnection.TransferCallToParticipant (targetParticipant, options, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Communication.CallingServer.TransferCallResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetParticipant" Type="Azure.Communication.CommunicationIdentifier" />
+        <Parameter Name="options" Type="Azure.Communication.CallingServer.TransferCallOptions" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="targetParticipant"> The target participant. </param>
+        <param name="options">The transfer options. </param>
+        <param name="cancellationToken"> The cancellation token. </param>
+        <summary> Transfer the call. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Azure.RequestFailedException">The server returned an error. See <see cref="P:System.Exception.Message" /> for details returned from the server.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TransferCallToParticipantAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Communication.CallingServer.TransferCallResponse&gt; TransferCallToParticipantAsync (Azure.Communication.CommunicationIdentifier targetParticipant, Azure.Communication.CallingServer.TransferCallOptions options = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Communication.CallingServer.TransferCallResponse&gt; TransferCallToParticipantAsync(class Azure.Communication.CommunicationIdentifier targetParticipant, class Azure.Communication.CallingServer.TransferCallOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.CallConnection.TransferCallToParticipantAsync(Azure.Communication.CommunicationIdentifier,Azure.Communication.CallingServer.TransferCallOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function TransferCallToParticipantAsync (targetParticipant As CommunicationIdentifier, Optional options As TransferCallOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TransferCallResponse)" />
+      <MemberSignature Language="F#" Value="abstract member TransferCallToParticipantAsync : Azure.Communication.CommunicationIdentifier * Azure.Communication.CallingServer.TransferCallOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Communication.CallingServer.TransferCallResponse&gt;&#xA;override this.TransferCallToParticipantAsync : Azure.Communication.CommunicationIdentifier * Azure.Communication.CallingServer.TransferCallOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Communication.CallingServer.TransferCallResponse&gt;" Usage="callConnection.TransferCallToParticipantAsync (targetParticipant, options, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Communication.CallingServer.TransferCallResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetParticipant" Type="Azure.Communication.CommunicationIdentifier" />
+        <Parameter Name="options" Type="Azure.Communication.CallingServer.TransferCallOptions" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="targetParticipant"> The identity of the target where call should be transferred to. </param>
+        <param name="options">The transfer options. </param>
+        <param name="cancellationToken"> The cancellation token. </param>
+        <summary> Transfer this call to a participant. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:Azure.RequestFailedException">The server returned an error. See <see cref="P:System.Exception.Message" /> for details returned from the server.</exception>

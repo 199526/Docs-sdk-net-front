@@ -179,7 +179,9 @@
             Gets the operation progress. Value is from [0-100].
             </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            This property can be accessed only after an update request. Make sure to call UpdateStatus first.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateStatus">

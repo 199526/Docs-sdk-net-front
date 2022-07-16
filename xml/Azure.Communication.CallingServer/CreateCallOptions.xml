@@ -18,6 +18,24 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CreateCallOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.CreateCallOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Create Call Options.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CreateCallOptions (Uri callbackUri, System.Collections.Generic.IEnumerable&lt;Azure.Communication.CallingServer.MediaType&gt; requestedMediaTypes, System.Collections.Generic.IEnumerable&lt;Azure.Communication.CallingServer.EventSubscriptionType&gt; requestedCallEvents);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri callbackUri, class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.Communication.CallingServer.MediaType&gt; requestedMediaTypes, class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.Communication.CallingServer.EventSubscriptionType&gt; requestedCallEvents) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.CreateCallOptions.#ctor(System.Uri,System.Collections.Generic.IEnumerable{Azure.Communication.CallingServer.MediaType},System.Collections.Generic.IEnumerable{Azure.Communication.CallingServer.EventSubscriptionType})" />

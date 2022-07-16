@@ -34,18 +34,18 @@
       </Docs>
     </Member>
     <Member MemberName="FromBackupResourceId">
-      <MemberSignature Language="C#" Value="public string FromBackupResourceId { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string FromBackupResourceId" />
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier FromBackupResourceId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier FromBackupResourceId" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.LongTermRetentionBackupOperationResult.FromBackupResourceId" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FromBackupResourceId As String" />
-      <MemberSignature Language="F#" Value="member this.FromBackupResourceId : string" Usage="Azure.ResourceManager.Sql.Models.LongTermRetentionBackupOperationResult.FromBackupResourceId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FromBackupResourceId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.FromBackupResourceId : Azure.Core.ResourceIdentifier" Usage="Azure.ResourceManager.Sql.Models.LongTermRetentionBackupOperationResult.FromBackupResourceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Source backup resource id. </summary>
@@ -154,18 +154,18 @@
       </Docs>
     </Member>
     <Member MemberName="ToBackupResourceId">
-      <MemberSignature Language="C#" Value="public string ToBackupResourceId { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string ToBackupResourceId" />
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier ToBackupResourceId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier ToBackupResourceId" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.LongTermRetentionBackupOperationResult.ToBackupResourceId" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ToBackupResourceId As String" />
-      <MemberSignature Language="F#" Value="member this.ToBackupResourceId : string" Usage="Azure.ResourceManager.Sql.Models.LongTermRetentionBackupOperationResult.ToBackupResourceId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ToBackupResourceId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.ToBackupResourceId : Azure.Core.ResourceIdentifier" Usage="Azure.ResourceManager.Sql.Models.LongTermRetentionBackupOperationResult.ToBackupResourceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Target backup resource id. </summary>

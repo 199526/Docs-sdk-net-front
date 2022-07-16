@@ -74,18 +74,18 @@
       </Docs>
     </Member>
     <Member MemberName="VirtualNetworkSubnetId">
-      <MemberSignature Language="C#" Value="public string VirtualNetworkSubnetId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string VirtualNetworkSubnetId" />
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier VirtualNetworkSubnetId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier VirtualNetworkSubnetId" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.VirtualNetworkRuleData.VirtualNetworkSubnetId" />
-      <MemberSignature Language="VB.NET" Value="Public Property VirtualNetworkSubnetId As String" />
-      <MemberSignature Language="F#" Value="member this.VirtualNetworkSubnetId : string with get, set" Usage="Azure.ResourceManager.Sql.VirtualNetworkRuleData.VirtualNetworkSubnetId" />
+      <MemberSignature Language="VB.NET" Value="Public Property VirtualNetworkSubnetId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.VirtualNetworkSubnetId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Sql.VirtualNetworkRuleData.VirtualNetworkSubnetId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The ARM resource id of the virtual network subnet. </summary>

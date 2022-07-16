@@ -1,0 +1,83 @@
+<Type Name="RejectCallRequest" FullName="Azure.Communication.CallingServer.RejectCallRequest">
+  <TypeSignature Language="C#" Value="public class RejectCallRequest" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RejectCallRequest extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.Communication.CallingServer.RejectCallRequest" />
+  <TypeSignature Language="VB.NET" Value="Public Class RejectCallRequest" />
+  <TypeSignature Language="F#" Value="type RejectCallRequest = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> The request payload for rejecting the call. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RejectCallRequest (string incomingCallContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string incomingCallContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.RejectCallRequest.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (incomingCallContext As String)" />
+      <MemberSignature Language="F#" Value="new Azure.Communication.CallingServer.RejectCallRequest : string -&gt; Azure.Communication.CallingServer.RejectCallRequest" Usage="new Azure.Communication.CallingServer.RejectCallRequest incomingCallContext" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="incomingCallContext" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="incomingCallContext"> The context associated with the call. </param>
+        <summary> Initializes a new instance of RejectCallRequest. </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="incomingCallContext" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CallRejectReason">
+      <MemberSignature Language="C#" Value="public Azure.Communication.CallingServer.CallRejectReason? CallRejectReason { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.Communication.CallingServer.CallRejectReason&gt; CallRejectReason" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallingServer.RejectCallRequest.CallRejectReason" />
+      <MemberSignature Language="VB.NET" Value="Public Property CallRejectReason As Nullable(Of CallRejectReason)" />
+      <MemberSignature Language="F#" Value="member this.CallRejectReason : Nullable&lt;Azure.Communication.CallingServer.CallRejectReason&gt; with get, set" Usage="Azure.Communication.CallingServer.RejectCallRequest.CallRejectReason" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.Communication.CallingServer.CallRejectReason&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The rejection reason. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncomingCallContext">
+      <MemberSignature Language="C#" Value="public string IncomingCallContext { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string IncomingCallContext" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallingServer.RejectCallRequest.IncomingCallContext" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IncomingCallContext As String" />
+      <MemberSignature Language="F#" Value="member this.IncomingCallContext : string" Usage="Azure.Communication.CallingServer.RejectCallRequest.IncomingCallContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The context associated with the call. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

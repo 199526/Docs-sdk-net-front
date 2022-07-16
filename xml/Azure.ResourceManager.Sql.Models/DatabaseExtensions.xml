@@ -34,18 +34,18 @@
       </Docs>
     </Member>
     <Member MemberName="OperationMode">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Sql.Models.OperationMode? OperationMode { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Sql.Models.OperationMode&gt; OperationMode" />
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Sql.Models.DatabaseExtensionOperationMode? OperationMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Sql.Models.DatabaseExtensionOperationMode&gt; OperationMode" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.DatabaseExtensions.OperationMode" />
-      <MemberSignature Language="VB.NET" Value="Public Property OperationMode As Nullable(Of OperationMode)" />
-      <MemberSignature Language="F#" Value="member this.OperationMode : Nullable&lt;Azure.ResourceManager.Sql.Models.OperationMode&gt; with get, set" Usage="Azure.ResourceManager.Sql.Models.DatabaseExtensions.OperationMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property OperationMode As Nullable(Of DatabaseExtensionOperationMode)" />
+      <MemberSignature Language="F#" Value="member this.OperationMode : Nullable&lt;Azure.ResourceManager.Sql.Models.DatabaseExtensionOperationMode&gt; with get, set" Usage="Azure.ResourceManager.Sql.Models.DatabaseExtensions.OperationMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Nullable&lt;Azure.ResourceManager.Sql.Models.OperationMode&gt;</ReturnType>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.Sql.Models.DatabaseExtensionOperationMode&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Operation Mode. </summary>

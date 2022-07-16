@@ -1,0 +1,41 @@
+<Type Name="GetCallRecordingStateResponse" FullName="Azure.Communication.CallingServer.GetCallRecordingStateResponse">
+  <TypeSignature Language="C#" Value="public class GetCallRecordingStateResponse" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GetCallRecordingStateResponse extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.Communication.CallingServer.GetCallRecordingStateResponse" />
+  <TypeSignature Language="VB.NET" Value="Public Class GetCallRecordingStateResponse" />
+  <TypeSignature Language="F#" Value="type GetCallRecordingStateResponse = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> The GetCallRecordingStateResponse. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="RecordingState">
+      <MemberSignature Language="C#" Value="public Azure.Communication.CallingServer.RecordingState? RecordingState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.Communication.CallingServer.RecordingState&gt; RecordingState" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallingServer.GetCallRecordingStateResponse.RecordingState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RecordingState As Nullable(Of RecordingState)" />
+      <MemberSignature Language="F#" Value="member this.RecordingState : Nullable&lt;Azure.Communication.CallingServer.RecordingState&gt;" Usage="Azure.Communication.CallingServer.GetCallRecordingStateResponse.RecordingState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.Communication.CallingServer.RecordingState&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Gets the recording state. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

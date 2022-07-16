@@ -53,6 +53,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="IsAutoRotationEnabled">
+      <MemberSignature Language="C#" Value="public bool? IsAutoRotationEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsAutoRotationEnabled" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.ManagedInstanceEncryptionProtectorData.IsAutoRotationEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsAutoRotationEnabled As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.IsAutoRotationEnabled : Nullable&lt;bool&gt; with get, set" Usage="Azure.ResourceManager.Sql.ManagedInstanceEncryptionProtectorData.IsAutoRotationEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Key auto rotation opt-in flag. Either true or false. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Kind">
       <MemberSignature Language="C#" Value="public string Kind { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Kind" />

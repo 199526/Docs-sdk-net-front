@@ -218,18 +218,18 @@
       </Docs>
     </Member>
     <Member MemberName="InstancePoolId">
-      <MemberSignature Language="C#" Value="public string InstancePoolId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string InstancePoolId" />
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier InstancePoolId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier InstancePoolId" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.ManagedInstanceData.InstancePoolId" />
-      <MemberSignature Language="VB.NET" Value="Public Property InstancePoolId As String" />
-      <MemberSignature Language="F#" Value="member this.InstancePoolId : string with get, set" Usage="Azure.ResourceManager.Sql.ManagedInstanceData.InstancePoolId" />
+      <MemberSignature Language="VB.NET" Value="Public Property InstancePoolId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.InstancePoolId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Sql.ManagedInstanceData.InstancePoolId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The Id of the instance pool this managed server belongs to. </summary>
@@ -237,19 +237,59 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="KeyId">
-      <MemberSignature Language="C#" Value="public string KeyId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string KeyId" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.ManagedInstanceData.KeyId" />
-      <MemberSignature Language="VB.NET" Value="Public Property KeyId As String" />
-      <MemberSignature Language="F#" Value="member this.KeyId : string with get, set" Usage="Azure.ResourceManager.Sql.ManagedInstanceData.KeyId" />
+    <Member MemberName="IsPublicDataEndpointEnabled">
+      <MemberSignature Language="C#" Value="public bool? IsPublicDataEndpointEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsPublicDataEndpointEnabled" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.ManagedInstanceData.IsPublicDataEndpointEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsPublicDataEndpointEnabled As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.IsPublicDataEndpointEnabled : Nullable&lt;bool&gt; with get, set" Usage="Azure.ResourceManager.Sql.ManagedInstanceData.IsPublicDataEndpointEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Whether or not the public data endpoint is enabled. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsZoneRedundant">
+      <MemberSignature Language="C#" Value="public bool? IsZoneRedundant { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsZoneRedundant" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.ManagedInstanceData.IsZoneRedundant" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsZoneRedundant As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.IsZoneRedundant : Nullable&lt;bool&gt; with get, set" Usage="Azure.ResourceManager.Sql.ManagedInstanceData.IsZoneRedundant" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Whether or not the multi-az is enabled. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyId">
+      <MemberSignature Language="C#" Value="public Uri KeyId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri KeyId" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.ManagedInstanceData.KeyId" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeyId As Uri" />
+      <MemberSignature Language="F#" Value="member this.KeyId : Uri with get, set" Usage="Azure.ResourceManager.Sql.ManagedInstanceData.KeyId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> A CMK URI of the key to use for encryption. </summary>
@@ -278,18 +318,18 @@
       </Docs>
     </Member>
     <Member MemberName="MaintenanceConfigurationId">
-      <MemberSignature Language="C#" Value="public string MaintenanceConfigurationId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string MaintenanceConfigurationId" />
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier MaintenanceConfigurationId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier MaintenanceConfigurationId" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.ManagedInstanceData.MaintenanceConfigurationId" />
-      <MemberSignature Language="VB.NET" Value="Public Property MaintenanceConfigurationId As String" />
-      <MemberSignature Language="F#" Value="member this.MaintenanceConfigurationId : string with get, set" Usage="Azure.ResourceManager.Sql.ManagedInstanceData.MaintenanceConfigurationId" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaintenanceConfigurationId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.MaintenanceConfigurationId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Sql.ManagedInstanceData.MaintenanceConfigurationId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Specifies maintenance configuration id to apply to this managed instance. </summary>
@@ -344,18 +384,18 @@
       </Docs>
     </Member>
     <Member MemberName="PrimaryUserAssignedIdentityId">
-      <MemberSignature Language="C#" Value="public string PrimaryUserAssignedIdentityId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string PrimaryUserAssignedIdentityId" />
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier PrimaryUserAssignedIdentityId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier PrimaryUserAssignedIdentityId" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.ManagedInstanceData.PrimaryUserAssignedIdentityId" />
-      <MemberSignature Language="VB.NET" Value="Public Property PrimaryUserAssignedIdentityId As String" />
-      <MemberSignature Language="F#" Value="member this.PrimaryUserAssignedIdentityId : string with get, set" Usage="Azure.ResourceManager.Sql.ManagedInstanceData.PrimaryUserAssignedIdentityId" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrimaryUserAssignedIdentityId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.PrimaryUserAssignedIdentityId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Sql.ManagedInstanceData.PrimaryUserAssignedIdentityId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The resource id of a user assigned identity to be used by default. </summary>
@@ -483,6 +523,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="RestorePointInTime">
+      <MemberSignature Language="C#" Value="public DateTimeOffset? RestorePointInTime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; RestorePointInTime" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.ManagedInstanceData.RestorePointInTime" />
+      <MemberSignature Language="VB.NET" Value="Public Property RestorePointInTime As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.RestorePointInTime : Nullable&lt;DateTimeOffset&gt; with get, set" Usage="Azure.ResourceManager.Sql.ManagedInstanceData.RestorePointInTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Specifies the point in time (ISO8601 format) of the source database that will be restored to create the new database. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ServicePrincipal">
       <MemberSignature Language="C#" Value="public Azure.ResourceManager.Sql.Models.ServicePrincipal ServicePrincipal { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Sql.Models.ServicePrincipal ServicePrincipal" />
@@ -524,18 +584,18 @@
       </Docs>
     </Member>
     <Member MemberName="SourceManagedInstanceId">
-      <MemberSignature Language="C#" Value="public string SourceManagedInstanceId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string SourceManagedInstanceId" />
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier SourceManagedInstanceId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier SourceManagedInstanceId" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.ManagedInstanceData.SourceManagedInstanceId" />
-      <MemberSignature Language="VB.NET" Value="Public Property SourceManagedInstanceId As String" />
-      <MemberSignature Language="F#" Value="member this.SourceManagedInstanceId : string with get, set" Usage="Azure.ResourceManager.Sql.ManagedInstanceData.SourceManagedInstanceId" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceManagedInstanceId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.SourceManagedInstanceId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Sql.ManagedInstanceData.SourceManagedInstanceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The resource identifier of the source managed instance associated with create operation of this instance. </summary>
@@ -604,18 +664,18 @@
       </Docs>
     </Member>
     <Member MemberName="SubnetId">
-      <MemberSignature Language="C#" Value="public string SubnetId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string SubnetId" />
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier SubnetId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier SubnetId" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.ManagedInstanceData.SubnetId" />
-      <MemberSignature Language="VB.NET" Value="Public Property SubnetId As String" />
-      <MemberSignature Language="F#" Value="member this.SubnetId : string with get, set" Usage="Azure.ResourceManager.Sql.ManagedInstanceData.SubnetId" />
+      <MemberSignature Language="VB.NET" Value="Public Property SubnetId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.SubnetId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Sql.ManagedInstanceData.SubnetId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Subnet resource ID for the managed instance. </summary>

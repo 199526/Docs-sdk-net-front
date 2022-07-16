@@ -13,6 +13,7 @@
     <AssemblyVersion>12.9.0.0</AssemblyVersion>
     <AssemblyVersion>12.10.0.0</AssemblyVersion>
     <AssemblyVersion>12.11.0.0</AssemblyVersion>
+    <AssemblyVersion>12.12.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.Core.ClientOptions</BaseTypeName>
@@ -41,6 +42,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="version" Type="Azure.Storage.Files.DataLake.DataLakeClientOptions+ServiceVersion" />
@@ -68,6 +70,7 @@
         <AssemblyName>Azure.Storage.Files.DataLake</AssemblyName>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.Storage.Files.DataLake.Models.DataLakeCustomerProvidedKey&gt;</ReturnType>
@@ -75,6 +78,28 @@
       <Docs>
         <summary>
             Gets the <see cref="P:Azure.Storage.Files.DataLake.DataLakeClientOptions.CustomerProvidedKey" /> to be used when making requests.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DownloadTransferValidationOptions">
+      <MemberSignature Language="C#" Value="public Azure.Storage.DownloadTransferValidationOptions DownloadTransferValidationOptions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Storage.DownloadTransferValidationOptions DownloadTransferValidationOptions" />
+      <MemberSignature Language="DocId" Value="P:Azure.Storage.Files.DataLake.DataLakeClientOptions.DownloadTransferValidationOptions" />
+      <MemberSignature Language="VB.NET" Value="Public Property DownloadTransferValidationOptions As DownloadTransferValidationOptions" />
+      <MemberSignature Language="F#" Value="member this.DownloadTransferValidationOptions : Azure.Storage.DownloadTransferValidationOptions with get, set" Usage="Azure.Storage.Files.DataLake.DataLakeClientOptions.DownloadTransferValidationOptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Files.DataLake</AssemblyName>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Storage.DownloadTransferValidationOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Transfer validation options to be applied to blob downloads from this client.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -93,6 +118,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -122,6 +148,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -137,6 +164,28 @@
              may not have propagated there yet. Otherwise, subsequent retries will alternate back and forth
              between primary and secondary Uri.
              </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UploadTransferValidationOptions">
+      <MemberSignature Language="C#" Value="public Azure.Storage.UploadTransferValidationOptions UploadTransferValidationOptions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Storage.UploadTransferValidationOptions UploadTransferValidationOptions" />
+      <MemberSignature Language="DocId" Value="P:Azure.Storage.Files.DataLake.DataLakeClientOptions.UploadTransferValidationOptions" />
+      <MemberSignature Language="VB.NET" Value="Public Property UploadTransferValidationOptions As UploadTransferValidationOptions" />
+      <MemberSignature Language="F#" Value="member this.UploadTransferValidationOptions : Azure.Storage.UploadTransferValidationOptions with get, set" Usage="Azure.Storage.Files.DataLake.DataLakeClientOptions.UploadTransferValidationOptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Files.DataLake</AssemblyName>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Storage.UploadTransferValidationOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Transfer validation options to be applied to blob uploads from this client.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -157,6 +206,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Storage.Files.DataLake.DataLakeClientOptions+ServiceVersion</ReturnType>

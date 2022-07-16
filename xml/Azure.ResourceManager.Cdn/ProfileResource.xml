@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.ResourceManager.ArmResource</BaseTypeName>
@@ -31,6 +32,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -48,6 +50,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Cdn.ProfileResource&gt;</ReturnType>
@@ -82,6 +85,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.ProfileResource&gt;&gt;</ReturnType>
@@ -180,13 +184,14 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Cdn.Models.CdnNameAvailabilityResult&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="content" Type="Azure.ResourceManager.Cdn.Models.HostNameAvailabilityContent" Index="0" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="content" Type="Azure.ResourceManager.Cdn.Models.HostNameAvailabilityContent" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="content"> Custom domain to be validated. </param>
@@ -212,13 +217,14 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.Models.CdnNameAvailabilityResult&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="content" Type="Azure.ResourceManager.Cdn.Models.HostNameAvailabilityContent" Index="0" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="content" Type="Azure.ResourceManager.Cdn.Models.HostNameAvailabilityContent" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="content"> Custom domain to be validated. </param>
@@ -244,6 +250,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
@@ -272,6 +279,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Cdn.ProfileData</ReturnType>
@@ -293,6 +301,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
@@ -324,6 +333,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
@@ -355,6 +365,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Cdn.Models.SsoUri&gt;</ReturnType>
@@ -383,6 +394,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.Models.SsoUri&gt;&gt;</ReturnType>
@@ -411,6 +423,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Cdn.ProfileResource&gt;</ReturnType>
@@ -973,6 +986,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.ProfileResource&gt;&gt;</ReturnType>
@@ -1001,6 +1015,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Cdn.CdnEndpointResource&gt;</ReturnType>
@@ -1035,6 +1050,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.CdnEndpointResource&gt;&gt;</ReturnType>
@@ -1069,6 +1085,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Cdn.CdnEndpointCollection</ReturnType>
@@ -1090,13 +1107,14 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Cdn.FrontDoorCustomDomainResource&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="customDomainName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="customDomainName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="customDomainName"> Name of the domain under the profile which is unique globally. </param>
@@ -1124,13 +1142,14 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.FrontDoorCustomDomainResource&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="customDomainName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="customDomainName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="customDomainName"> Name of the domain under the profile which is unique globally. </param>
@@ -1158,6 +1177,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Cdn.FrontDoorCustomDomainCollection</ReturnType>
@@ -1179,13 +1199,14 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Cdn.FrontDoorEndpointResource&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="endpointName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="endpointName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="endpointName"> Name of the endpoint under the profile which is unique globally. </param>
@@ -1213,13 +1234,14 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.FrontDoorEndpointResource&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="endpointName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="endpointName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="endpointName"> Name of the endpoint under the profile which is unique globally. </param>
@@ -1247,6 +1269,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Cdn.FrontDoorEndpointCollection</ReturnType>
@@ -1268,13 +1291,14 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Cdn.FrontDoorOriginGroupResource&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="originGroupName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="originGroupName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="originGroupName"> Name of the origin group which is unique within the endpoint. </param>
@@ -1302,13 +1326,14 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.FrontDoorOriginGroupResource&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="originGroupName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="originGroupName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="originGroupName"> Name of the origin group which is unique within the endpoint. </param>
@@ -1336,6 +1361,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Cdn.FrontDoorOriginGroupCollection</ReturnType>
@@ -1357,12 +1383,13 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Cdn.Models.FrontDoorUsage&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
@@ -1385,12 +1412,13 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Cdn.Models.FrontDoorUsage&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
@@ -1413,13 +1441,14 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Cdn.FrontDoorRuleSetResource&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ruleSetName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="ruleSetName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="ruleSetName"> Name of the rule set under the profile which is unique globally. </param>
@@ -1447,13 +1476,14 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.FrontDoorRuleSetResource&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ruleSetName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="ruleSetName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="ruleSetName"> Name of the rule set under the profile which is unique globally. </param>
@@ -1481,6 +1511,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Cdn.FrontDoorRuleSetCollection</ReturnType>
@@ -1502,13 +1533,14 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Cdn.FrontDoorSecretResource&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="secretName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="secretName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="secretName"> Name of the Secret under the profile. </param>
@@ -1536,13 +1568,14 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.FrontDoorSecretResource&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="secretName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="secretName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="secretName"> Name of the Secret under the profile. </param>
@@ -1570,6 +1603,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Cdn.FrontDoorSecretCollection</ReturnType>
@@ -1591,6 +1625,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Cdn.FrontDoorSecurityPolicyCollection</ReturnType>
@@ -1612,13 +1647,14 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Cdn.FrontDoorSecurityPolicyResource&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="securityPolicyName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="securityPolicyName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="securityPolicyName"> Name of the security policy under the profile. </param>
@@ -1646,13 +1682,14 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.FrontDoorSecurityPolicyResource&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="securityPolicyName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="securityPolicyName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="securityPolicyName"> Name of the security policy under the profile. </param>
@@ -1680,6 +1717,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Cdn.Models.ContinentsResponse&gt;</ReturnType>
@@ -1708,6 +1746,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.Models.ContinentsResponse&gt;&gt;</ReturnType>
@@ -1736,6 +1775,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Cdn.Models.MetricsResponse&gt;</ReturnType>
@@ -1784,6 +1824,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.Models.MetricsResponse&gt;&gt;</ReturnType>
@@ -1832,6 +1873,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Cdn.Models.RankingsResponse&gt;</ReturnType>
@@ -1874,6 +1916,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.Models.RankingsResponse&gt;&gt;</ReturnType>
@@ -1916,6 +1959,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Cdn.Models.ResourcesResponse&gt;</ReturnType>
@@ -1944,6 +1988,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.Models.ResourcesResponse&gt;&gt;</ReturnType>
@@ -2084,12 +2129,13 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Cdn.Models.CdnUsage&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
@@ -2112,12 +2158,13 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Cdn.Models.CdnUsage&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
@@ -2140,6 +2187,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Cdn.Models.SupportedOptimizationTypesListResult&gt;</ReturnType>
@@ -2168,6 +2216,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.Models.SupportedOptimizationTypesListResult&gt;&gt;</ReturnType>
@@ -2196,6 +2245,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Cdn.Models.WafMetricsResponse&gt;</ReturnType>
@@ -2240,6 +2290,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.Models.WafMetricsResponse&gt;&gt;</ReturnType>
@@ -2284,6 +2335,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Cdn.Models.WafRankingsResponse&gt;</ReturnType>
@@ -2328,6 +2380,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.Models.WafRankingsResponse&gt;&gt;</ReturnType>
@@ -2372,6 +2425,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2392,6 +2446,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Cdn.ProfileResource&gt;</ReturnType>
@@ -2424,6 +2479,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.ProfileResource&gt;&gt;</ReturnType>
@@ -2456,6 +2512,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Core.ResourceType</ReturnType>
@@ -2475,6 +2532,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Cdn.ProfileResource&gt;</ReturnType>
@@ -2507,6 +2565,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Cdn.ProfileResource&gt;&gt;</ReturnType>
@@ -2539,6 +2598,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Cdn.ProfileResource&gt;</ReturnType>
@@ -2574,6 +2634,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Cdn.ProfileResource&gt;&gt;</ReturnType>

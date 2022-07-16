@@ -1,0 +1,41 @@
+<Type Name="CallParticipantCollection" FullName="Azure.Communication.CallingServer.CallParticipantCollection">
+  <TypeSignature Language="C#" Value="public class CallParticipantCollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CallParticipantCollection extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.Communication.CallingServer.CallParticipantCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class CallParticipantCollection" />
+  <TypeSignature Language="F#" Value="type CallParticipantCollection = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> A collection of participants in a call. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;Azure.Communication.CallingServer.CallParticipant&gt; Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class Azure.Communication.CallingServer.CallParticipant&gt; Value" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallingServer.CallParticipantCollection.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As IReadOnlyList(Of CallParticipant)" />
+      <MemberSignature Language="F#" Value="member this.Value : System.Collections.Generic.IReadOnlyList&lt;Azure.Communication.CallingServer.CallParticipant&gt;" Usage="Azure.Communication.CallingServer.CallParticipantCollection.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Azure.Communication.CallingServer.CallParticipant&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Collection of internal call participants. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

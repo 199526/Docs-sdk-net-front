@@ -54,18 +54,18 @@
       </Docs>
     </Member>
     <Member MemberName="Options">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.CosmosDB.Models.MongoIndexOptions Options { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.CosmosDB.Models.MongoIndexOptions Options" />
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.CosmosDB.Models.MongoIndexConfig Options { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.CosmosDB.Models.MongoIndexConfig Options" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.CosmosDB.Models.MongoIndex.Options" />
-      <MemberSignature Language="VB.NET" Value="Public Property Options As MongoIndexOptions" />
-      <MemberSignature Language="F#" Value="member this.Options : Azure.ResourceManager.CosmosDB.Models.MongoIndexOptions with get, set" Usage="Azure.ResourceManager.CosmosDB.Models.MongoIndex.Options" />
+      <MemberSignature Language="VB.NET" Value="Public Property Options As MongoIndexConfig" />
+      <MemberSignature Language="F#" Value="member this.Options : Azure.ResourceManager.CosmosDB.Models.MongoIndexConfig with get, set" Usage="Azure.ResourceManager.CosmosDB.Models.MongoIndex.Options" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.CosmosDB.Models.MongoIndexOptions</ReturnType>
+        <ReturnType>Azure.ResourceManager.CosmosDB.Models.MongoIndexConfig</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Cosmos DB MongoDB collection index key options. </summary>

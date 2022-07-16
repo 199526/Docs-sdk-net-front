@@ -18,6 +18,34 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AzureFunctionReceiver (string name, Azure.Core.ResourceIdentifier functionAppResourceId, string functionName, Uri httpTriggerUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class Azure.Core.ResourceIdentifier functionAppResourceId, string functionName, class System.Uri httpTriggerUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Monitor.Models.AzureFunctionReceiver.#ctor(System.String,Azure.Core.ResourceIdentifier,System.String,System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, functionAppResourceId As ResourceIdentifier, functionName As String, httpTriggerUri As Uri)" />
+      <MemberSignature Language="F#" Value="new Azure.ResourceManager.Monitor.Models.AzureFunctionReceiver : string * Azure.Core.ResourceIdentifier * string * Uri -&gt; Azure.ResourceManager.Monitor.Models.AzureFunctionReceiver" Usage="new Azure.ResourceManager.Monitor.Models.AzureFunctionReceiver (name, functionAppResourceId, functionName, httpTriggerUri)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="functionAppResourceId" Type="Azure.Core.ResourceIdentifier" />
+        <Parameter Name="functionName" Type="System.String" />
+        <Parameter Name="httpTriggerUri" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="name"> The name of the azure function receiver. Names must be unique across all receivers within an action group. </param>
+        <param name="functionAppResourceId"> The azure resource id of the function app. </param>
+        <param name="functionName"> The function name in the function app. </param>
+        <param name="httpTriggerUri"> The http trigger url where http request sent to. </param>
+        <summary> Initializes a new instance of AzureFunctionReceiver. </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" />, <paramref name="functionAppResourceId" />, <paramref name="functionName" /> or <paramref name="httpTriggerUri" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AzureFunctionReceiver (string name, string functionAppResourceId, string functionName, Uri httpTriggerUri);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string functionAppResourceId, string functionName, class System.Uri httpTriggerUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Monitor.Models.AzureFunctionReceiver.#ctor(System.String,System.String,System.String,System.Uri)" />
@@ -46,18 +74,18 @@
       </Docs>
     </Member>
     <Member MemberName="FunctionAppResourceId">
-      <MemberSignature Language="C#" Value="public string FunctionAppResourceId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string FunctionAppResourceId" />
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier FunctionAppResourceId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier FunctionAppResourceId" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Monitor.Models.AzureFunctionReceiver.FunctionAppResourceId" />
-      <MemberSignature Language="VB.NET" Value="Public Property FunctionAppResourceId As String" />
-      <MemberSignature Language="F#" Value="member this.FunctionAppResourceId : string with get, set" Usage="Azure.ResourceManager.Monitor.Models.AzureFunctionReceiver.FunctionAppResourceId" />
+      <MemberSignature Language="VB.NET" Value="Public Property FunctionAppResourceId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.FunctionAppResourceId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Monitor.Models.AzureFunctionReceiver.FunctionAppResourceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The azure resource id of the function app. </summary>

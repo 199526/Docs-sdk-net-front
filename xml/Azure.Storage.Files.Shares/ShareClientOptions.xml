@@ -13,6 +13,7 @@
     <AssemblyVersion>12.9.0.0</AssemblyVersion>
     <AssemblyVersion>12.10.0.0</AssemblyVersion>
     <AssemblyVersion>12.11.0.0</AssemblyVersion>
+    <AssemblyVersion>12.12.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.Core.ClientOptions</BaseTypeName>
@@ -42,6 +43,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="version" Type="Azure.Storage.Files.Shares.ShareClientOptions+ServiceVersion" />
@@ -55,6 +57,50 @@
             Initializes a new instance of the <see cref="T:Azure.Storage.Files.Shares.ShareClientOptions" />
             class.
             </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DownloadTransferValidationOptions">
+      <MemberSignature Language="C#" Value="public Azure.Storage.DownloadTransferValidationOptions DownloadTransferValidationOptions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Storage.DownloadTransferValidationOptions DownloadTransferValidationOptions" />
+      <MemberSignature Language="DocId" Value="P:Azure.Storage.Files.Shares.ShareClientOptions.DownloadTransferValidationOptions" />
+      <MemberSignature Language="VB.NET" Value="Public Property DownloadTransferValidationOptions As DownloadTransferValidationOptions" />
+      <MemberSignature Language="F#" Value="member this.DownloadTransferValidationOptions : Azure.Storage.DownloadTransferValidationOptions with get, set" Usage="Azure.Storage.Files.Shares.ShareClientOptions.DownloadTransferValidationOptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Files.Shares</AssemblyName>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Storage.DownloadTransferValidationOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Transfer validation options to be applied to blob downloads from this client.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UploadTransferValidationOptions">
+      <MemberSignature Language="C#" Value="public Azure.Storage.UploadTransferValidationOptions UploadTransferValidationOptions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Storage.UploadTransferValidationOptions UploadTransferValidationOptions" />
+      <MemberSignature Language="DocId" Value="P:Azure.Storage.Files.Shares.ShareClientOptions.UploadTransferValidationOptions" />
+      <MemberSignature Language="VB.NET" Value="Public Property UploadTransferValidationOptions As UploadTransferValidationOptions" />
+      <MemberSignature Language="F#" Value="member this.UploadTransferValidationOptions : Azure.Storage.UploadTransferValidationOptions with get, set" Usage="Azure.Storage.Files.Shares.ShareClientOptions.UploadTransferValidationOptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Files.Shares</AssemblyName>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Storage.UploadTransferValidationOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Transfer validation options to be applied to blob uploads from this client.
+            </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,6 +120,7 @@
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
         <AssemblyVersion>12.10.0.0</AssemblyVersion>
         <AssemblyVersion>12.11.0.0</AssemblyVersion>
+        <AssemblyVersion>12.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Storage.Files.Shares.ShareClientOptions+ServiceVersion</ReturnType>

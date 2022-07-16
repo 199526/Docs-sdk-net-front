@@ -9,6 +9,7 @@
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
+    <AssemblyVersion>1.3.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -28,29 +29,24 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public WebPubSubConnection (Uri uri);" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri uri) cil managed" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public WebPubSubConnection (Uri uri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri uri) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.WebJobs.Extensions.WebPubSub.WebPubSubConnection.#ctor(System.Uri)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (uri As Uri)" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.WebJobs.Extensions.WebPubSub.WebPubSubConnection : Uri -&gt; Microsoft.Azure.WebJobs.Extensions.WebPubSub.WebPubSubConnection" Usage="new Microsoft.Azure.WebJobs.Extensions.WebPubSub.WebPubSubConnection uri" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public WebPubSubConnection (Uri url);" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri url) cil managed" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (url As Uri)" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.WebJobs.Extensions.WebPubSub.WebPubSubConnection : Uri -&gt; Microsoft.Azure.WebJobs.Extensions.WebPubSub.WebPubSubConnection" Usage="new Microsoft.Azure.WebJobs.Extensions.WebPubSub.WebPubSubConnection url" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (uri As Uri)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.WebJobs.Extensions.WebPubSub.WebPubSubConnection : Uri -&gt; Microsoft.Azure.WebJobs.Extensions.WebPubSub.WebPubSubConnection" Usage="new Microsoft.Azure.WebJobs.Extensions.WebPubSub.WebPubSubConnection uri" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.WebJobs.Extensions.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="uri" Type="System.Uri" Index="0" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="url" Type="System.Uri" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="uri" Type="System.Uri" />
       </Parameters>
       <Docs>
         <param name="uri" />
-        <param name="url" />
         <summary>
             Create an instance of the connection information.
             </summary>
@@ -69,6 +65,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -93,9 +90,10 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet">
+        <Attribute>
           <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("baseUrl")]</AttributeName>
           <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("baseUrl")&gt;]</AttributeName>
         </Attribute>
@@ -145,9 +143,10 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet">
+        <Attribute>
           <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("url")]</AttributeName>
           <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("url")&gt;]</AttributeName>
         </Attribute>

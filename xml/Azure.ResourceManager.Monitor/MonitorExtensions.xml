@@ -202,6 +202,78 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetActionGroupTestNotifications">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.Monitor.Models.TestNotificationDetailsResponse&gt; GetActionGroupTestNotifications (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, string notificationId, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.Monitor.Models.TestNotificationDetailsResponse&gt; GetActionGroupTestNotifications(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, string notificationId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Monitor.MonitorExtensions.GetActionGroupTestNotifications(Azure.ResourceManager.Resources.SubscriptionResource,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetActionGroupTestNotifications (subscriptionResource As SubscriptionResource, notificationId As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of TestNotificationDetailsResponse)" />
+      <MemberSignature Language="F#" Value="static member GetActionGroupTestNotifications : Azure.ResourceManager.Resources.SubscriptionResource * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Monitor.Models.TestNotificationDetailsResponse&gt;" Usage="Azure.ResourceManager.Monitor.MonitorExtensions.GetActionGroupTestNotifications (subscriptionResource, notificationId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Monitor.Models.TestNotificationDetailsResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
+        <Parameter Name="notificationId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="notificationId"> The notification id. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get the test notifications by the notification id
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Insights/notificationStatus/{notificationId}
+            Operation Id: ActionGroups_GetTestNotifications
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="notificationId" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="notificationId" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetActionGroupTestNotificationsAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Monitor.Models.TestNotificationDetailsResponse&gt;&gt; GetActionGroupTestNotificationsAsync (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, string notificationId, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Monitor.Models.TestNotificationDetailsResponse&gt;&gt; GetActionGroupTestNotificationsAsync(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, string notificationId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Monitor.MonitorExtensions.GetActionGroupTestNotificationsAsync(Azure.ResourceManager.Resources.SubscriptionResource,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetActionGroupTestNotificationsAsync (subscriptionResource As SubscriptionResource, notificationId As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of TestNotificationDetailsResponse))" />
+      <MemberSignature Language="F#" Value="static member GetActionGroupTestNotificationsAsync : Azure.ResourceManager.Resources.SubscriptionResource * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Monitor.Models.TestNotificationDetailsResponse&gt;&gt;" Usage="Azure.ResourceManager.Monitor.MonitorExtensions.GetActionGroupTestNotificationsAsync (subscriptionResource, notificationId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Monitor.Models.TestNotificationDetailsResponse&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
+        <Parameter Name="notificationId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="notificationId"> The notification id. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get the test notifications by the notification id
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Insights/notificationStatus/{notificationId}
+            Operation Id: ActionGroups_GetTestNotifications
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="notificationId" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="notificationId" /> is null. </exception>
+      </Docs>
+    </Member>
     <Member MemberName="GetActivityLogAlert">
       <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.Monitor.ActivityLogAlertResource&gt; GetActivityLogAlert (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string activityLogAlertName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.Monitor.ActivityLogAlertResource&gt; GetActivityLogAlert(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string activityLogAlertName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -388,18 +460,18 @@
       </Docs>
     </Member>
     <Member MemberName="GetActivityLogs">
-      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.Monitor.Models.EventData&gt; GetActivityLogs (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, string filter, string select = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.Monitor.Models.EventData&gt; GetActivityLogs(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, string filter, string select, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.Monitor.Models.EventDataInfo&gt; GetActivityLogs (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, string filter, string select = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.Monitor.Models.EventDataInfo&gt; GetActivityLogs(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, string filter, string select, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Monitor.MonitorExtensions.GetActivityLogs(Azure.ResourceManager.Resources.SubscriptionResource,System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetActivityLogs (subscriptionResource As SubscriptionResource, filter As String, Optional select As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of EventData)" />
-      <MemberSignature Language="F#" Value="static member GetActivityLogs : Azure.ResourceManager.Resources.SubscriptionResource * string * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Monitor.Models.EventData&gt;" Usage="Azure.ResourceManager.Monitor.MonitorExtensions.GetActivityLogs (subscriptionResource, filter, select, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetActivityLogs (subscriptionResource As SubscriptionResource, filter As String, Optional select As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of EventDataInfo)" />
+      <MemberSignature Language="F#" Value="static member GetActivityLogs : Azure.ResourceManager.Resources.SubscriptionResource * string * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Monitor.Models.EventDataInfo&gt;" Usage="Azure.ResourceManager.Monitor.MonitorExtensions.GetActivityLogs (subscriptionResource, filter, select, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Monitor.Models.EventData&gt;</ReturnType>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Monitor.Models.EventDataInfo&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
@@ -417,25 +489,25 @@
             Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Insights/eventtypes/management/values
             Operation Id: ActivityLogs_List
             </summary>
-        <returns> A collection of <see cref="T:Azure.ResourceManager.Monitor.Models.EventData" /> that may take multiple service requests to iterate over. </returns>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Monitor.Models.EventDataInfo" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="filter" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetActivityLogsAsync">
-      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.Monitor.Models.EventData&gt; GetActivityLogsAsync (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, string filter, string select = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Monitor.Models.EventData&gt; GetActivityLogsAsync(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, string filter, string select, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.Monitor.Models.EventDataInfo&gt; GetActivityLogsAsync (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, string filter, string select = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Monitor.Models.EventDataInfo&gt; GetActivityLogsAsync(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, string filter, string select, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Monitor.MonitorExtensions.GetActivityLogsAsync(Azure.ResourceManager.Resources.SubscriptionResource,System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetActivityLogsAsync (subscriptionResource As SubscriptionResource, filter As String, Optional select As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of EventData)" />
-      <MemberSignature Language="F#" Value="static member GetActivityLogsAsync : Azure.ResourceManager.Resources.SubscriptionResource * string * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Monitor.Models.EventData&gt;" Usage="Azure.ResourceManager.Monitor.MonitorExtensions.GetActivityLogsAsync (subscriptionResource, filter, select, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetActivityLogsAsync (subscriptionResource As SubscriptionResource, filter As String, Optional select As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of EventDataInfo)" />
+      <MemberSignature Language="F#" Value="static member GetActivityLogsAsync : Azure.ResourceManager.Resources.SubscriptionResource * string * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Monitor.Models.EventDataInfo&gt;" Usage="Azure.ResourceManager.Monitor.MonitorExtensions.GetActivityLogsAsync (subscriptionResource, filter, select, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Monitor.Models.EventData&gt;</ReturnType>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Monitor.Models.EventDataInfo&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
@@ -453,7 +525,7 @@
             Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Insights/eventtypes/management/values
             Operation Id: ActivityLogs_List
             </summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.Monitor.Models.EventData" /> that may take multiple service requests to iterate over. </returns>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Monitor.Models.EventDataInfo" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="filter" /> is null. </exception>
@@ -2133,6 +2205,64 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetMonitorPrivateEndpointConnectionResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Monitor.MonitorPrivateEndpointConnectionResource GetMonitorPrivateEndpointConnectionResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Monitor.MonitorPrivateEndpointConnectionResource GetMonitorPrivateEndpointConnectionResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Monitor.MonitorExtensions.GetMonitorPrivateEndpointConnectionResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetMonitorPrivateEndpointConnectionResource (client As ArmClient, id As ResourceIdentifier) As MonitorPrivateEndpointConnectionResource" />
+      <MemberSignature Language="F#" Value="static member GetMonitorPrivateEndpointConnectionResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Monitor.MonitorPrivateEndpointConnectionResource" Usage="Azure.ResourceManager.Monitor.MonitorExtensions.GetMonitorPrivateEndpointConnectionResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Monitor.MonitorPrivateEndpointConnectionResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Monitor.MonitorPrivateEndpointConnectionResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Monitor.MonitorPrivateEndpointConnectionResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Monitor.MonitorPrivateEndpointConnectionResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Monitor.MonitorPrivateEndpointConnectionResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMonitorPrivateLinkResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Monitor.MonitorPrivateLinkResource GetMonitorPrivateLinkResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Monitor.MonitorPrivateLinkResource GetMonitorPrivateLinkResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Monitor.MonitorExtensions.GetMonitorPrivateLinkResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetMonitorPrivateLinkResource (client As ArmClient, id As ResourceIdentifier) As MonitorPrivateLinkResource" />
+      <MemberSignature Language="F#" Value="static member GetMonitorPrivateLinkResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Monitor.MonitorPrivateLinkResource" Usage="Azure.ResourceManager.Monitor.MonitorExtensions.GetMonitorPrivateLinkResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Monitor.MonitorPrivateLinkResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Monitor.MonitorPrivateLinkResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Monitor.MonitorPrivateLinkResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Monitor.MonitorPrivateLinkResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Monitor.MonitorPrivateLinkResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetPrivateEndpointConnectionResource">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Monitor.PrivateEndpointConnectionResource GetPrivateEndpointConnectionResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Monitor.PrivateEndpointConnectionResource GetPrivateEndpointConnectionResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
@@ -2261,6 +2391,35 @@
           <paramref name="scopeName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="scopeName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPrivateLinkScopedResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Monitor.PrivateLinkScopedResource GetPrivateLinkScopedResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Monitor.PrivateLinkScopedResource GetPrivateLinkScopedResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Monitor.MonitorExtensions.GetPrivateLinkScopedResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetPrivateLinkScopedResource (client As ArmClient, id As ResourceIdentifier) As PrivateLinkScopedResource" />
+      <MemberSignature Language="F#" Value="static member GetPrivateLinkScopedResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Monitor.PrivateLinkScopedResource" Usage="Azure.ResourceManager.Monitor.MonitorExtensions.GetPrivateLinkScopedResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Monitor.PrivateLinkScopedResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Monitor.PrivateLinkScopedResource" /> along with the instance operations that can be performed on it but with no data.
+            You can use <see cref="M:Azure.ResourceManager.Monitor.PrivateLinkScopedResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Monitor.PrivateLinkScopedResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
+            </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Monitor.PrivateLinkScopedResource" /> object. </returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPrivateLinkScopeOperationStatu">
@@ -2478,18 +2637,18 @@
       </Docs>
     </Member>
     <Member MemberName="GetTenantActivityLogs">
-      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.Monitor.Models.EventData&gt; GetTenantActivityLogs (this Azure.ResourceManager.Resources.TenantResource tenantResource, string filter = default, string select = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.Monitor.Models.EventData&gt; GetTenantActivityLogs(class Azure.ResourceManager.Resources.TenantResource tenantResource, string filter, string select, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.Monitor.Models.EventDataInfo&gt; GetTenantActivityLogs (this Azure.ResourceManager.Resources.TenantResource tenantResource, string filter = default, string select = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.Monitor.Models.EventDataInfo&gt; GetTenantActivityLogs(class Azure.ResourceManager.Resources.TenantResource tenantResource, string filter, string select, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Monitor.MonitorExtensions.GetTenantActivityLogs(Azure.ResourceManager.Resources.TenantResource,System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetTenantActivityLogs (tenantResource As TenantResource, Optional filter As String = Nothing, Optional select As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of EventData)" />
-      <MemberSignature Language="F#" Value="static member GetTenantActivityLogs : Azure.ResourceManager.Resources.TenantResource * string * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Monitor.Models.EventData&gt;" Usage="Azure.ResourceManager.Monitor.MonitorExtensions.GetTenantActivityLogs (tenantResource, filter, select, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetTenantActivityLogs (tenantResource As TenantResource, Optional filter As String = Nothing, Optional select As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of EventDataInfo)" />
+      <MemberSignature Language="F#" Value="static member GetTenantActivityLogs : Azure.ResourceManager.Resources.TenantResource * string * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Monitor.Models.EventDataInfo&gt;" Usage="Azure.ResourceManager.Monitor.MonitorExtensions.GetTenantActivityLogs (tenantResource, filter, select, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Monitor.Models.EventData&gt;</ReturnType>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Monitor.Models.EventDataInfo&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="tenantResource" Type="Azure.ResourceManager.Resources.TenantResource" RefType="this" />
@@ -2507,23 +2666,23 @@
             Request Path: /providers/Microsoft.Insights/eventtypes/management/values
             Operation Id: TenantActivityLogs_List
             </summary>
-        <returns> A collection of <see cref="T:Azure.ResourceManager.Monitor.Models.EventData" /> that may take multiple service requests to iterate over. </returns>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Monitor.Models.EventDataInfo" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTenantActivityLogsAsync">
-      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.Monitor.Models.EventData&gt; GetTenantActivityLogsAsync (this Azure.ResourceManager.Resources.TenantResource tenantResource, string filter = default, string select = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Monitor.Models.EventData&gt; GetTenantActivityLogsAsync(class Azure.ResourceManager.Resources.TenantResource tenantResource, string filter, string select, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.Monitor.Models.EventDataInfo&gt; GetTenantActivityLogsAsync (this Azure.ResourceManager.Resources.TenantResource tenantResource, string filter = default, string select = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Monitor.Models.EventDataInfo&gt; GetTenantActivityLogsAsync(class Azure.ResourceManager.Resources.TenantResource tenantResource, string filter, string select, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Monitor.MonitorExtensions.GetTenantActivityLogsAsync(Azure.ResourceManager.Resources.TenantResource,System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetTenantActivityLogsAsync (tenantResource As TenantResource, Optional filter As String = Nothing, Optional select As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of EventData)" />
-      <MemberSignature Language="F#" Value="static member GetTenantActivityLogsAsync : Azure.ResourceManager.Resources.TenantResource * string * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Monitor.Models.EventData&gt;" Usage="Azure.ResourceManager.Monitor.MonitorExtensions.GetTenantActivityLogsAsync (tenantResource, filter, select, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetTenantActivityLogsAsync (tenantResource As TenantResource, Optional filter As String = Nothing, Optional select As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of EventDataInfo)" />
+      <MemberSignature Language="F#" Value="static member GetTenantActivityLogsAsync : Azure.ResourceManager.Resources.TenantResource * string * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Monitor.Models.EventDataInfo&gt;" Usage="Azure.ResourceManager.Monitor.MonitorExtensions.GetTenantActivityLogsAsync (tenantResource, filter, select, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Monitor.Models.EventData&gt;</ReturnType>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Monitor.Models.EventDataInfo&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="tenantResource" Type="Azure.ResourceManager.Resources.TenantResource" RefType="this" />
@@ -2541,7 +2700,7 @@
             Request Path: /providers/Microsoft.Insights/eventtypes/management/values
             Operation Id: TenantActivityLogs_List
             </summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.Monitor.Models.EventData" /> that may take multiple service requests to iterate over. </returns>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Monitor.Models.EventDataInfo" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

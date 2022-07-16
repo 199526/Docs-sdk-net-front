@@ -14,16 +14,16 @@
   <Interfaces />
   <Docs>
     <summary>
-            The options for communication <see cref="T:Azure.Communication.CallingServer.CallConnection" /> and <see cref="T:Azure.Communication.CallingServer.ServerCall" />.
+            The latest version of the Calling Server.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CallingServerClientOptions (Azure.Communication.CallingServer.CallingServerClientOptions.ServiceVersion version = Azure.Communication.CallingServer.CallingServerClientOptions+ServiceVersion.V2021_08_30_Preview);" />
+      <MemberSignature Language="C#" Value="public CallingServerClientOptions (Azure.Communication.CallingServer.CallingServerClientOptions.ServiceVersion version = Azure.Communication.CallingServer.CallingServerClientOptions+ServiceVersion.V2022_04_07_Preview);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Azure.Communication.CallingServer.CallingServerClientOptions/ServiceVersion version) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.CallingServerClientOptions.#ctor(Azure.Communication.CallingServer.CallingServerClientOptions.ServiceVersion)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional version As CallingServerClientOptions.ServiceVersion = Azure.Communication.CallingServer.CallingServerClientOptions+ServiceVersion.V2021_08_30_Preview)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional version As CallingServerClientOptions.ServiceVersion = Azure.Communication.CallingServer.CallingServerClientOptions+ServiceVersion.V2022_04_07_Preview)" />
       <MemberSignature Language="F#" Value="new Azure.Communication.CallingServer.CallingServerClientOptions : Azure.Communication.CallingServer.CallingServerClientOptions.ServiceVersion -&gt; Azure.Communication.CallingServer.CallingServerClientOptions" Usage="new Azure.Communication.CallingServer.CallingServerClientOptions version" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
