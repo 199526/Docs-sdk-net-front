@@ -205,6 +205,45 @@
           <paramref name="extensionName" /> or <paramref name="databaseExtensions" /> is null. </exception>
       </Docs>
     </Member>
+    <Member MemberName="CreateOrUpdateDatabaseExtension">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.Models.ImportExportExtensionsOperationResult&gt; CreateOrUpdateDatabaseExtension (Azure.WaitUntil waitUntil, string extensionName, Azure.ResourceManager.Sql.Models.SqlDatabaseExtension sqlDatabaseExtension, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Sql.Models.ImportExportExtensionsOperationResult&gt; CreateOrUpdateDatabaseExtension(valuetype Azure.WaitUntil waitUntil, string extensionName, class Azure.ResourceManager.Sql.Models.SqlDatabaseExtension sqlDatabaseExtension, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlDatabaseResource.CreateOrUpdateDatabaseExtension(Azure.WaitUntil,System.String,Azure.ResourceManager.Sql.Models.SqlDatabaseExtension,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateDatabaseExtension (waitUntil As WaitUntil, extensionName As String, sqlDatabaseExtension As SqlDatabaseExtension, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of ImportExportExtensionsOperationResult)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateDatabaseExtension : Azure.WaitUntil * string * Azure.ResourceManager.Sql.Models.SqlDatabaseExtension * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.Models.ImportExportExtensionsOperationResult&gt;&#xA;override this.CreateOrUpdateDatabaseExtension : Azure.WaitUntil * string * Azure.ResourceManager.Sql.Models.SqlDatabaseExtension * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.Models.ImportExportExtensionsOperationResult&gt;" Usage="sqlDatabaseResource.CreateOrUpdateDatabaseExtension (waitUntil, extensionName, sqlDatabaseExtension, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.Models.ImportExportExtensionsOperationResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
+        <Parameter Name="extensionName" Type="System.String" />
+        <Parameter Name="sqlDatabaseExtension" Type="Azure.ResourceManager.Sql.Models.SqlDatabaseExtension" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="waitUntil">
+          <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
+        <param name="extensionName"> The String to use. </param>
+        <param name="sqlDatabaseExtension"> The database import request parameters. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Perform a database extension operation, like polybase import
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/extensions/{extensionName}
+            Operation Id: DatabaseExtensions_CreateOrUpdate
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="extensionName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="extensionName" /> or <paramref name="sqlDatabaseExtension" /> is null. </exception>
+      </Docs>
+    </Member>
     <Member MemberName="CreateOrUpdateDatabaseExtensionAsync">
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.Models.ImportExportExtensionsOperationResult&gt;&gt; CreateOrUpdateDatabaseExtensionAsync (Azure.WaitUntil waitUntil, string extensionName, Azure.ResourceManager.Sql.Models.DatabaseExtensions databaseExtensions, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Sql.Models.ImportExportExtensionsOperationResult&gt;&gt; CreateOrUpdateDatabaseExtensionAsync(valuetype Azure.WaitUntil waitUntil, string extensionName, class Azure.ResourceManager.Sql.Models.DatabaseExtensions databaseExtensions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -242,6 +281,45 @@
           <paramref name="extensionName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="extensionName" /> or <paramref name="databaseExtensions" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateOrUpdateDatabaseExtensionAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.Models.ImportExportExtensionsOperationResult&gt;&gt; CreateOrUpdateDatabaseExtensionAsync (Azure.WaitUntil waitUntil, string extensionName, Azure.ResourceManager.Sql.Models.SqlDatabaseExtension sqlDatabaseExtension, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Sql.Models.ImportExportExtensionsOperationResult&gt;&gt; CreateOrUpdateDatabaseExtensionAsync(valuetype Azure.WaitUntil waitUntil, string extensionName, class Azure.ResourceManager.Sql.Models.SqlDatabaseExtension sqlDatabaseExtension, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlDatabaseResource.CreateOrUpdateDatabaseExtensionAsync(Azure.WaitUntil,System.String,Azure.ResourceManager.Sql.Models.SqlDatabaseExtension,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateDatabaseExtensionAsync (waitUntil As WaitUntil, extensionName As String, sqlDatabaseExtension As SqlDatabaseExtension, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of ImportExportExtensionsOperationResult))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateDatabaseExtensionAsync : Azure.WaitUntil * string * Azure.ResourceManager.Sql.Models.SqlDatabaseExtension * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.Models.ImportExportExtensionsOperationResult&gt;&gt;&#xA;override this.CreateOrUpdateDatabaseExtensionAsync : Azure.WaitUntil * string * Azure.ResourceManager.Sql.Models.SqlDatabaseExtension * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.Models.ImportExportExtensionsOperationResult&gt;&gt;" Usage="sqlDatabaseResource.CreateOrUpdateDatabaseExtensionAsync (waitUntil, extensionName, sqlDatabaseExtension, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.Models.ImportExportExtensionsOperationResult&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
+        <Parameter Name="extensionName" Type="System.String" />
+        <Parameter Name="sqlDatabaseExtension" Type="Azure.ResourceManager.Sql.Models.SqlDatabaseExtension" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="waitUntil">
+          <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
+        <param name="extensionName"> The String to use. </param>
+        <param name="sqlDatabaseExtension"> The database import request parameters. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Perform a database extension operation, like polybase import
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/extensions/{extensionName}
+            Operation Id: DatabaseExtensions_CreateOrUpdate
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="extensionName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="extensionName" /> or <paramref name="sqlDatabaseExtension" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateResourceIdentifier">
@@ -428,6 +506,41 @@
       </Docs>
     </Member>
     <Member MemberName="Export">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.Models.ImportExportOperationResult&gt; Export (Azure.WaitUntil waitUntil, Azure.ResourceManager.Sql.Models.DatabaseExportDefinition databaseExportDefinition, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Sql.Models.ImportExportOperationResult&gt; Export(valuetype Azure.WaitUntil waitUntil, class Azure.ResourceManager.Sql.Models.DatabaseExportDefinition databaseExportDefinition, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlDatabaseResource.Export(Azure.WaitUntil,Azure.ResourceManager.Sql.Models.DatabaseExportDefinition,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Export (waitUntil As WaitUntil, databaseExportDefinition As DatabaseExportDefinition, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of ImportExportOperationResult)" />
+      <MemberSignature Language="F#" Value="abstract member Export : Azure.WaitUntil * Azure.ResourceManager.Sql.Models.DatabaseExportDefinition * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.Models.ImportExportOperationResult&gt;&#xA;override this.Export : Azure.WaitUntil * Azure.ResourceManager.Sql.Models.DatabaseExportDefinition * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.Models.ImportExportOperationResult&gt;" Usage="sqlDatabaseResource.Export (waitUntil, databaseExportDefinition, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.Models.ImportExportOperationResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
+        <Parameter Name="databaseExportDefinition" Type="Azure.ResourceManager.Sql.Models.DatabaseExportDefinition" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="waitUntil">
+          <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
+        <param name="databaseExportDefinition"> The database export request parameters. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Exports a database.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/export
+            Operation Id: Databases_Export
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="databaseExportDefinition" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Export">
       <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.Models.ImportExportOperationResult&gt; Export (Azure.WaitUntil waitUntil, Azure.ResourceManager.Sql.Models.ExportDatabaseDefinition exportDatabaseDefinition, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Sql.Models.ImportExportOperationResult&gt; Export(valuetype Azure.WaitUntil waitUntil, class Azure.ResourceManager.Sql.Models.ExportDatabaseDefinition exportDatabaseDefinition, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlDatabaseResource.Export(Azure.WaitUntil,Azure.ResourceManager.Sql.Models.ExportDatabaseDefinition,System.Threading.CancellationToken)" />
@@ -460,6 +573,41 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="exportDatabaseDefinition" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.Models.ImportExportOperationResult&gt;&gt; ExportAsync (Azure.WaitUntil waitUntil, Azure.ResourceManager.Sql.Models.DatabaseExportDefinition databaseExportDefinition, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Sql.Models.ImportExportOperationResult&gt;&gt; ExportAsync(valuetype Azure.WaitUntil waitUntil, class Azure.ResourceManager.Sql.Models.DatabaseExportDefinition databaseExportDefinition, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlDatabaseResource.ExportAsync(Azure.WaitUntil,Azure.ResourceManager.Sql.Models.DatabaseExportDefinition,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ExportAsync (waitUntil As WaitUntil, databaseExportDefinition As DatabaseExportDefinition, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of ImportExportOperationResult))" />
+      <MemberSignature Language="F#" Value="abstract member ExportAsync : Azure.WaitUntil * Azure.ResourceManager.Sql.Models.DatabaseExportDefinition * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.Models.ImportExportOperationResult&gt;&gt;&#xA;override this.ExportAsync : Azure.WaitUntil * Azure.ResourceManager.Sql.Models.DatabaseExportDefinition * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.Models.ImportExportOperationResult&gt;&gt;" Usage="sqlDatabaseResource.ExportAsync (waitUntil, databaseExportDefinition, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.Models.ImportExportOperationResult&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
+        <Parameter Name="databaseExportDefinition" Type="Azure.ResourceManager.Sql.Models.DatabaseExportDefinition" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="waitUntil">
+          <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
+        <param name="databaseExportDefinition"> The database export request parameters. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Exports a database.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/export
+            Operation Id: Databases_Export
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="databaseExportDefinition" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ExportAsync">
@@ -701,18 +849,18 @@
       </Docs>
     </Member>
     <Member MemberName="GetCurrentSensitivityLabels">
-      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.ServerDatabaseSchemaTableColumnSensitivityLabelResource&gt; GetCurrentSensitivityLabels (string skipToken = default, bool? count = default, string filter = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.ServerDatabaseSchemaTableColumnSensitivityLabelResource&gt; GetCurrentSensitivityLabels(string skipToken, valuetype System.Nullable`1&lt;bool&gt; count, string filter, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.SqlDatabaseSensitivityLabelResource&gt; GetCurrentSensitivityLabels (string skipToken = default, bool? count = default, string filter = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.SqlDatabaseSensitivityLabelResource&gt; GetCurrentSensitivityLabels(string skipToken, valuetype System.Nullable`1&lt;bool&gt; count, string filter, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlDatabaseResource.GetCurrentSensitivityLabels(System.String,System.Nullable{System.Boolean},System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCurrentSensitivityLabels (Optional skipToken As String = Nothing, Optional count As Nullable(Of Boolean) = Nothing, Optional filter As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of ServerDatabaseSchemaTableColumnSensitivityLabelResource)" />
-      <MemberSignature Language="F#" Value="abstract member GetCurrentSensitivityLabels : string * Nullable&lt;bool&gt; * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.ServerDatabaseSchemaTableColumnSensitivityLabelResource&gt;&#xA;override this.GetCurrentSensitivityLabels : string * Nullable&lt;bool&gt; * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.ServerDatabaseSchemaTableColumnSensitivityLabelResource&gt;" Usage="sqlDatabaseResource.GetCurrentSensitivityLabels (skipToken, count, filter, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCurrentSensitivityLabels (Optional skipToken As String = Nothing, Optional count As Nullable(Of Boolean) = Nothing, Optional filter As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of SqlDatabaseSensitivityLabelResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetCurrentSensitivityLabels : string * Nullable&lt;bool&gt; * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.SqlDatabaseSensitivityLabelResource&gt;&#xA;override this.GetCurrentSensitivityLabels : string * Nullable&lt;bool&gt; * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.SqlDatabaseSensitivityLabelResource&gt;" Usage="sqlDatabaseResource.GetCurrentSensitivityLabels (skipToken, count, filter, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.ServerDatabaseSchemaTableColumnSensitivityLabelResource&gt;</ReturnType>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.SqlDatabaseSensitivityLabelResource&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="skipToken" Type="System.String" />
@@ -730,23 +878,23 @@
             Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/currentSensitivityLabels
             Operation Id: SensitivityLabels_ListCurrentByDatabase
             </summary>
-        <returns> A collection of <see cref="T:Azure.ResourceManager.Sql.ServerDatabaseSchemaTableColumnSensitivityLabelResource" /> that may take multiple service requests to iterate over. </returns>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseSensitivityLabelResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCurrentSensitivityLabelsAsync">
-      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.ServerDatabaseSchemaTableColumnSensitivityLabelResource&gt; GetCurrentSensitivityLabelsAsync (string skipToken = default, bool? count = default, string filter = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.ServerDatabaseSchemaTableColumnSensitivityLabelResource&gt; GetCurrentSensitivityLabelsAsync(string skipToken, valuetype System.Nullable`1&lt;bool&gt; count, string filter, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.SqlDatabaseSensitivityLabelResource&gt; GetCurrentSensitivityLabelsAsync (string skipToken = default, bool? count = default, string filter = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.SqlDatabaseSensitivityLabelResource&gt; GetCurrentSensitivityLabelsAsync(string skipToken, valuetype System.Nullable`1&lt;bool&gt; count, string filter, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlDatabaseResource.GetCurrentSensitivityLabelsAsync(System.String,System.Nullable{System.Boolean},System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCurrentSensitivityLabelsAsync (Optional skipToken As String = Nothing, Optional count As Nullable(Of Boolean) = Nothing, Optional filter As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of ServerDatabaseSchemaTableColumnSensitivityLabelResource)" />
-      <MemberSignature Language="F#" Value="abstract member GetCurrentSensitivityLabelsAsync : string * Nullable&lt;bool&gt; * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.ServerDatabaseSchemaTableColumnSensitivityLabelResource&gt;&#xA;override this.GetCurrentSensitivityLabelsAsync : string * Nullable&lt;bool&gt; * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.ServerDatabaseSchemaTableColumnSensitivityLabelResource&gt;" Usage="sqlDatabaseResource.GetCurrentSensitivityLabelsAsync (skipToken, count, filter, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCurrentSensitivityLabelsAsync (Optional skipToken As String = Nothing, Optional count As Nullable(Of Boolean) = Nothing, Optional filter As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of SqlDatabaseSensitivityLabelResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetCurrentSensitivityLabelsAsync : string * Nullable&lt;bool&gt; * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.SqlDatabaseSensitivityLabelResource&gt;&#xA;override this.GetCurrentSensitivityLabelsAsync : string * Nullable&lt;bool&gt; * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.SqlDatabaseSensitivityLabelResource&gt;" Usage="sqlDatabaseResource.GetCurrentSensitivityLabelsAsync (skipToken, count, filter, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.ServerDatabaseSchemaTableColumnSensitivityLabelResource&gt;</ReturnType>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.SqlDatabaseSensitivityLabelResource&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="skipToken" Type="System.String" />
@@ -764,7 +912,7 @@
             Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/currentSensitivityLabels
             Operation Id: SensitivityLabels_ListCurrentByDatabase
             </summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.Sql.ServerDatabaseSchemaTableColumnSensitivityLabelResource" /> that may take multiple service requests to iterate over. </returns>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseSensitivityLabelResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -871,18 +1019,18 @@
       </Docs>
     </Member>
     <Member MemberName="GetDatabaseColumns">
-      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.ServerDatabaseSchemaTableColumnResource&gt; GetDatabaseColumns (System.Collections.Generic.IEnumerable&lt;string&gt; schema = default, System.Collections.Generic.IEnumerable&lt;string&gt; table = default, System.Collections.Generic.IEnumerable&lt;string&gt; column = default, System.Collections.Generic.IEnumerable&lt;string&gt; orderBy = default, string skiptoken = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.ServerDatabaseSchemaTableColumnResource&gt; GetDatabaseColumns(class System.Collections.Generic.IEnumerable`1&lt;string&gt; schema, class System.Collections.Generic.IEnumerable`1&lt;string&gt; table, class System.Collections.Generic.IEnumerable`1&lt;string&gt; column, class System.Collections.Generic.IEnumerable`1&lt;string&gt; orderBy, string skiptoken, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.SqlDatabaseColumnResource&gt; GetDatabaseColumns (System.Collections.Generic.IEnumerable&lt;string&gt; schema = default, System.Collections.Generic.IEnumerable&lt;string&gt; table = default, System.Collections.Generic.IEnumerable&lt;string&gt; column = default, System.Collections.Generic.IEnumerable&lt;string&gt; orderBy = default, string skiptoken = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.SqlDatabaseColumnResource&gt; GetDatabaseColumns(class System.Collections.Generic.IEnumerable`1&lt;string&gt; schema, class System.Collections.Generic.IEnumerable`1&lt;string&gt; table, class System.Collections.Generic.IEnumerable`1&lt;string&gt; column, class System.Collections.Generic.IEnumerable`1&lt;string&gt; orderBy, string skiptoken, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlDatabaseResource.GetDatabaseColumns(System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDatabaseColumns (Optional schema As IEnumerable(Of String) = Nothing, Optional table As IEnumerable(Of String) = Nothing, Optional column As IEnumerable(Of String) = Nothing, Optional orderBy As IEnumerable(Of String) = Nothing, Optional skiptoken As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of ServerDatabaseSchemaTableColumnResource)" />
-      <MemberSignature Language="F#" Value="abstract member GetDatabaseColumns : seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.ServerDatabaseSchemaTableColumnResource&gt;&#xA;override this.GetDatabaseColumns : seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.ServerDatabaseSchemaTableColumnResource&gt;" Usage="sqlDatabaseResource.GetDatabaseColumns (schema, table, column, orderBy, skiptoken, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDatabaseColumns (Optional schema As IEnumerable(Of String) = Nothing, Optional table As IEnumerable(Of String) = Nothing, Optional column As IEnumerable(Of String) = Nothing, Optional orderBy As IEnumerable(Of String) = Nothing, Optional skiptoken As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of SqlDatabaseColumnResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetDatabaseColumns : seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.SqlDatabaseColumnResource&gt;&#xA;override this.GetDatabaseColumns : seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.SqlDatabaseColumnResource&gt;" Usage="sqlDatabaseResource.GetDatabaseColumns (schema, table, column, orderBy, skiptoken, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.ServerDatabaseSchemaTableColumnResource&gt;</ReturnType>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.SqlDatabaseColumnResource&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="schema" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
@@ -904,23 +1052,23 @@
             Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/columns
             Operation Id: DatabaseColumns_ListByDatabase
             </summary>
-        <returns> A collection of <see cref="T:Azure.ResourceManager.Sql.ServerDatabaseSchemaTableColumnResource" /> that may take multiple service requests to iterate over. </returns>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseColumnResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDatabaseColumnsAsync">
-      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.ServerDatabaseSchemaTableColumnResource&gt; GetDatabaseColumnsAsync (System.Collections.Generic.IEnumerable&lt;string&gt; schema = default, System.Collections.Generic.IEnumerable&lt;string&gt; table = default, System.Collections.Generic.IEnumerable&lt;string&gt; column = default, System.Collections.Generic.IEnumerable&lt;string&gt; orderBy = default, string skiptoken = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.ServerDatabaseSchemaTableColumnResource&gt; GetDatabaseColumnsAsync(class System.Collections.Generic.IEnumerable`1&lt;string&gt; schema, class System.Collections.Generic.IEnumerable`1&lt;string&gt; table, class System.Collections.Generic.IEnumerable`1&lt;string&gt; column, class System.Collections.Generic.IEnumerable`1&lt;string&gt; orderBy, string skiptoken, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.SqlDatabaseColumnResource&gt; GetDatabaseColumnsAsync (System.Collections.Generic.IEnumerable&lt;string&gt; schema = default, System.Collections.Generic.IEnumerable&lt;string&gt; table = default, System.Collections.Generic.IEnumerable&lt;string&gt; column = default, System.Collections.Generic.IEnumerable&lt;string&gt; orderBy = default, string skiptoken = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.SqlDatabaseColumnResource&gt; GetDatabaseColumnsAsync(class System.Collections.Generic.IEnumerable`1&lt;string&gt; schema, class System.Collections.Generic.IEnumerable`1&lt;string&gt; table, class System.Collections.Generic.IEnumerable`1&lt;string&gt; column, class System.Collections.Generic.IEnumerable`1&lt;string&gt; orderBy, string skiptoken, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlDatabaseResource.GetDatabaseColumnsAsync(System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDatabaseColumnsAsync (Optional schema As IEnumerable(Of String) = Nothing, Optional table As IEnumerable(Of String) = Nothing, Optional column As IEnumerable(Of String) = Nothing, Optional orderBy As IEnumerable(Of String) = Nothing, Optional skiptoken As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of ServerDatabaseSchemaTableColumnResource)" />
-      <MemberSignature Language="F#" Value="abstract member GetDatabaseColumnsAsync : seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.ServerDatabaseSchemaTableColumnResource&gt;&#xA;override this.GetDatabaseColumnsAsync : seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.ServerDatabaseSchemaTableColumnResource&gt;" Usage="sqlDatabaseResource.GetDatabaseColumnsAsync (schema, table, column, orderBy, skiptoken, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDatabaseColumnsAsync (Optional schema As IEnumerable(Of String) = Nothing, Optional table As IEnumerable(Of String) = Nothing, Optional column As IEnumerable(Of String) = Nothing, Optional orderBy As IEnumerable(Of String) = Nothing, Optional skiptoken As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of SqlDatabaseColumnResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetDatabaseColumnsAsync : seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.SqlDatabaseColumnResource&gt;&#xA;override this.GetDatabaseColumnsAsync : seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * seq&lt;string&gt; * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.SqlDatabaseColumnResource&gt;" Usage="sqlDatabaseResource.GetDatabaseColumnsAsync (schema, table, column, orderBy, skiptoken, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.ServerDatabaseSchemaTableColumnResource&gt;</ReturnType>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.SqlDatabaseColumnResource&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="schema" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
@@ -942,7 +1090,7 @@
             Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/columns
             Operation Id: DatabaseColumns_ListByDatabase
             </summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.Sql.ServerDatabaseSchemaTableColumnResource" /> that may take multiple service requests to iterate over. </returns>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseColumnResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1003,18 +1151,18 @@
       </Docs>
     </Member>
     <Member MemberName="GetDatabaseOperations">
-      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.DatabaseOperation&gt; GetDatabaseOperations (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.Models.DatabaseOperation&gt; GetDatabaseOperations(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.DatabaseOperationData&gt; GetDatabaseOperations (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.Models.DatabaseOperationData&gt; GetDatabaseOperations(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlDatabaseResource.GetDatabaseOperations(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDatabaseOperations (Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of DatabaseOperation)" />
-      <MemberSignature Language="F#" Value="abstract member GetDatabaseOperations : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.DatabaseOperation&gt;&#xA;override this.GetDatabaseOperations : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.DatabaseOperation&gt;" Usage="sqlDatabaseResource.GetDatabaseOperations cancellationToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDatabaseOperations (Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of DatabaseOperationData)" />
+      <MemberSignature Language="F#" Value="abstract member GetDatabaseOperations : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.DatabaseOperationData&gt;&#xA;override this.GetDatabaseOperations : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.DatabaseOperationData&gt;" Usage="sqlDatabaseResource.GetDatabaseOperations cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.DatabaseOperation&gt;</ReturnType>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.DatabaseOperationData&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
@@ -1026,23 +1174,23 @@
             Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/operations
             Operation Id: DatabaseOperations_ListByDatabase
             </summary>
-        <returns> A collection of <see cref="T:Azure.ResourceManager.Sql.Models.DatabaseOperation" /> that may take multiple service requests to iterate over. </returns>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Sql.Models.DatabaseOperationData" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDatabaseOperationsAsync">
-      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.DatabaseOperation&gt; GetDatabaseOperationsAsync (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.Models.DatabaseOperation&gt; GetDatabaseOperationsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.DatabaseOperationData&gt; GetDatabaseOperationsAsync (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.Models.DatabaseOperationData&gt; GetDatabaseOperationsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlDatabaseResource.GetDatabaseOperationsAsync(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDatabaseOperationsAsync (Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of DatabaseOperation)" />
-      <MemberSignature Language="F#" Value="abstract member GetDatabaseOperationsAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.DatabaseOperation&gt;&#xA;override this.GetDatabaseOperationsAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.DatabaseOperation&gt;" Usage="sqlDatabaseResource.GetDatabaseOperationsAsync cancellationToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDatabaseOperationsAsync (Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of DatabaseOperationData)" />
+      <MemberSignature Language="F#" Value="abstract member GetDatabaseOperationsAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.DatabaseOperationData&gt;&#xA;override this.GetDatabaseOperationsAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.DatabaseOperationData&gt;" Usage="sqlDatabaseResource.GetDatabaseOperationsAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.DatabaseOperation&gt;</ReturnType>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.DatabaseOperationData&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
@@ -1054,7 +1202,7 @@
             Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/operations
             Operation Id: DatabaseOperations_ListByDatabase
             </summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.Sql.Models.DatabaseOperation" /> that may take multiple service requests to iterate over. </returns>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Sql.Models.DatabaseOperationData" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1459,24 +1607,84 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetLedgerDigestUploads">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.LedgerDigestUploadsCollection GetLedgerDigestUploads ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.LedgerDigestUploadsCollection GetLedgerDigestUploads() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlDatabaseResource.GetLedgerDigestUploads" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetLedgerDigestUploads () As LedgerDigestUploadsCollection" />
-      <MemberSignature Language="F#" Value="abstract member GetLedgerDigestUploads : unit -&gt; Azure.ResourceManager.Sql.LedgerDigestUploadsCollection&#xA;override this.GetLedgerDigestUploads : unit -&gt; Azure.ResourceManager.Sql.LedgerDigestUploadsCollection" Usage="sqlDatabaseResource.GetLedgerDigestUploads " />
+    <Member MemberName="GetLedgerDigestUpload">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.LedgerDigestUploadResource&gt; GetLedgerDigestUpload (Azure.ResourceManager.Sql.Models.LedgerDigestUploadsName ledgerDigestUploads, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.LedgerDigestUploadResource&gt; GetLedgerDigestUpload(valuetype Azure.ResourceManager.Sql.Models.LedgerDigestUploadsName ledgerDigestUploads, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlDatabaseResource.GetLedgerDigestUpload(Azure.ResourceManager.Sql.Models.LedgerDigestUploadsName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetLedgerDigestUpload (ledgerDigestUploads As LedgerDigestUploadsName, Optional cancellationToken As CancellationToken = Nothing) As Response(Of LedgerDigestUploadResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetLedgerDigestUpload : Azure.ResourceManager.Sql.Models.LedgerDigestUploadsName * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.LedgerDigestUploadResource&gt;&#xA;override this.GetLedgerDigestUpload : Azure.ResourceManager.Sql.Models.LedgerDigestUploadsName * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.LedgerDigestUploadResource&gt;" Usage="sqlDatabaseResource.GetLedgerDigestUpload (ledgerDigestUploads, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Sql.LedgerDigestUploadsCollection</ReturnType>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.LedgerDigestUploadResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ledgerDigestUploads" Type="Azure.ResourceManager.Sql.Models.LedgerDigestUploadsName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="ledgerDigestUploads"> The LedgerDigestUploadsName to use. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the current ledger digest upload configuration for a database.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/ledgerDigestUploads/{ledgerDigestUploads}
+            Operation Id: LedgerDigestUploads_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLedgerDigestUploadAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.LedgerDigestUploadResource&gt;&gt; GetLedgerDigestUploadAsync (Azure.ResourceManager.Sql.Models.LedgerDigestUploadsName ledgerDigestUploads, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.LedgerDigestUploadResource&gt;&gt; GetLedgerDigestUploadAsync(valuetype Azure.ResourceManager.Sql.Models.LedgerDigestUploadsName ledgerDigestUploads, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlDatabaseResource.GetLedgerDigestUploadAsync(Azure.ResourceManager.Sql.Models.LedgerDigestUploadsName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetLedgerDigestUploadAsync (ledgerDigestUploads As LedgerDigestUploadsName, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of LedgerDigestUploadResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetLedgerDigestUploadAsync : Azure.ResourceManager.Sql.Models.LedgerDigestUploadsName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.LedgerDigestUploadResource&gt;&gt;&#xA;override this.GetLedgerDigestUploadAsync : Azure.ResourceManager.Sql.Models.LedgerDigestUploadsName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.LedgerDigestUploadResource&gt;&gt;" Usage="sqlDatabaseResource.GetLedgerDigestUploadAsync (ledgerDigestUploads, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.LedgerDigestUploadResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ledgerDigestUploads" Type="Azure.ResourceManager.Sql.Models.LedgerDigestUploadsName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="ledgerDigestUploads"> The LedgerDigestUploadsName to use. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the current ledger digest upload configuration for a database.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/ledgerDigestUploads/{ledgerDigestUploads}
+            Operation Id: LedgerDigestUploads_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLedgerDigestUploads">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.LedgerDigestUploadCollection GetLedgerDigestUploads ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.LedgerDigestUploadCollection GetLedgerDigestUploads() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlDatabaseResource.GetLedgerDigestUploads" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetLedgerDigestUploads () As LedgerDigestUploadCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetLedgerDigestUploads : unit -&gt; Azure.ResourceManager.Sql.LedgerDigestUploadCollection&#xA;override this.GetLedgerDigestUploads : unit -&gt; Azure.ResourceManager.Sql.LedgerDigestUploadCollection" Usage="sqlDatabaseResource.GetLedgerDigestUploads " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.LedgerDigestUploadCollection</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary> Gets a collection of LedgerDigestUploadsResources in the SqlDatabase. </summary>
-        <returns> An object representing collection of LedgerDigestUploadsResources and their operations over a LedgerDigestUploadsResource. </returns>
+        <summary> Gets a collection of LedgerDigestUploadResources in the SqlDatabase. </summary>
+        <returns> An object representing collection of LedgerDigestUploadResources and their operations over a LedgerDigestUploadResource. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1745,18 +1953,18 @@
       </Docs>
     </Member>
     <Member MemberName="GetMetricDefinitions">
-      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.MetricDefinition&gt; GetMetricDefinitions (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.Models.MetricDefinition&gt; GetMetricDefinitions(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.SqlMetricDefinition&gt; GetMetricDefinitions (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.Models.SqlMetricDefinition&gt; GetMetricDefinitions(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlDatabaseResource.GetMetricDefinitions(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMetricDefinitions (Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of MetricDefinition)" />
-      <MemberSignature Language="F#" Value="abstract member GetMetricDefinitions : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.MetricDefinition&gt;&#xA;override this.GetMetricDefinitions : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.MetricDefinition&gt;" Usage="sqlDatabaseResource.GetMetricDefinitions cancellationToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMetricDefinitions (Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of SqlMetricDefinition)" />
+      <MemberSignature Language="F#" Value="abstract member GetMetricDefinitions : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.SqlMetricDefinition&gt;&#xA;override this.GetMetricDefinitions : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.SqlMetricDefinition&gt;" Usage="sqlDatabaseResource.GetMetricDefinitions cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.MetricDefinition&gt;</ReturnType>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.Models.SqlMetricDefinition&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
@@ -1768,23 +1976,23 @@
             Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/metricDefinitions
             Operation Id: MetricDefinitions_ListDatabase
             </summary>
-        <returns> A collection of <see cref="T:Azure.ResourceManager.Sql.Models.MetricDefinition" /> that may take multiple service requests to iterate over. </returns>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Sql.Models.SqlMetricDefinition" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetMetricDefinitionsAsync">
-      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.MetricDefinition&gt; GetMetricDefinitionsAsync (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.Models.MetricDefinition&gt; GetMetricDefinitionsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.SqlMetricDefinition&gt; GetMetricDefinitionsAsync (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.Models.SqlMetricDefinition&gt; GetMetricDefinitionsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlDatabaseResource.GetMetricDefinitionsAsync(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMetricDefinitionsAsync (Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of MetricDefinition)" />
-      <MemberSignature Language="F#" Value="abstract member GetMetricDefinitionsAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.MetricDefinition&gt;&#xA;override this.GetMetricDefinitionsAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.MetricDefinition&gt;" Usage="sqlDatabaseResource.GetMetricDefinitionsAsync cancellationToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMetricDefinitionsAsync (Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of SqlMetricDefinition)" />
+      <MemberSignature Language="F#" Value="abstract member GetMetricDefinitionsAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.SqlMetricDefinition&gt;&#xA;override this.GetMetricDefinitionsAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.SqlMetricDefinition&gt;" Usage="sqlDatabaseResource.GetMetricDefinitionsAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.MetricDefinition&gt;</ReturnType>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.Models.SqlMetricDefinition&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
@@ -1796,7 +2004,7 @@
             Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/metricDefinitions
             Operation Id: MetricDefinitions_ListDatabase
             </summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.Sql.Models.MetricDefinition" /> that may take multiple service requests to iterate over. </returns>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Sql.Models.SqlMetricDefinition" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1865,18 +2073,18 @@
       </Docs>
     </Member>
     <Member MemberName="GetRecommendedSensitivityLabels">
-      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.ServerDatabaseSchemaTableColumnSensitivityLabelResource&gt; GetRecommendedSensitivityLabels (string skipToken = default, bool? includeDisabledRecommendations = default, string filter = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.ServerDatabaseSchemaTableColumnSensitivityLabelResource&gt; GetRecommendedSensitivityLabels(string skipToken, valuetype System.Nullable`1&lt;bool&gt; includeDisabledRecommendations, string filter, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.SqlDatabaseSensitivityLabelResource&gt; GetRecommendedSensitivityLabels (string skipToken = default, bool? includeDisabledRecommendations = default, string filter = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.SqlDatabaseSensitivityLabelResource&gt; GetRecommendedSensitivityLabels(string skipToken, valuetype System.Nullable`1&lt;bool&gt; includeDisabledRecommendations, string filter, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlDatabaseResource.GetRecommendedSensitivityLabels(System.String,System.Nullable{System.Boolean},System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRecommendedSensitivityLabels (Optional skipToken As String = Nothing, Optional includeDisabledRecommendations As Nullable(Of Boolean) = Nothing, Optional filter As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of ServerDatabaseSchemaTableColumnSensitivityLabelResource)" />
-      <MemberSignature Language="F#" Value="abstract member GetRecommendedSensitivityLabels : string * Nullable&lt;bool&gt; * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.ServerDatabaseSchemaTableColumnSensitivityLabelResource&gt;&#xA;override this.GetRecommendedSensitivityLabels : string * Nullable&lt;bool&gt; * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.ServerDatabaseSchemaTableColumnSensitivityLabelResource&gt;" Usage="sqlDatabaseResource.GetRecommendedSensitivityLabels (skipToken, includeDisabledRecommendations, filter, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRecommendedSensitivityLabels (Optional skipToken As String = Nothing, Optional includeDisabledRecommendations As Nullable(Of Boolean) = Nothing, Optional filter As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of SqlDatabaseSensitivityLabelResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetRecommendedSensitivityLabels : string * Nullable&lt;bool&gt; * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.SqlDatabaseSensitivityLabelResource&gt;&#xA;override this.GetRecommendedSensitivityLabels : string * Nullable&lt;bool&gt; * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.SqlDatabaseSensitivityLabelResource&gt;" Usage="sqlDatabaseResource.GetRecommendedSensitivityLabels (skipToken, includeDisabledRecommendations, filter, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.ServerDatabaseSchemaTableColumnSensitivityLabelResource&gt;</ReturnType>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.SqlDatabaseSensitivityLabelResource&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="skipToken" Type="System.String" />
@@ -1894,23 +2102,23 @@
             Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/recommendedSensitivityLabels
             Operation Id: SensitivityLabels_ListRecommendedByDatabase
             </summary>
-        <returns> A collection of <see cref="T:Azure.ResourceManager.Sql.ServerDatabaseSchemaTableColumnSensitivityLabelResource" /> that may take multiple service requests to iterate over. </returns>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseSensitivityLabelResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRecommendedSensitivityLabelsAsync">
-      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.ServerDatabaseSchemaTableColumnSensitivityLabelResource&gt; GetRecommendedSensitivityLabelsAsync (string skipToken = default, bool? includeDisabledRecommendations = default, string filter = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.ServerDatabaseSchemaTableColumnSensitivityLabelResource&gt; GetRecommendedSensitivityLabelsAsync(string skipToken, valuetype System.Nullable`1&lt;bool&gt; includeDisabledRecommendations, string filter, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.SqlDatabaseSensitivityLabelResource&gt; GetRecommendedSensitivityLabelsAsync (string skipToken = default, bool? includeDisabledRecommendations = default, string filter = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.SqlDatabaseSensitivityLabelResource&gt; GetRecommendedSensitivityLabelsAsync(string skipToken, valuetype System.Nullable`1&lt;bool&gt; includeDisabledRecommendations, string filter, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlDatabaseResource.GetRecommendedSensitivityLabelsAsync(System.String,System.Nullable{System.Boolean},System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRecommendedSensitivityLabelsAsync (Optional skipToken As String = Nothing, Optional includeDisabledRecommendations As Nullable(Of Boolean) = Nothing, Optional filter As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of ServerDatabaseSchemaTableColumnSensitivityLabelResource)" />
-      <MemberSignature Language="F#" Value="abstract member GetRecommendedSensitivityLabelsAsync : string * Nullable&lt;bool&gt; * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.ServerDatabaseSchemaTableColumnSensitivityLabelResource&gt;&#xA;override this.GetRecommendedSensitivityLabelsAsync : string * Nullable&lt;bool&gt; * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.ServerDatabaseSchemaTableColumnSensitivityLabelResource&gt;" Usage="sqlDatabaseResource.GetRecommendedSensitivityLabelsAsync (skipToken, includeDisabledRecommendations, filter, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRecommendedSensitivityLabelsAsync (Optional skipToken As String = Nothing, Optional includeDisabledRecommendations As Nullable(Of Boolean) = Nothing, Optional filter As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of SqlDatabaseSensitivityLabelResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetRecommendedSensitivityLabelsAsync : string * Nullable&lt;bool&gt; * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.SqlDatabaseSensitivityLabelResource&gt;&#xA;override this.GetRecommendedSensitivityLabelsAsync : string * Nullable&lt;bool&gt; * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.SqlDatabaseSensitivityLabelResource&gt;" Usage="sqlDatabaseResource.GetRecommendedSensitivityLabelsAsync (skipToken, includeDisabledRecommendations, filter, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.ServerDatabaseSchemaTableColumnSensitivityLabelResource&gt;</ReturnType>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.SqlDatabaseSensitivityLabelResource&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="skipToken" Type="System.String" />
@@ -1928,7 +2136,7 @@
             Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/recommendedSensitivityLabels
             Operation Id: SensitivityLabels_ListRecommendedByDatabase
             </summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.Sql.ServerDatabaseSchemaTableColumnSensitivityLabelResource" /> that may take multiple service requests to iterate over. </returns>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseSensitivityLabelResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2369,6 +2577,448 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetSqlDatabaseAdvisor">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.SqlDatabaseAdvisorResource&gt; GetSqlDatabaseAdvisor (string advisorName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.SqlDatabaseAdvisorResource&gt; GetSqlDatabaseAdvisor(string advisorName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlDatabaseResource.GetSqlDatabaseAdvisor(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlDatabaseAdvisor (advisorName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of SqlDatabaseAdvisorResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlDatabaseAdvisor : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.SqlDatabaseAdvisorResource&gt;&#xA;override this.GetSqlDatabaseAdvisor : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.SqlDatabaseAdvisorResource&gt;" Usage="sqlDatabaseResource.GetSqlDatabaseAdvisor (advisorName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.SqlDatabaseAdvisorResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="advisorName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="advisorName"> The name of the Database Advisor. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a database advisor.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/advisors/{advisorName}
+            Operation Id: DatabaseAdvisors_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="advisorName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="advisorName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlDatabaseAdvisorAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlDatabaseAdvisorResource&gt;&gt; GetSqlDatabaseAdvisorAsync (string advisorName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.SqlDatabaseAdvisorResource&gt;&gt; GetSqlDatabaseAdvisorAsync(string advisorName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlDatabaseResource.GetSqlDatabaseAdvisorAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlDatabaseAdvisorAsync (advisorName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of SqlDatabaseAdvisorResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlDatabaseAdvisorAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlDatabaseAdvisorResource&gt;&gt;&#xA;override this.GetSqlDatabaseAdvisorAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlDatabaseAdvisorResource&gt;&gt;" Usage="sqlDatabaseResource.GetSqlDatabaseAdvisorAsync (advisorName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlDatabaseAdvisorResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="advisorName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="advisorName"> The name of the Database Advisor. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a database advisor.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/advisors/{advisorName}
+            Operation Id: DatabaseAdvisors_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="advisorName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="advisorName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlDatabaseAdvisors">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.SqlDatabaseAdvisorCollection GetSqlDatabaseAdvisors ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.SqlDatabaseAdvisorCollection GetSqlDatabaseAdvisors() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlDatabaseResource.GetSqlDatabaseAdvisors" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlDatabaseAdvisors () As SqlDatabaseAdvisorCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlDatabaseAdvisors : unit -&gt; Azure.ResourceManager.Sql.SqlDatabaseAdvisorCollection&#xA;override this.GetSqlDatabaseAdvisors : unit -&gt; Azure.ResourceManager.Sql.SqlDatabaseAdvisorCollection" Usage="sqlDatabaseResource.GetSqlDatabaseAdvisors " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlDatabaseAdvisorCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> Gets a collection of SqlDatabaseAdvisorResources in the SqlDatabase. </summary>
+        <returns> An object representing collection of SqlDatabaseAdvisorResources and their operations over a SqlDatabaseAdvisorResource. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlDatabaseAutomaticTuning">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.SqlDatabaseAutomaticTuningResource GetSqlDatabaseAutomaticTuning ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.SqlDatabaseAutomaticTuningResource GetSqlDatabaseAutomaticTuning() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlDatabaseResource.GetSqlDatabaseAutomaticTuning" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlDatabaseAutomaticTuning () As SqlDatabaseAutomaticTuningResource" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlDatabaseAutomaticTuning : unit -&gt; Azure.ResourceManager.Sql.SqlDatabaseAutomaticTuningResource&#xA;override this.GetSqlDatabaseAutomaticTuning : unit -&gt; Azure.ResourceManager.Sql.SqlDatabaseAutomaticTuningResource" Usage="sqlDatabaseResource.GetSqlDatabaseAutomaticTuning " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlDatabaseAutomaticTuningResource</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> Gets an object representing a SqlDatabaseAutomaticTuningResource along with the instance operations that can be performed on it in the SqlDatabase. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseAutomaticTuningResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlDatabaseBlobAuditingPolicies">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.SqlDatabaseBlobAuditingPolicyCollection GetSqlDatabaseBlobAuditingPolicies ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.SqlDatabaseBlobAuditingPolicyCollection GetSqlDatabaseBlobAuditingPolicies() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlDatabaseResource.GetSqlDatabaseBlobAuditingPolicies" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlDatabaseBlobAuditingPolicies () As SqlDatabaseBlobAuditingPolicyCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlDatabaseBlobAuditingPolicies : unit -&gt; Azure.ResourceManager.Sql.SqlDatabaseBlobAuditingPolicyCollection&#xA;override this.GetSqlDatabaseBlobAuditingPolicies : unit -&gt; Azure.ResourceManager.Sql.SqlDatabaseBlobAuditingPolicyCollection" Usage="sqlDatabaseResource.GetSqlDatabaseBlobAuditingPolicies " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlDatabaseBlobAuditingPolicyCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> Gets a collection of SqlDatabaseBlobAuditingPolicyResources in the SqlDatabase. </summary>
+        <returns> An object representing collection of SqlDatabaseBlobAuditingPolicyResources and their operations over a SqlDatabaseBlobAuditingPolicyResource. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlDatabaseBlobAuditingPolicy">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.SqlDatabaseBlobAuditingPolicyResource&gt; GetSqlDatabaseBlobAuditingPolicy (Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName blobAuditingPolicyName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.SqlDatabaseBlobAuditingPolicyResource&gt; GetSqlDatabaseBlobAuditingPolicy(valuetype Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName blobAuditingPolicyName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlDatabaseResource.GetSqlDatabaseBlobAuditingPolicy(Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlDatabaseBlobAuditingPolicy (blobAuditingPolicyName As BlobAuditingPolicyName, Optional cancellationToken As CancellationToken = Nothing) As Response(Of SqlDatabaseBlobAuditingPolicyResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlDatabaseBlobAuditingPolicy : Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.SqlDatabaseBlobAuditingPolicyResource&gt;&#xA;override this.GetSqlDatabaseBlobAuditingPolicy : Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.SqlDatabaseBlobAuditingPolicyResource&gt;" Usage="sqlDatabaseResource.GetSqlDatabaseBlobAuditingPolicy (blobAuditingPolicyName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.SqlDatabaseBlobAuditingPolicyResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="blobAuditingPolicyName" Type="Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="blobAuditingPolicyName"> The name of the blob auditing policy. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a database's blob auditing policy.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/auditingSettings/{blobAuditingPolicyName}
+            Operation Id: DatabaseBlobAuditingPolicies_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlDatabaseBlobAuditingPolicyAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlDatabaseBlobAuditingPolicyResource&gt;&gt; GetSqlDatabaseBlobAuditingPolicyAsync (Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName blobAuditingPolicyName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.SqlDatabaseBlobAuditingPolicyResource&gt;&gt; GetSqlDatabaseBlobAuditingPolicyAsync(valuetype Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName blobAuditingPolicyName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlDatabaseResource.GetSqlDatabaseBlobAuditingPolicyAsync(Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlDatabaseBlobAuditingPolicyAsync (blobAuditingPolicyName As BlobAuditingPolicyName, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of SqlDatabaseBlobAuditingPolicyResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlDatabaseBlobAuditingPolicyAsync : Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlDatabaseBlobAuditingPolicyResource&gt;&gt;&#xA;override this.GetSqlDatabaseBlobAuditingPolicyAsync : Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlDatabaseBlobAuditingPolicyResource&gt;&gt;" Usage="sqlDatabaseResource.GetSqlDatabaseBlobAuditingPolicyAsync (blobAuditingPolicyName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlDatabaseBlobAuditingPolicyResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="blobAuditingPolicyName" Type="Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="blobAuditingPolicyName"> The name of the blob auditing policy. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a database's blob auditing policy.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/auditingSettings/{blobAuditingPolicyName}
+            Operation Id: DatabaseBlobAuditingPolicies_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlDatabaseSchema">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.SqlDatabaseSchemaResource&gt; GetSqlDatabaseSchema (string schemaName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.SqlDatabaseSchemaResource&gt; GetSqlDatabaseSchema(string schemaName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlDatabaseResource.GetSqlDatabaseSchema(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlDatabaseSchema (schemaName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of SqlDatabaseSchemaResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlDatabaseSchema : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.SqlDatabaseSchemaResource&gt;&#xA;override this.GetSqlDatabaseSchema : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.SqlDatabaseSchemaResource&gt;" Usage="sqlDatabaseResource.GetSqlDatabaseSchema (schemaName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.SqlDatabaseSchemaResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="schemaName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="schemaName"> The name of the schema. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get database schema
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/schemas/{schemaName}
+            Operation Id: DatabaseSchemas_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="schemaName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="schemaName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlDatabaseSchemaAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlDatabaseSchemaResource&gt;&gt; GetSqlDatabaseSchemaAsync (string schemaName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.SqlDatabaseSchemaResource&gt;&gt; GetSqlDatabaseSchemaAsync(string schemaName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlDatabaseResource.GetSqlDatabaseSchemaAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlDatabaseSchemaAsync (schemaName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of SqlDatabaseSchemaResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlDatabaseSchemaAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlDatabaseSchemaResource&gt;&gt;&#xA;override this.GetSqlDatabaseSchemaAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlDatabaseSchemaResource&gt;&gt;" Usage="sqlDatabaseResource.GetSqlDatabaseSchemaAsync (schemaName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlDatabaseSchemaResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="schemaName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="schemaName"> The name of the schema. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get database schema
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/schemas/{schemaName}
+            Operation Id: DatabaseSchemas_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="schemaName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="schemaName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlDatabaseSchemas">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.SqlDatabaseSchemaCollection GetSqlDatabaseSchemas ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.SqlDatabaseSchemaCollection GetSqlDatabaseSchemas() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlDatabaseResource.GetSqlDatabaseSchemas" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlDatabaseSchemas () As SqlDatabaseSchemaCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlDatabaseSchemas : unit -&gt; Azure.ResourceManager.Sql.SqlDatabaseSchemaCollection&#xA;override this.GetSqlDatabaseSchemas : unit -&gt; Azure.ResourceManager.Sql.SqlDatabaseSchemaCollection" Usage="sqlDatabaseResource.GetSqlDatabaseSchemas " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlDatabaseSchemaCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> Gets a collection of SqlDatabaseSchemaResources in the SqlDatabase. </summary>
+        <returns> An object representing collection of SqlDatabaseSchemaResources and their operations over a SqlDatabaseSchemaResource. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlDatabaseSecurityAlertPolicies">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.SqlDatabaseSecurityAlertPolicyCollection GetSqlDatabaseSecurityAlertPolicies ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.SqlDatabaseSecurityAlertPolicyCollection GetSqlDatabaseSecurityAlertPolicies() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlDatabaseResource.GetSqlDatabaseSecurityAlertPolicies" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlDatabaseSecurityAlertPolicies () As SqlDatabaseSecurityAlertPolicyCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlDatabaseSecurityAlertPolicies : unit -&gt; Azure.ResourceManager.Sql.SqlDatabaseSecurityAlertPolicyCollection&#xA;override this.GetSqlDatabaseSecurityAlertPolicies : unit -&gt; Azure.ResourceManager.Sql.SqlDatabaseSecurityAlertPolicyCollection" Usage="sqlDatabaseResource.GetSqlDatabaseSecurityAlertPolicies " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlDatabaseSecurityAlertPolicyCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> Gets a collection of SqlDatabaseSecurityAlertPolicyResources in the SqlDatabase. </summary>
+        <returns> An object representing collection of SqlDatabaseSecurityAlertPolicyResources and their operations over a SqlDatabaseSecurityAlertPolicyResource. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlDatabaseSecurityAlertPolicy">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.SqlDatabaseSecurityAlertPolicyResource&gt; GetSqlDatabaseSecurityAlertPolicy (Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName securityAlertPolicyName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.SqlDatabaseSecurityAlertPolicyResource&gt; GetSqlDatabaseSecurityAlertPolicy(valuetype Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName securityAlertPolicyName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlDatabaseResource.GetSqlDatabaseSecurityAlertPolicy(Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlDatabaseSecurityAlertPolicy (securityAlertPolicyName As SecurityAlertPolicyName, Optional cancellationToken As CancellationToken = Nothing) As Response(Of SqlDatabaseSecurityAlertPolicyResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlDatabaseSecurityAlertPolicy : Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.SqlDatabaseSecurityAlertPolicyResource&gt;&#xA;override this.GetSqlDatabaseSecurityAlertPolicy : Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.SqlDatabaseSecurityAlertPolicyResource&gt;" Usage="sqlDatabaseResource.GetSqlDatabaseSecurityAlertPolicy (securityAlertPolicyName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.SqlDatabaseSecurityAlertPolicyResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="securityAlertPolicyName" Type="Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="securityAlertPolicyName"> The name of the security alert policy. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a database's security alert policy.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/securityAlertPolicies/{securityAlertPolicyName}
+            Operation Id: DatabaseSecurityAlertPolicies_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlDatabaseSecurityAlertPolicyAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlDatabaseSecurityAlertPolicyResource&gt;&gt; GetSqlDatabaseSecurityAlertPolicyAsync (Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName securityAlertPolicyName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.SqlDatabaseSecurityAlertPolicyResource&gt;&gt; GetSqlDatabaseSecurityAlertPolicyAsync(valuetype Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName securityAlertPolicyName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlDatabaseResource.GetSqlDatabaseSecurityAlertPolicyAsync(Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlDatabaseSecurityAlertPolicyAsync (securityAlertPolicyName As SecurityAlertPolicyName, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of SqlDatabaseSecurityAlertPolicyResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlDatabaseSecurityAlertPolicyAsync : Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlDatabaseSecurityAlertPolicyResource&gt;&gt;&#xA;override this.GetSqlDatabaseSecurityAlertPolicyAsync : Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlDatabaseSecurityAlertPolicyResource&gt;&gt;" Usage="sqlDatabaseResource.GetSqlDatabaseSecurityAlertPolicyAsync (securityAlertPolicyName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlDatabaseSecurityAlertPolicyResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="securityAlertPolicyName" Type="Azure.ResourceManager.Sql.Models.SecurityAlertPolicyName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="securityAlertPolicyName"> The name of the security alert policy. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a database's security alert policy.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/securityAlertPolicies/{securityAlertPolicyName}
+            Operation Id: DatabaseSecurityAlertPolicies_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlDatabaseVulnerabilityAssessment">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.SqlDatabaseVulnerabilityAssessmentResource&gt; GetSqlDatabaseVulnerabilityAssessment (Azure.ResourceManager.Sql.Models.VulnerabilityAssessmentName vulnerabilityAssessmentName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.SqlDatabaseVulnerabilityAssessmentResource&gt; GetSqlDatabaseVulnerabilityAssessment(valuetype Azure.ResourceManager.Sql.Models.VulnerabilityAssessmentName vulnerabilityAssessmentName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlDatabaseResource.GetSqlDatabaseVulnerabilityAssessment(Azure.ResourceManager.Sql.Models.VulnerabilityAssessmentName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlDatabaseVulnerabilityAssessment (vulnerabilityAssessmentName As VulnerabilityAssessmentName, Optional cancellationToken As CancellationToken = Nothing) As Response(Of SqlDatabaseVulnerabilityAssessmentResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlDatabaseVulnerabilityAssessment : Azure.ResourceManager.Sql.Models.VulnerabilityAssessmentName * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.SqlDatabaseVulnerabilityAssessmentResource&gt;&#xA;override this.GetSqlDatabaseVulnerabilityAssessment : Azure.ResourceManager.Sql.Models.VulnerabilityAssessmentName * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Sql.SqlDatabaseVulnerabilityAssessmentResource&gt;" Usage="sqlDatabaseResource.GetSqlDatabaseVulnerabilityAssessment (vulnerabilityAssessmentName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Sql.SqlDatabaseVulnerabilityAssessmentResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vulnerabilityAssessmentName" Type="Azure.ResourceManager.Sql.Models.VulnerabilityAssessmentName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="vulnerabilityAssessmentName"> The name of the vulnerability assessment. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the database's vulnerability assessment.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/vulnerabilityAssessments/{vulnerabilityAssessmentName}
+            Operation Id: DatabaseVulnerabilityAssessments_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlDatabaseVulnerabilityAssessmentAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlDatabaseVulnerabilityAssessmentResource&gt;&gt; GetSqlDatabaseVulnerabilityAssessmentAsync (Azure.ResourceManager.Sql.Models.VulnerabilityAssessmentName vulnerabilityAssessmentName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Sql.SqlDatabaseVulnerabilityAssessmentResource&gt;&gt; GetSqlDatabaseVulnerabilityAssessmentAsync(valuetype Azure.ResourceManager.Sql.Models.VulnerabilityAssessmentName vulnerabilityAssessmentName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlDatabaseResource.GetSqlDatabaseVulnerabilityAssessmentAsync(Azure.ResourceManager.Sql.Models.VulnerabilityAssessmentName,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlDatabaseVulnerabilityAssessmentAsync (vulnerabilityAssessmentName As VulnerabilityAssessmentName, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of SqlDatabaseVulnerabilityAssessmentResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlDatabaseVulnerabilityAssessmentAsync : Azure.ResourceManager.Sql.Models.VulnerabilityAssessmentName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlDatabaseVulnerabilityAssessmentResource&gt;&gt;&#xA;override this.GetSqlDatabaseVulnerabilityAssessmentAsync : Azure.ResourceManager.Sql.Models.VulnerabilityAssessmentName * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlDatabaseVulnerabilityAssessmentResource&gt;&gt;" Usage="sqlDatabaseResource.GetSqlDatabaseVulnerabilityAssessmentAsync (vulnerabilityAssessmentName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Sql.SqlDatabaseVulnerabilityAssessmentResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vulnerabilityAssessmentName" Type="Azure.ResourceManager.Sql.Models.VulnerabilityAssessmentName" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="vulnerabilityAssessmentName"> The name of the vulnerability assessment. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the database's vulnerability assessment.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/vulnerabilityAssessments/{vulnerabilityAssessmentName}
+            Operation Id: DatabaseVulnerabilityAssessments_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlDatabaseVulnerabilityAssessments">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.SqlDatabaseVulnerabilityAssessmentCollection GetSqlDatabaseVulnerabilityAssessments ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.SqlDatabaseVulnerabilityAssessmentCollection GetSqlDatabaseVulnerabilityAssessments() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlDatabaseResource.GetSqlDatabaseVulnerabilityAssessments" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlDatabaseVulnerabilityAssessments () As SqlDatabaseVulnerabilityAssessmentCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlDatabaseVulnerabilityAssessments : unit -&gt; Azure.ResourceManager.Sql.SqlDatabaseVulnerabilityAssessmentCollection&#xA;override this.GetSqlDatabaseVulnerabilityAssessments : unit -&gt; Azure.ResourceManager.Sql.SqlDatabaseVulnerabilityAssessmentCollection" Usage="sqlDatabaseResource.GetSqlDatabaseVulnerabilityAssessments " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Sql.SqlDatabaseVulnerabilityAssessmentCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> Gets a collection of SqlDatabaseVulnerabilityAssessmentResources in the SqlDatabase. </summary>
+        <returns> An object representing collection of SqlDatabaseVulnerabilityAssessmentResources and their operations over a SqlDatabaseVulnerabilityAssessmentResource. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetSyncGroup">
       <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Sql.SyncGroupResource&gt; GetSyncGroup (string syncGroupName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Sql.SyncGroupResource&gt; GetSyncGroup(string syncGroupName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -2795,6 +3445,38 @@
           <paramref name="resourceMoveDefinition" /> is null. </exception>
       </Docs>
     </Member>
+    <Member MemberName="Rename">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response Rename (Azure.ResourceManager.Sql.Models.SqlResourceMoveDefinition sqlResourceMoveDefinition, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response Rename(class Azure.ResourceManager.Sql.Models.SqlResourceMoveDefinition sqlResourceMoveDefinition, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlDatabaseResource.Rename(Azure.ResourceManager.Sql.Models.SqlResourceMoveDefinition,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Rename (sqlResourceMoveDefinition As SqlResourceMoveDefinition, Optional cancellationToken As CancellationToken = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member Rename : Azure.ResourceManager.Sql.Models.SqlResourceMoveDefinition * System.Threading.CancellationToken -&gt; Azure.Response&#xA;override this.Rename : Azure.ResourceManager.Sql.Models.SqlResourceMoveDefinition * System.Threading.CancellationToken -&gt; Azure.Response" Usage="sqlDatabaseResource.Rename (sqlResourceMoveDefinition, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sqlResourceMoveDefinition" Type="Azure.ResourceManager.Sql.Models.SqlResourceMoveDefinition" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="sqlResourceMoveDefinition"> The resource move definition for renaming this database. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Renames a database.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/move
+            Operation Id: Databases_Rename
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="sqlResourceMoveDefinition" /> is null. </exception>
+      </Docs>
+    </Member>
     <Member MemberName="RenameAsync">
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; RenameAsync (Azure.ResourceManager.Sql.Models.ResourceMoveDefinition resourceMoveDefinition, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; RenameAsync(class Azure.ResourceManager.Sql.Models.ResourceMoveDefinition resourceMoveDefinition, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -2825,6 +3507,38 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="resourceMoveDefinition" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RenameAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; RenameAsync (Azure.ResourceManager.Sql.Models.SqlResourceMoveDefinition sqlResourceMoveDefinition, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; RenameAsync(class Azure.ResourceManager.Sql.Models.SqlResourceMoveDefinition sqlResourceMoveDefinition, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SqlDatabaseResource.RenameAsync(Azure.ResourceManager.Sql.Models.SqlResourceMoveDefinition,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RenameAsync (sqlResourceMoveDefinition As SqlResourceMoveDefinition, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member RenameAsync : Azure.ResourceManager.Sql.Models.SqlResourceMoveDefinition * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.RenameAsync : Azure.ResourceManager.Sql.Models.SqlResourceMoveDefinition * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="sqlDatabaseResource.RenameAsync (sqlResourceMoveDefinition, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sqlResourceMoveDefinition" Type="Azure.ResourceManager.Sql.Models.SqlResourceMoveDefinition" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="sqlResourceMoveDefinition"> The resource move definition for renaming this database. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Renames a database.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/move
+            Operation Id: Databases_Rename
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="sqlResourceMoveDefinition" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ResourceType">

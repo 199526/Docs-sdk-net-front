@@ -1994,12 +1994,68 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetPrivateLinkResources">
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.DataFactory.Models.DataFactoryPrivateLinkResource&gt; GetPrivateLinkResources (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.DataFactory.Models.DataFactoryPrivateLinkResource&gt; GetPrivateLinkResources(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataFactory.DataFactoryResource.GetPrivateLinkResources(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPrivateLinkResources (Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of DataFactoryPrivateLinkResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetPrivateLinkResources : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.DataFactory.Models.DataFactoryPrivateLinkResource&gt;&#xA;override this.GetPrivateLinkResources : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.DataFactory.Models.DataFactoryPrivateLinkResource&gt;" Usage="dataFactoryResource.GetPrivateLinkResources cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DataFactory</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.DataFactory.Models.DataFactoryPrivateLinkResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the private link resources
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataFactory/factories/{factoryName}/privateLinkResources
+            Operation Id: privateLinkResources_Get
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.DataFactory.Models.DataFactoryPrivateLinkResource" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetprivateLinkResourcesAsync">
       <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.DataFactory.Models.DataFactoryPrivateLinkResource&gt; GetprivateLinkResourcesAsync (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.DataFactory.Models.DataFactoryPrivateLinkResource&gt; GetprivateLinkResourcesAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataFactory.DataFactoryResource.GetprivateLinkResourcesAsync(System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetprivateLinkResourcesAsync (Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of DataFactoryPrivateLinkResource)" />
       <MemberSignature Language="F#" Value="abstract member GetprivateLinkResourcesAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.DataFactory.Models.DataFactoryPrivateLinkResource&gt;&#xA;override this.GetprivateLinkResourcesAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.DataFactory.Models.DataFactoryPrivateLinkResource&gt;" Usage="dataFactoryResource.GetprivateLinkResourcesAsync cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DataFactory</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.DataFactory.Models.DataFactoryPrivateLinkResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the private link resources
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataFactory/factories/{factoryName}/privateLinkResources
+            Operation Id: privateLinkResources_Get
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.DataFactory.Models.DataFactoryPrivateLinkResource" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPrivateLinkResourcesAsync">
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.DataFactory.Models.DataFactoryPrivateLinkResource&gt; GetPrivateLinkResourcesAsync (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.DataFactory.Models.DataFactoryPrivateLinkResource&gt; GetPrivateLinkResourcesAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataFactory.DataFactoryResource.GetPrivateLinkResourcesAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPrivateLinkResourcesAsync (Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of DataFactoryPrivateLinkResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetPrivateLinkResourcesAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.DataFactory.Models.DataFactoryPrivateLinkResource&gt;&#xA;override this.GetPrivateLinkResourcesAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.DataFactory.Models.DataFactoryPrivateLinkResource&gt;" Usage="dataFactoryResource.GetPrivateLinkResourcesAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataFactory</AssemblyName>

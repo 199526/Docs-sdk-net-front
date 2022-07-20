@@ -60,5 +60,26 @@
             </summary>
       </Docs>
     </Member>
+    <Member MemberName="V2022_04_07_Preview">
+      <MemberSignature Language="C#" Value="V2022_04_07_Preview" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Communication.CallingServer.CallingServerClientOptions/ServiceVersion V2022_04_07_Preview = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Communication.CallingServer.CallingServerClientOptions.ServiceVersion.V2022_04_07_Preview" />
+      <MemberSignature Language="VB.NET" Value="V2022_04_07_Preview" />
+      <MemberSignature Language="F#" Value="V2022_04_07_Preview = 1" Usage="Azure.Communication.CallingServer.CallingServerClientOptions.ServiceVersion.V2022_04_07_Preview" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Communication.CallingServer.CallingServerClientOptions+ServiceVersion</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            The Beta of the CallingServer service.
+            </summary>
+      </Docs>
+    </Member>
   </Members>
 </Type>

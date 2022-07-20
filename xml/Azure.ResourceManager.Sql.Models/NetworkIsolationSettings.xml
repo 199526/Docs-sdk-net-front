@@ -34,18 +34,18 @@
       </Docs>
     </Member>
     <Member MemberName="SqlServerResourceId">
-      <MemberSignature Language="C#" Value="public string SqlServerResourceId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string SqlServerResourceId" />
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier SqlServerResourceId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier SqlServerResourceId" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.NetworkIsolationSettings.SqlServerResourceId" />
-      <MemberSignature Language="VB.NET" Value="Public Property SqlServerResourceId As String" />
-      <MemberSignature Language="F#" Value="member this.SqlServerResourceId : string with get, set" Usage="Azure.ResourceManager.Sql.Models.NetworkIsolationSettings.SqlServerResourceId" />
+      <MemberSignature Language="VB.NET" Value="Public Property SqlServerResourceId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.SqlServerResourceId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Sql.Models.NetworkIsolationSettings.SqlServerResourceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The resource id for the SQL server which is the target of this request. If set, private endpoint connection will be created for the SQL server. Must match server which is target of the operation. </summary>
@@ -54,18 +54,18 @@
       </Docs>
     </Member>
     <Member MemberName="StorageAccountResourceId">
-      <MemberSignature Language="C#" Value="public string StorageAccountResourceId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string StorageAccountResourceId" />
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier StorageAccountResourceId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier StorageAccountResourceId" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.NetworkIsolationSettings.StorageAccountResourceId" />
-      <MemberSignature Language="VB.NET" Value="Public Property StorageAccountResourceId As String" />
-      <MemberSignature Language="F#" Value="member this.StorageAccountResourceId : string with get, set" Usage="Azure.ResourceManager.Sql.Models.NetworkIsolationSettings.StorageAccountResourceId" />
+      <MemberSignature Language="VB.NET" Value="Public Property StorageAccountResourceId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.StorageAccountResourceId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Sql.Models.NetworkIsolationSettings.StorageAccountResourceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The resource id for the storage account used to store BACPAC file. If set, private endpoint connection will be created for the storage account. Must match storage account used for StorageUri parameter. </summary>

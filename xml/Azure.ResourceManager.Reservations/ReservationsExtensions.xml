@@ -85,6 +85,38 @@
           <paramref name="content" /> is null. </exception>
       </Docs>
     </Member>
+    <Member MemberName="GetAllQuotaRequestDetails">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Reservations.QuotaRequestDetailsCollection GetAllQuotaRequestDetails (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, string providerId, Azure.Core.AzureLocation location);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Reservations.QuotaRequestDetailsCollection GetAllQuotaRequestDetails(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, string providerId, valuetype Azure.Core.AzureLocation location) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Reservations.ReservationsExtensions.GetAllQuotaRequestDetails(Azure.ResourceManager.Resources.SubscriptionResource,System.String,Azure.Core.AzureLocation)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAllQuotaRequestDetails (subscriptionResource As SubscriptionResource, providerId As String, location As AzureLocation) As QuotaRequestDetailsCollection" />
+      <MemberSignature Language="F#" Value="static member GetAllQuotaRequestDetails : Azure.ResourceManager.Resources.SubscriptionResource * string * Azure.Core.AzureLocation -&gt; Azure.ResourceManager.Reservations.QuotaRequestDetailsCollection" Usage="Azure.ResourceManager.Reservations.ReservationsExtensions.GetAllQuotaRequestDetails (subscriptionResource, providerId, location)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Reservations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Reservations.QuotaRequestDetailsCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
+        <Parameter Name="providerId" Type="System.String" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="providerId"> Azure resource provider ID. </param>
+        <param name="location"> Azure region. </param>
+        <summary> Gets a collection of QuotaRequestDetailsResources in the SubscriptionResource. </summary>
+        <returns> An object representing collection of QuotaRequestDetailsResources and their operations over a QuotaRequestDetailsResource. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="providerId" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="providerId" /> is null. </exception>
+      </Docs>
+    </Member>
     <Member MemberName="GetAppliedReservationList">
       <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.Reservations.Models.AppliedReservations&gt; GetAppliedReservationList (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.Reservations.Models.AppliedReservations&gt; GetAppliedReservationList(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />

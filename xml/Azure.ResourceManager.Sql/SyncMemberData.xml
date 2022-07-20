@@ -154,18 +154,18 @@
       </Docs>
     </Member>
     <Member MemberName="SyncAgentId">
-      <MemberSignature Language="C#" Value="public string SyncAgentId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string SyncAgentId" />
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier SyncAgentId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier SyncAgentId" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SyncMemberData.SyncAgentId" />
-      <MemberSignature Language="VB.NET" Value="Public Property SyncAgentId As String" />
-      <MemberSignature Language="F#" Value="member this.SyncAgentId : string with get, set" Usage="Azure.ResourceManager.Sql.SyncMemberData.SyncAgentId" />
+      <MemberSignature Language="VB.NET" Value="Public Property SyncAgentId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.SyncAgentId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Sql.SyncMemberData.SyncAgentId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> ARM resource id of the sync agent in the sync member. </summary>
@@ -194,18 +194,18 @@
       </Docs>
     </Member>
     <Member MemberName="SyncMemberAzureDatabaseResourceId">
-      <MemberSignature Language="C#" Value="public string SyncMemberAzureDatabaseResourceId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string SyncMemberAzureDatabaseResourceId" />
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier SyncMemberAzureDatabaseResourceId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier SyncMemberAzureDatabaseResourceId" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SyncMemberData.SyncMemberAzureDatabaseResourceId" />
-      <MemberSignature Language="VB.NET" Value="Public Property SyncMemberAzureDatabaseResourceId As String" />
-      <MemberSignature Language="F#" Value="member this.SyncMemberAzureDatabaseResourceId : string with get, set" Usage="Azure.ResourceManager.Sql.SyncMemberData.SyncMemberAzureDatabaseResourceId" />
+      <MemberSignature Language="VB.NET" Value="Public Property SyncMemberAzureDatabaseResourceId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.SyncMemberAzureDatabaseResourceId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Sql.SyncMemberData.SyncMemberAzureDatabaseResourceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> ARM resource id of the sync member logical database, for sync members in Azure. </summary>

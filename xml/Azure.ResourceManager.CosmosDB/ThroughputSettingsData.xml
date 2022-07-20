@@ -38,18 +38,18 @@
       </Docs>
     </Member>
     <Member MemberName="Resource">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.CosmosDB.Models.ThroughputSettingsPropertiesResource Resource { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.CosmosDB.Models.ThroughputSettingsPropertiesResource Resource" />
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.CosmosDB.Models.ExtendedThroughputSettingsResourceInfo Resource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.CosmosDB.Models.ExtendedThroughputSettingsResourceInfo Resource" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.CosmosDB.ThroughputSettingsData.Resource" />
-      <MemberSignature Language="VB.NET" Value="Public Property Resource As ThroughputSettingsPropertiesResource" />
-      <MemberSignature Language="F#" Value="member this.Resource : Azure.ResourceManager.CosmosDB.Models.ThroughputSettingsPropertiesResource with get, set" Usage="Azure.ResourceManager.CosmosDB.ThroughputSettingsData.Resource" />
+      <MemberSignature Language="VB.NET" Value="Public Property Resource As ExtendedThroughputSettingsResourceInfo" />
+      <MemberSignature Language="F#" Value="member this.Resource : Azure.ResourceManager.CosmosDB.Models.ExtendedThroughputSettingsResourceInfo with get, set" Usage="Azure.ResourceManager.CosmosDB.ThroughputSettingsData.Resource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.CosmosDB.Models.ThroughputSettingsPropertiesResource</ReturnType>
+        <ReturnType>Azure.ResourceManager.CosmosDB.Models.ExtendedThroughputSettingsResourceInfo</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Gets or sets the resource. </summary>

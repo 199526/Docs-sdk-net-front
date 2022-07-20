@@ -18,23 +18,23 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public TimeWindow (DateTimeOffset start, DateTimeOffset end);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DateTimeOffset start, valuetype System.DateTimeOffset end) cil managed" />
+      <MemberSignature Language="C#" Value="public TimeWindow (DateTimeOffset startOn, DateTimeOffset endOn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DateTimeOffset startOn, valuetype System.DateTimeOffset endOn) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Monitor.Models.TimeWindow.#ctor(System.DateTimeOffset,System.DateTimeOffset)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (start As DateTimeOffset, end As DateTimeOffset)" />
-      <MemberSignature Language="F#" Value="new Azure.ResourceManager.Monitor.Models.TimeWindow : DateTimeOffset * DateTimeOffset -&gt; Azure.ResourceManager.Monitor.Models.TimeWindow" Usage="new Azure.ResourceManager.Monitor.Models.TimeWindow (start, end)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (startOn As DateTimeOffset, endOn As DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="new Azure.ResourceManager.Monitor.Models.TimeWindow : DateTimeOffset * DateTimeOffset -&gt; Azure.ResourceManager.Monitor.Models.TimeWindow" Usage="new Azure.ResourceManager.Monitor.Models.TimeWindow (startOn, endOn)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="start" Type="System.DateTimeOffset" />
-        <Parameter Name="end" Type="System.DateTimeOffset" />
+        <Parameter Name="startOn" Type="System.DateTimeOffset" />
+        <Parameter Name="endOn" Type="System.DateTimeOffset" />
       </Parameters>
       <Docs>
-        <param name="start"> the start time for the profile in ISO 8601 format. </param>
-        <param name="end"> the end time for the profile in ISO 8601 format. </param>
+        <param name="startOn"> the start time for the profile in ISO 8601 format. </param>
+        <param name="endOn"> the end time for the profile in ISO 8601 format. </param>
         <summary> Initializes a new instance of TimeWindow. </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -59,12 +59,52 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="EndOn">
+      <MemberSignature Language="C#" Value="public DateTimeOffset EndOn { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTimeOffset EndOn" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Monitor.Models.TimeWindow.EndOn" />
+      <MemberSignature Language="VB.NET" Value="Public Property EndOn As DateTimeOffset" />
+      <MemberSignature Language="F#" Value="member this.EndOn : DateTimeOffset with get, set" Usage="Azure.ResourceManager.Monitor.Models.TimeWindow.EndOn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTimeOffset</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> the end time for the profile in ISO 8601 format. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Start">
       <MemberSignature Language="C#" Value="public DateTimeOffset Start { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTimeOffset Start" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Monitor.Models.TimeWindow.Start" />
       <MemberSignature Language="VB.NET" Value="Public Property Start As DateTimeOffset" />
       <MemberSignature Language="F#" Value="member this.Start : DateTimeOffset with get, set" Usage="Azure.ResourceManager.Monitor.Models.TimeWindow.Start" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTimeOffset</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> the start time for the profile in ISO 8601 format. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartOn">
+      <MemberSignature Language="C#" Value="public DateTimeOffset StartOn { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTimeOffset StartOn" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Monitor.Models.TimeWindow.StartOn" />
+      <MemberSignature Language="VB.NET" Value="Public Property StartOn As DateTimeOffset" />
+      <MemberSignature Language="F#" Value="member this.StartOn : DateTimeOffset with get, set" Usage="Azure.ResourceManager.Monitor.Models.TimeWindow.StartOn" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>

@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,6 +27,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,6 +45,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="connectionString" Type="System.String" />
@@ -67,6 +70,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="connectionString" Type="System.String" />
@@ -93,6 +97,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="endpoint" Type="System.Uri" />
@@ -117,6 +122,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="endpoint" Type="System.Uri" />
@@ -141,6 +147,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="endpoint" Type="System.Uri" />
@@ -167,6 +174,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="endpoint" Type="System.Uri" />
@@ -193,6 +201,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response</ReturnType>
@@ -205,24 +214,15 @@
       <Docs>
         <param name="group"> Target group name, which length should be greater than 0 and less than 1025. </param>
         <param name="connectionId"> Target connection Id. </param>
-        <param name="context"> The request context. </param>
+        <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary> Add a connection to the target group. </summary>
-        <returns>To be added.</returns>
-        <remarks>
-            Schema for <c>Response Error</c>:
-            <code>{
-              code: string,
-              message: string,
-              target: string,
-              details: [ErrorDetail],
-              inner: {
-                code: string,
-                inner: InnerError
-              }
-            }
-            </code></remarks>
+        <returns> The response returned from the service. </returns>
+        <remarks> Add a connection to the target group. </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="group" /> or <paramref name="connectionId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="group" /> or <paramref name="connectionId" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="AddConnectionToGroupAsync">
@@ -235,6 +235,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
@@ -247,24 +248,15 @@
       <Docs>
         <param name="group"> Target group name, which length should be greater than 0 and less than 1025. </param>
         <param name="connectionId"> Target connection Id. </param>
-        <param name="context"> The request context. </param>
+        <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary> Add a connection to the target group. </summary>
-        <returns>To be added.</returns>
-        <remarks>
-            Schema for <c>Response Error</c>:
-            <code>{
-              code: string,
-              message: string,
-              target: string,
-              details: [ErrorDetail],
-              inner: {
-                code: string,
-                inner: InnerError
-              }
-            }
-            </code></remarks>
+        <returns> The response returned from the service. </returns>
+        <remarks> Add a connection to the target group. </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="group" /> or <paramref name="connectionId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="group" /> or <paramref name="connectionId" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="AddUserToGroup">
@@ -277,6 +269,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response</ReturnType>
@@ -287,9 +280,9 @@
         <Parameter Name="context" Type="Azure.RequestContext" />
       </Parameters>
       <Docs>
-        <param name="group"> Target group name, which length should be greater than 0 and less than 1025. </param>
         <param name="userId"> Target user Id. </param>
-        <param name="context"> The request context. </param>
+        <param name="group"> Target group name, which length should be greater than 0 and less than 1025. </param>
+        <param name="context"> The request context, which can override default behaviors on the request on a per-call basis. </param>
         <summary> Add a user to the target group. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -306,7 +299,7 @@
             }
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="group" /> or <paramref name="userId" /> is null. </exception>
+          <paramref name="userId" /> or <paramref name="group" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="AddUserToGroupAsync">
@@ -319,6 +312,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
@@ -329,9 +323,9 @@
         <Parameter Name="context" Type="Azure.RequestContext" />
       </Parameters>
       <Docs>
-        <param name="group"> Target group name, which length should be greater than 0 and less than 1025. </param>
         <param name="userId"> Target user Id. </param>
-        <param name="context"> The request context. </param>
+        <param name="group"> Target group name, which length should be greater than 0 and less than 1025. </param>
+        <param name="context"> The request context, which can override default behaviors on the request on a per-call basis. </param>
         <summary> Add a user to the target group. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -348,7 +342,7 @@
             }
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="group" /> or <paramref name="userId" /> is null. </exception>
+          <paramref name="userId" /> or <paramref name="group" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CheckPermission">
@@ -361,6 +355,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;System.Boolean&gt;</ReturnType>
@@ -391,6 +386,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Boolean&gt;&gt;</ReturnType>
@@ -421,6 +417,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response</ReturnType>
@@ -433,22 +430,11 @@
       <Docs>
         <param name="excluded"> Exclude these connectionIds when closing the connections in the hub. </param>
         <param name="reason"> The reason closing the client connection. </param>
-        <param name="context"> The request context. </param>
+        <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary> Close the connections in the hub. </summary>
-        <returns>To be added.</returns>
-        <remarks>
-            Schema for <c>Response Error</c>:
-            <code>{
-              code: string,
-              message: string,
-              target: string,
-              details: [ErrorDetail],
-              inner: {
-                code: string,
-                inner: InnerError
-              }
-            }
-            </code></remarks>
+        <returns> The response returned from the service. </returns>
+        <remarks> Close the connections in the hub. </remarks>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="CloseAllConnectionsAsync">
@@ -461,6 +447,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
@@ -473,22 +460,11 @@
       <Docs>
         <param name="excluded"> Exclude these connectionIds when closing the connections in the hub. </param>
         <param name="reason"> The reason closing the client connection. </param>
-        <param name="context"> The request context. </param>
+        <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary> Close the connections in the hub. </summary>
-        <returns>To be added.</returns>
-        <remarks>
-            Schema for <c>Response Error</c>:
-            <code>{
-              code: string,
-              message: string,
-              target: string,
-              details: [ErrorDetail],
-              inner: {
-                code: string,
-                inner: InnerError
-              }
-            }
-            </code></remarks>
+        <returns> The response returned from the service. </returns>
+        <remarks> Close the connections in the hub. </remarks>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="CloseConnection">
@@ -501,6 +477,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response</ReturnType>
@@ -513,24 +490,15 @@
       <Docs>
         <param name="connectionId"> Target connection Id. </param>
         <param name="reason"> The reason closing the client connection. </param>
-        <param name="context"> The request context. </param>
+        <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary> Close the client connection. </summary>
-        <returns>To be added.</returns>
-        <remarks>
-            Schema for <c>Response Error</c>:
-            <code>{
-              code: string,
-              message: string,
-              target: string,
-              details: [ErrorDetail],
-              inner: {
-                code: string,
-                inner: InnerError
-              }
-            }
-            </code></remarks>
+        <returns> The response returned from the service. </returns>
+        <remarks> Close the client connection. </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="connectionId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="connectionId" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="CloseConnectionAsync">
@@ -543,6 +511,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
@@ -555,24 +524,15 @@
       <Docs>
         <param name="connectionId"> Target connection Id. </param>
         <param name="reason"> The reason closing the client connection. </param>
-        <param name="context"> The request context. </param>
+        <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary> Close the client connection. </summary>
-        <returns>To be added.</returns>
-        <remarks>
-            Schema for <c>Response Error</c>:
-            <code>{
-              code: string,
-              message: string,
-              target: string,
-              details: [ErrorDetail],
-              inner: {
-                code: string,
-                inner: InnerError
-              }
-            }
-            </code></remarks>
+        <returns> The response returned from the service. </returns>
+        <remarks> Close the client connection. </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="connectionId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="connectionId" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="CloseGroupConnections">
@@ -585,6 +545,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response</ReturnType>
@@ -599,24 +560,15 @@
         <param name="group"> Target group name, which length should be greater than 0 and less than 1025. </param>
         <param name="excluded"> Exclude these connectionIds when closing the connections in the group. </param>
         <param name="reason"> The reason closing the client connection. </param>
-        <param name="context"> The request context. </param>
+        <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary> Close connections in the specific group. </summary>
-        <returns>To be added.</returns>
-        <remarks>
-            Schema for <c>Response Error</c>:
-            <code>{
-              code: string,
-              message: string,
-              target: string,
-              details: [ErrorDetail],
-              inner: {
-                code: string,
-                inner: InnerError
-              }
-            }
-            </code></remarks>
+        <returns> The response returned from the service. </returns>
+        <remarks> Close connections in the specific group. </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="group" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="group" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="CloseGroupConnectionsAsync">
@@ -629,6 +581,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
@@ -643,24 +596,15 @@
         <param name="group"> Target group name, which length should be greater than 0 and less than 1025. </param>
         <param name="excluded"> Exclude these connectionIds when closing the connections in the group. </param>
         <param name="reason"> The reason closing the client connection. </param>
-        <param name="context"> The request context. </param>
+        <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary> Close connections in the specific group. </summary>
-        <returns>To be added.</returns>
-        <remarks>
-            Schema for <c>Response Error</c>:
-            <code>{
-              code: string,
-              message: string,
-              target: string,
-              details: [ErrorDetail],
-              inner: {
-                code: string,
-                inner: InnerError
-              }
-            }
-            </code></remarks>
+        <returns> The response returned from the service. </returns>
+        <remarks> Close connections in the specific group. </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="group" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="group" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="CloseUserConnections">
@@ -673,6 +617,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response</ReturnType>
@@ -687,24 +632,15 @@
         <param name="userId"> The user Id. </param>
         <param name="excluded"> Exclude these connectionIds when closing the connections for the user. </param>
         <param name="reason"> The reason closing the client connection. </param>
-        <param name="context"> The request context. </param>
+        <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary> Close connections for the specific user. </summary>
-        <returns>To be added.</returns>
-        <remarks>
-            Schema for <c>Response Error</c>:
-            <code>{
-              code: string,
-              message: string,
-              target: string,
-              details: [ErrorDetail],
-              inner: {
-                code: string,
-                inner: InnerError
-              }
-            }
-            </code></remarks>
+        <returns> The response returned from the service. </returns>
+        <remarks> Close connections for the specific user. </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="userId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="userId" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="CloseUserConnectionsAsync">
@@ -717,6 +653,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
@@ -731,24 +668,15 @@
         <param name="userId"> The user Id. </param>
         <param name="excluded"> Exclude these connectionIds when closing the connections for the user. </param>
         <param name="reason"> The reason closing the client connection. </param>
-        <param name="context"> The request context. </param>
+        <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary> Close connections for the specific user. </summary>
-        <returns>To be added.</returns>
-        <remarks>
-            Schema for <c>Response Error</c>:
-            <code>{
-              code: string,
-              message: string,
-              target: string,
-              details: [ErrorDetail],
-              inner: {
-                code: string,
-                inner: InnerError
-              }
-            }
-            </code></remarks>
+        <returns> The response returned from the service. </returns>
+        <remarks> Close connections for the specific user. </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="userId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="userId" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="ConnectionExists">
@@ -761,6 +689,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;System.Boolean&gt;</ReturnType>
@@ -787,6 +716,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Boolean&gt;&gt;</ReturnType>
@@ -813,6 +743,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -835,6 +766,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -867,6 +799,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -899,6 +832,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Uri&gt;</ReturnType>
@@ -931,6 +865,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Uri&gt;</ReturnType>
@@ -963,6 +898,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response</ReturnType>
@@ -993,6 +929,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
@@ -1023,6 +960,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;System.Boolean&gt;</ReturnType>
@@ -1049,6 +987,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Boolean&gt;&gt;</ReturnType>
@@ -1075,6 +1014,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1097,6 +1037,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Core.Pipeline.HttpPipeline</ReturnType>
@@ -1117,6 +1058,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response</ReturnType>
@@ -1129,24 +1071,15 @@
       <Docs>
         <param name="group"> Target group name, which length should be greater than 0 and less than 1025. </param>
         <param name="connectionId"> Target connection Id. </param>
-        <param name="context"> The request context. </param>
+        <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary> Remove a connection from the target group. </summary>
-        <returns>To be added.</returns>
-        <remarks>
-            Schema for <c>Response Error</c>:
-            <code>{
-              code: string,
-              message: string,
-              target: string,
-              details: [ErrorDetail],
-              inner: {
-                code: string,
-                inner: InnerError
-              }
-            }
-            </code></remarks>
+        <returns> The response returned from the service. </returns>
+        <remarks> Remove a connection from the target group. </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="group" /> or <paramref name="connectionId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="group" /> or <paramref name="connectionId" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveConnectionFromGroupAsync">
@@ -1159,6 +1092,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
@@ -1171,24 +1105,15 @@
       <Docs>
         <param name="group"> Target group name, which length should be greater than 0 and less than 1025. </param>
         <param name="connectionId"> Target connection Id. </param>
-        <param name="context"> The request context. </param>
+        <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary> Remove a connection from the target group. </summary>
-        <returns>To be added.</returns>
-        <remarks>
-            Schema for <c>Response Error</c>:
-            <code>{
-              code: string,
-              message: string,
-              target: string,
-              details: [ErrorDetail],
-              inner: {
-                code: string,
-                inner: InnerError
-              }
-            }
-            </code></remarks>
+        <returns> The response returned from the service. </returns>
+        <remarks> Remove a connection from the target group. </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="group" /> or <paramref name="connectionId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="group" /> or <paramref name="connectionId" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveUserFromAllGroups">
@@ -1201,6 +1126,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response</ReturnType>
@@ -1211,24 +1137,15 @@
       </Parameters>
       <Docs>
         <param name="userId"> Target user Id. </param>
-        <param name="context"> The request context. </param>
+        <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary> Remove a user from all groups. </summary>
-        <returns>To be added.</returns>
-        <remarks>
-            Schema for <c>Response Error</c>:
-            <code>{
-              code: string,
-              message: string,
-              target: string,
-              details: [ErrorDetail],
-              inner: {
-                code: string,
-                inner: InnerError
-              }
-            }
-            </code></remarks>
+        <returns> The response returned from the service. </returns>
+        <remarks> Remove a user from all groups. </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="userId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="userId" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveUserFromAllGroupsAsync">
@@ -1241,6 +1158,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
@@ -1251,24 +1169,15 @@
       </Parameters>
       <Docs>
         <param name="userId"> Target user Id. </param>
-        <param name="context"> The request context. </param>
+        <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary> Remove a user from all groups. </summary>
-        <returns>To be added.</returns>
-        <remarks>
-            Schema for <c>Response Error</c>:
-            <code>{
-              code: string,
-              message: string,
-              target: string,
-              details: [ErrorDetail],
-              inner: {
-                code: string,
-                inner: InnerError
-              }
-            }
-            </code></remarks>
+        <returns> The response returned from the service. </returns>
+        <remarks> Remove a user from all groups. </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="userId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="userId" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveUserFromGroup">
@@ -1281,6 +1190,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response</ReturnType>
@@ -1291,9 +1201,9 @@
         <Parameter Name="context" Type="Azure.RequestContext" />
       </Parameters>
       <Docs>
-        <param name="group"> Target group name, which length should be greater than 0 and less than 1025. </param>
         <param name="userId"> Target user Id. </param>
-        <param name="context"> The request context. </param>
+        <param name="group"> Target group name, which length should be greater than 0 and less than 1025. </param>
+        <param name="context"> The request context, which can override default behaviors on the request on a per-call basis. </param>
         <summary> Remove a user from the target group. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -1310,7 +1220,7 @@
             }
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="group" /> or <paramref name="userId" /> is null. </exception>
+          <paramref name="userId" /> or <paramref name="group" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveUserFromGroupAsync">
@@ -1323,6 +1233,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
@@ -1333,9 +1244,9 @@
         <Parameter Name="context" Type="Azure.RequestContext" />
       </Parameters>
       <Docs>
-        <param name="group"> Target group name, which length should be greater than 0 and less than 1025. </param>
         <param name="userId"> Target user Id. </param>
-        <param name="context"> The request context. </param>
+        <param name="group"> Target group name, which length should be greater than 0 and less than 1025. </param>
+        <param name="context"> The request context, which can override default behaviors on the request on a per-call basis. </param>
         <summary> Remove a user from the target group. </summary>
         <returns>To be added.</returns>
         <remarks>
@@ -1352,7 +1263,7 @@
             }
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="group" /> or <paramref name="userId" /> is null. </exception>
+          <paramref name="userId" /> or <paramref name="group" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="RevokePermission">
@@ -1365,6 +1276,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response</ReturnType>
@@ -1395,6 +1307,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
@@ -1425,6 +1338,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response</ReturnType>
@@ -1451,6 +1365,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response</ReturnType>
@@ -1462,27 +1377,16 @@
         <Parameter Name="context" Type="Azure.RequestContext" />
       </Parameters>
       <Docs>
-        <param name="content"> The content to send as the body of the request. </param>
-        <param name="contentType"> Upload file type. Allowed values: "application/json" | "application/octet-stream". </param>
+        <param name="content"> The content to send as the body of the request. Details of the request body schema are in the Remarks section below. </param>
+        <param name="contentType"> Upload file type. Allowed values: "application/json" | "application/octet-stream" | "text/plain". </param>
         <param name="excluded"> Excluded connection Ids. </param>
-        <param name="context"> The request context. </param>
+        <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary> Broadcast content inside request body to all the connected client connections. </summary>
-        <returns>To be added.</returns>
-        <remarks>
-            Schema for <c>Response Error</c>:
-            <code>{
-              code: string,
-              message: string,
-              target: string,
-              details: [ErrorDetail],
-              inner: {
-                code: string,
-                inner: InnerError
-              }
-            }
-            </code></remarks>
+        <returns> The response returned from the service. </returns>
+        <remarks> Broadcast content inside request body to all the connected client connections. </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="content" /> is null. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="SendToAllAsync">
@@ -1495,6 +1399,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
@@ -1521,6 +1426,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
@@ -1532,27 +1438,16 @@
         <Parameter Name="context" Type="Azure.RequestContext" />
       </Parameters>
       <Docs>
-        <param name="content"> The content to send as the body of the request. </param>
-        <param name="contentType"> Upload file type. Allowed values: "application/json" | "application/octet-stream". </param>
+        <param name="content"> The content to send as the body of the request. Details of the request body schema are in the Remarks section below. </param>
+        <param name="contentType"> Upload file type. Allowed values: "application/json" | "application/octet-stream" | "text/plain". </param>
         <param name="excluded"> Excluded connection Ids. </param>
-        <param name="context"> The request context. </param>
+        <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary> Broadcast content inside request body to all the connected client connections. </summary>
-        <returns>To be added.</returns>
-        <remarks>
-            Schema for <c>Response Error</c>:
-            <code>{
-              code: string,
-              message: string,
-              target: string,
-              details: [ErrorDetail],
-              inner: {
-                code: string,
-                inner: InnerError
-              }
-            }
-            </code></remarks>
+        <returns> The response returned from the service. </returns>
+        <remarks> Broadcast content inside request body to all the connected client connections. </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="content" /> is null. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="SendToConnection">
@@ -1565,6 +1460,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response</ReturnType>
@@ -1595,6 +1491,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response</ReturnType>
@@ -1607,26 +1504,17 @@
       </Parameters>
       <Docs>
         <param name="connectionId"> The connection Id. </param>
-        <param name="content"> The content to send as the body of the request. </param>
-        <param name="contentType"> Upload file type. Allowed values: "application/json" | "application/octet-stream". </param>
-        <param name="context"> The request context. </param>
+        <param name="content"> The content to send as the body of the request. Details of the request body schema are in the Remarks section below. </param>
+        <param name="contentType"> Upload file type. Allowed values: "application/json" | "application/octet-stream" | "text/plain". </param>
+        <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary> Send content inside request body to the specific connection. </summary>
-        <returns>To be added.</returns>
-        <remarks>
-            Schema for <c>Response Error</c>:
-            <code>{
-              code: string,
-              message: string,
-              target: string,
-              details: [ErrorDetail],
-              inner: {
-                code: string,
-                inner: InnerError
-              }
-            }
-            </code></remarks>
+        <returns> The response returned from the service. </returns>
+        <remarks> Send content inside request body to the specific connection. </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="connectionId" /> or <paramref name="content" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="connectionId" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="SendToConnectionAsync">
@@ -1639,6 +1527,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
@@ -1669,6 +1558,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
@@ -1681,26 +1571,17 @@
       </Parameters>
       <Docs>
         <param name="connectionId"> The connection Id. </param>
-        <param name="content"> The content to send as the body of the request. </param>
-        <param name="contentType"> Upload file type. Allowed values: "application/json" | "application/octet-stream". </param>
-        <param name="context"> The request context. </param>
+        <param name="content"> The content to send as the body of the request. Details of the request body schema are in the Remarks section below. </param>
+        <param name="contentType"> Upload file type. Allowed values: "application/json" | "application/octet-stream" | "text/plain". </param>
+        <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary> Send content inside request body to the specific connection. </summary>
-        <returns>To be added.</returns>
-        <remarks>
-            Schema for <c>Response Error</c>:
-            <code>{
-              code: string,
-              message: string,
-              target: string,
-              details: [ErrorDetail],
-              inner: {
-                code: string,
-                inner: InnerError
-              }
-            }
-            </code></remarks>
+        <returns> The response returned from the service. </returns>
+        <remarks> Send content inside request body to the specific connection. </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="connectionId" /> or <paramref name="content" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="connectionId" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="SendToGroup">
@@ -1713,6 +1594,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response</ReturnType>
@@ -1743,6 +1625,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response</ReturnType>
@@ -1756,27 +1639,18 @@
       </Parameters>
       <Docs>
         <param name="group"> Target group name, which length should be greater than 0 and less than 1025. </param>
-        <param name="content"> The content to send as the body of the request. </param>
-        <param name="contentType"> Upload file type. Allowed values: "application/json" | "application/octet-stream". </param>
+        <param name="content"> The content to send as the body of the request. Details of the request body schema are in the Remarks section below. </param>
+        <param name="contentType"> Upload file type. Allowed values: "application/json" | "application/octet-stream" | "text/plain". </param>
         <param name="excluded"> Excluded connection Ids. </param>
-        <param name="context"> The request context. </param>
+        <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary> Send content inside request body to a group of connections. </summary>
-        <returns>To be added.</returns>
-        <remarks>
-            Schema for <c>Response Error</c>:
-            <code>{
-              code: string,
-              message: string,
-              target: string,
-              details: [ErrorDetail],
-              inner: {
-                code: string,
-                inner: InnerError
-              }
-            }
-            </code></remarks>
+        <returns> The response returned from the service. </returns>
+        <remarks> Send content inside request body to a group of connections. </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="group" /> or <paramref name="content" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="group" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="SendToGroupAsync">
@@ -1789,6 +1663,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
@@ -1819,6 +1694,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
@@ -1832,27 +1708,18 @@
       </Parameters>
       <Docs>
         <param name="group"> Target group name, which length should be greater than 0 and less than 1025. </param>
-        <param name="content"> The content to send as the body of the request. </param>
-        <param name="contentType"> Upload file type. Allowed values: "application/json" | "application/octet-stream". </param>
+        <param name="content"> The content to send as the body of the request. Details of the request body schema are in the Remarks section below. </param>
+        <param name="contentType"> Upload file type. Allowed values: "application/json" | "application/octet-stream" | "text/plain". </param>
         <param name="excluded"> Excluded connection Ids. </param>
-        <param name="context"> The request context. </param>
+        <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary> Send content inside request body to a group of connections. </summary>
-        <returns>To be added.</returns>
-        <remarks>
-            Schema for <c>Response Error</c>:
-            <code>{
-              code: string,
-              message: string,
-              target: string,
-              details: [ErrorDetail],
-              inner: {
-                code: string,
-                inner: InnerError
-              }
-            }
-            </code></remarks>
+        <returns> The response returned from the service. </returns>
+        <remarks> Send content inside request body to a group of connections. </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="group" /> or <paramref name="content" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="group" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="SendToUser">
@@ -1865,6 +1732,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response</ReturnType>
@@ -1895,6 +1763,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response</ReturnType>
@@ -1907,26 +1776,17 @@
       </Parameters>
       <Docs>
         <param name="userId"> The user Id. </param>
-        <param name="content"> The content to send as the body of the request. </param>
-        <param name="contentType"> Upload file type. Allowed values: "application/json" | "application/octet-stream". </param>
-        <param name="context"> The request context. </param>
+        <param name="content"> The content to send as the body of the request. Details of the request body schema are in the Remarks section below. </param>
+        <param name="contentType"> Upload file type. Allowed values: "application/json" | "application/octet-stream" | "text/plain". </param>
+        <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary> Send content inside request body to the specific user. </summary>
-        <returns>To be added.</returns>
-        <remarks>
-            Schema for <c>Response Error</c>:
-            <code>{
-              code: string,
-              message: string,
-              target: string,
-              details: [ErrorDetail],
-              inner: {
-                code: string,
-                inner: InnerError
-              }
-            }
-            </code></remarks>
+        <returns> The response returned from the service. </returns>
+        <remarks> Send content inside request body to the specific user. </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="userId" /> or <paramref name="content" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="userId" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="SendToUserAsync">
@@ -1939,6 +1799,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
@@ -1969,6 +1830,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
@@ -1981,26 +1843,17 @@
       </Parameters>
       <Docs>
         <param name="userId"> The user Id. </param>
-        <param name="content"> The content to send as the body of the request. </param>
-        <param name="contentType"> Upload file type. Allowed values: "application/json" | "application/octet-stream". </param>
-        <param name="context"> The request context. </param>
+        <param name="content"> The content to send as the body of the request. Details of the request body schema are in the Remarks section below. </param>
+        <param name="contentType"> Upload file type. Allowed values: "application/json" | "application/octet-stream" | "text/plain". </param>
+        <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary> Send content inside request body to the specific user. </summary>
-        <returns>To be added.</returns>
-        <remarks>
-            Schema for <c>Response Error</c>:
-            <code>{
-              code: string,
-              message: string,
-              target: string,
-              details: [ErrorDetail],
-              inner: {
-                code: string,
-                inner: InnerError
-              }
-            }
-            </code></remarks>
+        <returns> The response returned from the service. </returns>
+        <remarks> Send content inside request body to the specific user. </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="userId" /> or <paramref name="content" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="userId" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="UserExists">
@@ -2013,6 +1866,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;System.Boolean&gt;</ReturnType>
@@ -2039,6 +1893,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Boolean&gt;&gt;</ReturnType>

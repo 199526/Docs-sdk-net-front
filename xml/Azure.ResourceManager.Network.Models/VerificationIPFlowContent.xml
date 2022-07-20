@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,15 +28,16 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="targetResourceId" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="direction" Type="Azure.ResourceManager.Network.Models.NetworkTrafficDirection" Index="1" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="protocol" Type="Azure.ResourceManager.Network.Models.IPFlowProtocol" Index="2" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="localPort" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="remotePort" Type="System.String" Index="4" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="localIPAddress" Type="System.String" Index="5" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="remoteIPAddress" Type="System.String" Index="6" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="targetResourceId" Type="Azure.Core.ResourceIdentifier" />
+        <Parameter Name="direction" Type="Azure.ResourceManager.Network.Models.NetworkTrafficDirection" />
+        <Parameter Name="protocol" Type="Azure.ResourceManager.Network.Models.IPFlowProtocol" />
+        <Parameter Name="localPort" Type="System.String" />
+        <Parameter Name="remotePort" Type="System.String" />
+        <Parameter Name="localIPAddress" Type="System.String" />
+        <Parameter Name="remoteIPAddress" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="targetResourceId"> The ID of the target resource to perform next-hop on. </param>
@@ -86,23 +88,19 @@
       </Docs>
     </Member>
     <Member MemberName="Direction">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Network.Models.NetworkTrafficDirection Direction { get; }" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype Azure.ResourceManager.Network.Models.NetworkTrafficDirection Direction" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Network.Models.NetworkTrafficDirection Direction { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Azure.ResourceManager.Network.Models.NetworkTrafficDirection Direction" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.Models.VerificationIPFlowContent.Direction" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Direction As NetworkTrafficDirection" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="member this.Direction : Azure.ResourceManager.Network.Models.NetworkTrafficDirection" Usage="Azure.ResourceManager.Network.Models.VerificationIPFlowContent.Direction" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Network.Models.Direction Direction { get; }" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype Azure.ResourceManager.Network.Models.Direction Direction" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Direction As Direction" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="member this.Direction : Azure.ResourceManager.Network.Models.Direction" Usage="Azure.ResourceManager.Network.Models.VerificationIPFlowContent.Direction" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Direction As NetworkTrafficDirection" />
+      <MemberSignature Language="F#" Value="member this.Direction : Azure.ResourceManager.Network.Models.NetworkTrafficDirection" Usage="Azure.ResourceManager.Network.Models.VerificationIPFlowContent.Direction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType FrameworkAlternate="azure-dotnet">Azure.ResourceManager.Network.Models.NetworkTrafficDirection</ReturnType>
-        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.ResourceManager.Network.Models.Direction</ReturnType>
+        <ReturnType>Azure.ResourceManager.Network.Models.NetworkTrafficDirection</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The direction of the packet represented as a 5-tuple. </summary>
@@ -120,6 +118,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -140,6 +139,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -160,6 +160,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Network.Models.IPFlowProtocol</ReturnType>
@@ -180,6 +181,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -200,6 +202,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -211,23 +214,19 @@
       </Docs>
     </Member>
     <Member MemberName="TargetNicResourceId">
-      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier TargetNicResourceId { get; set; }" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier TargetNicResourceId" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier TargetNicResourceId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier TargetNicResourceId" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.Models.VerificationIPFlowContent.TargetNicResourceId" />
-      <MemberSignature Language="VB.NET" Value="Public Property TargetNicResourceId As ResourceIdentifier" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="member this.TargetNicResourceId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Network.Models.VerificationIPFlowContent.TargetNicResourceId" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public string TargetNicResourceId { get; set; }" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".property instance string TargetNicResourceId" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public Property TargetNicResourceId As String" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="member this.TargetNicResourceId : string with get, set" Usage="Azure.ResourceManager.Network.Models.VerificationIPFlowContent.TargetNicResourceId" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetNicResourceId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.TargetNicResourceId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Network.Models.VerificationIPFlowContent.TargetNicResourceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType FrameworkAlternate="azure-dotnet">Azure.Core.ResourceIdentifier</ReturnType>
-        <ReturnType FrameworkAlternate="azure-dotnet-preview">System.String</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The NIC ID. (If VM has multiple NICs and IP forwarding is enabled on any of them, then this parameter must be specified. Otherwise optional). </summary>
@@ -236,23 +235,19 @@
       </Docs>
     </Member>
     <Member MemberName="TargetResourceId">
-      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier TargetResourceId { get; }" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier TargetResourceId" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier TargetResourceId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier TargetResourceId" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.Models.VerificationIPFlowContent.TargetResourceId" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetResourceId As ResourceIdentifier" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="member this.TargetResourceId : Azure.Core.ResourceIdentifier" Usage="Azure.ResourceManager.Network.Models.VerificationIPFlowContent.TargetResourceId" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public string TargetResourceId { get; }" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".property instance string TargetResourceId" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetResourceId As String" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="member this.TargetResourceId : string" Usage="Azure.ResourceManager.Network.Models.VerificationIPFlowContent.TargetResourceId" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetResourceId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.TargetResourceId : Azure.Core.ResourceIdentifier" Usage="Azure.ResourceManager.Network.Models.VerificationIPFlowContent.TargetResourceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType FrameworkAlternate="azure-dotnet">Azure.Core.ResourceIdentifier</ReturnType>
-        <ReturnType FrameworkAlternate="azure-dotnet-preview">System.String</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The ID of the target resource to perform next-hop on. </summary>

@@ -623,7 +623,7 @@
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary> Cancel a long-running Text Analysis conversations job. </summary>
         <returns> The <see cref="T:Azure.Operation" /> representing an asynchronous operation on the service. </returns>
-        <remarks>To be added.</remarks>
+        <remarks> Cancel a long-running Text Analysis conversations job. </remarks>
         <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
@@ -653,7 +653,7 @@
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary> Cancel a long-running Text Analysis conversations job. </summary>
         <returns> The <see cref="T:Azure.Operation" /> representing an asynchronous operation on the service. </returns>
-        <remarks>To be added.</remarks>
+        <remarks> Cancel a long-running Text Analysis conversations job. </remarks>
         <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
@@ -703,9 +703,11 @@
         <param name="jobId"> Job ID. </param>
         <param name="showStats"> (Optional) if set to true, response will contain request and document level statistics. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Get the status of an analysis job. A job may consist of one or more tasks. Once all tasks are succeeded, the job will transition to the succeeded state and results will be available for each task. </summary>
+        <summary> Get analysis status and results. </summary>
         <returns> The response returned from the service. Details of the response body schema are in the Remarks section below. </returns>
         <remarks>
+            Get the status of an analysis job. A job may consist of one or more tasks. Once all tasks are succeeded, the job will transition to the succeeded state and results will be available for each task.
+            
             Below is the JSON schema for the response payload.
             
             Response Body:
@@ -782,9 +784,11 @@
         <param name="jobId"> Job ID. </param>
         <param name="showStats"> (Optional) if set to true, response will contain request and document level statistics. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Get the status of an analysis job. A job may consist of one or more tasks. Once all tasks are succeeded, the job will transition to the succeeded state and results will be available for each task. </summary>
+        <summary> Get analysis status and results. </summary>
         <returns> The response returned from the service. Details of the response body schema are in the Remarks section below. </returns>
         <remarks>
+            Get the status of an analysis job. A job may consist of one or more tasks. Once all tasks are succeeded, the job will transition to the succeeded state and results will be available for each task.
+            
             Below is the JSON schema for the response payload.
             
             Response Body:

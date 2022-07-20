@@ -130,9 +130,9 @@
         <param name="content"> The content to send as the body of the request. Details of the request body schema are in the Remarks section below. </param>
         <param name="contentEncoding"> gzip. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> See error response code and error response message for more detail. </summary>
+        <summary> Ingestion API used to directly ingest data using Data Collection Rules. </summary>
         <returns> The response returned from the service. </returns>
-        <remarks>To be added.</remarks>
+        <remarks> See error response code and error response message for more detail. </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="ruleId" />, <paramref name="streamName" /> or <paramref name="content" /> is null. </exception>
         <exception cref="T:System.ArgumentException">
@@ -167,9 +167,9 @@
         <param name="content"> The content to send as the body of the request. Details of the request body schema are in the Remarks section below. </param>
         <param name="contentEncoding"> gzip. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> See error response code and error response message for more detail. </summary>
+        <summary> Ingestion API used to directly ingest data using Data Collection Rules. </summary>
         <returns> The response returned from the service. </returns>
-        <remarks>To be added.</remarks>
+        <remarks> See error response code and error response message for more detail. </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="ruleId" />, <paramref name="streamName" /> or <paramref name="content" /> is null. </exception>
         <exception cref="T:System.ArgumentException">

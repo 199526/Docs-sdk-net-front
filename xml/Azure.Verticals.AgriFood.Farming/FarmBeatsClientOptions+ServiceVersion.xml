@@ -35,5 +35,24 @@
         <summary> Service version "2021-03-31-preview". </summary>
       </Docs>
     </Member>
+    <Member MemberName="V2021_03_31_Preview">
+      <MemberSignature Language="C#" Value="V2021_03_31_Preview" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Verticals.AgriFood.Farming.FarmBeatsClientOptions/ServiceVersion V2021_03_31_Preview = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Verticals.AgriFood.Farming.FarmBeatsClientOptions.ServiceVersion.V2021_03_31_Preview" />
+      <MemberSignature Language="VB.NET" Value="V2021_03_31_Preview" />
+      <MemberSignature Language="F#" Value="V2021_03_31_Preview = 1" Usage="Azure.Verticals.AgriFood.Farming.FarmBeatsClientOptions.ServiceVersion.V2021_03_31_Preview" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Verticals.AgriFood.Farming</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Verticals.AgriFood.Farming.FarmBeatsClientOptions+ServiceVersion</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary> Service version "2021-03-31-preview". </summary>
+      </Docs>
+    </Member>
   </Members>
 </Type>

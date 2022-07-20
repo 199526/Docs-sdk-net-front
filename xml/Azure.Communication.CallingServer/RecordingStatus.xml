@@ -1,0 +1,270 @@
+<Type Name="RecordingStatus" FullName="Azure.Communication.CallingServer.RecordingStatus">
+  <TypeSignature Language="C#" Value="public readonly struct RecordingStatus : IEquatable&lt;Azure.Communication.CallingServer.RecordingStatus&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit RecordingStatus extends System.ValueType implements class System.IEquatable`1&lt;valuetype Azure.Communication.CallingServer.RecordingStatus&gt;" />
+  <TypeSignature Language="DocId" Value="T:Azure.Communication.CallingServer.RecordingStatus" />
+  <TypeSignature Language="VB.NET" Value="Public Structure RecordingStatus&#xA;Implements IEquatable(Of RecordingStatus)" />
+  <TypeSignature Language="F#" Value="type RecordingStatus = struct" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;Azure.Communication.CallingServer.RecordingStatus&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary> The RecordingStatus. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RecordingStatus (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.RecordingStatus.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As String)" />
+      <MemberSignature Language="F#" Value="new Azure.Communication.CallingServer.RecordingStatus : string -&gt; Azure.Communication.CallingServer.RecordingStatus" Usage="new Azure.Communication.CallingServer.RecordingStatus value" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary> Initializes a new instance of <see cref="T:Azure.Communication.CallingServer.RecordingStatus" />. </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Active">
+      <MemberSignature Language="C#" Value="public static Azure.Communication.CallingServer.RecordingStatus Active { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.Communication.CallingServer.RecordingStatus Active" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallingServer.RecordingStatus.Active" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Active As RecordingStatus" />
+      <MemberSignature Language="F#" Value="member this.Active : Azure.Communication.CallingServer.RecordingStatus" Usage="Azure.Communication.CallingServer.RecordingStatus.Active" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Communication.CallingServer.RecordingStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> active. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (Azure.Communication.CallingServer.RecordingStatus other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype Azure.Communication.CallingServer.RecordingStatus other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.RecordingStatus.Equals(Azure.Communication.CallingServer.RecordingStatus)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As RecordingStatus) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : Azure.Communication.CallingServer.RecordingStatus -&gt; bool" Usage="recordingStatus.Equals other" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="Azure.Communication.CallingServer.RecordingStatus" />
+      </Parameters>
+      <Docs>
+        <param name="other">An object to compare with this object.</param>
+        <summary>Indicates whether the current object is equal to another object of the same type.</summary>
+        <returns>
+          <see langword="true" /> if the current object is equal to the <paramref name="other" /> parameter; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.RecordingStatus.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="recordingStatus.Equals obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to compare with the current instance.</param>
+        <summary>Indicates whether this instance and a specified object are equal.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> and this instance are the same type and represent the same value; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.RecordingStatus.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="recordingStatus.GetHashCode " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>A 32-bit signed integer that is the hash code for this instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Inactive">
+      <MemberSignature Language="C#" Value="public static Azure.Communication.CallingServer.RecordingStatus Inactive { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.Communication.CallingServer.RecordingStatus Inactive" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallingServer.RecordingStatus.Inactive" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Inactive As RecordingStatus" />
+      <MemberSignature Language="F#" Value="member this.Inactive : Azure.Communication.CallingServer.RecordingStatus" Usage="Azure.Communication.CallingServer.RecordingStatus.Inactive" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Communication.CallingServer.RecordingStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> inactive. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool operator == (Azure.Communication.CallingServer.RecordingStatus left, Azure.Communication.CallingServer.RecordingStatus right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype Azure.Communication.CallingServer.RecordingStatus left, valuetype Azure.Communication.CallingServer.RecordingStatus right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.RecordingStatus.op_Equality(Azure.Communication.CallingServer.RecordingStatus,Azure.Communication.CallingServer.RecordingStatus)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As RecordingStatus, right As RecordingStatus) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : Azure.Communication.CallingServer.RecordingStatus * Azure.Communication.CallingServer.RecordingStatus -&gt; bool" Usage="left = right" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="Azure.Communication.CallingServer.RecordingStatus" />
+        <Parameter Name="right" Type="Azure.Communication.CallingServer.RecordingStatus" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary> Determines if two <see cref="T:Azure.Communication.CallingServer.RecordingStatus" /> values are the same. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Azure.Communication.CallingServer.RecordingStatus (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Azure.Communication.CallingServer.RecordingStatus op_Implicit(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.RecordingStatus.op_Implicit(System.String)~Azure.Communication.CallingServer.RecordingStatus" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As String) As RecordingStatus" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : string -&gt; Azure.Communication.CallingServer.RecordingStatus" Usage="Azure.Communication.CallingServer.RecordingStatus.op_Implicit value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Communication.CallingServer.RecordingStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary> Converts a string to a <see cref="T:Azure.Communication.CallingServer.RecordingStatus" />. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool operator != (Azure.Communication.CallingServer.RecordingStatus left, Azure.Communication.CallingServer.RecordingStatus right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype Azure.Communication.CallingServer.RecordingStatus left, valuetype Azure.Communication.CallingServer.RecordingStatus right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.RecordingStatus.op_Inequality(Azure.Communication.CallingServer.RecordingStatus,Azure.Communication.CallingServer.RecordingStatus)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As RecordingStatus, right As RecordingStatus) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : Azure.Communication.CallingServer.RecordingStatus * Azure.Communication.CallingServer.RecordingStatus -&gt; bool" Usage="Azure.Communication.CallingServer.RecordingStatus.op_Inequality (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="Azure.Communication.CallingServer.RecordingStatus" />
+        <Parameter Name="right" Type="Azure.Communication.CallingServer.RecordingStatus" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary> Determines if two <see cref="T:Azure.Communication.CallingServer.RecordingStatus" /> values are not the same. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallingServer.RecordingStatus.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="recordingStatus.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallingServer</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the fully qualified type name of this instance.</summary>
+        <returns>The fully qualified type name.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

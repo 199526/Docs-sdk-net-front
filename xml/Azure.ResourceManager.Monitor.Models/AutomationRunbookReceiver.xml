@@ -18,6 +18,34 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AutomationRunbookReceiver (Azure.Core.ResourceIdentifier automationAccountId, string runbookName, Azure.Core.ResourceIdentifier webhookResourceId, bool isGlobalRunbook);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Azure.Core.ResourceIdentifier automationAccountId, string runbookName, class Azure.Core.ResourceIdentifier webhookResourceId, bool isGlobalRunbook) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Monitor.Models.AutomationRunbookReceiver.#ctor(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceIdentifier,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (automationAccountId As ResourceIdentifier, runbookName As String, webhookResourceId As ResourceIdentifier, isGlobalRunbook As Boolean)" />
+      <MemberSignature Language="F#" Value="new Azure.ResourceManager.Monitor.Models.AutomationRunbookReceiver : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceIdentifier * bool -&gt; Azure.ResourceManager.Monitor.Models.AutomationRunbookReceiver" Usage="new Azure.ResourceManager.Monitor.Models.AutomationRunbookReceiver (automationAccountId, runbookName, webhookResourceId, isGlobalRunbook)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="automationAccountId" Type="Azure.Core.ResourceIdentifier" />
+        <Parameter Name="runbookName" Type="System.String" />
+        <Parameter Name="webhookResourceId" Type="Azure.Core.ResourceIdentifier" />
+        <Parameter Name="isGlobalRunbook" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="automationAccountId"> The Azure automation account Id which holds this runbook and authenticate to Azure resource. </param>
+        <param name="runbookName"> The name for this runbook. </param>
+        <param name="webhookResourceId"> The resource id for webhook linked to this runbook. </param>
+        <param name="isGlobalRunbook"> Indicates whether this instance is global runbook. </param>
+        <summary> Initializes a new instance of AutomationRunbookReceiver. </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="automationAccountId" />, <paramref name="runbookName" /> or <paramref name="webhookResourceId" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AutomationRunbookReceiver (string automationAccountId, string runbookName, string webhookResourceId, bool isGlobalRunbook);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string automationAccountId, string runbookName, string webhookResourceId, bool isGlobalRunbook) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Monitor.Models.AutomationRunbookReceiver.#ctor(System.String,System.String,System.String,System.Boolean)" />
@@ -46,18 +74,18 @@
       </Docs>
     </Member>
     <Member MemberName="AutomationAccountId">
-      <MemberSignature Language="C#" Value="public string AutomationAccountId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string AutomationAccountId" />
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier AutomationAccountId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier AutomationAccountId" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Monitor.Models.AutomationRunbookReceiver.AutomationAccountId" />
-      <MemberSignature Language="VB.NET" Value="Public Property AutomationAccountId As String" />
-      <MemberSignature Language="F#" Value="member this.AutomationAccountId : string with get, set" Usage="Azure.ResourceManager.Monitor.Models.AutomationRunbookReceiver.AutomationAccountId" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutomationAccountId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.AutomationAccountId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Monitor.Models.AutomationRunbookReceiver.AutomationAccountId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The Azure automation account Id which holds this runbook and authenticate to Azure resource. </summary>
@@ -166,18 +194,18 @@
       </Docs>
     </Member>
     <Member MemberName="WebhookResourceId">
-      <MemberSignature Language="C#" Value="public string WebhookResourceId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string WebhookResourceId" />
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier WebhookResourceId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier WebhookResourceId" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Monitor.Models.AutomationRunbookReceiver.WebhookResourceId" />
-      <MemberSignature Language="VB.NET" Value="Public Property WebhookResourceId As String" />
-      <MemberSignature Language="F#" Value="member this.WebhookResourceId : string with get, set" Usage="Azure.ResourceManager.Monitor.Models.AutomationRunbookReceiver.WebhookResourceId" />
+      <MemberSignature Language="VB.NET" Value="Public Property WebhookResourceId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.WebhookResourceId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Monitor.Models.AutomationRunbookReceiver.WebhookResourceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The resource id for webhook linked to this runbook. </summary>

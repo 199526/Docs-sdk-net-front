@@ -1,0 +1,85 @@
+<Type Name="ServerPropertiesForRestore" FullName="Azure.ResourceManager.PostgreSql.Models.ServerPropertiesForRestore">
+  <TypeSignature Language="C#" Value="public class ServerPropertiesForRestore : Azure.ResourceManager.PostgreSql.Models.ServerPropertiesForCreate" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServerPropertiesForRestore extends Azure.ResourceManager.PostgreSql.Models.ServerPropertiesForCreate" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.PostgreSql.Models.ServerPropertiesForRestore" />
+  <TypeSignature Language="VB.NET" Value="Public Class ServerPropertiesForRestore&#xA;Inherits ServerPropertiesForCreate" />
+  <TypeSignature Language="F#" Value="type ServerPropertiesForRestore = class&#xA;    inherit ServerPropertiesForCreate" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.PostgreSql</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.ResourceManager.PostgreSql.Models.ServerPropertiesForCreate</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> The properties used to create a new server by restoring from a backup. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServerPropertiesForRestore (string sourceServerId, DateTimeOffset restorePointInOn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string sourceServerId, valuetype System.DateTimeOffset restorePointInOn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.PostgreSql.Models.ServerPropertiesForRestore.#ctor(System.String,System.DateTimeOffset)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (sourceServerId As String, restorePointInOn As DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="new Azure.ResourceManager.PostgreSql.Models.ServerPropertiesForRestore : string * DateTimeOffset -&gt; Azure.ResourceManager.PostgreSql.Models.ServerPropertiesForRestore" Usage="new Azure.ResourceManager.PostgreSql.Models.ServerPropertiesForRestore (sourceServerId, restorePointInOn)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.PostgreSql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="sourceServerId" Type="System.String" />
+        <Parameter Name="restorePointInOn" Type="System.DateTimeOffset" />
+      </Parameters>
+      <Docs>
+        <param name="sourceServerId"> The source server id to restore from. </param>
+        <param name="restorePointInOn"> Restore point creation time (ISO8601 format), specifying the time to restore from. </param>
+        <summary> Initializes a new instance of ServerPropertiesForRestore. </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="sourceServerId" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RestorePointInOn">
+      <MemberSignature Language="C#" Value="public DateTimeOffset RestorePointInOn { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTimeOffset RestorePointInOn" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.PostgreSql.Models.ServerPropertiesForRestore.RestorePointInOn" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RestorePointInOn As DateTimeOffset" />
+      <MemberSignature Language="F#" Value="member this.RestorePointInOn : DateTimeOffset" Usage="Azure.ResourceManager.PostgreSql.Models.ServerPropertiesForRestore.RestorePointInOn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.PostgreSql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTimeOffset</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Restore point creation time (ISO8601 format), specifying the time to restore from. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceServerId">
+      <MemberSignature Language="C#" Value="public string SourceServerId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourceServerId" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.PostgreSql.Models.ServerPropertiesForRestore.SourceServerId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceServerId As String" />
+      <MemberSignature Language="F#" Value="member this.SourceServerId : string" Usage="Azure.ResourceManager.PostgreSql.Models.ServerPropertiesForRestore.SourceServerId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.PostgreSql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The source server id to restore from. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

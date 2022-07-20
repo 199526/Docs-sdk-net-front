@@ -38,18 +38,18 @@
       </Docs>
     </Member>
     <Member MemberName="PrivateLinkServiceId">
-      <MemberSignature Language="C#" Value="public string PrivateLinkServiceId { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string PrivateLinkServiceId" />
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier PrivateLinkServiceId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier PrivateLinkServiceId" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.PrivateEndpointConnectionRequestStatus.PrivateLinkServiceId" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrivateLinkServiceId As String" />
-      <MemberSignature Language="F#" Value="member this.PrivateLinkServiceId : string" Usage="Azure.ResourceManager.Sql.Models.PrivateEndpointConnectionRequestStatus.PrivateLinkServiceId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrivateLinkServiceId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.PrivateLinkServiceId : Azure.Core.ResourceIdentifier" Usage="Azure.ResourceManager.Sql.Models.PrivateEndpointConnectionRequestStatus.PrivateLinkServiceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Resource id for which the private endpoint is created. </summary>

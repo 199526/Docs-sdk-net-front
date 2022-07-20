@@ -18,6 +18,32 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LogicAppReceiver (string name, Azure.Core.ResourceIdentifier resourceId, Uri callbackUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class Azure.Core.ResourceIdentifier resourceId, class System.Uri callbackUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Monitor.Models.LogicAppReceiver.#ctor(System.String,Azure.Core.ResourceIdentifier,System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, resourceId As ResourceIdentifier, callbackUri As Uri)" />
+      <MemberSignature Language="F#" Value="new Azure.ResourceManager.Monitor.Models.LogicAppReceiver : string * Azure.Core.ResourceIdentifier * Uri -&gt; Azure.ResourceManager.Monitor.Models.LogicAppReceiver" Usage="new Azure.ResourceManager.Monitor.Models.LogicAppReceiver (name, resourceId, callbackUri)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="resourceId" Type="Azure.Core.ResourceIdentifier" />
+        <Parameter Name="callbackUri" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="name"> The name of the logic app receiver. Names must be unique across all receivers within an action group. </param>
+        <param name="resourceId"> The azure resource id of the logic app receiver. </param>
+        <param name="callbackUri"> The callback url where http request sent to. </param>
+        <summary> Initializes a new instance of LogicAppReceiver. </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" />, <paramref name="resourceId" /> or <paramref name="callbackUri" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public LogicAppReceiver (string name, string resourceId, Uri callbackUri);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string resourceId, class System.Uri callbackUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Monitor.Models.LogicAppReceiver.#ctor(System.String,System.String,System.Uri)" />
@@ -84,18 +110,18 @@
       </Docs>
     </Member>
     <Member MemberName="ResourceId">
-      <MemberSignature Language="C#" Value="public string ResourceId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string ResourceId" />
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier ResourceId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier ResourceId" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Monitor.Models.LogicAppReceiver.ResourceId" />
-      <MemberSignature Language="VB.NET" Value="Public Property ResourceId As String" />
-      <MemberSignature Language="F#" Value="member this.ResourceId : string with get, set" Usage="Azure.ResourceManager.Monitor.Models.LogicAppReceiver.ResourceId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResourceId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.ResourceId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Monitor.Models.LogicAppReceiver.ResourceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The azure resource id of the logic app receiver. </summary>

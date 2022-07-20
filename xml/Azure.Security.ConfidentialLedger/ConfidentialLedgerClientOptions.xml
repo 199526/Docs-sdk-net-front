@@ -7,13 +7,14 @@
   <AssemblyInfo>
     <AssemblyName>Azure.Security.ConfidentialLedger</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.Core.ClientOptions</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary> Client options for ConfidentialLedgerClient. </summary>
+    <summary> Client options for ConfidentialLedger library clients. </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,6 +28,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Security.ConfidentialLedger</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="version" Type="Azure.Security.ConfidentialLedger.ConfidentialLedgerClientOptions+ServiceVersion" />

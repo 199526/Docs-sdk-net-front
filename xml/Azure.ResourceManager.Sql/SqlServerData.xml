@@ -158,18 +158,18 @@
       </Docs>
     </Member>
     <Member MemberName="KeyId">
-      <MemberSignature Language="C#" Value="public string KeyId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string KeyId" />
+      <MemberSignature Language="C#" Value="public Uri KeyId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri KeyId" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlServerData.KeyId" />
-      <MemberSignature Language="VB.NET" Value="Public Property KeyId As String" />
-      <MemberSignature Language="F#" Value="member this.KeyId : string with get, set" Usage="Azure.ResourceManager.Sql.SqlServerData.KeyId" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeyId As Uri" />
+      <MemberSignature Language="F#" Value="member this.KeyId : Uri with get, set" Usage="Azure.ResourceManager.Sql.SqlServerData.KeyId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> A CMK URI of the key to use for encryption. </summary>
@@ -218,18 +218,18 @@
       </Docs>
     </Member>
     <Member MemberName="PrimaryUserAssignedIdentityId">
-      <MemberSignature Language="C#" Value="public string PrimaryUserAssignedIdentityId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string PrimaryUserAssignedIdentityId" />
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier PrimaryUserAssignedIdentityId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier PrimaryUserAssignedIdentityId" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SqlServerData.PrimaryUserAssignedIdentityId" />
-      <MemberSignature Language="VB.NET" Value="Public Property PrimaryUserAssignedIdentityId As String" />
-      <MemberSignature Language="F#" Value="member this.PrimaryUserAssignedIdentityId : string with get, set" Usage="Azure.ResourceManager.Sql.SqlServerData.PrimaryUserAssignedIdentityId" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrimaryUserAssignedIdentityId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.PrimaryUserAssignedIdentityId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Sql.SqlServerData.PrimaryUserAssignedIdentityId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The resource id of a user assigned identity to be used by default. </summary>

@@ -38,18 +38,18 @@
       </Docs>
     </Member>
     <Member MemberName="Options">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.CosmosDB.Models.CassandraTablePropertiesOptions Options { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.CosmosDB.Models.CassandraTablePropertiesOptions Options" />
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.CosmosDB.Models.CassandraTablePropertiesConfig Options { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.CosmosDB.Models.CassandraTablePropertiesConfig Options" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.CosmosDB.CassandraTableData.Options" />
-      <MemberSignature Language="VB.NET" Value="Public Property Options As CassandraTablePropertiesOptions" />
-      <MemberSignature Language="F#" Value="member this.Options : Azure.ResourceManager.CosmosDB.Models.CassandraTablePropertiesOptions with get, set" Usage="Azure.ResourceManager.CosmosDB.CassandraTableData.Options" />
+      <MemberSignature Language="VB.NET" Value="Public Property Options As CassandraTablePropertiesConfig" />
+      <MemberSignature Language="F#" Value="member this.Options : Azure.ResourceManager.CosmosDB.Models.CassandraTablePropertiesConfig with get, set" Usage="Azure.ResourceManager.CosmosDB.CassandraTableData.Options" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.CosmosDB.Models.CassandraTablePropertiesOptions</ReturnType>
+        <ReturnType>Azure.ResourceManager.CosmosDB.Models.CassandraTablePropertiesConfig</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Gets or sets the options. </summary>
@@ -58,18 +58,18 @@
       </Docs>
     </Member>
     <Member MemberName="Resource">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.CosmosDB.Models.CassandraTablePropertiesResource Resource { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.CosmosDB.Models.CassandraTablePropertiesResource Resource" />
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.CosmosDB.Models.ExtendedCassandraTableResourceInfo Resource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.CosmosDB.Models.ExtendedCassandraTableResourceInfo Resource" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.CosmosDB.CassandraTableData.Resource" />
-      <MemberSignature Language="VB.NET" Value="Public Property Resource As CassandraTablePropertiesResource" />
-      <MemberSignature Language="F#" Value="member this.Resource : Azure.ResourceManager.CosmosDB.Models.CassandraTablePropertiesResource with get, set" Usage="Azure.ResourceManager.CosmosDB.CassandraTableData.Resource" />
+      <MemberSignature Language="VB.NET" Value="Public Property Resource As ExtendedCassandraTableResourceInfo" />
+      <MemberSignature Language="F#" Value="member this.Resource : Azure.ResourceManager.CosmosDB.Models.ExtendedCassandraTableResourceInfo with get, set" Usage="Azure.ResourceManager.CosmosDB.CassandraTableData.Resource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.CosmosDB.Models.CassandraTablePropertiesResource</ReturnType>
+        <ReturnType>Azure.ResourceManager.CosmosDB.Models.ExtendedCassandraTableResourceInfo</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Gets or sets the resource. </summary>
